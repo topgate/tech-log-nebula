@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { promises as fs } from 'node:fs';
+import path from 'node:path';
+
+const dataDir = path.join(process.cwd(), 'src/data');
+const files = await fs.readdir(dataDir);
+
+const articles = await Promise.all(
+  files.map(async (file) => {
+    const content = await fs.readFile(path.join(dataDir, file), 'utf-8');
+    const contentJson = JSON.parse(content);
+    return {
+        title: contentJson.title,
+        published: contentJson.published,
+        slug: file.replace('.json', ''),
+    };
+  })
+);
+
+// 記事を公開日の降順でソート
+articles.sort((a, b) => new Date(b.published).getTime() - new Date(a.published).getTime());
+---
+
+<Layout title="過去の記事一覧">
+    <div class="bg-gray-100 dark:bg-gray-800 min-h-screen">
+      <div class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold text-gray-800 dark:text-gray-200 mb-8">過去の記事一覧</h1>
+        
+        <div class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6">
+          <ul class="space-y-6">
+            {articles.map(article => (
+              <li class="border-b border-gray-200 dark:border-gray-600 pb-6 last:border-b-0 last:pb-0">
+                <a href={`/articles/${article.slug}`} class="block hover:bg-gray-50 dark:hover:bg-gray-600 transition duration-150 ease-in-out p-3 rounded -mx-3">
+                  <h2 class="text-xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2">{article.title}</h2>
+                  <time datetime={article.published} class="text-sm text-gray-500 dark:text-gray-400">
+                    {new Date(article.published).toLocaleDateString('ja-JP')}
+                  </time>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+  
+        <div class="mt-8 text-center">
+          <a href="/" class="inline-block bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-150 ease-in-out">
+            ホームに戻る
+          </a>
+        </div>
+      </div>
+    </div>
+  </Layout>

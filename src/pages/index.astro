@@ -1,16 +1,54 @@
 ---
+import Layout from '../layouts/Layout.astro';
+import { promises as fs } from 'node:fs';
+import path from 'node:path';
+import type { ArticleJson } from '../types/ArticleJson';
 
+const dataDir = path.join(process.cwd(), 'src/data');
+const files = await fs.readdir(dataDir);
+
+const articles = await Promise.all(
+  files.map(async (file) => {
+    const content = await fs.readFile(path.join(dataDir, file), 'utf-8');
+    const contentJson = JSON.parse(content) as ArticleJson;
+    return {
+        title: contentJson.title,
+        published: contentJson.published,
+        slug: file.replace('.json', ''),
+    };
+  })
+);
+
+// 記事を公開日の降順でソートし、最新の5件を取得
+articles.sort((a, b) => new Date(b.published).getTime() - new Date(a.published).getTime());
+const recentArticles = articles.slice(0, 5);
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="ホーム">
+	<div class="bg-gray-100 dark:bg-gray-800 min-h-screen">
+	  <div class="container mx-auto px-4 py-8">
+		
+		<section class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 mb-8">
+		  <h2 class="text-2xl font-semibold text-gray-700 dark:text-gray-300 mb-4">最新の記事</h2>
+		  <ul class="space-y-4">
+			{recentArticles.map(article => (
+			  <li class="border-b border-gray-200 dark:border-gray-600 pb-4 last:border-b-0 last:pb-0">
+				<a href={`/articles/${article.slug}`} class="block hover:bg-gray-50 dark:hover:bg-gray-600 transition duration-150 ease-in-out p-2 rounded">
+				  <h3 class="text-xl font-medium text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300">{article.title}</h3>
+				  <time datetime={article.published} class="text-sm text-gray-500 dark:text-gray-400">
+					{new Date(article.published).toLocaleDateString('ja-JP')}
+				  </time>
+				</a>
+			  </li>
+			))}
+		  </ul>
+		</section>
+		
+		<div class="text-center">
+		  <a href="/articles" class="inline-block bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-150 ease-in-out">
+			すべての記事を見る
+		  </a>
+		</div>
+	  </div>
+	</div>
+  </Layout>

@@ -1,0 +1,91 @@
+---
+---
+<header class="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-gray-800 shadow-md">
+    <nav class="container mx-auto px-4 py-4">
+      <div class="flex justify-between items-center">
+        <div class="logo">
+          <a href="/" class="text-xl font-bold text-gray-800 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 transition-colors duration-200">
+            TechLog Nebula
+          </a>
+        </div>
+        <ul class="flex space-x-6 items-center">
+          <li>
+            <a href="/" class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100 transition-colors duration-200">ホーム</a>
+          </li>
+          <li>
+            <a href="/about" class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100 transition-colors duration-200">サイトについて</a>
+          </li>
+          <li>
+            <a href="/articles" class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100 transition-colors duration-200">記事一覧</a>
+          </li>
+          <li>
+            <label for="darkModeToggle" class="flex items-center cursor-pointer" id="darkModeToggleContainer">
+              <div class="relative">
+                <input type="checkbox" id="darkModeToggle" class="sr-only">
+                <div class="block w-14 h-8 rounded-full bg-gray-600 dark:bg-gray-300"></div>
+                <div class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition-transform duration-300 ease-in-out flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon sun-icon h-4 w-4 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon moon-icon h-4 w-4 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                  </svg>
+                </div>
+              </div>
+              <span class="ml-3 text-gray-700 dark:text-gray-300 font-medium sr-only">テーマ切り替え</span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+<style>
+  #darkModeToggle:checked + .block {
+    @apply bg-blue-600 dark:bg-blue-300;
+  }
+  #darkModeToggle:checked + .block + .dot {
+    @apply translate-x-6;
+  }
+  .dot {
+    transition: transform 0.3s ease-in-out;
+  }
+  .icon {
+    position: absolute;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+  .sun-icon {
+    opacity: 1;
+  }
+  .moon-icon {
+    opacity: 0;
+  }
+  
+  .dark .sun-icon {
+    opacity: 0;
+  }
+  .dark .moon-icon {
+    opacity: 1;
+  }
+</style>
+
+<script>
+  const darkModeToggle = document.getElementById('darkModeToggle')! as HTMLInputElement;
+  const darkModeToggleContainer = document.getElementById('darkModeToggleContainer')!;
+  const html = document.documentElement;
+  
+  // 初期状態の設定
+  function updateTheme(isDark: boolean) {
+    html.classList.toggle('dark', isDark);
+    darkModeToggle.checked = isDark;
+    localStorage.theme = isDark ? 'dark' : 'light';
+    darkModeToggleContainer?.classList.toggle('dark', isDark);
+  }
+
+  // 初期ロード時のテーマ設定
+  updateTheme(html.classList.contains('dark'));
+
+  darkModeToggle.addEventListener('change', () => {
+    updateTheme(darkModeToggle.checked);
+  });
+</script>

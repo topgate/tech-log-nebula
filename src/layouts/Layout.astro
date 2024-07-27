@@ -1,0 +1,46 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const { title } = Astro.props;
+---
+
+<html lang="ja" class="dark:bg-gray-900 dark:text-gray-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <link rel="stylesheet" href="/styles/global.css" />
+    <script>
+      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    </script>
+  </head>
+  <body class="flex flex-col min-h-screen dark:bg-gray-900 dark:text-gray-100">
+    <Header />
+    <main class="flex-grow mt-16">
+      <slot />
+    </main>
+    <Footer />
+    <script>
+      // Toggle dark mode
+      function toggleDarkMode() {
+        if (document.documentElement.classList.contains('dark')) {
+          document.documentElement.classList.remove('dark')
+          localStorage.theme = 'light'
+        } else {
+          document.documentElement.classList.add('dark')
+          localStorage.theme = 'dark'
+        }
+      }
+
+      // Add event listener to dark mode toggle button
+      document.getElementById('darkModeToggle')!.addEventListener('click', toggleDarkMode)
+    </script>
+  </body>
+</html>

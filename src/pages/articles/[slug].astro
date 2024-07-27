@@ -1,0 +1,211 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import type {ArticleJson} from '../../types/ArticleJson';
+
+export async function getStaticPaths() {
+  const dataDir = path.join(process.cwd(), 'src/data');
+  const files = await fs.readdir(dataDir);
+  const loadFile = async (targetFile: string) => {
+    const content = await fs.readFile(targetFile, 'utf-8');
+    const article = JSON.parse(content) as ArticleJson;
+    const articleSlug = path.basename(targetFile, '.json');
+
+    const tagCounts = article.articles.reduce((acc, item) => {
+        for(const tag of item.tags ){
+      
+        acc[tag] = (acc[tag] || 0) + 1;
+      }
+      return acc;
+    }, {} as {[key: string]: number});
+
+    return {
+      params: { slug: articleSlug },
+      props: { article, tagCounts },
+    };
+  }
+  const loadFiles = () => {
+    return files.map(async (file: string) => {
+        const targetFile = path.join(dataDir, file)
+        return loadFile(targetFile);
+    });
+  }
+ 
+  const result = await Promise.all(loadFiles())
+  return result
+}
+
+const { article, tagCounts  } = Astro.props;
+
+// Extract all unique tags
+const allTags = Object.entries(tagCounts).sort((a, b) => b[1] - a[1]);
+---
+
+<Layout title={article.title}>
+    <div class="bg-gray-100 dark:bg-gray-800 min-h-screen py-8">
+      <div class="container mx-auto px-4">
+        <article class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-8">
+          <header class="mb-8">
+            <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 mb-2">{article.title}</h1>
+            <p class="text-sm text-gray-500 dark:text-gray-400">
+              公開日: {new Date(article.published).toLocaleDateString('ja-JP')}
+            </p>
+          </header>
+  
+          <!-- Search input -->
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="記事を検索..."
+            class="w-full p-2 mb-4 border rounded dark:bg-gray-600 dark:text-gray-200 dark:border-gray-500"
+          />
+  
+          <!-- Tags filter -->
+          <div class="mb-4 flex flex-wrap gap-2" id="tagFilters">
+            <button class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm tag-filter active" data-tag="all">
+              すべて ({article.articles.length})
+            </button>
+            {allTags.map(([tag, count]) => (
+              <button class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm tag-filter" data-tag={tag}>
+                {tag} ({count})
+              </button>
+            ))}
+          </div>
+
+          <div class="space-y-8" id="articleList">
+            {article.articles.map((item) => (
+                <section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags={item.tags.join(',')}>
+                  <a href={item.url} class="block" target="_blank" rel="noopener noreferrer">
+                    <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2">{item.title}</h2>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap">{item.summary}</p>
+                    <div class="flex justify-between items-center">
+                      <div class="flex flex-wrap gap-2">
+                        {item.tags.map((tag) => (
+                          <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag={tag}>
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                      <span class="text-blue-600 dark:text-blue-400 hover:underline">続きを読む →</span>
+                    </div>
+                  </a>
+                </section>
+              ))}
+              </div>
+        </article>
+        <div class="mt-8 text-center">
+          <a href="/articles" class="inline-block bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-150 ease-in-out">
+            記事一覧に戻る
+          </a>
+        </div>
+      </div>
+    </div>
+  </Layout>
+
+<script>
+    type WithTag<T> = T&{dataset:{
+        tag:string
+    }};
+    type WithTags<T> = T&{dataset:{
+        tags:string
+    }};
+  function updateHash() {
+    
+    const searchInput = document.getElementById('searchInput') as HTMLInputElement;
+    const activeTag = document.querySelector('.tag-filter.active') as WithTag<HTMLElement>;
+    const hash = new URLSearchParams();
+    
+    if (searchInput.value) {
+      hash.set('search', searchInput.value);
+    }
+    if (activeTag && activeTag.dataset.tag !== 'all') {
+      hash.set('tag', activeTag.dataset.tag);
+    }
+    
+    window.location.hash = hash.toString();
+  }
+
+  function filterArticles() {
+    const searchInput = document.getElementById('searchInput') as HTMLInputElement;
+    const searchTerm = searchInput.value.toLowerCase();
+    const activeTag = document.querySelector('.tag-filter.active') as HTMLElement;
+    const selectedTag = activeTag.dataset.tag!;
+
+    const articles = document.querySelectorAll<HTMLElement>('#articleList section');
+    articles.forEach((article) => {
+      const title = article.querySelector('h2')!.textContent!.toLowerCase();
+      const summary = article.querySelector('p')!.textContent!.toLowerCase();
+      const tags = (article as WithTags<HTMLElement>).dataset.tags.split(',');
+      
+      const matchesSearch = title.includes(searchTerm) || summary.includes(searchTerm);
+      const matchesTag = selectedTag === 'all' || tags.includes(selectedTag);
+
+      if (matchesSearch && matchesTag) {
+        (article as HTMLElement).style.display = 'block';
+      } else {
+        (article as HTMLElement).style.display = 'none';
+      }
+    });
+
+    updateHash();
+  }
+
+  function initializeFromHash() {
+    const hash = new URLSearchParams(window.location.hash.slice(1));
+    const searchInput = document.getElementById('searchInput') as HTMLInputElement;
+    const searchTerm = hash.get('search');
+    const tagFilter = hash.get('tag');
+
+    if (searchTerm) {
+      searchInput.value = searchTerm;
+    }
+
+    if (tagFilter) {
+      const tagButton = document.querySelector(`.tag-filter[data-tag="${tagFilter}"]`) as HTMLElement;
+      if (tagButton) {
+        document.querySelectorAll('.tag-filter').forEach(btn => btn.classList.remove('active'));
+        tagButton.classList.add('active');
+      }
+    } else {
+      const allTagButton = document.querySelector('.tag-filter[data-tag="all"]') as HTMLElement;
+      allTagButton.classList.add('active');
+    }
+
+    filterArticles();
+  }
+
+  // Event listeners
+  document.getElementById('searchInput')!.addEventListener('input', filterArticles);
+
+  document.querySelectorAll('.tag-filter').forEach((button) => {
+    button.addEventListener('click', (e) => {
+      const clickedTag = e.target as HTMLElement;
+      document.querySelectorAll('.tag-filter').forEach((btn) => btn.classList.remove('active'));
+      clickedTag.classList.add('active');
+      filterArticles();
+    });
+  });
+
+  document.querySelectorAll('.article-tag').forEach((tag) => {
+    tag.addEventListener('click', (e) => {
+      const clickedTag = e.target as HTMLElement;
+      const tagButton = document.querySelector(`.tag-filter[data-tag="${clickedTag.dataset.tag}"]`) as HTMLElement;
+      if (tagButton) {
+        document.querySelectorAll('.tag-filter').forEach((btn) => btn.classList.remove('active'));
+        tagButton.classList.add('active');
+        filterArticles();
+      }
+    });
+  });
+
+  window.addEventListener('hashchange', initializeFromHash);
+  document.addEventListener('DOMContentLoaded', initializeFromHash);
+</script>
+
+<style>
+  .tag-filter.active {
+    background-color: #4299e1;
+    color: white;
+  }
+</style>
