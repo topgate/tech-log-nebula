@@ -1,22 +1,24 @@
 ---
+import Link from "./Link.astro";
+
 ---
 <header class="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-gray-800 shadow-md">
     <nav class="container mx-auto px-4 py-4">
       <div class="flex justify-between items-center">
         <div class="logo">
-          <a href="/" class="text-xl font-bold text-gray-800 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 transition-colors duration-200">
+          <Link href="/" class="text-xl font-bold text-gray-800 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 transition-colors duration-200">
             TechLog Nebula
-          </a>
+          </Link>
         </div>
         <ul class="flex space-x-6 items-center">
           <li>
-            <a href="/" class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100 transition-colors duration-200">ホーム</a>
+            <Link href="/" class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100 transition-colors duration-200">ホーム</Link>
           </li>
           <li>
-            <a href="/about" class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100 transition-colors duration-200">サイトについて</a>
+            <Link href="/about" class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100 transition-colors duration-200">サイトについて</Link>
           </li>
           <li>
-            <a href="/articles" class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100 transition-colors duration-200">記事一覧</a>
+            <Link href="/articles" class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100 transition-colors duration-200">記事一覧</Link>
           </li>
           <li>
             <label for="darkModeToggle" class="flex items-center cursor-pointer" id="darkModeToggleContainer">
