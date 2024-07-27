@@ -1,0 +1,918 @@
+<!DOCTYPE html><html lang="ja" class="dark:bg-gray-900 dark:text-gray-100"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>2024-07-26 までの技術動向</title><link rel="stylesheet" href="/styles/global.css"><link rel="stylesheet" href="/_astro/about.CBHqgTB_.css">
+<style>.tag-filter[data-astro-cid-xw3clhsd].active{background-color:#4299e1;color:#fff}
+</style><script type="module" src="/_astro/hoisted.BoCKn7Mq.js"></script></head> <body class="flex flex-col min-h-screen dark:bg-gray-900 dark:text-gray-100"> <header class="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-gray-800 shadow-md" data-astro-cid-3ef6ksr2> <nav class="container mx-auto px-4 py-4" data-astro-cid-3ef6ksr2> <div class="flex justify-between items-center" data-astro-cid-3ef6ksr2> <div class="logo" data-astro-cid-3ef6ksr2> <a href="/" class="text-xl font-bold text-gray-800 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 transition-colors duration-200" data-astro-cid-3ef6ksr2>
+TechLog Nebula
+</a> </div> <ul class="flex space-x-6 items-center" data-astro-cid-3ef6ksr2> <li data-astro-cid-3ef6ksr2> <a href="/" class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100 transition-colors duration-200" data-astro-cid-3ef6ksr2>ホーム</a> </li> <li data-astro-cid-3ef6ksr2> <a href="/about" class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100 transition-colors duration-200" data-astro-cid-3ef6ksr2>サイトについて</a> </li> <li data-astro-cid-3ef6ksr2> <a href="/articles" class="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100 transition-colors duration-200" data-astro-cid-3ef6ksr2>記事一覧</a> </li> <li data-astro-cid-3ef6ksr2> <label for="darkModeToggle" class="flex items-center cursor-pointer" id="darkModeToggleContainer" data-astro-cid-3ef6ksr2> <div class="relative" data-astro-cid-3ef6ksr2> <input type="checkbox" id="darkModeToggle" class="sr-only" data-astro-cid-3ef6ksr2> <div class="block w-14 h-8 rounded-full bg-gray-600 dark:bg-gray-300" data-astro-cid-3ef6ksr2></div> <div class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition-transform duration-300 ease-in-out flex items-center justify-center" data-astro-cid-3ef6ksr2> <svg xmlns="http://www.w3.org/2000/svg" class="icon sun-icon h-4 w-4 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-astro-cid-3ef6ksr2> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" data-astro-cid-3ef6ksr2></path> </svg> <svg xmlns="http://www.w3.org/2000/svg" class="icon moon-icon h-4 w-4 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-astro-cid-3ef6ksr2> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" data-astro-cid-3ef6ksr2></path> </svg> </div> </div> <span class="ml-3 text-gray-700 dark:text-gray-300 font-medium sr-only" data-astro-cid-3ef6ksr2>テーマ切り替え</span> </label> </li> </ul> </div> </nav> </header>   <main class="flex-grow mt-16">  <div class="bg-gray-100 dark:bg-gray-800 min-h-screen py-8" data-astro-cid-xw3clhsd> <div class="container mx-auto px-4" data-astro-cid-xw3clhsd> <article class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-8" data-astro-cid-xw3clhsd> <header class="mb-8" data-astro-cid-xw3clhsd> <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 mb-2" data-astro-cid-xw3clhsd>2024-07-26 までの技術動向</h1> <p class="text-sm text-gray-500 dark:text-gray-400" data-astro-cid-xw3clhsd>
+公開日: 2024/7/26 </p> </header> <!-- Search input --> <input type="text" id="searchInput" placeholder="記事を検索..." class="w-full p-2 mb-4 border rounded dark:bg-gray-600 dark:text-gray-200 dark:border-gray-500" data-astro-cid-xw3clhsd> <!-- Tags filter --> <div class="mb-4 flex flex-wrap gap-2" id="tagFilters" data-astro-cid-xw3clhsd> <button class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm tag-filter active" data-tag="all" data-astro-cid-xw3clhsd>
+すべて (89)
+</button> <button class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm tag-filter" data-tag="Web" data-astro-cid-xw3clhsd> Web (55)
+</button><button class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm tag-filter" data-tag="Software" data-astro-cid-xw3clhsd> Software (45)
+</button><button class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm tag-filter" data-tag="Security" data-astro-cid-xw3clhsd> Security (28)
+</button><button class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm tag-filter" data-tag="AI" data-astro-cid-xw3clhsd> AI (26)
+</button><button class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm tag-filter" data-tag="Other" data-astro-cid-xw3clhsd> Other (5)
+</button><button class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm tag-filter" data-tag="Recommend" data-astro-cid-xw3clhsd> Recommend (1)
+</button><button class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm tag-filter" data-tag="Rust" data-astro-cid-xw3clhsd> Rust (1)
+</button><button class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm tag-filter" data-tag="Python" data-astro-cid-xw3clhsd> Python (1)
+</button><button class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm tag-filter" data-tag="Django" data-astro-cid-xw3clhsd> Django (1)
+</button><button class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm tag-filter" data-tag="FastAPI" data-astro-cid-xw3clhsd> FastAPI (1)
+</button> </div> <div class="space-y-8" id="articleList" data-astro-cid-xw3clhsd> <section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="AI" data-astro-cid-xw3clhsd> <a href="https://scontent-sjc3-1.xx.fbcdn.net/v/t39.2365-6/452604312_1010783860585222_5768506504946476980_n.pdf?_nc_cat=102&ccb=1-7&_nc_sid=3c67a6&_nc_ohc=YAv_wnbaeV4Q7kNvgFYk-3h&_nc_ht=scontent-sjc3-1.xx&oh=00_AYA8prM7RdSnA8iWL_UPB6qpQKjkeBOtp8zxoco6qb1Chw&oe=66A84FAB" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Meta が微調整を必要としない Dreambooth テクニックをリリース</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>ページ内容を取得できませんでした</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="AI" data-astro-cid-xw3clhsd> AI </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="AI,Web" data-astro-cid-xw3clhsd> <a href="https://www.engadget.com/google-gives-free-gemini-users-access-to-its-faster-lighter-15-flash-ai-model-160006705.html?src=rss" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Google、Geminiユーザーに高速で軽量な1.5 Flash AIモデルへの無料アクセスを提供</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>💡 GoogleはGemini AIをより速くて効率的にします。以前は有料だった1.5 Flashという高速で軽量なAIモデルに誰でも無料でアクセスできるようになりました。
+
+🤝 Geminiの会話ウィンドウが拡大され、より複雑な質問や長い会話をすることができます。
+
+📈 GemimiにGoogleドライブまたはデバイスからファイルをアップロードする機能が追加される予定です。たとえばノートにアクセス権限を与えるとGeminiは勉強ガイドを作成してくれるなど。
+
+📊 Googleはデータの分析やグラフ化で理解しやすくします。
+
+🤔 Googleは事実回答系質問の場合、関連する内容へのリンクを表示する機能を追加しました。回答文末にグレーのチップが現れます。これはメールにも繋げられる機能です。
+
+💬 Geminiの利用可能な言語数が増えました。Android端末ではEU（イギリス、アイスランド、リヒテンシュタイン、ノルウェーを含む）でGemini in Google Messagesが利用できるようになります。また、13歳以上であれば誰でもGeminiのモバイルアプリを使えるようになりました。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="AI" data-astro-cid-xw3clhsd> AI </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Software,Security" data-astro-cid-xw3clhsd> <a href="https://go.theregister.com/feed/www.theregister.com/2024/07/25/5yo_docker_vulnerability/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>おそらく、5年前に発生したこの重大なDockerの脆弱性を早急に修正する必要があるだろう。</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>🚨 Dockerの重大な脆弱性が発見された。5年前に発生したこの問題は、権限昇格攻撃につながる可能性があります。Dockerエンジンをバージョンv23.0.14とv27.1.0以上に更新することが推奨されています。
+
+👉 脆弱性の概要：
+
+*   Dockerエンジンの認可プラグイン(Authorization Plugins)に脆弱性がある。
+*   攻撃者が特定のAPIリクエストを送信して権限昇格攻撃を実行できる可能性がある。
+
+📊 脆弱性の評価：
+
+*  CVSSスコア：9.9
+*   脅威レベル: 低
+*   必要な特権：低
+
+💻 影響を受けるバージョン：
+
+*   Dockerエンジンのバージョン19.03以降
+*   Docker Desktopのバージョンv4.33未満（ただし、影響は軽微）
+
+🔒 対策：
+
+*   Dockerエンジンをバージョンv23.0.14とv27.1.0以上に更新する。
+*   認可プラグインを使用していない場合は脆弱性の影響を受けない。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Security" data-astro-cid-xw3clhsd> Security </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web,Software" data-astro-cid-xw3clhsd> <a href="https://dev.to/francescoxx/announcing-rust-1800-2njd" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Rust 1.80.0 の発表</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>Rust 1.58 の新しいバージョンがリリースされました。このバージョンには、言語、ライブラリ、ツールチェインの多くの改善が含まれています。ここでは、その主な変更点を紹介します。
+
+🔍 パターン マッチングの変更 🔗
+パターン マッチングが変更されました。`..=` の代わりに `..` を使うことができます。これは範囲指定子として機能し、値をそのままコピーします。
+
+📦 コード スニペット 📝
+
+```rust
+pub fn size_prefix(n: u32) -&gt; &amp;&#39;static str {
+    const K: u32 = 10u32.pow(3);
+    const M: u32 = 10u32.pow(6);
+    const G: u32 = 10u32.pow(9);
+    match n {
+        ..K =&gt; &quot;&quot;,
+        K..M =&gt; &quot;k&quot;,
+        M..G =&gt; &quot;M&quot;,
+        G.. =&gt; &quot;G&quot;,
+    }
+}
+```
+
+📈 ステーブル化された API 🚀
+Rc と Arc の実装、Duration、Option、Seek、BinaryHeap、NonNull などの改善が含まれています。
+
+詳しく知る 👉 &lt;https://dly.to/UOrPS3PDZrA&gt;</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="AI,Web,Software" data-astro-cid-xw3clhsd> <a href="https://gigazine.net/news/20240725-mint-1t-open-source-multimodal-dataset/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>1兆のテキストトークン・34億個の画像・PDF・ArXivの論文などを含むオープンソースのデータセット「MINT-1T」をSalesforceが公開</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>🔍 Salesforce AI Researchは、AIモデルのトレーニングに必要なデータセット「MINT-1T」をオープンソースとして公開しました。
+
+💻 MINT-1Tにはテキスト1兆トークンと34億枚の画像が含まれ、さらにPDFやプレプリントサーバーの論文なども含まれています。
+
+📊 これまでのデータセットに比べると、大幅にトークン数が増加していることが特徴です。
+
+🌐 MINT-1TにはWeb上のドキュメントだけでなく、HTMLドキュメントを超えてPDFやプレプリントサーバーの論文なども含まれており、これらの追加ソースにより科学文書のドメインカバレッジが向上することが確認されています。
+
+📈 Salesforce AI Researchは、MINT-1Tを使ってXGen-MMモデルをトレーニングした結果、OBELICSを使ってトレーニングした場合に比べると全体的なパフォーマンスが向上していることを発表しました。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="AI" data-astro-cid-xw3clhsd> AI </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web,Software,Security" data-astro-cid-xw3clhsd> <a href="https://thehackernews.com/2024/07/cisa-warns-of-exploitable.html" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>CISA、人気のBIND 9 DNSソフトウェアに悪用可能な脆弱性があると警告</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>🚨 Berkeley Internet Name Domain (BIND) 9 Domain Name System (DNS) ソフトウェア スイートに関する重要なセキュリティ警告 🚨
+
+* BIND 9 バージョン 9.18.28, 9.20.0, および 9.18.28-S1 でサービス拒否状態（DoS）を引き起こす可能性のある複数のセキュリティ脆弱性が存在します。
+🛡️ 脆弱性に関する詳細 🛡️
+
+* CVE-2024-4076: ロジック エラーにより、古くなったデータを提供する必要があるローカルな権威あるゾーン データでの検索に失敗する可能性があります。
+* CVE-2024-1975: 正当な DNS メッセージの検証が、過剰な CPU 負荷につながり、サービス拒否状態を引き起こします。
+* CVE-2024-1737: 1 つの所有者名に対して大きな数のリソース レコード タイプを作成することで、データベース処理を遅くすることができます。
+* CVE-2024-0760: 悪意ある DNS クライアントが TCP で大量のクエリを送信し、それらの応答を読まないと、サーバーは他のクライアントに応答しない可能性があります。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Security" data-astro-cid-xw3clhsd> Security </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Security,Software" data-astro-cid-xw3clhsd> <a href="https://thehackernews.com/2024/07/critical-docker-engine-flaw-allows.html" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>重大な Docker エンジンの欠陥により、攻撃者が認証プラグインをバイパスできるようになる</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>🚨 重大な Docker エンジンの欠陥により、攻撃者が認証プラグインをバイパスできるようになる 🚨
+
+以下は、この欠陥に関する要点です。
+
+⚠️ この欠陥は Docker Engine の特定のバージョンに影響し、攻撃者が認証プラグインをバイパスして特権昇格を行うことが可能になります。
+
+🔒 この欠陥は、2018 年に発見され、Docker Engine v18.09.1 で修正されたものですが、その後も継続していました。
+
+🚨 影響を受ける Docker Engine のバージョンは、v19.03.x から v27.1.0 までです。
+
+💡 この欠陥を解決するために、Docker はバージョン 23.0.14 と 27.1.0 をリリースしました。
+
+📝 Docker Desktop も影響を受ける可能性がありますが、デフォルトの設定では認証プラグインは含まれていないため、攻撃者がホストにアクセスする必要があります。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Security" data-astro-cid-xw3clhsd> Security </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="AI" data-astro-cid-xw3clhsd> <a href="https://gigazine.net/news/20240725-openai-rule-based-rewards/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>OpenAIが人間を使わずAIの安全性を高める手法「Rule-Based Rewards(RBR)」を開発</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📊 OpenAIは、機械学習モデルにルールを直接組み込むことで、人間のフィードバックよりもはるかに低コストでトレーニングできる方法を開発しました。この方法は、「Rule-Based Rewards（RBR）」と呼ばれます。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="AI" data-astro-cid-xw3clhsd> AI </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="AI,Web" data-astro-cid-xw3clhsd> <a href="https://gigazine.net/news/20240725-stable-video-4d/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Stability AIが1本の動画から8つの異なるアングルやビューの動画を生成するAIモデル「Stable Video 4D」を発表</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📰 Stability AIは、動画生成AI「Stable Video 4D」をリリースしました。Stable Video 4Dは、入力された動画データから3次元映像を再構築し、任意の角度から見た新しい視点で動画を作成できることが特徴です。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="AI" data-astro-cid-xw3clhsd> AI </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Software" data-astro-cid-xw3clhsd> <a href="https://future-architect.github.io/articles/20240725a/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Go 1.23リリース連載 Go Telemetry | フューチャー技術ブログ</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>🚨 Go言語のTelemetry機能 🚨
+---------------------
+
+💡  Go言語の最新バージョン（Go 1.20）から、テレメトリー機能（Telemetry）が追加されました。この機能により、Go言語を使用するユーザーの行動や動作に関するデータを収集することができます。
+
+📊  Telemetry機能は、デフォルトでローカルモードで有効になっており、ローカルのファイルにのみデータを出力します。サーバーへのアップロードは行われません。
+
+💻  Go言語のLanguage Serverであるgoplsも、Telemetry機能に対応しています。VSCodeでの開発では、デフォルトでTelemetryが有効な状態となっています。
+
+📝  ログの出力場所を確認すると、「local」と「upload」のディレクトリが生成されていることがわかります。
+
+💡  Telemetry機能は、Go言語のユーザーの行動や動作に関するデータを収集することを目的としており、これらのデータは、Go言語の開発者による分析や改善に役立つことになります。
+📊
+- 2024年7月20日現在、Go言語1.24以降には、テレメトリー機能が有効になっています。 
+- テレメトリーは gopls を含む Go のツールから収集されたデータをローカル環境の特定のディレクトリに書き出します。
+- その後、ユーザーが許可した場合、このデータは匿名形式で Go チームにアップロードされます。 
+- Go 1.24 からテレメトリーを有効にするには、環境変数 GO_TELEMETRY を 1 に設定する必要があります。 
+- テレメトリーのモードには on, off, local の3種類が存在します。 
+- gotelemetry コマンドは、テレメトリーの設定とローカル環境に出力されたデータを確認するために使用できます。
+- os.UserConfigDir()/go/telemetry 配下に、mode というファイルがあり、更新日とセットで記録されています。 
+- Telemerty は、ローカル環境の os.UserConfigDir()/go/telemetry に出力されます。 
+- Telemetry がローカルに出力され、リモートのサーバにアップロードされるまでの流れは、画像で概略がわかります。 
+- Telemetry には Basic counters と Stack counters の2種類があります。
+📊 以下は、Go の Telemetry についての要点です。
+
+* Go の Telemetry は、パフォーマンスとエラーに関するデータ収集に役立ちます。
+* `net/http` パッケージを使用して Web サーバーを実行する場合は、Telemetry が有効になります。
+* `GO_TELEMETRY_ENABLED=0` を設定することで、Telemetry を無効化できます。
+* Telemetry は、指定された URL にデータを送信します。デフォルトでは、Go のサーバーにデータが送信されますが、ローカルのファイルに保存されるように設定することもできます。
+🔒  プライバシーの問題には注意する必要があります。Telemetry はオプトインで有効化されるため、ユーザーは任意のタイミングで Telemetry を無効にすることができます。
+
+📈  Go言語のTelemetry機能を利用することで、Go言語を使用するユーザーの行動や動作に関するデータを収集し、これらのデータをもとに改善策を講じることができます。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Software,Other" data-astro-cid-xw3clhsd> <a href="https://this-week-in-rust.org/blog/2024/07/24/this-week-in-rust-557/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>This Week in Rust 557</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>🌎 Rustコミュニティイベント
+
+🇺🇸 **北アメリカ**
+*   2024年7月24日 | オースティン、TX、米国 | Rust Lunch - Fareground
+*   2024年7月25日 | マウンテンビュー、CA、米国 | Rust Meetup at Hacker Dojo
+*   2024年7月29日 | ケンブリッジ、MA、米国 | Alewife Rust Lunch, July 29
+*   2024年8月1日 | セントルイス、MO、米国 | Lifetimes
+*   2024年8月8日 | マウンテンビュー、CA、米国 | Rust Meetup at Hacker Dojo
+*   2024年8月8日 | シアトル、WA、米国 | August Meetup
+*   2024年8月19日 | ミネアポリス、MN、米国 | Minneapolis Rust Meetup: &quot;State of Rust GPU Programming&quot; &amp; Happy Hour
+*   2024年8月20日 | サンフランシスコ、CA、米国 | Rust Hacking in Person
+*   2024年8月21日 | ハイブリッド - バンクーバー、BC、カナダ | Rust Study/Hack/Hang-out
+
+🇦🇺 **オセアニア**
+*   2024年8月1日 | ブリスベン、QLD、オーストラリア | August Meetup</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Other" data-astro-cid-xw3clhsd> Other </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web,Security" data-astro-cid-xw3clhsd> <a href="https://dev.to/stacklok/north-korean-state-actors-exploit-open-source-supply-chain-via-malicious-npm-package-4obc" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>北朝鮮の国家主体が悪意のあるnpmパッケージを介してオープンソースのサプライチェーンを悪用</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📝 記事の内容を以下に要約します。
+
+* 💻 Webアプリケーション &quot;express&quot; の脆弱性 (CVE-2022-3107) が発見されました。この脆弱性により、攻撃者は任意の Node.js パッケージをインストールし、その後パッケージ管理システム (npm) から削除できます。
+* 🚨 Webアプリケーション &quot;express&quot; のバージョン 4.x および 5.x に影響します。バージョン 3.x は影響を受けませんが、セキュリティのないメジャーバージョンなので使用しないように警告されています。
+* 📝 この脆弱性は npm パッケージ名に含まれる文字セットを制限することなくパッケージをインストールできる express の不適切な入力検証により発生します。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Security" data-astro-cid-xw3clhsd> Security </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web,Security" data-astro-cid-xw3clhsd> <a href="https://www.darkreading.com/application-security/stargazer-goblin-amasses-rogue-github-accounts-to-spread-malware" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>「スターゲイザー ゴブリン」が不正な GitHub アカウントを集めてマルウェアを拡散</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>🚨 GitHubでは、Ghost Networkと呼ばれる脅威グループが存在し、多数のGitHubアカウントを操作し、Phishing詐欺やマルウェアの配布に利用していると報告されています。
+
+💻 このグループは、検索結果の最上位に表示されるようにタグを使用したり、Discordなどのサービスを通じて悪意あるリポジトリを宣伝しています。
+
+🚫 リポジトリには、ゲーム用Mod、破解されたAdobeやVPNソフトウェア、アイルートレーディングツールなどが含まれており、ユーザーを欺き、マルウェアに感染させる可能性があります。
+
+📈 Ghost NetworkはCrowdStrikeのイベントに対応するリポジトリも作成しており、これによりユーザーはマルウェアに感染する危険性が高まります。
+
+🚨 これらの脅威を防ぐために、ユーザーはGitHubでの検索結果に注意し、不正なリポジトリに気をつける必要があります。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Security" data-astro-cid-xw3clhsd> Security </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Security" data-astro-cid-xw3clhsd> <a href="https://wccftech.com/reason-behind-atts-massive-network-outage-revealed-that-blocked-25000-emergency-call-and-impacted-125-million-devices/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>AT&amp;T の大規模ネットワーク障害の原因が明らかに、25,000 件の緊急通話がブロックされ、1 億 2,500 万台のデバイスに影響</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📰 AT&amp;T の大規模ネットワーク障害の原因が明らかに
+⚠️ 25,000 件の緊急通報がブロックされた
+📊 1 億 2,500 万台のデバイスに影響
+🔍 FCC 報告書は、AT&amp;T の内部手続きの不備を原因とする障害だったことを示唆
+🚨 92 百万通りの音声通報がブロックされ、その中には 25,000 件の緊急通報も含まれた</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Security" data-astro-cid-xw3clhsd> Security </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="AI" data-astro-cid-xw3clhsd> <a href="https://mistral.ai/news/mistral-large-2407/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>十分な大きさ – ミストラル AI</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📊 Mistral Large 2 のパフォーマンスは、Mistral Nemo を大幅に上回りました。 🤖 Mistral Large 2 は、MMLU ベンチマークを使用して評価され、コーアAIのCommand R+やLlama 3.1 モデルと比較されました。 🌎 Mistral Large 2 は多言語サポートに優れており、特に英語、フランス語、ドイツ語、スペイン語、イタリア語、ポルトガル語、オランダ語、ロシア語、中国語、日本語、韓国語、アラビア語、ヒンディー語で高い性能を発揮します。 🤝 Mistral Large 2 はツール使用と関数呼び出しが強化されており、複雑なビジネス アプリケーションのエンジンとして機能することができます。 📈 Mistral Large 2 は la Plateforme にて利用可能です。また、Google Cloud Platform と Vertex AI を介してアクセスすることも可能です。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="AI" data-astro-cid-xw3clhsd> AI </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="AI,Web,Software" data-astro-cid-xw3clhsd> <a href="https://gigazine.net/news/20240724-google-research-neuralgcm/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>機械学習で従来の3500倍以上高速かつコストが10万分の1に抑えられる気象予測モデル「NeuralGCM」をGoogle Researchが公開</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>🌟 以下は、Google Researchが公開した気象予測モデル「NeuralGCM」についての記事の要約です。
+
+⭐️ 気象予測モデル「NeuralGCM」は、従来の物理法則に基づくモデルに加えて、小規模な現象を機械学習によって学習することで精度を向上させたものである。
+
+🌎 大規模な現象については従来通り物理法則に基づいて計算し、小規模な現象については既存の気象データから機械学習によって学習したモデルを使用する。
+
+🚀 3500倍以上高速で、計算コストも10万分の1に抑えられているため、高性能コンピューティングの分野で25年分の進歩に相当する改善とされる。
+
+💻 GitHubでソースコードとモデルの重みを非商用利用向けに公開しており、新しい要素を追加して仮説をテストしたり、モデルの機能を改善したりすることができる。
+
+🌐 これは、気象予測の精度を向上させ、天候災害への対策に役立つ可能性がある。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="AI" data-astro-cid-xw3clhsd> AI </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web,Software" data-astro-cid-xw3clhsd> <a href="https://zenn.dev/mixi/articles/2efdbeb0574906" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>【2024年版】MIXI 新卒向け技術研修の資料・動画を公開しました！</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>🎉 2024年版MIXI新卒向け技術研修の資料と動画が公開された。📚💻
+
+🔍 研修目的：プログラミングスキルを身につけることを目的とした研修です。
+
+📝 研修内容：
+
+*   プログラミング言語の基礎（Python, Javaなど）
+*   Web開発技術（HTML/CSS, JavaScriptなど）
+*   データベースとSQL
+*   Gitとバージョン管理
+*   セキュリティ対策
+
+📺 研修資料：
+
+*   研修用の教材を含むPDFファイルが公開されています。
+*   研修を受講する際に参考にしてください。
+
+🎥 研修動画：
+
+*   研修の実施中、動画撮影を行いました。 
+*   YouTubeチャンネルから視聴可能です。
+*   研修内容をより深く理解するための補足教材としてご活用下さい。
+
+💻 研修で学べること：
+
+*   Android/iOS/Flutter開発
+*   Webアーキテクチャ&amp;フロントエンド基礎
+*   バックエンド入門
+*   DevOps基礎
+*   データベース基礎
+*   セキュリティ基礎
+
+👥 講師・チューター：
+
+*   各研修には経験豊富な講師とチューターが参加します。
+
+💡 研修の目的は、T字型人材の基礎を形成するための学習を行うことです。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="AI" data-astro-cid-xw3clhsd> <a href="https://www.tomsguide.com/ai/ai-image-video/sora-beating-kling-ai-video-is-now-available-outside-china-heres-how-to-get-access" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>ソラを破るクリングAIビデオが中国国外でも視聴可能になりました。アクセス方法はこちら</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>🤔
+Kling AIのバージョン3はリリースされた 🚀
+Kling AIは、Soraと比較できるAIビデオクリエーションを提供 💥
+クリップ長2分まで生成可能 📹
+5秒から始まるクリップ作成 🔁
+📊 Appleは、iOS 18とmacOS Sequoiaの新しいバージョンにAI機能「Apple Intelligence」を追加することを発表しました。この機能により、ユーザーは複雑なタスクを簡単に行うことができます。また、iPhoneのミラーリング機能もmacOS Sequoiaに追加される予定です。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="AI" data-astro-cid-xw3clhsd> AI </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web" data-astro-cid-xw3clhsd> <a href="https://dev.to/railsdesigner/rails-designer-v11-released-formlabelcomponent-medialist-1a83" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Rails Designer v1.1 リリース: FormLabelComponent + MediaList</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📦 新しいもの
+• FormLabelComponent が追加されました
+• form_label ヘルパーが追加されました (FormLabelComponent とペアになります)
+• local_storage_helpers が追加されました
+
+💅 追加機能
+• oAuth ボタンの ButtonComponent バリアントが追加されました
+• 新しいスタックリストのバリアント (メディア リスト) が追加されました
+
+🧙‍♂️🎩🐇 改善
+• Inquiry を多くのコンポーネントで使用するように変更しました。カスタム述語メソッドではなく、inquiry メソッドを使用します。
+• local_storage_helpers に一致させるために cookies_helpers をリファクタリングしました。
+• NotificationComponent の基本的な設定オプションが追加されました
+• コンポーネント ファイルにダイナミックなアイコン挿入を使用するように変更しました。
+
+🎷🐛 バグ修正
+• スタック リストのバリアントのアイコンを修正しました
+• ButtonComponent の正しいクラス継承を修正しました</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web,Security,Software" data-astro-cid-xw3clhsd> <a href="https://thehackernews.com/2024/07/microsoft-defender-flaw-exploited-to.html" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Microsoft Defender の脆弱性が悪用され、ACR、Lumma、Meduza 窃盗マルウェアが配信される</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>🚨 **サイバー攻撃：新しいStealerマルウェアの出現とCrowdStrikeの問題への対応**
+
+* ACR、Lumma、およびMeduza Stealersなどの新しいStealerマルウェアが発見されました。 
+* これらのマルウェアは、Google ChromeやMicrosoft EdgeなどのブラウザからクレデンシャルやCookieを盗み取る機能を持っています。
+* さらに、CrowdStrikeの問題への対応として、Daolpuという新しいStealerマルウェアが発見されました。このマルウェアは、Windowsの問題に伴うCrowdStrikeのアップデートエラーを利用して、ユーザーのクレデンシャルやCookieを盗み取るために使用されています。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Security" data-astro-cid-xw3clhsd> Security </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web,Software" data-astro-cid-xw3clhsd> <a href="https://github.com/beego/beego" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Beego: Go 向けフルスタック Web フレームワーク</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>🌟 Beego は Go 言語で開発された Web フレームワークです。 
+
+🔧 Beego は RESTful な設計をサポートしており、MVC (Model-View-Controller) アーキテクチャに基づいて構築されています。
+
+📈 Beego にはモジュラーな構成が特徴であり、さまざまなコンポーネントを組み合わせて利用することができます。
+
+📊 Beego には自動で API ドキュメントを生成する機能があります。
+
+📍 Beego にはアノテーションに基づいたルーティングシステムが備わっており、簡単にルートを定義することができます。
+
+🌐 Beego には名前空間 (Namespace) 機能があり、複数のアプリケーションを 1 つのプロセス内で実行することができます。
+
+💻 Beego には強力な開発ツールが付属しており、迅速にアプリケーションの開発を行うことができます。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Security,Web" data-astro-cid-xw3clhsd> <a href="https://gigazine.net/news/20240724-letsencrypt-ocsp/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>世界最大の認証局のLet’s Encryptが「オンライン証明書状態プロトコル(OCSP)」のサポートを打ち切ると発表</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📰 Let&#39;s Encryptは「オンライン証明書状態プロトコル(OCSP)」のサポートを打ち切ると発表しました。
+
+💡 OCSP経由で証明書の状態をチェックするブラウザやソフトウェアでは、CAが訪問者のIPアドレスを識別できる可能性があります。
+
+🚫 Let&#39;s EncryptはOCSPサービスの提供と運用にリソースを費やしてきましたが、CRLによりOCSPは必須ではなくなったため、今回の措置は必要であったと説明しています。
+
+📝 ただし、OCSPにはメリットとデメリットがあります。SSL認証の自動化サービス・SSLMateの創業者であるアンドリュー・エア氏は、CRLはすべての証明書の状態ではなく取り消された証明書のみをリスト化するため、CAによる遺漏を検知できない点を指摘しました。
+
+🤔 さらに、Hacker Newsに降臨したLet&#39;s Encryptのジョシュア・アース氏は、「OCSPの実行をCAに要求することは、CAの運用を複雑で高価なものにします。これにはかなりのマイナス面があり、Let&#39;s EncryptがOCSPに費やすコストは、CAのほかの業務に投入できないコストに他なりません」と回答しました。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Security" data-astro-cid-xw3clhsd> Security </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="" data-astro-cid-xw3clhsd> <a href="https://zenn.dev/dai_shi/articles/cf1af600e7bba5" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Jotai v2.9.1をリリースしました</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📝 Jotai v2.9.1 のリリースについて
+🔄 バグの修正とテストコードの追加
+🤝 コントリビュータによるバグ修正の進み方を期待
+🚀 Jotai の将来的な発展を目指す</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd>  </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="AI,Web" data-astro-cid-xw3clhsd> <a href="https://ascii.jp/elem/000/004/211/4211722/?rss" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>メタ、写真からアバター画像を生成できる新機能「Meta AI」に追加</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>🌐 メタはAIアシスタント「Meta AI」の機能拡張と利用可能地域の拡大を発表しました。
+
+⚙️ 写真から自分のアバターを生成できる新機能「Imagine me」が追加されました。
+
+📸 アップロードした写真からテキストプロンプトを使って自分のアバターを生成できます。たとえば「王族としての自分」や「シュルレアリスムの絵画の中の自分」といったプロンプトでアバターを作成可能です。
+
+🎨 画像編集機能も強化され、生成した画像内のオブジェクトを簡単に追加、削除、変更できるようになりました。たとえば「金魚鉢の中でシュノーケリングをする猫」という画像を生成した後、「猫をコーギーに変更」というプロンプトだけで画像を調整することができます。
+
+🌎 Meta AIは日本ではまだ利用できませんが、アルゼンチン、チリ、コロンビア、エクアドル、メキシコ、ペルー、カメルーンなど22ヵ国で利用可能です。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="AI" data-astro-cid-xw3clhsd> AI </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web,Software" data-astro-cid-xw3clhsd> <a href="https://gigazine.net/news/20240724-google-chrome-127/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>「Google Chrome 127」安定版リリース、フォントごとに見た目の大きさが変わる問題に対応</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📊 Google Chrome 127 では、次の機能が追加または変更されています。
+
+💻 WebXR のサポートが拡大し、より多くの VR/AR デバイスを使用できるようになりました。
+🔍 HTML要素に0以上の tabindex が明示的に指定されていた場合にはキーボードでのフォーカスが可能でしたが、Chrome 127以降はtabindexが設定されていなくともフォーカスが可能になった。
+📝 CSSの content に代替テキストを追加するための記述が登場しました。
+🔍 開発者ツールのパフォーマンス画面において、WebSocketのメッセージイベントをキャプチャ・表示することが可能になりました。
+
+これらの変更により、WebXR のサポートが拡大し、より多くの VR/AR デバイスを使用できるようになった。また、HTML 要素に tabindex が設定されていなくてもキーボードでのフォーカスが可能になるなど、ユーザー体験が向上しました。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web,Software" data-astro-cid-xw3clhsd> <a href="https://news.mynavi.jp/techplus/article/20240723-2990860/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Google、サードパーティCookie存続へ方針転換 、ユーザー選択重視の新手法を提案</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📝 Googleは、ChromeブラウザでのサードパーティCookie廃止を見直し、今後もサポートを継続すると発表した。代わりに、「ユーザーの選択」に焦点を当て、ユーザーによるプライバシーコントロールの向上に注力する方針である。
+
+📊 Googleは2019年にユーザーのプライバシーを保護しながら、効果的に広告を配信する代替技術の開発を進め、「脱Cookie」を実現する取り組みを開始した。ユーザーを類似の興味を持つグループにカテゴリ化する「FLoC」やユーザーの興味に基づいて関連性の高い広告を配信する「Topics」などを提案し、関係者のフィードバックを収集しながら、プライバシーサンドボックスの実装に向けて開発を進めてきた。
+
+📊 Googleはユーザーの選択を重視する新たなアプローチを提案し、規制当局との対話を開始した。サードパーティCookieを廃止する代わりに、Chromeに新しい機能を導入し、ユーザーがWebブラウジング全体に適用される選択を、十分な情報を得た上で行うことができるようになった。
+
+📊 Googleは今後もPrivacy Sandbox APIの提供を継続し、プライバシーと豊かなコンテンツアクセスを向上させるための投資を行なっていくと発表した。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web" data-astro-cid-xw3clhsd> <a href="https://news.mynavi.jp/techplus/article/20240723-2989956/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>GoogleのURL短縮サービス「Google URL Shortener」完全終了へ</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📣 GoogleのURL短縮サービス「Google URL Shortener」は完全終了することが発表された。2019年3月以降、既存の短縮URLのみが機能していたが、2025年8月25日以降は機能しなくなる。
+
+💻 以下は詳細情報である。
+🌟 2024年8月23日からはサービス終了を予告するページが表示される。
+📆 既存の短縮URLは引き続き使用できるが、2025年8月25日にリダイレクト機能が停止する。
+🚫 サービス終了後は、goo.glリンクへのアクセスは404エラーとなる。
+📣 Googleでは、依然としてgoo.glリンクを使用しているWebサイトやWebサービスの管理者に対して、できるだけ早く別のリンクに移行するように呼びかけている。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Other" data-astro-cid-xw3clhsd> <a href="https://zenn.dev/trap/articles/af32614c07214d" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>MarkdownベースのGo製タスクランナー「xc」のススメ</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📝 xcとは、READMEファイル内のコマンドをタスクランナーとして実行できるツールです。xcはシンプルな機能で、README.mdに各タスクのコマンドを記述することでそれらがxcを通して実行することができます。
+
+💻 以下のような機能があります。
+• READMEファイル内のコードブロック内に直接シェルスクリプトを書くことができる
+• タスクに必要な依存関係や入力値を指定可能
+
+🚨 xcのイマイチなところとしては、カラー対応が貧弱であることや、他のタスクランナーと比べるとスター数が少ないことなどがあります。
+
+💪 以上の内容から、xcを使ってタスク管理を効率化することができます。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Other" data-astro-cid-xw3clhsd> Other </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web,Software,Security" data-astro-cid-xw3clhsd> <a href="https://www.docker.com/blog/docker-security-advisory-docker-engine-authz-plugin/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Docker Security Advisory: AuthZ Plugin Bypass Regression in Docker Engine</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📝 Docker Engine のセキュリティ アドバイザリー 🚨
+🔒 AuthZ プラグイン バイパス レグレッション 🔒
+👉 影響を受けるバージョン:
+	* &lt;= v19.03.15
+	* &lt;= v20.10.27
+	* &lt;= v23.0.1
+🙅‍♂️ 対策:
+	1. Docker Engine を最新の修正バージョンに更新する
+	2. AuthZ プラグインを使用しない
+	3. Docker API へのアクセスを制限する (信頼できるパーティーのみ)
+	4. Docker Desktop v4.33 に更新する</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Security" data-astro-cid-xw3clhsd> Security </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web,Software,Other" data-astro-cid-xw3clhsd> <a href="https://pycoders.com/issues/639" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>PyCoder&#39;s Weekly: 第 639 号 (2024 年 7 月 23 日)</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📰 Python Weekly Issue #531 の概要
+==========================
+
+### 記事
+
+* 📊 &quot;Change&quot; in Python: What Does It Mean? - Trey Hunner (Real Python)
+	+ Python では「change」という用語は、変数が指すオブジェクトの変更と、オブジェクト自体の変更という 2 つの意味を持つ。
+* 🤔 Flask vs Django in 2024 - Will Vincent
+	+ Flask と Django の比較、Web サイト作成への適用例などを紹介。
+* 📈 Making an Iterator Out of a Function - Rodrigo Girão Serrão (Real Python)
+	+ `iter` 関数を使って関数からイテレータを作成する方法を紹介。
+* 🌐 Developing GraphQL APIs in Django With Strawberry - TestDriven.io
+	+ Strawberry を使った Django での GraphQL API 開発のチュートリアル。
+
+### プロジェクト &amp; コード
+
+* cbfa: Class-Based Views for FastAPI - pomponchik (GitHub)
+	+ FastAPI のクラスベースビュー実装。
+* Satyrn: macOS App for Jupyter Notebooks - satyrn.app
+	+ Jupyter ノートブック専用の macOS アプリケーション。
+* Datasketch: Probabilistic Data Structures - PyPI.org
+	+ 確率的データ構造の実装ライブラリ。
+* pyNES: Python Programming for Nintendo 8 Bits - gutomaia (GitHub)
+	+ ニンテンドー 8 ビット コンピュータ向け Python プログラミング環境。
+* staged-script: Divide Automation Scripts Into Stages - sandialabs (GitHub)
+	+ オートメーションスクリプトを段階的に実行するツール。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Other" data-astro-cid-xw3clhsd> Other </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="AI" data-astro-cid-xw3clhsd> <a href="https://llama.meta.com/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Llama 3.1 正式リリース</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>🤔 Llama 3.1 の詳細は以下です。
+
+* 2つのモデルサイズ: 8Bパラメーター、70Bパラメーター
+* 2024年4月のデータセットを使用してトレーニングされた
+* さまざまな言語で評価された
+* 多くのベンチマークで高いスコアを獲得した
+* Web API経由でのみアクセス可能
+📚 以下はWebページから抽出した情報の要約です。
+
+🎉 Llama 3.1 が正式リリースされました。
+🤖 Open Source AI はこれからの道です。
+🔍 Llama 2 エコシステムの図
+📈 Introducing Llama 3.1: Our most capable models to date (Llama 3.1 の紹介: 我々がこれまでに作った中で最も能力の高いモデル)
+📊 Llama 3 ヒャードのモデルの研究論文
+📨 最新情報をメールで受け取ることができます。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="AI" data-astro-cid-xw3clhsd> AI </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web,Software" data-astro-cid-xw3clhsd> <a href="https://golangweekly.com/issues/516" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Getting a grip on Go 1.23</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📚 Go 1.23 のリリースノートは、インタラクティブな形式で提供されています。 👉 https://golangweekly.com/link/157842/web
+💻 GitHub Actions を実行する Blacksmith は、最新の CPU 上で実行することで 2 倍高速化し、コストを半減できる。 👉 https://golangweekly.com/link/157841/web
+🔍 Hash-Based Bisect Debugging in Compilers and Runtimes は、コンパイラやランタイムにおけるデバッグ手法に関する記事です。 👉 https://golangweekly.com/link/157845/web
+💡 Live Website Updates with Go, SSE, and HTMX では、Server-Sent Events (SSE) と HTMX を使用したリアルタイム更新について説明しています。 👉 https://golangweekly.com/link/157848/web
+🔄 Safeguarding Changes using the Plan-Execute Pattern では、プレビューを表示して変更を確認するパターンを Go で実装する方法を紹介しています。 👉 https://golangweekly.com/link/157849/web
+📄 gRPC Over HTTP/3 は、Go を使用した gRPC と HTTP/3 の組み合わせに関する記事です。 👉 https://golangweekly.com/link/157850/web
+📄 Calling Go Functions from C++ では、C++ から Go 関数を呼び出す方法について説明しています。 👉 https://golangweekly.com/link/157851/web</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web,Security" data-astro-cid-xw3clhsd> <a href="https://github.blog/security/vulnerability-research/attack-of-the-clones-getting-rce-in-chromes-renderer-with-duplicate-object-properties/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>クローンの攻撃: 重複したオブジェクト プロパティを使用して Chrome のレンダラーで RCE が発生する</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>🚨 クローン攻撃: 重複したオブジェクトプロパティを利用したChromeレンダラーのRCE脆弱性 🌐
+
+この記事では、クローン攻撃と呼ばれるChromeのレンダラーでRCE（Remote Code Execution）が発生する脆弱性について説明しています。 🔍 記事では、この脆弱性を利用した攻撃の詳細と、Google Chromeに影響を与える可能性があることを示唆しています。
+
+🔒 以下は記事の内容を箇条書きで要約したものです。
+
+💡 脆弱性の概要: クローン攻撃とは、Chromeのレンダラー内でのRCE（Remote Code Execution）が発生する脆弱性です。この脆弱性は、重複したオブジェクトプロパティを利用してWebAssemblyインポート関数のジャンプターゲットを任意に変更することで達成されます。
+
+🌐 影響: この脆弱性はGoogle Chromeに影響を与える可能性があります。したがって、この脆弱性に対する適切なパッチやアップデートを行うことが重要です。
+
+📄 脆弱性の詳細情報については、原文を参照してください。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Security" data-astro-cid-xw3clhsd> Security </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="AI,Web" data-astro-cid-xw3clhsd> <a href="https://videocardz.com/newz/intel-launches-ai-playground-free-and-open-source-generative-ai-tool-powered-by-arc-gpus" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Intel が ARC GPU を搭載した無料のオープンソース生成 AI ツール AI Playground を発表</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📰 Webページ「Intel が ARC GPU を搭載した無料のオープンソース生成 AI ツール AI Playground を発表」には、以下のような情報が記載されています。
+
+*   Intel が ARC GPU を搭載した無料のオープンソース生成 AI ツール AI Playground を発表した。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="AI" data-astro-cid-xw3clhsd> AI </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="AI,Web,Software" data-astro-cid-xw3clhsd> <a href="https://zenn.dev/knowledgesense/articles/c9c50ae37f2ebf" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>RAGで複数のLLMを使う「Speculative RAG」の解説</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📄 RAG（Retrieval Augmented Generation）システムの改善に関する研究を紹介します。このシステムは、大量のデータから関連する情報を取得し、それに基づいて回答を生成します。
+
+💡 Speculative RAGという新しいアプローチを提案しています。これは、複数のLLM（Large Language Model）を使用して回答生成を高速化する方法です。具体的には、以下のステップで回答を生成します。
+
+1️⃣ ユーザーの質問に基づいて関連するドキュメントを取得します。
+2️⃣ ドキュメント群を類似度が近い複数のクラスタに分けます。
+3️⃣ 各クラスタからランダムにドキュメントを選択し、小さいLLM（Mistral 7B）に渡して回答を生成します。
+4️⃣ 複数のインスタンスで同時並行に3のプロセスを実施します。
+5️⃣ 生成された複数の回答を、大きいLLMが評価し、最良の回答を選択します。
+
+📈 この研究では、Speculative RAGを使用することで従来のRAGシステムと比較して最大51%の遅延削減が達成できたことが示されています。また、4つのベンチマークで最先端の性能を達成し、特にPubHealthでは従来手法と比べて12.97%の精度向上が確認されました。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="AI" data-astro-cid-xw3clhsd> AI </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Security" data-astro-cid-xw3clhsd> <a href="https://ascii.jp/elem/000/004/211/4211244/?rss" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Eburyマルウェア、40万台のLinuxサーバーを侵害</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📰 ESET社の調査によると、EburyボットネットがLinuxサーバーに広く感染し、暗号通貨やWebサイトからの詳細なデータを盗み取っていることが判明した。 🤖
+📊 2023年11月現在、Eburyは40万台以上のサーバーに展開されており、スパム送信やWebトラフィックのリダイレクトを行い、金融取引を実行するWebサイトから詳細な情報が窃取されている。 📈
+🔍 ESET社の新しいホワイトペーパーでは、Eburyボットネットの詳細と進化した隠蔽機能について説明されており、自社のサーバーが侵害されているか確認する方法も紹介されている。 🔍</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Security" data-astro-cid-xw3clhsd> Security </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Software,Other" data-astro-cid-xw3clhsd> <a href="https://blog.jp.square-enix.com/iteng-blog/posts/00093-tidb-chat2query/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>TiDB Serverless の Chat2Query を試してみる</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📊 TiDB ServerlessとChat2Queryの連携テストに関する記事の要約です。
+
+🔍 以下は、TiDB ServerlessとChat2Queryの連携テストの結果に基づくポイントです。
+
+💡 TiDB Serverlessのデータ投入ツール tiup dumpling は便利ですが、既存の mysqldump データから投入する場合はDDLを分離する必要があります。
+🤔 Chat2Queryは利用者側がデータ構造を理解していないと間違いに気付けない点はどうしようもなく、手軽ではあるが気軽に使ってしまって大丈夫かは別問題です。
+💡 TiDB ServerlessのRequest Unit(RU)はChat2Queryのクエリ生成でも消費される模様。ExplainでもRU消費があることが確認されました。
+🚨 クラスターを作るとPublicエンドポイントが有効になっているので、テスト目的で無ければ disabled にした方が良いです。
+
+📊 以上はTiDB ServerlessとChat2Queryの連携テストに関する記事の要約です。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Other" data-astro-cid-xw3clhsd> Other </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="AI,Software,Recommend" data-astro-cid-xw3clhsd> <a href="https://zenn.dev/rinte/articles/e908d88342e9d0" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>開発ドキュメント＆ソースコード生成ツールを作ってみた</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📝 Webページの内容を要約します。
+
+🔍 タイトル: 開発ドキュメント＆ソースコード生成ツールを作ってみた
+
+📄 要約:
+
+* 👉 AIツールを使用してマッチングシステムの開発ドキュメントとソースコードを自動生成する方法について説明しています。
+* 🤖 生成された成果物には、開発ドキュメントとソースコードが含まれます。開発ドキュメントは、マッチングシステムの概要、機能、利用方法などの情報が記載されています。一方、ソースコードは、システムの実装に使用するためのプログラムコードです。
+* 👉 生成されたソースコードは、ReactとSupabaseを使用したマッチングシステムの実装例として提供されており、開発者はこれを参考にして自社のシステムを構築できます。
+* 💡 このツールはオフショア受託開発を高速化/効率化するために使用されることを目指しています。
+* 📝 基本的な機能は無料ユーザーでも使えるようにしますが、一部機能には有料設定を行う予定です。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="AI" data-astro-cid-xw3clhsd> AI </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Recommend" data-astro-cid-xw3clhsd> Recommend </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web,Software" data-astro-cid-xw3clhsd> <a href="https://github.com/eza-community/eza" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Eza: ls の現代的でメンテナンスされた代替品</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📝 Webページのタイトル: Eza: ls の現代的でメンテナンスされた代替品 
+
+eza とは、Unix と Linux オペレーティング システムと共に配布されている古いファイル リスティング コマンドライン プログラム ls の代替です。eza にはより多くの機能と優れたデフォルトが備わっています。
+
+📋 主な特徴
+* カラーを使用してファイルの種類やメタデータを区別します。
+* シンボリック リンク、拡張属性、および Git に対応しています。
+* 小型で高速であり、単一のバイナリです。
+* exa では非実装となっている次のような機能があります。
+
+📚 exa にはない特徴
+* 「グリッド バグ」を修正します。
+* ハイパーリンクをサポートしています。
+* マウント ポイントの詳細を表示します。
+* Selinux コンテキストを出力します。
+* Git リポジトリの状態を出力します。
+* 人間が読みやすい相対的な日付を出力します。
+
+💻 使ってみる
+Nix を使用する場合、flake サポートを有効にしてから次のコマンドで eza を実行できます。 
+
+📝 貢献方法
+❗️ まず、コミュニティガイドラインに従ってください。
+📝 このリポジトリ内にドキュメントがあります。 
+🖥️ eza コマンドを実行すると、ターミナル内にヘルプが表示されます。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Security" data-astro-cid-xw3clhsd> <a href="https://news.mynavi.jp/techplus/article/20240722-2988781/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Apache HTTP Server 2.4に脆弱性、前回の不十分な対策を修正</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>🌟 Apache HTTP Server 2.4は複数の脆弱性を持っています。以下にその詳細を示します。
+
+*   CVE-2024-40725：ソースコード開示の脆弱性です。不十分なCVE-2024-39884の修正により、ローカルコンテンツのソースコードが漏洩する可能性があります。
+*   CVE-2024-40898：サーバーサイドリクエストフォージェリー（SSRF）の脆弱性です。WindowsのApache HTTP Serverにおいて、攻撃者の悪意あるリクエストを通じてNTLMハッシュが窃取される可能性があります。
+
+📈 脆弱性が存在する製品およびバージョンは次のとおりです。
+
+*   Apache HTTP Server 2.4.0から2.4.61までのバージョン
+
+🔧 脆弱性が修正された製品およびバージョンは次のとおりです。
+
+*   Apache HTTP Server 2.4.62</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Security" data-astro-cid-xw3clhsd> Security </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Software" data-astro-cid-xw3clhsd> <a href="https://zenn.dev/kyuki/articles/871904b22e5c9e" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>マイクロサービスの課題を克服するsagaパターンについて</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📝 記事の要約：
+
+* 2 つのパターンが紹介されている
+	+ オーケストレーションパターン：ワークフローを単一のエンティティが制御する
+	+ コレオグラフィーパターン：各サービスが自律的に動作し、補償トランザクションを実行する
+
+🤔 考えられる疑問：
+
+* デメリットやメリットは？
+* どちらのパターンを使うべきか？
+
+📊 AWSでの実装：
+
+* オーケストレーションパターン：AWS Step Functionsを使用
+* コレオグラフィーパターン：各サービスが自律的に動作し、補償トランザクションを実行する
+
+🔍 まとめ：
+
+* ビジネスのユースケースによってはデメリットをメリットと捉えることもできる
+* ワークフローを簡潔にするか？スケーラビリティ性やトレーサビリティ性はどうしたいか？耐障害性や各サービスの結合度はどのようにしたいか？</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web" data-astro-cid-xw3clhsd> <a href="https://zenn.dev/hiromichinomata/articles/da75218fa8e8ab" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>実装が公開されているデザインシステム一覧</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📄 以下は、デザイン システムを実装したものの一覧です。
+
+1. Primer Design System
+2. Pajamas
+3. デジタル庁デザインシステムβ版
+4. SmartHR Design System
+5. Cloudscape Design System
+6. Spindle
+7. Polaris
+8. charcoal
+9. INGRED UI
+10. vibes
+11. Washington Post Design System
+12. Lightning Design System
+13. Spectrum
+14. Gestalt
+15. Base Web React UI framework
+
+🤔 これらのデザイン システムは、さまざまなテクノロジーで実装されています。たとえば、React、Vue.js、Web Component、CSS、Rails ViewComponent、iOS、Androidなどです。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web,Software" data-astro-cid-xw3clhsd> <a href="https://zenn.dev/shu223/articles/mapkit_search" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>【iOS 18】MapKitの検索機能のアップデートまとめ</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>🔍 Webアプリケーション開発における新しいAPIである「Spatial Search」が発表された。 
+📈 この機能により、Web上での検索や表示を地理的に制限できるようになった。 
+📊 例えば、Google Mapsで特定の地域内のコーヒーショップを検索する場合などに利用可能である。 
+🔍 Spatial Searchは、Webおよびネイティブアプリケーション両方で利用できる。 
+
+✍️Spatial Search APIには、特定の地域内のコンテンツの検索や表示を地理的に制限するための機能が用意されている。 
+
+📍 MKPointAnnotationに新しいプロパティとして`imageNames`と`imageAspectRatio`が追加された。 
+🌐 MapKitでは、地図上で3D建物を表示できるようになった。 
+
+📈 これらのアップデートにより、アプリケーション開発者はより高度な地理空間検索機能や3Dマッピング機能を実現することができるようになる。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Security,Other" data-astro-cid-xw3clhsd> <a href="https://www.darkreading.com/threat-intelligence/notorious-chinese-hacker-gang-re-emerges-after-two-years" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>悪名高い中国のハッカー集団 GhostEmperor が 2 年ぶりに再登場</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>🚨GhostEmperorは、高度な技術力と洗練された攻撃手法を持つ中国系の脅威アクターです。彼らは主に東南アジアを標的にし、政府機関や企業などを攻撃しています。このグループは高度なスキルを持つ中国系の脅威アクターとして知られています。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Security" data-astro-cid-xw3clhsd> Security </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Other" data-astro-cid-xw3clhsd> Other </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Software,Security" data-astro-cid-xw3clhsd> <a href="https://ervin.ipsquad.net/blog/2024/07/19/web-review-week-2024-29/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>ウェブレビュー、2024-29週</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📚️ 以下は2024-29週のウェブレビュー記事の要約です。
+
+• 💡 **新しいコンテンツ**
+ • 🔒 **セキュリティアップデート**
+
+📰 記事の概要は以下です。
+
+• 🤔 Lessons learned in 35 years of making software – Jim Grey: ソフトウェア開発における35年の経験から得た教訓。
+• 💡 Story Points are Pointless, Measure Queues: ストーリーポイントに代わるキュー理論の提案。
+• 👥 Managing Underperformers | Jack Danger: パフォーマンスが低いチームや個人の管理に関するアドバイス。
+• 🌟 All I Need to Know About Engineering Leadership I Learned From Leave No Trace - Jacob Kaplan-Moss: エンジニアリングリーダーシップにおけるLeave No Traceの原則。
+• 🔁 Progress can be slow: 自己改善に時間がかかることを強調する記事。
+• 🚣‍♀️ German Navy still uses 8-inch floppy disks, working on emulating a replacement | Ars Technica: ドイツ海軍がまだ8インチフロッピーディスクを使っているという記事。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Security" data-astro-cid-xw3clhsd> Security </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web,Security" data-astro-cid-xw3clhsd> <a href="https://www.tomsguide.com/computing/vpns/trello-user-your-personal-information-might-be-on-sale-for-pennies" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Trello ユーザーですか? あなたの個人情報が数セントで売りに出されているかもしれません</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>💻 以下はWebページの要約です。
+
+* Trelloユーザーの個人情報が数セントで売りに出されている可能性がある
+* Trelloは1月にサイバー攻撃を受けたと報告されており、15百万人のユーザー情報が漏洩した疑い
+* attackの責任者はTrello APIエンドポイントを通じてemailアドレスをTrelloアカウントにマッピングできたことを明らかにしている。
+* Trello側はAPI変更により、未認証ユーザーが他のユーザーの公開情報にアクセスすることを防ぐ
+* ユーザーには、パスワードの変更と2要素認証の設定、およびフィッシング詐欺への注意が推奨される</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Security" data-astro-cid-xw3clhsd> Security </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web,Software" data-astro-cid-xw3clhsd> <a href="https://zenn.dev/gmomedia/articles/1f29fa8933d47d" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>MySQL9.0の新機能 Saving JSON output from EXPLAIN ANALYZE INTO を触ってみる</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📝
+🔍 SQL解析ツールのEXPLAIN ANALYZE INTOの結果を別テーブルに格納する方法について紹介している記事。
+💡 EXPLAIN ANALYZE FORMAT=JSONを使用して、分析結果をJSON形式で取得し、INSERT INTO文を使って別テーブルに格納することができることを示すサンプルコードが掲載されている。
+📈 また、EXPLAIN ANALYZEの結果の例として、LIKE句によるクエリの実行計画の分析結果が紹介されている。
+📊 MySQL 9.0 の新機能「Saving JSON output from EXPLAIN ANALYZE INTO」を試した結果、クエリの実行計画とコストを見やすい形式で出力できることがわかった。重たいクエリを調査する際や、実行した結果のコストなどを調査したい際に便利である。また、スローログと併用するとより効果的である。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="AI,Software" data-astro-cid-xw3clhsd> <a href="https://gigazine.net/news/20240719-nvidia-mistral-nemo-ai/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>NVIDIAとMistral AIがAIモデル「Mistral NeMo」を発表、新型トークナイザ「Tekken」を採用し日本語を含む多言語性能が強み</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>🤖 NVIDIAは、Mistral NeMoと呼ばれるAIモデルを発表しました。このモデルは、90倍に効率が向上しており、日本語でも高精度な回答を返すことができます。Mistral NeMoはNVIDIAのAIプラットフォームDGX Cloudで学習処理を実行し、学習の際にはGPU最適化技術「Megatron-LM」を活用しています。このモデルはすでにNVIDIA NIM上で使えるサービスとしてパッケージ化されています。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="AI" data-astro-cid-xw3clhsd> AI </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="AI,Web" data-astro-cid-xw3clhsd> <a href="https://venturebeat.com/ai/groq-open-source-llama-ai-model-tops-leaderboard-outperforming-gpt-4o-and-claude-in-function-calling/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Groq のオープンソース Llama AI モデルがリーダーボードでトップに躍り出、関数呼び出しで GPT-4o や Claude を上回る</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📝 Groqは、Llama 3というオープンソースAIモデルをリリースしました。これは、さまざまなタスクで他の主要なAIモデルよりも優れたパフォーマンスを示しています。 💡 このモデルは、Groq APIとHugging Faceを通じて利用可能です。 👥 Hugging Faceでは、このモデルを使ったデモも公開されています。 🤖 このオープンソースモデルは、より多くの研究者や開発者がAI技術にアクセスし、革新的なアイデアを実現できるようにします。 🔓 また、このリリースは、大規模なテック企業が独占的に所有しているクローズドシステムとは対照的であり、AI業界の風景を変える可能性があります。 🌐</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="AI" data-astro-cid-xw3clhsd> AI </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web,Security" data-astro-cid-xw3clhsd> <a href="https://www.darkreading.com/threat-intelligence/20-million-trusted-domains-vulnerable-to-email-hosting-exploits" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>2,000 万の信頼できるドメインがメールホスティングの脆弱性に</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>以下は、メールホスティング脆弱性に関する要約です。
+
+📣 2000万以上の信頼できるドメインが影響を受ける可能性があると報告されているメールホスティング脆弱性についての重要な発表があります。
+
+🔍 2000万以上の信頼できるドメインが影響を受けると報告 💻
+
+📧 メールホスティングサービスの脆弱性により、ユーザーデータやメールアカウントへのアクセスが危険にさらされる 📨
+
+🚨 この脆弱性は、サイバー攻撃者による悪用を引き起こす可能性があります 🔒
+
+📧✉️ 以下は、3種類の新たなEmailスプーフィング攻撃を要約したものです。
+
+*   SPF（Sender Policy Framework）、DKIM（DomainKeys Identified Mail）、DMARC（Domain-based Message Authentication Reporting and Conformance）などのセキュリティコントロールを回避し、偽装メールを送信する3種類の新たなEmailスプーフィング攻撃が発見されました。
+*   攻撃1：SPFを回避して大規模なスプーフィングキャンペーンを実行します。
+*   攻撃2：DKIMを悪用して、フィードバックループ（Feedback Loop）機能のドメイン検証を不正に行うことで、大規模なスプーフィングキャンペーンを実行します。
+*   攻撃3：SMTPスマグリング攻撃を拡張し、Microsoft、GMX、Ciscoなどのメッセージングサーバーの既存の脆弱性を悪用して、偽装された送信者のメールを大量に送信します。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Security" data-astro-cid-xw3clhsd> Security </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web,Security" data-astro-cid-xw3clhsd> <a href="https://thehackernews.com/2024/07/tag-100-new-threat-actor-uses-open.html" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>TAG-100: 新たな脅威アクターがオープンソースツールを利用して広範囲に攻撃</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>🚨「Recorded Future」は、Palo Alto Networks GlobalProtect アプライアンスを標的にした大規模なサイバー攻撃について警告しました。この攻撃により、主にアメリカの教育、金融、法務、地方政府、およびユーティリティ部門の組織が影響を受けました。
+🔍攻撃者は、Palo Alto Networks GlobalProtect に対する PoC エクスプロイトを使用して初期アクセスを獲得し、その後 Pantegana、Spark RAT、および Cobalt Strike Beacon を展開しました。 
+🚨この発見は、PoC エクスプロイトとオープンソース ツールを組み合わせて攻撃を実行する方法を示しており、これにより、より複雑な検出回避手法に移行したり、不正アクセス後に検出されるリスクを軽減したりできるなど、さまざまな利点があります。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Security" data-astro-cid-xw3clhsd> Security </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Security,Software" data-astro-cid-xw3clhsd> <a href="https://go.theregister.com/feed/www.theregister.com/2024/07/18/maximumseverity_cisco_vulnerability_allows_attackers/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>最も深刻なシスコの脆弱性により、攻撃者は管理者パスワードを変更できる</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📝 Webページのコンテンツを要約すると以下のようになります。
+
+⚠️ Cisco Smart Software Manager (SSM) On-Prem には、最大深刻度の脆弱性 CVE-2024-20419 があります。この脆弱性により、攻撃者は任意のユーザーのパスワードを変更できます。Cisco はこの脆弱性について詳細を公開していませんが、影響を受ける製品のリストと修正プログラムを提供しています。
+
+🚨 この脆弱性は SSM On-Prem と SSM Satellite の両方に影響します。修正プログラムにより、攻撃者はユーザーのパスワードを変更できなくなりますが、これらの製品の利用者にはすぐに更新することを推奨しています。
+
+🕵️ Cisco は、この脆弱性について詳しい情報を開示していませんが、影響を受ける可能性のある顧客数などに関する追加情報が必要な場合は、Cisco の公式 Web サイトを確認してください。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Security" data-astro-cid-xw3clhsd> Security </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Software" data-astro-cid-xw3clhsd> <a href="https://future-architect.github.io/articles/20240717a/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Go1.23リリース連載: archive/tar | フューチャー技術ブログ</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📚 Go 1.23のarchive/tarパッケージの変更に関する要点をまとめました。以下は要点の箇条書きです。
+
+🤔 Go 1.23からarchive/tarパッケージがtarファイル内のシンボリックリンクのuid/gidを名前で検索するようになり、ルート権限の取得につながる可能性がある。
+🚨 Dockerなどのコンテナ環境ではこの機能が問題となる可能性がある。
+💻 Go 1.23では、この問題に対処するためにarchive/tarパッケージに新しいインターフェースFileInfoNamesを追加した。
+
+ FileInfoNamesインターフェースには、Uname()とGname()メソッドがあります。これらは名前からuid/gidを取得する機能です。このインターフェースが実装されていれば、tarファイル内のシンボリックリンクのuid/gidを名前で検索せずに済むようになります。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Rust,Software" data-astro-cid-xw3clhsd> <a href="https://this-week-in-rust.org/blog/2024/07/17/this-week-in-rust-556/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>This Week in Rust 556</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>Rustに関する週刊ニュースです。この週のトピックは、RFCs の承認や Rust、Cargo、Language Team、Language Reference、および Unsafe Code Guidelines に関するイベントについて取り上げられています。
+
+📅 2024年7月下旬から8月上旬にかけて行われるRustに関するイベントのスケジュールが発表されました。以下はそのスケジュールです：
+
+* 7/17: バンクーバー、BC、CA - Vancouver Rust Meetup
+* 7/18: ナッシュビル、TN、US - Music City Rust Developers
+* 7/18: シアトル、WA、US - Seattle Rust User Group
+* 7/21: ボストン、MA、US - Boston Rust Meetup
+* 7/24: オースティン、TX、US - Rust ATX
+* 7/25: マウンテンビュー、CA、US - Mountain View Rust Meetup
+
+これらのイベントでは、Rustプログラミング言語の勉強会、ハッカソン、コミュニティの交流などが行われます。
+
+📅 2024-07-29 | カンブリッジ、MA、US | ボストンRustミートアップ 
+    🔹 7月29日のアリーワイフのランチ 
+
+🌍 2024-08-01 | セントルイス、MO、US | STL Rust 
+    🔹 ライフタイム 
+
+📅 2024-08-08 | マウンテンビュー、CA、US | マウンテンビューラストミートアップ
+    🔹 ハッカー道場でのRustミートアップ
+
+🌍 2024-08-01 | ブリスベン、QLD、AU | Rust Brisbane 
+    🔹 8月のミーティング</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Rust" data-astro-cid-xw3clhsd> Rust </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Software" data-astro-cid-xw3clhsd> <a href="https://gihyo.jp/article/2024/07/google-docs-allow-import-and-export-markdown?utm_source=feed" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>GoogleドキュメントでMarkdownのインポートとエクスポートが可能に</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📄 GoogleドキュメントでMarkdownのインポートとエクスポートが可能になりました。
+
+💻 MarkdownファイルをGoogleドキュメントに直接貼り付けることができます。
+
+🔍 ドキュメントのコンテンツをMarkdownとしてコピーすることができます。
+
+📁 MarkdownファイルをGoogleドキュメントとしてインポートすることができます。
+
+📈 GoogleドキュメントをMarkdownとしてエクスポートすることができます。
+
+🖼️ 画像が含まれる場合、base64形式の文字列でコピーされるようです。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web,Software" data-astro-cid-xw3clhsd> <a href="https://future-architect.github.io/articles/20240718a/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Go 1.23リリース連載 range over funcとiterパッケージ | フューチャー技術ブログ</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>💡 Go 1.23 の新機能を紹介します。
+
+### range over func
+Go 1.23 では、関数から値を生成するために、range を使用できるようになりました。これにより、関数を繰り返し処理したり、イテレータのように扱ったりできます。
+
+```go
+func someFunc() func() (int, bool) {
+    i := 0
+    return func() (int, bool) {
+        if i &gt;= 10 {
+            return 0, false
+        }
+        v := i
+        i++
+        return v, true
+    }
+}
+
+for v, ok := range someFunc(); ok; v, ok = someFunc() {
+    fmt.Println(v)
+}
+```
+
+### iter
+iter は、イテレーターを簡単に生成できるようにするために追加されたパッケージです。iter パッケージには、シーケンス (sequence) という概念が導入されています。
+
+シーケンスは、イテレーターを使用して値を生成する関数のことです。シーケンスは、range over func を使用して繰り返し処理できます。
+
+```go
+package iter
+
+type Seq[T any] interface {
+    ~func(yield func(T) bool)
+}
+
+// 以下に記載されているように関数を定義することで、
+// range over func の利用方法が可能となる。
+// func someFunc() Seq[int] { /* ... */ }
+```
+
+また、iter パッケージには、range over func と組み合わせて使用できる型定義も提供されています。
+
+```go
+package iter
+
+type Seq2[K any, V any] interface {
+    ~func(yield func(K, V) bool)
+}
+
+// 以下に記載されているように関数を定義することで、
+// range over func の利用方法が可能となる。
+// func someFunc() Seq2[int, int64] { /* ... */ }
+```
+
+### Proposal
+Go 1.23 から導入された range over func と iter パッケージについて、Proposal から利用例までを紹介します。
+
+*   Proposal では、range over func の導入によって Go の反復処理が統合されると述べられています。
+*   Go1.23 以降は、slices と maps に対する range over func の使用が推奨されるとのことです。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="AI,Web,Security" data-astro-cid-xw3clhsd> <a href="https://www.darkreading.com/application-security/tumeryk-inc-launches-with-free-gen-ai-llm-vulnerability-scanner" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Tumeryk Inc. が無料の Gen AI LLM 脆弱性スキャナーを提供開始</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📣 Tumeryk Inc. が無料の Gen AI LLM 脆弱性スキャナーを提供開始
+,🚨 Tumeryk Inc. は、組織が生成型 AI (gen AI) のセキュリティを模擬し強化できるようにするために、Tumeryk AI Security Studio を立ち上げました。
+,💻 大規模言語モデル (LLM) 脆弱性スキャナーは、セキュリティ専門家が gen AI API 推論エンドポイントに対して実行できます。
+,🔒 Tumeryk LLM Safety Report が生成され、企業が潜在的な gen AI リスクを発見し、それらから保護するためのセキュリティポリシーを Tumeryk Gen AI Firewall で構築できるようになります。
+,🚫 Tumeryk Gen AI Firewall は NVIDIA NeMo Guardrails とその他の最先端ツールや研究によって構築されており、gen AI へのアクセスに対して中央管理された制御を提供します。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="AI" data-astro-cid-xw3clhsd> AI </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Security" data-astro-cid-xw3clhsd> Security </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Software" data-astro-cid-xw3clhsd> <a href="https://www.docker.com/blog/docker-desktop-4-32/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Docker Desktop 4.32: Beta Releases of Compose File Viewer, Terminal Shell Integration, and Volume Backups to Cloud Providers</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📄 **Docker Desktop 4.32 の新機能**
+
+* 🚀 Compose File Viewer (β版) - Docker Compose 構成ファイルの視覚化ツール
+* 💻 Terminal Integration (β版) - Docker Desktop 内のターミナル統合
+* 💸 Volume Backups to Cloud Providers (β版) - クラウドプロバイダーへのボリュームバックアップ
+* 📦 MSI Installer (Early Access) - Docker Desktop のMSIインストーラー
+
+🚀 **Compose File Viewer**
+
+* Compose Watchの設定方法を表示する
+* Compose構成ファイルの視覚化ツール
+* 基本的なCompose概念とCompose Watchの設定が簡単になる</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web" data-astro-cid-xw3clhsd> <a href="https://developer.nvidia.com/blog/nvidia-transitions-fully-towards-open-source-gpu-kernel-modules/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>NVIDIA がオープンソース Linux GPU カーネル モジュールに完全移行</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📝 NVIDIAはLinux GPUカーネルモジュールをオープンソース化しました。同社は2022年5月にデータセンター用のコンピュートGPUを対象として初めてリリースし、GeForceおよびワークステーションGPUはアルファ版で提供されていました。
+
+📈 NVIDIA Grace HopperおよびNVIDIA Blackwellなどの最新プラットフォームでは、オープンソースのGPUカーネルモジュールを使用する必要があります。Turing、Ampere、Ada Lovelace、Hopperアーキテクチャを搭載した新しいGPUでは、同社はオープンソースのGPUカーネルモジュールへの移行を推奨しています。
+
+📊 Maxwell、Pascal、Voltaアーキテクチャを搭載した古いGPUには、オープンソースのGPUカーネルモジュールが互換性がないため、引き続きNVIDIA独自ドライバーを使用する必要があります。
+
+🚀 NVIDIA Driver Installation Guideでは、さまざまなLinuxディストリビューションのインストール方法について説明しています。すべてのディストリビューションで、最初に必要なパッケージをインストールし、その後各ディストリビューションの特定の手順に従ってNVIDIAドライバーをインストールします。
+
+📈 また、CUDA Toolkitのインストール方法についても説明しています。すべてのディストリビューションで、`sudo apt-get/dnf/zypper install cuda-toolkit`（または同等のコマンド）を実行してインストールします。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web,Software" data-astro-cid-xw3clhsd> <a href="https://zenn.dev/cybozu_frontend/articles/frontend_weekly_20240716" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Interop 2024の中間アップデートなど: Cybozu Frontend Weekly (2024-07-16号)</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📊 Interop 2024の中間アップデートに関する報告が行われました。 👈
+🌐 Web Storage APIやShared Element Transitionsなどの新しい機能が取り入れられています。 🔜&lt;br&gt;
+🤝 Web Storage APIの2番目のエディションとして最終版が発表されました。 📦&lt;br&gt;
+🔒 セキュリティ関連の機能に変更点があります。 🔍&lt;br&gt;
+🎉 Interop 2024のFocus Areasに含まれるShared Element Transitions APIが、Google Chromeに実装されました。 👏&lt;br&gt;
+📈 これにより、アプリケーション間の遷移をスムーズにする機能が提供されます。 🔗&lt;br&gt;
+🤝 Googleは、Web Storage APIやShared Element Transitionsなどの新しい機能を取り入れています。 🚀&lt;br&gt;
+🔜️ WebXRとWebGPUについても触れられており、これらのAPIのサポート強化を進めると述べられています。 🔍&lt;br&gt;
+📊 WHATWGバージョンと比較すると、セキュリティ関連の機能に変更点があるWeb Storage APIがデフォルトで有効になりました。 🔒&lt;br&gt;
+🔜️ Speculation Rules APIのドキュメントが更新されました。 👈&lt;br&gt;</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web" data-astro-cid-xw3clhsd> <a href="https://zenn.dev/gemcook/articles/480de0e144d5d2" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>次世代Web BandlerのFarmが熱そう</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📄 Farmは、Rustで実装された高速なビルドツールです。Viteなどの既存のビルドツールと比較し、次のような特徴があります。
+
+✨ 1. 高速なビルド: Rustによりパフォーマンスが向上
+💻 2. 多様なプラグインエコシステム:豊富なプラグインエコシステムがあり、RustとJavaScriptの両方をサポート
+
+📈 3. 柔軟な拡張性:豊富なプラグインエコシステムによりカスタムプラグインを作成しやすい
+
+🤝 4. 開発者体験の向上:使いやすさに重点を置いた設計であり設定がシンプルで直感的なインターフェースが提供されている
+
+📊 5. ブラウザ互換性の確保:モダンブラウザもレガシーブラウザも両方サポートしておりブラウザ間の互換性が保たれている</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="AI,Software" data-astro-cid-xw3clhsd> <a href="https://venturebeat.com/ai/google-brings-ai-agent-platform-project-oscar-open-source/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Google、AIエージェントプラットフォームProject Oscarをオープンソース化</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>🚀 Googleは、オープンソース開発チームがエージェントを作成し、ソフトウェアプログラムを管理できるようにするためのプラットフォーム「Project Oscar」を発表しました。
+
+💡 Project Oscarは、現在オープンソースプロジェクトに焦点を当てていますが、将来的にはクローズドソースプロジェクトにも利用される可能性があります。
+
+🤖 エージェントは自然言語でユーザーとやり取りし、コードの変更不要で命令を受け付けることができます。
+
+📊 Googleの「Go」プログラミング言語チームは、バグ報告などのトラッカーを管理するためにProject Oscarを活用しています。
+
+🚫 Project Oscarは将来的には他のオープンソースプロジェクトにも導入される予定です。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="AI" data-astro-cid-xw3clhsd> AI </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="AI,Web" data-astro-cid-xw3clhsd> <a href="https://zenn.dev/knowledgesense/articles/d253c8730e73bb" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>最適なAgentを自動で生成するCaptain Agent</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📄 Captain Agent という手法は、LLM (Large Language Model) を使用して複雑な問題を解決するための新しいアプローチです。この手法では、LLM が単独で問題を解決するのではなく、さまざまなツールやエージェントを組み合わせて問題を解決します。
+
+💡 Captain Agent の主な特徴は、動的にエージェントのチームを再構成する能力です。このアプローチにより、LLM は問題に対して最適なエージェントのセットを選択し、より効率的に問題を解決できます。
+
+📊 さまざまなタスクで Captain Agent の性能を評価した結果、この手法は他の既存の方法よりも高い精度を達成することが示されています。さらに、動的なエージェントの再構成が精度に寄与していることも示唆されています。
+
+🤔 ただし、事前に定義されたエージェントやツールの存在が精度の向上に必要であること、また実行時間が長くなる可能性があることを考慮する必要があります。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="AI" data-astro-cid-xw3clhsd> AI </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web,Security" data-astro-cid-xw3clhsd> <a href="https://www.darkreading.com/application-security/the-linux-foundation-and-openssf-release-report-on-the-state-of-education-in-secure-software-development" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Linux Foundation と OpenSSF がセキュア ソフトウェア開発の教育の現状に関するレポートを発表</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>🔒 Linux Foundation Research と Open Source Security Foundation (OpenSSF) は、セキュア ソフトウェア開発の教育に関するレポートを発表しました。このレポートでは約 400 人のソフトウェア開発専門家に対する調査結果に基づいて以下のことがわかりました。
+
+
+🔹 多くのソフトウェア開発者は、セキュリティに関する知識やスキルが不足していることを認めています。
+📚 セキュリティに関する教育やトレーニングは、業界全体で不足しています。
+🤝 開発者は、セキュリティに関する情報を得るための信頼できる情報源にアクセスすることが難しいと感じています。
+🕒 セキュリティに関するトピックについて学ぶ機会が少ないと感じている開発者の割合は高いです。
+
+
+これらの結果に基づいて、OpenSSF はセキュリティ設計を重視したソフトウェア開発者教育プログラムの構築を目指しています。また、セキュリティ関連のトピックについて学ぶための無料コースも提供予定です。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Security" data-astro-cid-xw3clhsd> Security </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="AI" data-astro-cid-xw3clhsd> <a href="https://venturebeat.com/ai/mistral-releases-codestral-mamba-for-faster-longer-code-generation/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Mistral は、より高速で長いコード生成を実現する Codestral Mamba をリリースしました。</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📊 Mistral AIは、32Kコンテキストウィンドウを持つ新しいAIモデル「Mathstral」を発表しました。 
+💻 Mathstralには、Apache 2.0オープンソースライセンスが適用されます。 
+🤖 Mathstralは、数学推論に特化したすべてのモデルを超えました。
+📈 ユーザーは、このモデルの結果を利用することもできますし、ファインチューニングして改良することも可能です。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="AI" data-astro-cid-xw3clhsd> AI </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web,Security" data-astro-cid-xw3clhsd> <a href="https://webkit.org/blog/15697/private-browsing-2-0/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>プライベートブラウジング 2.0</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>🔒 プライベートブラウジング 2.0
+------------------------
+
+* 📊 Private Browsing には、ユーザーのプライバシーを保護するために、クロスサイトトラッキングを防止する機能が含まれています。これにより、Web サイト間でユーザーを識別するためのクエリパラメータやフラグメントなどのトラッキング情報の収集を防ぎます。
+* 📈 Private Browsing では、Safari が目的の Web サイトの第三者スクリプトが URL を読み取ることを困難にすることで、クロスサイトナビゲーション前に識別されたサブセットのクエリパラメータを削除します。
+* 🚫 Web AdAttributionKit は Private Browsing で使用可能です。これにより、アドバースメントの帰因とクリック測定をプライバシー保護された方法で実行できます。
+
+🛡️ フィンガープリントトラッキング
+-------------------------
+
+* 👀 フィンガープリントトラッキングとは、ユーザーのデバイスや行動を特定し、Web ブラウザを識別するために使用される手法の一種です。これにより、クロスサイトトラッキング（異なる Web サイト間でのユーザーの追跡）が可能になります。
+* 📊 フィンガープリントにはデバイスフィンガープリント、ネットワークおよび地理位置フィンガープリント、ユーザー設定フィンガープリント、ユーザー行動フィンガープリントなどの種類があります。
+* 🔒 フィンガープリントトラッキングは時間の経過とともに変化する可能性があり、デバイスが更新されるとフィンガープリントも変更される可能性があります。
+
+🚨 WebKit の Standards Positions から、Google の Topics API に対する意見を要約した記事 📄
+-----------------------------------------------
+
+* 🤔 Google の Topics API は fingerprinting を悪化させていると考えられています。
+* 👀 Topics API ではユーザーのブラウジング履歴を収集し、数百のトピックから関心事を推測します。
+* 🚫 WebKit はこの API に反対していますが、Chrome ではすでに実装されています。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Security" data-astro-cid-xw3clhsd> Security </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web,Security" data-astro-cid-xw3clhsd> <a href="https://www.darkreading.com/threat-intelligence/void-banshee-apt-microsoft-zero-day-spear-phishing-attacks" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Void Banshee APT がスピアフィッシング攻撃で Microsoft のゼロデイを悪用</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>🚨 Void Banshee APT によるスピアフィッシング攻撃は、Microsoft のゼロデイを悪用しています。Internet Explorer (IE) がゼロデイ攻撃を受けており、HTA ファイルをダウンロードして Atlantida スティーラーを配布することで、Windows ユーザーを標的にしています。
+
+📈 攻撃の詳細:
+• PDF ドキュメントに安全なように見える MHTML プロトコルハンドラーと x-usc! ディレクティブを含む URL ファイルが配布されます。
+• URL ファイルを開くと、Internet Explorer が開き、HTA ファイルがダウンロードされます。
+• HTA ファイルは Atlantida スティーラーを実行し、Telegram、Steam、FileZilla などのアプリケーションから機密情報を収集します。
+
+🚫 脆弱性:
+• IE のサポート終了後も、Windows ユーザーが標的にされ続けていることがわかりました。
+• 攻撃者は IE を利用し、HTA ファイルをダウンロードしてマルウェアを実行することで、ゼロデイ攻撃を行っています。
+
+🔒 対策:
+• 脆弱性を修正するにはパッチを適用する必要があります。
+• ユーザーは IE の使用を避け、代わりにセキュリティが優れたブラウザを使用することを検討してください。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Security" data-astro-cid-xw3clhsd> Security </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Software,Web,Security" data-astro-cid-xw3clhsd> <a href="https://golangweekly.com/issues/515" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>It&#39;s about time</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>🔍 Webページのタイトル: It&#39;s about time 
+💬 以下は、提供されたWebページの内容を箇条書きで要約したものです。
+
+* 💻 WorkOS: The Modern Identity Platform for B2B SaaS
+* 📊 Goのランキングが7位に上昇
+* 🎧 Mat RyerがGo Timeポッドキャストに出演
+* 🤝 Kafka Is Dead, Long Live Kafka
+* 🚀 Writing GUI apps doesn&#39;t have to be painful
+* 🛡️ Protect your application infrastructure running on AWS with this time tested and essential security checklist
+* 🎥 Iris seeks Sr. Backend Engineer for edge-deployed Go/Rust dev
+* 🔧 Build Tools for Go</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Security" data-astro-cid-xw3clhsd> Security </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="AI,Software" data-astro-cid-xw3clhsd> <a href="https://www.watch.impress.co.jp/docs/news/1608739.html" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>富士通とCohere、日本語LLM「Takane」共同開発で戦略的提携</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📊 富士通とCohereは戦略的パートナーシップを結び、企業の成長や社会課題の解決を支援する生成AIの提供を目指す。
+
+💻 両社は、日本語強化版のLLM「Takane」を共同開発し、富士通がグローバル市場向けに独占的に提供する予定である。
+
+🔒 「Takane」は、Cohereの最新LLM「Command R+」をベースに、日本語能力を強化した安全性と透明性に優れたLLMである。
+
+📈 富士通は9月から「Fujitsu Kozuchi」から「Takane」を提供する予定であり、7月にはナレッジグラフ拡張RAGや企業規則に準拠した生成AI監査技術も開発・提供を予定している。
+
+🤝 8月からは「Fujitsu Kozuchi」で提供予定の生成AI混合技術により、「Takane」と様々な特化型モデルや既存の機械学習モデルを組み合わせた特化型生成AIを自動生成することが可能になる。
+
+🔒 「Takane」は、高いセキュリティが必要となる金融、官公庁、R\&amp;Dなどのユーザー向けにプライベート環境で利用できるサービスとして展開予定である。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="AI" data-astro-cid-xw3clhsd> AI </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Software" data-astro-cid-xw3clhsd> <a href="https://future-architect.github.io/articles/20240716a/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Go 1.23リリース連載始まります＆timeパッケージ | フューチャー技術ブログ</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>🕒️ Go 1.23からtime.TickerとTimerが内部でチャネルを持たなくなったため、Reset()呼び出し前のドレインの必要性が減りました。
+🌟 Go 1.23リリース連載が始まりました
+📝 consumer関数では、time.NewTimer()を使用してタイマーを作成し、Reset()メソッドでタイムアウト時間を再設定していました。
+💡 Go 1.23から、チャネルがバッファなしになったことで、このドレイン処理は不要となり、いきなりReset()が呼べるようになります。
+📝 contextパッケージのコードを読むと、context.WithDeadlineCause()(context.WithTimeout()とかもみんな最終的にこれを呼ぶ)の中で、time.AfterFunc()を呼んでおり、time.AfterFunc()はtime.NewTimer()と同じような内部実装になっていました。
+📝 丁寧なGo開発者は全員ひっかかっていたが、今回の修正でGCされるようになったということで、丁寧な人には恩恵があるアップデートのようです。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="AI,Web,Software" data-astro-cid-xw3clhsd> <a href="https://venturebeat.com/ai/microsofts-new-ai-system-spreadsheetllm-unlocks-insights-from-spreadsheets-boosting-enterprise-productivity/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>マイクロソフトの新しい AI システム「SpreadsheetLLM」はスプレッドシートから洞察を引き出し、企業の生産性を向上します</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📊 SpreadsheetLLMは、自然言語処理によってユーザーが平文の英語を使ってスプレッドシートデータを照会し操作できるようにします。 
+✨ SpreadsheetLLMは複雑な式やプログラミング言語ではなく、より多くのユーザーにデータインサイトへのアクセスを民主化する可能性があります。
+💡 SpreadsheetLLMはまた、スプレッドシートデータ分析に関連する煩雑で時間のかかるタスクの自動化にも役立ちます。AIの力を活用して、ビジネスは無限に時間とリソースを節約できる可能性があり、従業員がより価値の高いアクティビティに集中できます。
+🤝 SpreadsheetLLMの開発は、企業がより効率的かつ効果的にデータを利用できるようにするための取り組みの一例です。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="AI" data-astro-cid-xw3clhsd> AI </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web" data-astro-cid-xw3clhsd> <a href="https://zeromq.org/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>ZeroMQ: 高性能並行処理フレームワーク</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📚 ZeroMQについて知っておくべき点を箇条書きでまとめました。
+
+🔹 **ZeroMQとは**
+ ZeroMQはオープンソースのユニバーサルメッセージングライブラリです。
+
+🤝 **特徴**
+ ZeroMQは、プロセス内、プロセス間、TCP、マルチキャストなどのさまざまなトランスポートを介してアトミックメッセージを送信することができます。また、ファンアウト、パブリッシュサブスクライブ、タスク分配、リクエストレスポンスなどのパターンでソケットをN対N接続できるほか、マルチコア環境での並列処理にも適しています。
+
+🤝 **使用している企業**
+ Microsoft、Samsung、AT&amp;T、Spotify、Facebook、Digital Ocean、Auth0、Bitcoin、Jupyter、Mongrel2、Jinaなど。
+
+🚀 これらのポイントから、ZeroMQは高性能なメッセージングライブラリであり、分散システムの構築に適していることがわかります。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web" data-astro-cid-xw3clhsd> <a href="https://www.mediawiki.org/wiki/Reading/Web/Accessibility_for_reading" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Wikipediaがダークモードのサポートを開始</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📰 Wikipediaがダークモードのサポートを開始したことについて要約された記事です。
+
+*   Wikipediaでは、Readability research report（読みやすさに関する研究報告書）に基づいて、ダークモードのサポートを開始しました。 🔍 この計画では、すべてのユーザーに適したインターフェースを提供することを目的としています。これには、デスクトップとモバイルの両方で読みやすいテキストを表示することが含まれます。 📈 これまでの研究や調査によると、現在のテキストサイズは読みにくさが指摘されていました。したがって、デフォルトのフォントサイズを変更し、より読みやすいものにすることが計画されています。 📊 この計画は、すべてのウィキメディアプロジェクトに適用されます。この変更により、すべてのユーザーがより快適な読書体験を楽しめるようになります。 🔍 以下の4つの目標があります。
+📊 1. タイポグラフィーの問題点を特定し理解する
+📈 2. モバイルおよびデスクトップサイトでの読みやすさを向上させる
+🌎 3. 異なる言語と文字のタイポグラフィーを最適化する
+🖋️ 4. タイポグラフィーのカスタマイズを可能にする 🔍 さらに、以下の2つの目標もあります。
+💡 1. 低光量条件での記事の読みやすさを向上させる
+🌃 2. 夜間モードオプションと設定を簡単に発見・利用できるようにする 📊 以下の3つの方法で、プロジェクトの成否を評価します。 
+1.Prototype作成と開発における研究支援の意思決定 
+2.ユーザーテストやコミュニティ間での会話に基づく読みやすさの質的向上 
+3.X％以上のセッションがY秒を超えるタイポグラフィをカスタマイズする 
+   (具体的な変数は後日決定)
+4.少なくともX%のセッションでナイトモードを使用します。 
+5.読み込み深さに大きな変更がないこと</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Security" data-astro-cid-xw3clhsd> <a href="https://hackread.com/disneys-internal-slack-breached-nullbulge-leak-data/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>ディズニーの社内Slackが侵害された？NullBulgeが1.1TiBのデータを漏洩</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>🚨 ディズニーがサイバー攻撃を受けた疑い 🤖
+🔒 会社は調査中であり、詳しい情報は明らかにしていない
+💸 ディズニーの株価は下落したものの、すぐに回復した
+📊 この攻撃はアメリカ企業を標的としたサイバー攻撃の一環かもしれない
+👀 Ticketmasterデータ漏洩事件やAT&amp;Tの顧客情報流出なども発生している</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Security" data-astro-cid-xw3clhsd> Security </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web,Software" data-astro-cid-xw3clhsd> <a href="https://webcontainers.io/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>WebContainers: 開発環境。Webアプリで</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>🚀 WebContainersは、Node.jsアプリケーションが実行できるWebブラウザ内でのコンテナサービスです。
+
+✨ WebContainersの主な特徴は以下です:
+🔩 Node.jsの完全サポート
+🔩 npm, yarnなどのパッケージマネージャーへの対応
+🔩 全てのメジャーブラウザへの対応
+
+🚀 Web開発者がより自由にアプリケーションを作成できるように、WebContainersには以下のような利点があります。
+✨ Webブラウザ上での直接的なNode.jsアプリケーションの作成・実行
+✨ npmやyarnなどのパッケージマネージャーを使用した依存関係の管理
+
+📚 また、WebContainersは開発ツールやサービスとの統合にも対応しています。
+✨ VS CodeやIntelliJなどのIDEへの統合
+✨ GitHubやGitLabなどのバージョン管理サービスの統合</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web,Security" data-astro-cid-xw3clhsd> <a href="https://gladtech.social/@cuchaz/112775302929069283" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Firefox 128 では広告技術設定「プライバシー保護属性」がオプトアウト可能</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📣 Firefox 128 の広告技術設定「プライバシー保護属性」について
+• Firefox 128 には新しい広告技術機能がデフォルトで有効になっており、オプトアウトすることができます。
+• この機能はウェブサイトの監視を防ぐことを目的としていますが、Mozilla はこれらの機能を利用してユーザーの活動を追跡し、報告書を作成します。
+• Mozilla によると、この報告書は匿名化されており、オプトアウトすることは可能です。
+• `dom.private-attribution.submission.enabled` を false に設定すると、この機能を無効にすることができます。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Security" data-astro-cid-xw3clhsd> Security </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Python,Django,FastAPI,Software,Web" data-astro-cid-xw3clhsd> <a href="https://dev.to/poovarasu/pythonfastapidjango-weekly-news-summary-08072024-14072024-46h9" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Python/FastAPI/Django: 週刊ニュースサマリー (2024/07/08–2024/07/14)</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📊 Python関連のニュースやリリース、記事、アップデートがまとまった週刊サマリーです。以下はその主な内容です。
+
+* 🚨 Django 5.0.7と4.2.14のセキュリティアップデート
+* 📝 Python関数名に関するルールや規則
+* 📰 Apple App Store、組み込みシステム、制約プログラミングなど
+* 📨 HTMXとFastAPIの統合方法
+* 📧 Flask、Redis Queue、Amazon SESを使った確認メール送信方法
+* 🌈 CORSやTypeScriptを使用したフルスタック環境構築チュートリアル
+* 💡 Reactアプリケーションでの効率的なデータ取得方法
+* 🔮 個人的な実験の結果を分析したもの
+* 🚀 Djangoプロジェクトへの貢献について
+* 📄 Next.jsとFastAPIを使ったPDF解析アプリケーションの構築方法
+* 💬 Pythonで作成されたAIチャットボットの紹介
+* 🔍 メモ化を用いたグリッドトラバーサルのチュートリアル</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Python" data-astro-cid-xw3clhsd> Python </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Django" data-astro-cid-xw3clhsd> Django </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="FastAPI" data-astro-cid-xw3clhsd> FastAPI </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web,Software" data-astro-cid-xw3clhsd> <a href="https://news.mynavi.jp/article/20240712-2984652/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Arm、超解像機能「Accuracy Super Resolution」発表 - AMD FSR2からフォーク</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>💻 Armは7月10日（現地時間）、同社GPU向けの超解像機能「Accuracy Super Resolution（ASR）」を発表した。AMDがオープンソースソフトウェア（MITライセンス）で公開しているAMD FSR2を活用したことを明言している。
+
+💡 超解像技術とは、ゲームなどでのレンダリングを映像出力よりも小さい解像度で行ってから、引き延ばすことでパフォーマンスを引き上げる機能のこと。NVIDIAではDLSS、AMDではFSR、IntelではXeSSがそれぞれ開発されており、超解像技術の採用は最新ゲームタイトルにおける潮流の一つになっている。
+
+📊 Arm ASRでは電力効率も重視。ネイティブ解像度でのレンダリングではモバイルデバイスでサーマルスロットリングが発生することがあっても、Arm ASRを活用することでGPUの負荷を最適化してパフォーマンスを引き上げられるという。
+
+📈 Arm ASRはプリセットが3種類あり、「パフォーマンス」、「バランス」、「クオリティ」がある。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Security" data-astro-cid-xw3clhsd> <a href="https://news.mynavi.jp/techplus/article/20240712-2983765/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>OpenSSHに再び任意コード実行の脆弱性、確認とアップデートを</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>🚨 OpenSSHの脆弱性に関する最新情報 🚨
+👀 OpenSSHに再び任意コード実行の脆弱性が発見された。
+💻 この脆弱性は、特定の環境下でのOpenwallのメーリングリストに投稿されたもので、「CVE-2024-6387」として追跡されている。
+🔍 新しく発見された脆弱性「CVE-2024-6409」は、privsep子プロセス内に存在し、非特権ユーザーによるリモートコード実行が可能となる。
+📝 この脆弱性はRed Hat Enterprise Linux 9、Fedora 35から37、AlmaLinux OS 9、Rocky Linux 9のOpenSSHに影響を与える可能性がある。
+💡 上記ディストリビューションの多くはすでに修正パッチを公開している。管理者には開発者の提供する情報を確認して速やかにアップデートすることが推奨されている。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Security" data-astro-cid-xw3clhsd> Security </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Security" data-astro-cid-xw3clhsd> <a href="https://krebsonsecurity.com/2024/07/hackers-steal-phone-sms-records-for-nearly-all-att-customers/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>ハッカーがAT&amp;Tのほぼ全顧客の電話とSMSの記録を盗む</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📣 Webページから抽出した情報は以下の通りです：
+
+• AT&amp;T社は、ほぼ全ての顧客の電話とSMSの記録がハッカーによって盗まれたことを明らかにしました。
+• 110万人分のデータが漏洩し、この中には、カスタマー番号や氏名、電話番号などの個人情報も含まれていました。
+• このデータは、AT&amp;T社が利用しているクラウドプラットフォームに保存されていたもので、ユーザー名とパスワードによる認証のみで保護されていました。
+• AT&amp;T社によると、このデータには顧客の氏名や電話番号など個別情報は含まれていませんが、特定の期間内の通話やSMS送信履歴などのメタデータが含まれています。
+• ハッカーはこのデータを、ユーザーの特定や位置情報の取得に利用する可能性があります。
+• AT&amp;T社は、この事件について調査中であり、関係者への対応を進めています。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Security" data-astro-cid-xw3clhsd> Security </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web,Software" data-astro-cid-xw3clhsd> <a href="https://dev.to/lukylab/reusable-swiftui-components-compot-3ni7" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>再利用可能な SwiftUI コンポーネント – Compot</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📱 Compot は、SwiftUI コンポーネントを保存し、管理するためのツールです。
+
+🔍 100以上のプリデザインされた SwiftUI コンポーネントとテンプレートがあります。ボタンやウェルカム画面、プロダクトカード、バナーなどから選択できます。
+
+📈 Compot を使用すると、開発者はコピー&amp;ペーストで簡単にコンポーネントを自分の Xcode プロジェクトに追加でき、開発の効率が向上します。パッケージ依存関係はないため、純粋な SwiftUI コードのみを使用できます。
+
+📊 コンポーネントをキーワードで検索したり、好きなコンポーネントを保存してカスタムコレクションを作成することが可能です。
+
+📈 iOS アプリ開発に役立つツールやポッドキャスト、書籍、その他のリソースへのリンクも含まれています。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web" data-astro-cid-xw3clhsd> <a href="https://zenn.dev/goemon/articles/714fd61a7d9f2d" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>フロントエンドのコード規約を作成してみた</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📚 Web開発におけるReactの設計パターンに関するガイドラインです。
+
+💡 以下は要約箇条書きです。
+
+🔍 bulletproof-reactを基準としています。
+
+🤝 状態管理のライブラリには、React Redux（大規模プロジェクト）、zustand（小〜中規模プロジェクト）、Hook API useReducer（小規模）を使用します。
+
+💼 フィーチャー毎に機能を分割し、オニオンアーキテクチャと同様に依存関係は「上の層から下の層」のみ許可します。UseCaseをcontrollersで実質的に呼び出し、Repositoryの役割をreducerが担い、storeのデータにアクセスするようにします。
+
+💻 ESLintとPrettierを導入し、コードのスタイルを整えます。
+
+📊 huskyを使って、修正の保存時とコミット時点でオートフォーマットするように設定します。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Software" data-astro-cid-xw3clhsd> <a href="https://deno.com/blog/v1.45" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Deno 1.45: ワークスペースとモノレポのサポート</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>Deno 1.45の新機能 🚀
+• ワークスペースとモノレポのサポート 💼
+• Node.js 互換性の向上 🔄
+• ロックファイルの凍結 ❄️
+• deno install の更新 📦
+• deno init --lib コマンド 📚
+• deno vendor は非推奨 ❌
+• deno test ファイルの検出 🔍
+• Jupyter ノートブックの改善 📝
+• deno compile が --env フラグをサポート 💻
+• 言語サーバーの柔軟性向上 💡
+• 標準ライブラリがより安定 📚
+• V8 12.7 と TypeScript 5.5.2 🔄
+• Deno 2 の機能を deno_future=1 で試す 🔮
+• 謝辞 🙏
+
+Deno 2.0についての重要な変更点 🌟
+1️⃣ ロックファイルはプロジェクトルートに配置される必要があります 💼
+2️⃣ `--frozen`フラグが追加され、Denoがlockfileを自動的に書き換えることを防ぐことができます 🔒
+3️⃣ Denoの`install`サブコマンドが更新され、npmのインストール動作と似たものになりました 📦
+4️⃣ `--global`フラグを使用して、グローバルにパッケージをインストールできます 🌐
+
+Deno 1.45 の新機能まとめ 🎉
+• 👍 ワークスペースとモノレポのサポート: `deno install` コマンドがワークスペース内の依存関係を管理できるようになりました 💼
+• 📦 npm ライフサイクル スクリプトのサポート: Deno が npm ライフサイクル スクリプトを実行する機能が追加されました 🔜
+• 📝 `deno init --lib`: Deno ライブラリを簡単に作成できるコマンドが追加されました 📚
+• ⚠️ `deno vendor` は非推奨: `deno vendor` コマンドは非推奨となり、将来的には削除される予定です 🔴
+• 📊 `deno test`: `__tests__` ディレクトリ内のテストファイルを自動的に検出して実行できるようになりました 🔍</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="Web,Software,Security" data-astro-cid-xw3clhsd> <a href="https://news.mynavi.jp/techplus/article/20240725-2991709/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>人気Androidアプリにゼロデイ脆弱性、動画に扮してマルウェア感染</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>🚨 Android向けTelegramアプリのゼロデイ脆弱性が発見された。マルウェア感染の可能性がある。
+
+⚠️ 脆弱性は「EvilVideo」と名付けられ、Android向けTelegramバージョン10.14.4以前で影響を受ける。
+
+📱 この脆弱性を悪用されると、マルチメディアファイルを装って悪意のあるアプリを配布できる。ユーザーがチャットを開くだけで悪意のあるファイルは自動的にダウンロードされる。
+
+💻 Telegramが不明な外部アプリのインストールを要求する画面が表示され、ユーザーが許可すると、マルウェアを含むアプリがインストールされる可能性がある。
+
+🚨 Android向けTelegramアプリのユーザーには、脆弱性の影響を回避するため速やかに最新版にアップデートすることが推奨されている。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Security" data-astro-cid-xw3clhsd> Security </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="AI,Web,Software" data-astro-cid-xw3clhsd> <a href="https://news.mynavi.jp/article/20240725-2992376/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>Microsoft、AIを利用した検索「Bing generative search」発表、プレビュー提供開始</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>🔍 Bingジェネレーティブ検索では、生成された回答が中心に配置され、右側に従来のWeb検索結果が並ぶ。
+
+💻 検索サンプルの場合、メインカラムのトップに「Up to 70 years in the wild and 88 years in captivity」（野生では最長70年、飼育下では88年）という生成コンテンツが表示され、生成に情報を使用したソースへのリンクが付けられている。
+
+🤖 Bingジェネレーティブ検索は、Bing検索と大小の言語モデルを組み合わせてユーザーの検索の意図を理解し、関連する膨大な情報源をレビューしてコンテンツを動的にマッチングさせている。
+
+🚨 Bingジェネレーティブ検索では、生成AIが実在しない情報を生成するハルシネーションの懸念がある。MicrosoftはBingジェネレーティブ検索のプレビューを小規模から、ごく一部のユーザーのクエリに対して提供し、効果と課題を確認していく方針である。
+
+🌐 Bingジェネレーティブ検索により、ユーザーが検索結果ページから直接情報を得られることで、Webサイトへのアクセス減少も懸念されている。Microsoftによると、Bingジェネレーティブ検索は従来のWeb検索結果も表示し、クリック可能な参考文献リンクを増やすなど、Webのエコシステムを支援する設計を行っている。
+
+📊 初期データでは、Webサイトへの移動が維持されているという。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="AI" data-astro-cid-xw3clhsd> AI </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="AI,Web,Software" data-astro-cid-xw3clhsd> <a href="https://venturebeat.com/ai/microsoft-unveils-serverless-fine-tuning-for-its-phi-3-small-language-model/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>マイクロソフトが Phi-3 小型言語モデルのサーバーレス ファインチューニングを発表</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📰 **マイクロソフトが Phi-3 小型言語モデルのサーバーレス ファインチューニングを発表**
+* マイクロソフトはPhi-3小型言語モデルのサーバーレスファインチューニングを発表した。
+* この技術により、開発者がより高速かつ効率的にAIモデルをトレーニングおよびデプロイできるようになる。
+📰 以下は記事の内容を要約したものです。
+
+• Microsoftが新しいAIモデルPhi-3を発表しました。これは、Azure OpenAI Serviceを通じてサーバーレスにファインチューニングできる最初のモデルです。
+
+• Phi-3には2つのバージョンがあります。小さい方はminiと呼ばれ、より大きなバージョンも用意されています。
+
+• mini版の価格は1,000トークンあたり$0.004（100万トークンあたり$4）から始まります。
+
+• Microsoftによると、教育ソフトウェア会社のKhan AcademyがPhi-3を使用してベンチマークテストを行っています。
+📰 次のニュースがあります。
+
+* MetaがオープンソースのLlama 3.1ファミリーとMistralの新しい大型モデルMistral Large 2をリリースしました。これらのモデルはさまざまな用途に合わせてフィントゥーニングすることができます。
+* これらは、エンタープライズ開発のための魅力あるAIオプションを提供する競争が本格化していることを示唆しており、AIプロバイダーは開発者に小さく大きなモデルを提供しています。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="AI" data-astro-cid-xw3clhsd> AI </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Software" data-astro-cid-xw3clhsd> Software </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="AI,Web" data-astro-cid-xw3clhsd> <a href="https://venturebeat.com/ai/ai-wars-heat-up-openais-searchgpt-takes-on-googles-search-dominance/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>AI戦争が激化：OpenAIのSearchGPTがGoogleの検索支配に挑む</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📰 記事の内容を要約します。
+
+* OpenAIは、人工知能（AI）技術を搭載した新しい検索エンジン「SearchGPT」を開発しています。
+* SearchGPTは、従来の検索エンジンのような単純なリスト形式ではなく、質問に対する詳細な回答を提供します。
+* この技術は、Googleなどの既存の検索エンジンに大きな影響を与える可能性があります。
+* OpenAIのCEOであるSam Altmanは、SearchGPTが人間の知識と経験に基づいた回答を提供することを目指していることを述べています。
+* しかし、この技術には課題もあり、SearchGPTが正確で信頼性の高い回答を提供できるかどうかが重要なポイントとなっています。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="AI" data-astro-cid-xw3clhsd> AI </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="AI,Web" data-astro-cid-xw3clhsd> <a href="https://chatgpt.com/search" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>OpenAIがSearchGPTを発表</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>📣 OpenAIはSearchGPTを発表しました。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="AI" data-astro-cid-xw3clhsd> AI </span><span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="Web" data-astro-cid-xw3clhsd> Web </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section><section class="border-b border-gray-200 dark:border-gray-600 pb-8 last:border-b-0 last:pb-0 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200 rounded-lg p-4" data-tags="AI" data-astro-cid-xw3clhsd> <a href="https://gigazine.net/news/20240725-2024-stack-overflow-developer-survey/" class="block" target="_blank" rel="noopener noreferrer" data-astro-cid-xw3clhsd> <h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-2" data-astro-cid-xw3clhsd>6万5000人以上の開発者に「好きな言語」「好きなOS」「好きな開発環境」「好きなAI」を聞いた年次調査「2024 Stack Overflow Developer Survey」の結果が公開される</h2> <p class="text-gray-600 dark:text-gray-400 mb-4 whitespace-pre-wrap" data-astro-cid-xw3clhsd>6万5000人以上の開発者が回答した年次調査「2024 Stack Overflow Developer Survey」の結果によると、以下のような傾向が見られる。
+
+📊 AIに関する質問では、
+• 68.3％が「AIは現在の仕事に対する脅威だとは思わない」と回答。
+• プロの開発者に限定するとこの割合は69.6％に増加。
+ 
+🤖 AIに関する倫理的責任について、
+• AIが出力する誤情報が懸念すべき事柄だと答えた人が多数。
+• データソースの帰属が不完全または欠落していることが多く選ばれた。
+
+💻 AIツールを使うチームや会社にとっての課題としては、「出力や回答を信頼しない」、「AIには内部アーキテクチャや企業知識のコンテキストが欠如している」という選択肢を選んだ人がいれも60％を超えた。
+
+📈 自由記述形式により、AIの進歩で1年後にワークフローがどう改善するかを問うた項目では、「シームレスになる」、「より良いコードを出力する」といった回答があった。</p> <div class="flex justify-between items-center" data-astro-cid-xw3clhsd> <div class="flex flex-wrap gap-2" data-astro-cid-xw3clhsd> <span class="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 px-2 py-1 rounded-full text-sm cursor-pointer article-tag" data-tag="AI" data-astro-cid-xw3clhsd> AI </span> </div> <span class="text-blue-600 dark:text-blue-400 hover:underline" data-astro-cid-xw3clhsd>続きを読む →</span> </div> </a> </section> </div> </article> <div class="mt-8 text-center" data-astro-cid-xw3clhsd> <a href="/articles" class="inline-block bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-150 ease-in-out" data-astro-cid-xw3clhsd>
+記事一覧に戻る
+</a> </div> </div> </div>  </main> <footer class="bg-gray-800 dark:bg-gray-900 text-white"> <div class="footer-content container mx-auto px-4 py-6"> <p>&copy; 2024 G-gen Co., Ltd.</p> </div> </footer>  </body> </html>  
