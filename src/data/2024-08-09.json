@@ -478,6 +478,476 @@
             "tags": [
                 "Web"
             ]
-        }
+        },
+        {
+            "title": "GMOインターネットグループ、AI画像生成サービス 『ConoHa AI Canvas』を提供開始",
+            "url": "https://www.gmo.jp/news/article/9080/",
+            "summary": "📰 以下は、提供された記事を要約したものです。\n\n📄 GMOインターネットグループ株式会社が運営するホスティングサービス「ConoHa byGMO」が、新しいAI生成ツール「ConoHa AI Canvas」を開始しました。\n\n💡 「ConoHa AI Canvas」は、AIを使用して画像やイラストを作成するツールで、簡単な操作でプロフェッショナルな品質の作品を作成できます。\n\n📊 このサービスは、未利用者に対するニーズに応えるために設計されており、料金が安価になれば、著作権や倫理の不安が解消されれば、操作が簡単になればという要望を持つ人々に向けて提供されています。\n\n🎉 また、「ConoHa byGMO」は、サービス開始を記念して8月1日よりキャンペーンを開始しています。",
+            "tags": [
+              "AI",
+              "Web"
+            ]
+          },
+          {
+            "title": "3rd Party Cookie 廃止の方針変更など : Cybozu Frontend Weekly (2024-07-23号)",
+            "url": "https://zenn.dev/cybozu_frontend/articles/frontend_weekly_20240723",
+            "summary": "Cybozu Frontend Weekly（2024-07-23号）では以下のような話題が取り上げられました。\n\n📰 Temporal関連資料の公開\n📝 3rd Party Cookie廃止に向けたGoogleの方針転換\n🎉 Node.js v22.5.0のリリース\n🚀 Deno 1.45のリリース\n🔒 Private Browsing 2.0（WebKit）\n🌴 Astro 4.12のリリース\n🤖 TypeSpec、Orval、Storybookを使ったフロントエンドモック生成自動化",
+            "tags": [
+              "Web"
+            ]
+          },
+          {
+            "title": "より小さく、より安全で、より透明: Gemma による責任ある AI の推進",
+            "url": "https://developers.googleblog.com/en/smaller-safer-more-transparent-advancing-responsible-ai-with-gemma/",
+            "summary": "🤖 以下は、Google が発表した新しい AI モデル「Gemma 2」とその応用に関する記事の要約です。\n\n💡 Gemma 2 は、テキスト生成と理解に特化した大規模な言語モデルであり、人間のような文章を生成できる。\n\n📈 Gemma 2 のパラメータ数は 20 億個で、Google の AI 研究者が開発したものである。\n\n🔍 ShieldGemma は、Gemma 2 を基に作られた安全性評価モデルであり、オンラインでの有害なコンテンツを検出するために使用される。\n\n📊 ShieldGemma には、さまざまなサイズのモデルがあり、ユーザーは自分のニーズに応じて選択できる。\n\n🤝 ShieldGemma はオープンソースであり、AI 研究者や開発者が共同で安全性評価モデルを開発することを促進する。\n\n🔥 さらに、Gemma Scope は Gemma 2 モデルの決定プロセスを照明するためのツールであり、専用のスパースオートエンコーダー (SAE) を使用してモデル内部の特定のポイントにズームインし、より解釈可能にする。\n\n🔍 Open SAEs では、Gemma 2 2B と 9B の全層をカバーする 400 個以上の無料 SAE が提供されており、Neuronpedia で SAE 機能を探索し、コードなしでモデル動作を分析できる。\n\n📁 Easy-to-use Repository は、SAE とのインターフェイスや Gemma 2 のコードと例が用意されたリポジトリであり、開発者が簡単に使うことができる。",
+            "tags": [
+              "AI",
+              "Web"
+            ]
+          },
+          {
+            "title": "This Week in Rust 558",
+            "url": "https://this-week-in-rust.org/blog/2024/07/31/this-week-in-rust-558/",
+            "summary": "📰 この週のRust558に関する情報です。\n\n* Rust 1.72.0がリリースされました。\n* let elseのサポート\n* std::process::idの追加\n* パフォーマンスの向上\n\n🚀 最終コメント期間に入ったRFC、PRおよびトラッキング・イシュー:\n* Asyncクロージャ\n* Cargoに名前付きパスベースを追加する(v2)\n* CPU機能検出コア\n* Disallow setting some built-in cfg via set the command-line\n* Enforce supertrait outlives obligations hold when confirming impl\n* implement Default for collection iterators that don't already have it\n* turn invalid_type_param_default into a FutureReleaseErrorReportInDeps\n* Stabilize unsafe extern blocks (RFC 3484)\n* Tracking Issue for std::ffi::c_str module\n* Add info cargo subcommand",
+            "tags": [
+              "Software"
+            ]
+          },
+          {
+            "title": "ランウェイ、さらに高速で安価な AI ビデオ モデル Gen-3 Alpha Turbo を発表",
+            "url": "https://venturebeat.com/ai/runway-faster-cheaper-gen-3-alpha-turbo/",
+            "summary": "🤖 Runway MLは、AI生成ツール「Gen-3 Alpha Turbo」が7秒間動画を作成するのに1クレジットかかることを明らかにしました。 \n💡 会社のリーダーブログでは、新しい価格設定が「実際の使用状況とパフォーマンスに基づいて」作成されたと述べられています。\n🤔 一部の人々は、Gen-3 Alpha Turboを1秒あたり7クレジットで提供するのが妥当である可能性があることを示唆しています。 \n📝 Runway MLは依然として訓練データに関する質問に直面しており、一部の批評家は、同社がYouTube動画からスクラップしたとされる行為を非難しています。\n💬 会社にはまだ公式声明が出されていませんが、一部の人々は、この問題についてさらに情報を開示するよう求めています。",
+            "tags": [
+              "AI"
+            ]
+          },
+          {
+            "title": "HNを表示: あらゆるウェブサイトをLLMのナレッジベースに変える",
+            "url": "https://www.embedding.io/",
+            "summary": "以下は記事の内容を箇条書きで要約したものです。\n\n🌐 **コレクションの作成**：API または Web インターフェイスを使用して、コレクションを作成します。コレクションには、利用するページやウェブサイトを格納できます。\n\n📄 **コンテンツのインジェスト**：Web ページをコレクションに追加します。アップデートは自動的に行われます。\n\n🤔 **クエリの実行**：準備ができたら、API を使用してコレクションにクエリを実行します。データは自動で更新されます。\n\n💡 **パブリック コレクション**：公開されたコレクションを試すことができます。\n\n💸 **価格プラン**：\n* フリー プラン: 無料 (500 クレジット)\n* ホビープラン: 20 ドル/月 (2,000 クレジット)\n* スタートアップ プラン: 100 ドル/月 (20,000 クレジット)\n* エンタープライズ プラン: 個別の価格設定、追加機能あり",
+            "tags": [
+              "Web"
+            ]
+          },
+          {
+            "title": "Ampere AmpereOne Aurora 512 コア AI CPU が発表",
+            "url": "https://www.servethehome.com/ampere-ampereone-aurora-512-core-ai-cpu-announced-arm/",
+            "summary": "📊以下はAmpereOneアナウンスの要約です：\n\n* Ampereが新しいプロセッサ「AmpereOne」を発表しました。\n* AmpereOneは、Cloud NativeとAIに特化した32コアから128コアまでの幅広い構成に対応します。\n* 2023年7月現在、64コア、80コア、96コアの構成が使用可能です。\n* 2024年に新しいAmpereOneオプションがリリース予定です。\n* AmpereOneは、Neoverse N2の後継であり、Arm v9 ISAに準拠しています。\n* 8MBから32MBまでのL3キャッシュを備えています。\n* DDR5メモリとPCIe 5.0インターフェイスをサポートしています。\n* AmpereOneは、Cloud NativeアプリケーションとAIワークロードに特化したプロセッサーです。",
+            "tags": [
+              "AI",
+              "Software"
+            ]
+          },
+          {
+            "title": "GitHub Copilot の新機能: 2024 年 7 月",
+            "url": "https://github.blog/ai-and-ml/github-copilot/whats-new-with-github-copilot-july-2024/",
+            "summary": "📄 GitHub Copilot の新機能: 2024 年 7 月について、以下のように要約できます。\n\n* 🔍 コードの分析：Copilotがコードを解析し、改善点を提案します。\n* 💻 コーディング支援：Copilotがコードの書き方や構造に関するアドバイスを提供します。\n* 📝 コメントの生成：Copilotがコードにコメントを追加することで、その意味と目的を明確化します。\n\n👨‍💻 個人開発者や大規模な開発プロジェクトで役立つ機能です。",
+            "tags": [
+              "Software"
+            ]
+          },
+          {
+            "title": "北朝鮮関連のマルウェアがWindows、Linux、macOSの開発者を標的に",
+            "url": "https://thehackernews.com/2024/07/north-korea-linked-malware-targets.html",
+            "summary": "🌎 **北朝鮮関連のマルウェアがWindows、Linux、macOSの開発者を標的に**\n\n📣 **概要**\n😈 DEV#POPPERキャンペーンは、北朝鮮が展開しているサイバー攻撃の一環であり、2021年に初めて報告された。このキャンペーンでは、Pythonスクリプトを使用してWebブラウザから機密情報を盗み出すことが特徴である。\n\n📁 **新たな発見**\n🚨 Recorded Futureは、このDEV#POPPERキャンペーンの新たな段階を発見した。ZIPアーカイブファイル内のnpmモジュールが含まれており、これをインストールすると、JavaScriptコード（BeaverTail）が実行され、リモートサーバーとの接続が確立される。\n\n🤖 **InvisibleFerret**\n😺 InvisibleFerretは、Pythonスクリプトの一種で、システムの詳細情報を収集し、Webブラウザからクッキーや機密情報を盗み出すことができる。これには、コマンドの実行やファイルのアップロード/ダウンロード、キーストロークやクリップボード内容の記録などの機能も含まれている。\n\n🌐 **北朝鮮のインターネット使用**\n📊 Recorded Futureは、北朝鮮が外国製技術を積極的に使用していることを明らかにした。これには、Apple、Samsung、Huawei、XiaomiなどのデバイスやFacebook、Instagram、WeChatなどのソーシャルメディアプラットフォームも含まれている。\n\n🚨 **結論**\n😈 DEV#POPPERキャンペーンは、北朝鮮によるサイバー攻撃の一環であり、Webブラウザから機密情報を盗み出すことが特徴である。これらの新たな発見は、北朝鮮が外国製技術を積極的に使用しており、インターネット上で活動する際にもより注意深くなっていることを示唆している。",
+            "tags": [
+              "Web",
+              "Security"
+            ]
+          },
+          {
+            "title": "中国のハッカーがLODEINFOとNOOPDOORマルウェアで日本企業を標的に",
+            "url": "https://thehackernews.com/2024/07/chinese-hackers-target-japanese-firms.html",
+            "summary": "🚨 **APT10グループは、カバーソフトウェア会社のEarth Kashaを使って攻撃活動を行っていることがわかった** 🚨\n💻 APT10グループは、さまざまな組織に攻撃を仕掛けている。\n🔍 そのうちの一つが、カバーソフトウェア会社の「Earth Kasha」で、日本と中国に拠点を持つ。\n📊 このグループは2013年に最初に発見され、その後も活動を継続している。",
+            "tags": [
+              "Software",
+              "Security"
+            ]
+          },
+          {
+            "title": "オープンなAmazon Cognitoエミュレーター \"Magnito\" のご紹介",
+            "url": "https://zenn.dev/caru/articles/0e063d368484ce",
+            "summary": "🌐 Magnitoとは\n------------------\n\n*   Amazon Cognitoのローカル環境でのエミュレーターである。\n\n💡 使い方\n-------------\n\n1.  Dockerコンテナを利用してMagnitoを起動する。 *   `docker run -p 9229:9229 -e AWS_ACCESS_KEY_ID=YOUR_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY=YOUR_SECRET_ACCESS_KEY -e COGNITO_REGION=YOUR_REGION magnito`\n2.  Amplify CLIからCognitoの設定を行う。 *   `amplify init` *   `amplify add auth` *   `amplify push --y`\n\n🌐 ローカル環境での使用\n-------------------------\n\n*   Amplify UIを利用する際に、MagnitoでエミュレートしたCognitoを使用する。\n\n💻 活用シナリオ\n--------------\n\n1.  **新規プロジェクトのプロトタイピング**：Dockerコンテナとして提供されているため、アプリケーションのプロトタイピングや開発環境の構築が簡単に行える。\n2.  **ローカルでの開発**：ローカルで実行されるため、429(Too Many Requests)エラーやネットワーク遅延などの問題を気にせずにテストやデバッグを行うことができる。\n3.  **テストへの組み込み**：インターネット接続が不要なため、CI/CDパイプラインでのテストがスムーズに行える。\n\n📝 まとめ\n----------\n\n*   MagnitoはAmazon Cognitoの機能をローカル環境でエミュレートするための強力なツールである。\n*   インターネット接続が不要となり、設定の煩雑さやテストの難しさを解消できる。",
+            "tags": [
+              "Web",
+              "Software"
+            ]
+          },
+          {
+            "title": "Midjourney が驚きの v6.1 アップデートをリリース — 人間がこれまで以上にリアルに見えるようになりました",
+            "url": "https://www.tomsguide.com/ai/ai-image-video/midjourney-drops-surprise-v61-update-now-humans-look-more-real-than-ever",
+            "summary": "📸 MidjourneyはAI画像生成ツールの新しいバージョン「V6.1」をリリースしました。このアップデートにより、画像品質が向上し、テキスト認識精度が高まり、upscale機能が強化されました。以下は主な変更点です。\n\n🔹 画像品質が向上\n🔹 テキスト認識精度が高まる\n🔹 Upscale機能が強化される（新しい-q 2モード）\n🔹 小さなイメージの特徴がより正確になる（目、遠くの手など）\n🔹 個人化モデルが強化され、画像生成がより多様化する",
+            "tags": [
+              "AI"
+            ]
+          },
+          {
+            "title": "MetaがSegment Anything Model 2を発表",
+            "url": "https://ai.meta.com/sam2/",
+            "summary": "🔍 Facebook の研究チームが開発したセグメンテーション モデル「Segment Anything 2 (SAM 2)」について紹介しています。\n\n📈 SAM 2 は、画像内の任意の領域を選択して、その領域をセグメント化できるモデルです。\n\n✨ SAM 2 の特徴としては、高精度で実世界のシナリオに対応可能であり、さまざまなオブジェクトやパーツを正確に認識できます。また、オプションのアテンション メカニズムによって、モデルが特定の領域に焦点を当てることができるため、より詳細なセグメント化が可能になります。\n\n🌎 SAM 2 のトレーニング データは、地理的に多様な 47 か国から収集された約 51,000 個の動画クリップから構成されており、モデルに実世界のシナリオに対応する能力を与えています。\n\n💻SAM 2 モデルと、SA-V データセット（トレーニング データ）、デモ、コードが一般公開されているため、研究者や開発者がこの技術を活用して新しいアプリケーションを作成できるようになっています。\n\n📢 SAM 2 は将来的には他の種類の入力プロンプトを受け付けるように拡張される可能性があります。",
+            "tags": [
+              "AI"
+            ]
+          },
+          {
+            "title": "Dockerコンテナ内のmacOS",
+            "url": "https://github.com/sickcodes/Docker-OSX",
+            "summary": "📚 以下は、Docker-OSX の使用方法に関する情報の要約です。\n\n🔍 Docker-OSX を実行するには、次のコマンドを使用します。\n```\ndocker pull sickcodes/docker-osx:auto\ndocker run -it --device /dev/kvm -p 50922:10022 sickcodes/docker-osx:auto\n```\n\n📊 SSH を有効にするには、以下のオプションを追加する必要があります。\n```\n-p 50922:10022\n```\n\n🔑 ユーザー名とパスワードはそれぞれ \"user\" と \"alpine\" です。\n\n🕒 OS X のインストール後、自動的に起動するようにするには、以下のオプションを追加します。\n```\n-e NOPICKER=true\n```\n\n📝 これらのコマンドとオプションを使用して、Docker-OSX を実行し、SSH を有効にし、OS X のインストール後に自動的に起動するように設定できます。\n\n🔧 macOS コンテナ内で任意のコマンドを実行するには、S` オプションを使用します。事前ビルドされたイメージの例は以下です。\n```\ndocker pull sickcodes/docker-osx:auto\ndocker run -it --device /dev/kvm -p 50922:10022 -v /tmp/.X11-unix:/tmp/.X11-unix -e \"DISPLAY=${DISPLAY:-:0.0}\" -e \"OSX_COMMANDS=/bin/bash -c \\\"put your commands here\\\"\" sickcodes/docker-osx:auto\n```\n\n📝 macOS コンテナ内で任意のコマンドを実行するには、ヘッドレスモードを使用できます。ヘッドレスモードでは `-v /tmp/.X11-unix:/tmp/.X11-unix` と `-e \"DISPLAY=${DISPLAY:-:0.0}\"` の 2 行が削除されます。\n\n📝 macOS コンテナは、コマンドライン引数を自由に設定できるため、さまざまなシナリオで使用できます。以下は、その他の例です。\n```\ndocker run -it --device /dev/kvm -p 50922:10022 -v /tmp/.X11-unix:/tmp/.X11-unix -e \"DISPLAY=${DISPLAY:-:0.0}\" -e \"OSX_COMMANDS=/bin/bash -c \\\"put your commands here\\\"\" sickcodes/docker-osx:auto\n```\n\n📝 macOS コンテナ内で実行可能なコマンドの例は、上記の通りです。",
+            "tags": [
+              "Web",
+              "Software",
+              "Other"
+            ]
+          },
+          {
+            "title": "Deep-Tempest: ディープラーニングを使って HDMI を盗聴する",
+            "url": "https://arxiv.org/abs/2407.09717",
+            "summary": "📊 この研究では、HDMI ケーブルから放出される電磁波を分析することで、デジタル ビデオ ディスプレイの盗聴 (TEMPEST) の問題に対処します。ディープラーニング モジュールを使用して、観測された電磁信号を表示された画像にマッピングします。このアプローチでは、詳細な数学的分析が必要ですが、実際の TEMPEST 設定を使用せずにトレーニング サンプルを生成できます。テキストの平均文字エラー率 (CER) の改善に注力し、以前に実装されたシステムよりも 60% 点以上改善しました。\n\n📈 提案されたシステムは、広く利用可能なソフトウェア定義無線 (SDR) に基づいており、人気の GNU Radio フレームワークに完全に統合されています。トレーニングに使用したデータセットも共有しており、シミュレートされたものと実際に 1000 回以上のキャプチャが含まれています。\n\n🛡️ 最後に、同様の原理に基づくシステムによる盗聴リスクを最小限に抑えるための対策について議論します。",
+            "tags": [
+              "AI",
+              "Web"
+            ]
+          },
+          {
+            "title": "OpenAI、「高度なボイスモード」のα版提供開始、AIとの自然な音声会話を実現",
+            "url": "https://news.mynavi.jp/article/20240731-2996052/",
+            "summary": "📣 OpenAIが「高度なボイスモード」のアルファ版提供を開始しました。\n\n🗣️ GPT-4oはマルチモーダルAIモデルであり、テキスト、音声、画像、およびそれらの組み合わせを入力として受け入れ、出力として生成します。\n\n🎤 GPT-4oは音声反応や画像認識が大きく向上しており、音声反応の場合、GPT-4の音声モードの音声入力からの待ち時間が平均5.4秒であるのに対し、GPT-4oは最短232ミリ秒、平均320ミリ秒と非常に高速です。\n\n📢 「高度なボイスモード」のアルファ版は、一部の「ChatGPT Plus」ユーザーから提供を開始する予定であり、今年秋に全てのChatGPT Plusユーザーが利用できるようにする計画です。\n\n🚫 OpenAIは「高度なボイスモード」に関して、特定の人の声をそっくりに再現できないように、4つのプリセット音声のみで会話するように制限し、それらの音声と異なる出力をブロックするシステムを構築しました。",
+            "tags": [
+              "AI"
+            ]
+          },
+          {
+            "title": "第824回　Dockerコンテナをダイレクトに動かせるようになった「Incus 6.3」を、Ubuntu 24.04で試す",
+            "url": "https://gihyo.jp/admin/serial/01/ubuntu-recipe/0824?utm_source=feed",
+            "summary": "🚀 以下は、IncusにおけるDockerコンテナの実行についての説明です。\n\n🔹 Incusは、LXDやDockerなどのさまざまなコンテナタイプをサポートしています。`incus list` コマンドでコンテナの一覧が見られます。\n🔹 `incus launch` コマンドで新しいコンテナを起動できます。たとえば、Docker Hubからnginxのコンテナイメージをpullして起動するには、`incus launch docker:nginx nginx` というコマンドを使います。\n🔹 起動したコンテナは `incus list` コマンドで確認でき、コンテナタイプに \"(APP)\" と書かれているものがDockerのアプリケーションコンテナです。\n🔹 Incusでは、IPアドレスに対してcurlすることでコンテナ内のWebサーバーに接続できます。\n\n📄 以下は、第824回Dockerコンテナをダイレクトに動かせるようになった「Incus 6.3」をUbuntu24.04で試すという記事の要約です。\n\n🔹 Incusは、Dockerコンテナを直接動かせるように設計されており、ユーザーが簡単にコンテナを作成および管理できるようにしています。\n🔹 この新しいバージョンでは、OCI準拠のコンテナレジストリであるQuay.ioへのサポートが追加され、Docker Hub以外にも追加できます。\n🔹 また、ユーザーはPodmanのサンプルコンテナを実行して、アザラシの群れを表示することができます。",
+            "tags": [
+              "Software"
+            ]
+          },
+          {
+            "title": "2年連続不動の開発言語トップ3は？「Stack Overflow Developer Survey 2024」",
+            "url": "https://news.mynavi.jp/techplus/article/20240730-2995534/",
+            "summary": "📊 以下はStack Overflow Developer Survey 2024の概要です。\n\n💻 人気の開発言語トップ3は、2年連続でJavaScript（62%）、HTML/CSS（53%）、Python（51%）が並んだ。\n\n🤖 RustやMarkdownが称賛された。\n\n📊 AIツールを使用中または今後使用する開発者は76％だが、その精度を信頼しているのは43％、複雑なタスクの処理に使っている割合は45％だった。\n\n🤝 組み込み技術ではRaspberry Pi（38.6％）やArduino（29.9％）、GNU GCC（29.1％）、CMake（28.3％）が根強い人気を持つ。\n\n💻 IDE（統合開発環境）ではVisual Studio Codeに人気が集まった。",
+            "tags": [
+              "Web"
+            ]
+          },
+          {
+            "title": "UEFIセキュアブートがバイパス可能のリスク、約900製品に影響の恐れ",
+            "url": "https://news.mynavi.jp/techplus/article/20240730-2993248/",
+            "summary": "🚨 セキュリティ企業Binarlyは、UEFI（Unified Extensible Firmware Interface）のファームウェアのサプライチェーン問題「PKfail」を発見した。\n\n💻 この問題を悪用されると、UEFIのプラットフォームキー(PK: Platform Key)にアクセスできる攻撃者がセキュアブートをバイパスする可能性がある。\n\n📈 影響を受けるファームウェアは、おおよそ900製品で、2012年5月から2024年6月にリリースされた製品の一部(10%超)である。\n\n🚨 PKfailを悪用されると、セキュアブートを回避してBlackLotusなどのUEFIマルウェアを展開される可能性があり注意が必要。\n\n💻 UEFIをサポートするデバイスを使用しているユーザーは、ベンダーの提供するファームウェアアップデート情報を確認し、必要に応じてアップデートを実施することが推奨されている。",
+            "tags": [
+              "Web",
+              "Security"
+            ]
+          },
+          {
+            "title": "PyCoder's Weekly: 第 640 号 (2024 年 7 月 30 日)",
+            "url": "https://pycoders.com/issues/640",
+            "summary": "📰 以下は PyCoder's Weekly の第 640 号の主なトピックです。\n\n• 📈 Python 3.9.17、3.10.11、3.11.6 がリリースされました。\n• 💼 Django 4.2.1 がリリースされました。\n• 📊 Python の pandas GroupBy を使いこなすためのチュートリアルが公開されました。\n• 🤖 Hugging Face Transformers: Open-Source AI With Python が紹介されています。\n• 🏃‍♂️ Tanda Runner: A Personalized Running Dashboard が紹介されています。\n• 💡 You Don’t Have to Guess to Estimate という記事が掲載されています。\n• 📝 Using else in a Comprehension という記事が掲載されています。\n• 🤔 TIL: Difference Between __getattr__ and __getattribute__ という記事が掲載されています。\n• 👥 Brought to you by Real Python for Teams という記事が掲載されています。\n📰 次の Python ライブラリが紹介されています。\n\n• 💻 taipy: データを Web アプリケーションに変換するライブラリです。\n• 📨 posting: ターミナルで動作するモダンな API クライアントです。\n• 📊 django-sql-explorer: SQL クエリーでデータを共有する Django アプリケーションです。\n• 🎮 pyxel: Python 用のレトロゲームエンジンです。\n• ☁️ Herbie: 天気予報データを取得するライブラリです。\n• 🔍 Maelstrom: Python と Rust のクラスター化されたテストランナーです。",
+            "tags": [
+              "Web"
+            ]
+          },
+          {
+            "title": "テキスト抽出不要のRAGを実現するColPali",
+            "url": "https://zenn.dev/knowledgesense/articles/08cfc3de7464cb",
+            "summary": "🔍 検索方法\n--------\n\n1. 検索クエリ用の文字列をトークンに変換します。\n2. ColPaliモデルのテキストエンコード機能を利用して、ベクトルデータをトークンごとに作成します。\n3. ColBertを使用してトークンごとに類似度の高いベクトルを検索し、ページ単位でスコアを集計します。\n4. スコアの高い順にPDFのページを並び替えます。\n\n📊 成果\n------\n\n* ArxivQ DocQ InfoQ TabF TATQなどの既存のベンチマーク手法すべてで、従来手法以上の成果を出しています。\n* Shift AI Energy Gov. Healthなどの独自に作成した、より現実のタスクに即したベンチマーク手法であっても従来手法以上の成果を出しています。\n* Embeddingの保存サイズは従来の手法と比較して圧倒的に容量が大きいですが、最適化の余地があり最終的には数倍程度の差に収まるとしています。\n* パッチ情報との類似度を元に画像内のどの場所に着目したかを可視化できます。\n\n📝 まとめ\n------\n\nColPaliはPDFの検索に焦点を当てていましたが、実際には画像全般に応用が利く手法です。ベクトル化するスピードも非常に早く、これはPDFをRAGで利用するための既存の手法と比較すると大きなアドバンテージです。また、一つのページを1024個のベクトルデータに分解するという点は、応用が利きそうな考え方です。",
+            "tags": [
+              "Web",
+              "Recommend"
+            ]
+          },
+          {
+            "title": "pnpm 9.5 でリリースされた Catalogs 機能を使ってモノレポ内の依存パッケージのバージョンを揃える",
+            "url": "https://zenn.dev/layerx/articles/19691b45fd261d",
+            "summary": "📝 pnpm 9.5 の Catalogs 機能を使ったモノレポ内の依存パッケージのバージョン揃えについて説明します。\n\n🔍 Catalogs の活用\n---------------------\n\n*   webapp-foundation では、共通パッケージとして `@apollo/client` を提供する\n*   `@apollo/client` は `peerDependencies` と `devDependencies` に含まれる\n    *   peerDependencies: ランタイムで依存関係の制約を追加し、実体には依存しない\n    *   devDependencies: テストで実体が必要なので、開発環境で利用できるようにする\n\n🤝 Catalogs の導入によるメリット\n--------------------------------\n\n*   すべての webapp で同一バージョンのパッケージを利用することができる\n*   パッケージの重複を防ぎ、依存関係の問題を解決する\n\n🤔Catalogs の導入における考慮点\n-----------------------------\n\n*   全体の webapp でのアップグレード時にバージョンが揃う必要がある\n*   Dependabot や Renovate などのツールとの互換性は未確認",
+            "tags": [
+              "Web",
+              "Software"
+            ]
+          },
+          {
+            "title": "Metaが画像だけでなく動画内のオブジェクトもリアルタイムかつ正確に識別可能なAIモデル「Segment Anything Model 2(SAM 2)」をリリース",
+            "url": "https://gigazine.net/news/20240730-meta-segment-anything-2-sam/",
+            "summary": "📊\n・動画内から特定のオブジェクトを抽出できるAI「Meta Segment Anything 2 (SAM 2)」がリリースされた。\n・セグメンテーションとは、映像内の複数の物体や人物などを区別して認識する技術である。\n・この技術は、動画内から特定のオブジェクトを抽出し、その背景を色変えしたり透過させたりすることが可能。また、セグメンテーション結果をgif画像としてダウンロードもできる。\n・SAM 2はApache 2.0ライセンスのもとオープンソース化されており、GitHubで公開されている。",
+            "tags": [
+              "AI",
+              "Software"
+            ]
+          },
+          {
+            "title": "日本人が知らない中国製LLMを日本から試す方法",
+            "url": "https://ascii.jp/elem/000/004/212/4212701/?rss",
+            "summary": "中国製LLMとは？：LLMとは、大量のデータから学習し、人間のような自然言語処理能力を持つAIモデルの一種。中国でも多くのLLMが開発されている。\n\n🤔️ 以下は中国製LLMを日本から試す方法です。\n\n‣️ 1. VPN（Virtual Private Network）を利用する：VPNを使用して、中国のIPアドレスに接続し、中国製LLMを使用できるようにする。\n‣️ 2. クラウドサービスを利用する：AWSやGoogle Cloudなどのクラウドサービスを利用して、中国製LLMを実行環境を構築する。",
+            "tags": [
+              "AI",
+              "Other"
+            ]
+          },
+          {
+            "title": "コードの視認性を高めるBenQ製プログラマー向けモニター「RD280U」、TSUKUMOで展示スタート",
+            "url": "https://akiba-pc.watch.impress.co.jp/docs/news/news/1610914.html",
+            "summary": "📊 BenQ製プログラマー向けモニター「RD280U」の概要\nRD280Uは28.2インチワイドサイズでIPSパネルのモニターです。アスペクト比3:2で解像度4K+（3840×2560ドット）を実現します。\n💻 仕様と機能\nパネルにファインコート仕上げを施し、コードや画像などのコンテンツの視認性を高めました。また、光の反射で気が散ることなく、作業に集中できるように設計されています。利便性を高めるファンクションバーをモニター下部に装備する。ワンタッチでコーディングモードに切り替えるコーディングホットキーのほか、ブルーライト軽減・夜間プロテクションなどの設定を示すLEDインジケータなど、好みの調整機能を割り当てることが可能です。\n🌃 機能\n夜間プロテクション機能は、暗い環境に適した最低輝度での表示を可能にするもの。また、ブライトネスインテリジェンス（B.I.Gen2）機能では、センサーが周囲の環境光を検知し、モニターの明るさを自動的に調整する。\n💻 その他\n2つのPCを接続・切り替え可能というKVMスイッチ、暗い環境での作業で目の負担を低減するという背面バックライト（MoonHalo）も搭載する。",
+            "tags": [
+              "Software"
+            ]
+          },
+          {
+            "title": "Android狙うフィッシングキットとAI、攻撃者がセット販売",
+            "url": "https://news.mynavi.jp/techplus/article/20240729-2994386/",
+            "summary": "📝 Webページから抽出した文章は、Group-IBが新しいサイバー攻撃グループ「GXC Team」に関する調査結果を公開したことを報告しています。次のポイントが挙げられます。\n\n🔍 GXC Teamは2023年1月に活動を開始したスペイン語を話す犯罪組織とされる。\n💻 GXC TeamはAI(Artificial Intelligence)を悪用したサイバー攻撃ツールを開発し、プライベートのTelegramチャンネルやアンダーグラウンドフォーラムを通じてこれらを販売する。\n📊 攻撃ツールの主な標的はスペインの銀行顧客とされるが、他にも米国、英国、スロバキア、ブラジルの税務、政府サービス、電子商取引、銀行、暗号通貨取引所も標的とする。\n📈 攻撃ツールにはフィッシングキットとAndroidマルウェアのバンドル、フィッシングキットにAI音声通話の統合などの特徴がある。\n🚫 Group-IBはGXC Teamの攻撃を回避するため、オンラインバンキングを活用するユーザーにメールやメッセージからの要求は必ず金融機関に確認するなど対策を推奨している。",
+            "tags": [
+              "Web",
+              "AI",
+              "Security"
+            ]
+          },
+          {
+            "title": "Mac狙うPythonパッケージ、Google Cloudの認証情報を窃取",
+            "url": "https://news.mynavi.jp/techplus/article/20240729-2994384/",
+            "summary": "🚨悪意のあるPythonパッケージ「lr-utils-lib」が発見された。😱\n📦このパッケージはmacOS開発者を標的とし、Google Cloudの認証情報を窃取する可能性がある。🤫\n🔍調査により、この悪意のあるコードにはデバイス固有のIOPlatformUUIDのハッシュ値が64個ハードコードされており、これらに一致するデバイスに対してのみ攻撃が実行されることがわかった。📊\n👥ソーシャルエンジニアリングの可能性も浮かび上がっており、偽のLinkedInプロファイルが作成されていたことが発覚している。👀\n💡対策としては、Pythonパッケージを利用する開発者に対し、ダウンロード前にパッケージの信頼性を確認するよう推奨されている。また、インストール前にパッケージを調査し、不審なコードが含まれていないか確認することも求められている。🔍",
+            "tags": [
+              "Security"
+            ]
+          },
+          {
+            "title": "Google Chromeのパスワード管理に障害、保存していたパスワードが消える",
+            "url": "https://news.mynavi.jp/techplus/article/20240729-2994038/",
+            "summary": "💻 Google Chromeのパスワード管理に障害が発生し、保存していたパスワードが消える問題があったことをGoogleは発表しました。\n\n🕰️ 2024年7月24日22時半過ぎから25日16時半ごろまでChromeのパスワードマネージャーが正常に動作しなくなりました。\n\n💻 影響を受けたユーザーは保存していたパスワードが消え、パスワードを保存できなくなったと報告しています。\n\n🔍 Googleは根本原因について調査し、適切な機能保護なしに製品の動作を変更したことが原因だと判明しました。\n\n💻 ただし、影響を受けたユーザーのパスワードについては消去ではなく発見できなくなったと説明しています。つまり、パスワードは実際には消去されずに検索に失敗して表示できなくなっただけです。\n\n📊 この問題はWindowsのChromeバージョン127を使用していたユーザーの約2%に影響し、他のプラットフォームには影響はなかったとされています。",
+            "tags": [
+              "Web"
+            ]
+          },
+          {
+            "title": "[Go] 構造体フィールドの初期化漏れをCIで防ぐ！~exhaustruct~",
+            "url": "https://zenn.dev/hacobell_dev/articles/4bf484a360d343",
+            "summary": "📝 Go言語の構造体フィールドの初期化漏れを防ぐためのツール「exhaustruct」について説明しています。以下はその要点です。\n\n🔍  exhausstructは、指定された構造体に対してゼロ値が存在するかどうかのチェックを行います。\n💡 exhausstructを使用することで、バグの早期発見やコード品質の向上を実現できます。\n📊  exhausstructをgolangci-lintと組み合わせることで、既存のLintingプロセスに簡単に追加できます。\n\nこのように、exhaustructはGo言語の構造体フィールドの初期化漏れ防止に役立つツールであることがわかります。",
+            "tags": [
+              "Software"
+            ]
+          },
+          {
+            "title": "Git 2.46 のハイライト",
+            "url": "https://github.blog/open-source/git/highlights-from-git-2-46/",
+            "summary": "以下は、Git 2.46 のハイライトを箇条書きで要約したものです。\n\n🔍️ Git 2.46 の新機能\n------------------------\n\n* 📊 bitap pseudo-merge: 大規模なリポジトリ内のコミット間の関係をより効率的に処理するための新しい機能。\n* 🔜 GitHubでのパフォーマンス向上: 大規模なリポジトリに対するパフォーマンスを向上させるためにこの機能を利用予定。\n\n🚀 速度とパフォーマンス\n-------------------\n\n* 📈 Git のクローン作成が高速化: Git 2.45 で導入された改良により、クローン作成の速度が最大 4 倍まで向上。\n* 📦️ メモリ使用量削減: Git が大きなリポジトリを処理するときのメモリ使用量を削減するための修正。\n\n🚀️ Git LFS\n----------------\n\n* 📈 大きなファイルのアップロードエラー処理改善: Git Large File Storage (LFS) のサポートが向上。\n\n📝️ Git のテスト\n-----------------\n\n* 🔧️ 新しいテストケース追加と既存のテストケース更新: Git のテストフレームワークが強化。\n\n🔧️その他の変更点\n-------------------\n\n* 🐜 バグフィックスと小さな機能追加: Git 2.46 に含まれるいくつかのバグフィックスや小さな機能追加。",
+            "tags": [
+              "Web",
+              "Software"
+            ]
+          },
+          {
+            "title": "Docker Desktop 4.33: GA Releases of Docker Debug and Docker Build Checks Plus Enhanced Configuration Integrity Checks   ",
+            "url": "https://www.docker.com/blog/docker-desktop-4-33/",
+            "summary": "📄 Docker Desktop 4.33 の新機能について以下に箇条書きで示します。\n\n💻 Docker Debug: コンテナ内のコードをデバッグするためのツール。ブレークポイントの設定や変数値の確認が可能です。\n\n🛠️ Docker Build Checks: Dockerfile 内で定義されたステップごとにコンテキストが正しく評価されるかどうかを確認します。\n\n🔒 Enhanced Configuration Integrity Checks: 設定ファイル（docker-compose.yml など）の整合性チェックが強化されました。\n\nこれらの新機能により、Docker Desktop 4.33 は開発チームの生産性とワークフローを向上させます。",
+            "tags": [
+              "Web"
+            ]
+          },
+          {
+            "title": "Introducing Docker Build Checks: Optimize Dockerfiles with Best Practices",
+            "url": "https://www.docker.com/blog/introducing-docker-build-checks/",
+            "summary": "🚀 Docker Build Checks とは、Dockerfile を最適化し、ベスト プラクティスに従ってコンテナーの構築を改善するためのツールです。\n\n以下は、Docker Build Checks の主な機能と利点の箇条書きです。\n\n🔍 **ベスト プラクティスの分析**: Dockerfile を自動的に分析し、セキュリティ、パフォーマンス、およびベスト プラクティスに関する問題を特定します。\n\n💡 **カスタム ルールのサポート**: カスタム ルールを作成して適用することで、CI/CD パイプライン内の Docker Build Checks をさらに拡張できます。\n\n🚀 **簡単な実装**: Docker Compose を使用すると、Docker Build Checks をプロジェクトに簡単に統合できます。\n\n💻 **統合されたレポート**: CI/CD パイプライン内で、各構築ステージの結果を確認しやすいように、詳細なレポートが提供されます。",
+            "tags": [
+              "Web",
+              "Software"
+            ]
+          },
+          {
+            "title": "TanStack Form 使ってみた",
+            "url": "https://zenn.dev/aishift/articles/592a9a82f8bc8a",
+            "summary": "📝 TanStack Form の特徴と良いなと思った点\n--------------------------------------\n\n### 🔍 TanStack Form では、スキーマ定義と Field の型補完が優秀です。\n\nTanStack Form 公式の推しポイント3点は、強力な型サポート、柔軟なバリデーション、最適化された state 管理です。\n\n### 📝 TanStack Form の特徴\n\n#### 1️⃣ <strong>Headless</strong>\n\nTanStack Form は、UIコンポーネントを提供しないため、デベロッパーが自由に UI を実装できる。\n\n#### 2️⃣ <strong>Field First</strong>\n\nTanStack Form では、フォームの各フィールドは `<Form.Field>` コンポーネントによって管理される。各フィールドには独自のバリデーションとエラー状態を設定でき、フォーム全体の検証に貢献する。\n\n#### 3️⃣ <strong>Uncontrolled</strong>\n\nTanStack Form は、フォームの状態を制御しないため、デベロッパーがフォームの状態を管理する責任がある。 \n\n### 💡 個人のTanStack Formでいいなと思ったこと\n\n#### 1️⃣ Field First で柔軟なバリデーションが定義できる\n\nTanStack Form では、各フィールドに独自のバリデーションとエラー状態を設定でき、フォーム全体の検証に貢献する。さらに、`onChangeListenTo` オプションを使用して他のフィールドの変更時にバリデーションを走らせることも可能。\n\n### 👉 TanStack Form は React Hook 形式で提供されるため、React では使えますが Vue などの他のフレームワークには直接対応していません。ただし、Vue 向けの wrapper が作られているようです。👈\n\n### 🚀TanStack Form の特徴として Field First のアプローチが挙げられます。これは、状態管理の中心を入力フィールド自体にするという考え方です。このアプローチにより、よりシンプルで直感的なフォーム管理が可能になります。🚀\n\n### 💡 TanStack Form には、バリデーションやエラー処理のための強力なメカニズムがあります。これにより、ユーザー入力を検証し、適切なエラーメッセージを表示できます。💡\n\n### 📈 TanStack Form はパフォーマンスに重点を置いて設計されており、最適化されたステート管理戦略を採用しています。この結果、高速でスムーズなユーザー エクスペリエンスが実現します。📈\n\n### 🤝 TanStack Form には、他のライブラリとの互換性があります。たとえば、React Hook 形式のライブラリであるため、React Hook 形式で提供されるその他のライブラリとも連携できます。🤝",
+            "tags": [
+              "Software",
+              "Recommend"
+            ]
+          },
+          {
+            "title": "Vue Fes Japan 2023に行ってきました",
+            "url": "https://zenn.dev/kosuke_iwasaki/articles/7cda6a2e3b69af",
+            "summary": "🚨 このWebページは削除されているか、URLが間違っている可能性があります。\n\n* 404エラーが表示されています\n* Webページのコンテンツはありません\n* トップページへのリンクが提供されています",
+            "tags": [
+              "Other"
+            ]
+          },
+          {
+            "title": "シャープ、ECサイトへの不正アクセスで情報漏えい",
+            "url": "https://ascii.jp/elem/000/004/212/4212623/?rss",
+            "summary": "🚨 シャープは公式オンラインストア「COCORO STORE」および食材宅配サービス「ヘルシオデリ」のウェブサイトに不正アクセスがあり、一部の利用者の個人情報が流出したことを発表しました。\n\n以下は要点です:\n\n• 📊 不正アクセスは7月11日に発生し、7月22日に発覚しました。\n• 💻 個人情報の流出が確認されたのは合計203人で、主に6月23日から30日の間に両サービスで注文をした顧客が対象です。\n• 🤔 流出した情報には氏名、住所、電話番号、メールアドレスなどが含まれますが、クレジットカード情報は含まれないとのことです。\n• 📝 7月19日から22日の間に「COCORO STORE」にログインまたは商品を注文した約2万6654人の利用者については、個人情報流出の可能性が否定できない状況とされています。\n• 🚨 この期間中にサイトにアクセスしただけのユーザー（推定約7万5000人）も、悪意のあるサイトへ誘導されている可能性があります。\n• 📞 シャープは該当する利用者に対して電子メールで連絡を開始し、専用の問い合わせ窓口も設置しています。また、ウイルス対策ソフトでのスキャンやパスワードの変更を推奨しています。",
+            "tags": [
+              "Web",
+              "Security"
+            ]
+          },
+          {
+            "title": "マツコの知らない LINE ログインの世界",
+            "url": "https://zenn.dev/ubie_dev/articles/a4351079da6dd9",
+            "summary": "🌎 Ubieはユーザーが簡単な質問に答えることで関連する病名や受診先情報を得るサービスを提供しています。\n\n📈 ユビーのアカウントを作成すると、一貫性のある体験が可能になります。\n\n🤝 LINEログインは、ユーザーがLINEのアカウントの一意的識別子が含まれるトークンをUbieに渡すことで、アカウント作成ができます。\n\n📊 LINEログインにより、ユビーのウェブサイトで情報を入力する必要がなくなります。\n\n🤝 Ubieは、日本での普及率の高いチャット/SNSアプリであるLINEを利用してスムーズな認証体験を提供します。",
+            "tags": [
+              "Other"
+            ]
+          },
+          {
+            "title": "Vue.js v-tokyo Meetup #21で学んだこと・所感",
+            "url": "https://zenn.dev/kjmboy/articles/de9732f9e24e34",
+            "summary": "📝 以下は、提供された Web ページから要約された内容です。\n\n* 🤔 oxc: 爆速なコンパイラーであり、パフォーマンス問題をバグとして扱うことが開発ポリシーの一つである。また、Biome の内部でも動作しているとのこと。\n* 💡 VueUse: Vue.js 用の便利な関数群。useClipboard がおすすめとのこと。また、useAxios も便利で、爆速に axios を使用できるようになっている。\n* 🤝 UnJS: TS で CLI 作成を爆イケにするための 4 つのパッケージ (citty, consola, giget, jiti) が紹介されている。特に citty はミソと呼ばれており、CLI 作成を爆イケにすることができる。\n* 🔄 Nuxt4 移行: vue2 から 3 に移行した人にとってはかなり容易であるとのこと。また、nuxt.config.ts から簡単に移行を試せるし、個別で変更もオフにできる。\n\n以上が要約です。",
+            "tags": [
+              "Web",
+              "Other"
+            ]
+          },
+          {
+            "title": "2024/07/22〜2024/07/28の最新情報",
+            "url": "https://uki00a.github.io/deno-weekly/articles/2024/07/28.html",
+            "summary": "Deno 1.30がリリースされたことを知らせる記事です。以下はその要点です。\n\n💻 **std/bytes**: \n- `@std/bytes@1.0.0` がリリースされています。\n\n📁️ **std/fs**:\n- `@std/fs@1.0.0` がリリースされています。このバージョンで以下のエラーが削除されました。\n  - `SubdirectoryMoveError`\n  - `WalkError`\n\n💧 **std/streams**: \n- `@std/streams@1.0.0` がリリースされています。`toJson()` と `toText()` の引数の型定義が変更されました。\n\n🔍 **std/expect**、**std/front-matter**、**std/json**、**std/jsonc**、**std/yaml**: \n- それぞれバージョン 1.0.0 がリリースされています。\n\n🏋️‍♂️ **std/testing**: \n- `@std/testing@1.0.0-rc.5` がリリースされています。`FakeTime` が `AbortSignal.timeout` に対応しています。\n\n📝 **std/text**:\n- `@std/text@1.0.1` がリリースされています。\n  - `levenshteinDistance()` のパフォーマンスが高速化されました。",
+            "tags": [
+              "Web",
+              "Software"
+            ]
+          },
+          {
+            "title": "RemixをESLint v9 に対応させる",
+            "url": "https://zenn.dev/nickel/articles/f02db334167937",
+            "summary": "以下は、ESLint v9 へのアップグレードの注意点を箇条書きでまとめたものです。\n\n💡 **新しい設定ファイルフォーマット**: `ESLint` は、構成ファイルフォーマットに変更を加えました。`.eslintrc.js` のような旧式の構成ファイルはサポートされなくなります。\n📁️ **新しい構成ファイル名**: 新しい設定ファイルの名前は `eslint.config.js` です。\n🔍️ **`eslint:recommended`**: `ESLint v9` では、デフォルトの設定が `eslint:recommended` に変更されています。\n💡 **プラグインとパーサー**: プラグインとパーサーの構成は、`extends` の代わりに `plugins` と `parsers` を使用します。\n🚫️ **v9 未対応プラグインの導入**: 一部のプラグインは `ESLint v9` に未対応です。`@eslint/compat` を利用してこれに対応することができます。\n📦️ **古いパッケージ**: `@typescript-eslint/parser` および `@typescript-eslint/eslint-plugin` は古いパッケージとなりました。代わりに `typescript-eslint` を使用します。\n💻️ **VSCode への対応**: `.vscode/settings.json` に `\"eslint.useFlatConfig\": true` を追加する必要があります。\n\nこれらの注意点に従うことで、ESLint v9 へのアップグレードをスムーズに行うことができます。",
+            "tags": [
+              "Web",
+              "Software"
+            ]
+          },
+          {
+            "title": "【Report】Vue.js v-tokyo Meetup #21 に参加しました",
+            "url": "https://zenn.dev/comm_vue_nuxt/articles/c2fc1357dd5e21",
+            "summary": "📅 Vue.js v-tokyo Meetup #11参加レポート 🎉\n------------------------------------------\n\n👥 イベントの概要\n---------------\n\n*   会場：イーハトーブ本郷三丁目\n*   参加人数：40名程度\n*   発表者：\n    *   GANGANさん\n    *   wattanxさん\n\n💡 セッション内容\n-----------------\n\n🎤LT枠\n--------\n\n*   発表者：GANGANさん\n*   題目：「Nuxt3.xで始めるWeb Vitals改善」\n*   スライド：<https://gangnasecurity.com/lt/nuxt-web-vitals/>\n*   参照資料：<https://web.dev/vite-plugin-rewritten/>\n\n🎤LT枠\n--------\n\n*   発表者：GANGANさん\n*   題目：「Vue.js/Nuxtのコミュニティに貢献するためのガイドブック」\n*   スライド：<https://gangnasecurity.com/lt/vuejs-nuxt-contribution/>\n*   参照資料：<https://vuejs.org/v2/cookbook/editing-webpack-config.html>\n\n📊 メインセッション\n------------------\n\n*   発表者：wattanxさん\n*   スライド：<https://speakerdeck.com/wattanx/nuxt4>\n*   参照資料：<https://nuxt.com/docs/getting-started/upgrade#migrating-to-nuxt-4>\n\n🤝 懇親会でのやり取り\n-------------------\n\n懇親会では隣の席にGANGANさんがいました。このPublicationの記事を参考にしてもらった話や、現在開発しているものについての相談までしていただきました。",
+            "tags": [
+              "Web"
+            ]
+          },
+          {
+            "title": "オープンソースコードで構築された中国のAI、チャットボットのベンチマークテストでアメリカの技術に匹敵",
+            "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/chinese-ai-built-off-open-source-code-matches-american-tech-in-chatbot-benchmark-tests",
+            "summary": "🤖 AI技術に関するポイントを要約します。\n\n• 中国のAIツール「Yi-Large Global SOTA LLM」は、アメリカのGPT-4oやLlama-3と同等のスコアを獲得しました。\n• これらのAIツールはオープンソース技術に基づいています。\n• オープンソースコードにより、中国の企業が急速にアメリカを追いつきました。\n• 中国の企業はオープンソースコードを活用してAI開発を進めており、その結果としてアメリカの企業が開示したデータを基に新しいAIツールを作成しています。\n• これらのAIツールは、犯罪や非倫理的な目的で使用される可能性があるため、研究者たちはリスクと潜在的な規制について議論しています。\n• 中国の企業は、これらの懸念よりも技術の進歩を優先しており、オープンソースコードを活用して開発されたAIツールを一般に公開しています。",
+            "tags": [
+              "AI"
+            ]
+          },
+          {
+            "title": "標的型 PyPi パッケージが macOS 開発者から Google Cloud 認証情報を盗む",
+            "url": "https://www.darkreading.com/threat-intelligence/targeted-pypi-package-steals-google-cloud-credentials-macos-devs",
+            "summary": "🚨 セキュリティ上の注意喚起 🚨\n・PyPiにおけるlr-utils-libパッケージは、APTsによる狙い撃ち型サイバー攻撃に使用されている。\n・このパッケージは、高度に特定されたターゲットに対するアクセスを可能にする。\n・OSS（オープンソースソフトウェア）が、複数の地域におけるさまざまなターゲットへの不正アクセスに使用されることが多い。\n・lr-utils-libはすでにPyPiから削除されているが、その影響を受けた組織が依然としている可能性がある。",
+            "tags": [
+              "Security"
+            ]
+          },
+          {
+            "title": "Nvidia が LLM と常識的なサイバーセキュリティ戦略を採用",
+            "url": "https://www.darkreading.com/cyber-risk/nvidia-embraces-llms-and-commonsense-cybersecurity-strategy",
+            "summary": "🌎 AIセキュリティの専門家は、LLM（Large Language Model）がサイバー攻撃に使用されるリスクについて警告しています。\n\n⚠️ LLMは、コマンドやメッセージを分析し、それに応じてアクションを取ることができるため、脅威となる可能性があります。\n\n🔒 ただし、LLMの出力はランダム性があるため、アタッカーは必ずしも同じ結果を得られるとは限りません。\n\n💻 LLMは、AIシステムに自律性を持たせるために使用されることが多く、これがさらなるリスクにつながる可能性があります。\n\n🚨 専門家は、LLMのセキュリティには注意を払う必要があることを強調していますが、同時に、この問題は解決可能であることも認めています。",
+            "tags": [
+              "AI",
+              "Security"
+            ]
+          },
+          {
+            "title": "DeepMind がスパースオートエンコーダによる LLM の解釈に向けて大きく前進",
+            "url": "https://venturebeat.com/ai/deepmind-makes-big-jump-toward-interpreting-llms-with-sparse-autoencoders/",
+            "summary": "📚\n* JumpReLU SAEは、LLMのアクティベーションを分解するための新しい方法です。 \n* JumpReLU SAEは、Gated SAEとTopK SAEなどの既存のSAEよりも優れたパフォーマンスを示しました。\n* この方法は、LLMの内部動作をより深く理解し、それらの行動を操作するための新たな道を開くものです。",
+            "tags": [
+              "AI",
+              "Web"
+            ]
+          },
+          {
+            "title": "Perl Weekly #679 - Perl は...",
+            "url": "https://dev.to/szabgab/perl-weekly-679-perl-is-like-3llh",
+            "summary": "Perl Weekly Challenge 280 が発表されました 📚\nこの週の挑戦では、2つのタスク「Twice Appearance」と「Count Asterisks」に取り組むことができます。\n\nまた、この週の挑戦では、Team PWC の貢献を振り返ることができる 💻\nPerl と Raku で \"Sort Letters\" と \"Split String\" タスクに取り組んだ経験を共有することができます。\n\nここでは、Perl Weekly Challenge 279 に関連した記事の要約を紹介します 📝\n- TWC279: コンパクトなバイトサイズのワーク、見逃すことはない。セルフドキュメントの仕事は、ディスプレイに表示されている。\n- Weighted Letters and Even Chars: クリーンでストレートフォワード、ポイントまで Perl と Rust で実行している。素晴らしい仕事を続けよう。\n- Sort of Again: Raku の一行アタマのベストです。優雅なコードにクドスを送る。毎週共有し続けてください。\n- Perl Weekly Challenge Week 279:徹底的に議論された Raku ソリューションは、きっとあなたを忙しくさせてくれるでしょう。強くお勧めします。\n- Neither Sort Nor Split: どうやらこれらのタスクが、ソートもスプリットも行わないということのようです。\n\nさらに、Perl Weekly Challenge 279 に関連した記事とブログ記事も紹介しています 📄📝\nSort Letters: Perl Weekly Challenge 279のソリューション\nSplit String: Perl Weekly Challenge 279のソリューション\nPWC279: Perl Weekly Challenge 279のまとめ\n\nMore Weight for Examples!: CPANモジュールを使用したPerlの例\nSplit 'em away!: List::AllUtilsモジュールを使用したPerlの例\nScrambled and split: Perlの文字列操作例\nThe Weekly Challenge - 279: Perl Weekly Challenge 279のまとめ\nThe Weekly Challenge #279: Perl Weekly Challenge 279のまとめ\nSplit and Sort Strings of Letters: Perl Weekly Challenge 279のソリューション\n\n最後に、Perl関連のイベント情報もご紹介します 📅\nContinuous Integration (CI): GitHub Actions for Perl Projects: Zoomでのワークショップ（2024年8月4日）\nGitHub Pages for Perl developers: Zoomでのワークショップ（2024年8月15日）\nLondon Perl and Raku Workshop: ロンドンでのカンファレンス（2024年10月26日）",
+            "tags": [
+              "Other"
+            ]
+          },
+          {
+            "title": "Fuzzify: あいまい検索のための小さなライブラリ",
+            "url": "https://github.com/ad1992/fuzzify",
+            "summary": "🌍 Fuzzifyとは\nFuzzifyは、テキスト検索機能のための小さなライブラリです。\n\n💡 使い方\n1. `fuzz`関数に検索文字列とオプションを渡します。 \n2. オプションには、選択肢 (`choices`) と設定 (`options`) があります。\n3. 結果は配列で返されます。\n\n🔍 設定\n- `limit`: 結果の最大数\n- `threshold`: 最小距離値（0から1まで）\n- `includeScore`: スコアを含めるかどうか\n\n📝 例: \n```javascript\nconst fuzz = require('fuzzify');\n\nconst choices = ['Apple', 'Orange', 'Grapes', 'Mango'];\nconst options = { limit: 3, threshold: 0.6 };\nconst result = fuzz('Ape', choices, options);\nconsole.log(result);\n//=> [{ text: \"Apple\", distance: 2 }, { text: \"Grapes\", distance: 4 }]\n```",
+            "tags": [
+              "Software"
+            ]
+          },
+          {
+            "title": "Nuxt Scripts でサードパーティスクリプトをより身近に",
+            "url": "https://zenn.dev/comm_vue_nuxt/articles/what-is-nuxt-scripts",
+            "summary": "📄 Nuxt.js 3.12 以降のユーザーは、`.nuxt/imports.d.ts` を確認し、対象の composables が export されていれば追加インストール不要であることを確認できます。\n\n🔧 インストール方法には以下が含まれます。\n*   Nuxi でインストールする場合: `npx nuxi@latest module add scripts`\n*   pnpm / npm などでインストールする場合: `pnpm add -D @nuxt/scripts`📝 pnpm などを利用する場合はインストール実施後に `nuxt.config.ts` への追加を行えば大丈夫です(Nuxi 利用の場合は自動で追加される)。\n\n🔩 実際に使ってみるには、まず Nuxt Scripts をインストールし、実際に使ってみます。例としては Youtube Player の実験を行ってみます。\n📄 Nuxt Scripts というモジュールは、Nuxt.js を使用する開発者がサードパーティーのスクリプトをより効率的に管理できるように設計されています。\n\n💻 このモジュールには、YouTube 動画の再生機能や動画のステート変更の検知など、さまざまなスクリプトを実行するための関数が含まれています。\n📈 Nuxt Scripts では、ベンチマークユーザーの協力が随時募集中です。もしもあなたがこれらの機能を使ってみて、「読み込み速度の向上」や「改善点の発見」などがあるようでしたら、これらのフィードバックを共有してください。\n\n📝 また、新しいスクリプトの追加リクエストも随時募集中です。もしもあなたがこれらの機能を使ってみて、「このスクリプトの設定が便利になればええな」と思ったり、「これが追加されると嬉しい」と感じたら、これらのフィードバックを共有してください。\n\n👋 Nuxt Scripts の開発チームは、開発者からのフィードバックに基づいてモジュールを改善し続けることを目指しています。",
+            "tags": [
+              "Web",
+              "Software"
+            ]
+          },
+          {
+            "title": "Module Federationやってみた",
+            "url": "https://zenn.dev/maronn/articles/module-federation-nextjs",
+            "summary": "📄 Webpack Federation を使用したモジュール連携についての記事です。以下は要約です。\n\n✨ Webpack のモジュール連携機能である Module Federation を使用すると、複数の Next.js プロジェクト間でコンポーネントやモジュールを共有できます。\n✨ next-federation-plugin と @module-federation/typescript を使用してモジュール連携を実現します。\n\n📈 モジュール提供側のプロジェクトでは、next-federation-plugin を使用してモジュールをエクスポートし、@mf-types ディレクトリに型定義ファイルを生成します。\n📈 モジュール使用側のプロジェクトでは、@module-federation/typescript を使用してモジュールをインポートし、補完が効くようになります。\n\n🔍 tsconfig.json に追加設定を行うことで、型定義ファイルと実体モジュールのパスの不一致を解消できます。\n📊 以下が重要なポイントです:\n\n✨ 動的インポートにおける URL の指定\n✨ スタイル被りによるレイアウト崩れ\n✨ hydration は Module Federation でも注意が必要\n\n🔍 Module Federation を使用する際の注意点について、記事では以下のような内容が記載されています。\n\n✨ Webpack Federation: Webpack のモジュール連携機能を使用して、複数の Next.js プロジェクト間でコンポーネントやモジュールを共有する方法。\n✨ next-federation-plugin と @module-federation/typescript を使用してモジュール連携を実現します。\n\n✨ モジュール提供側のプロジェクトでは、next-federation-plugin を使用してモジュールをエクスポートし、@mf-types ディレクトリに型定義ファイルを生成します。\n✨ モジュール使用側のプロジェクトでは、@module-federation/typescript を使用してモジュールをインポートし、補完が効くようになります。\n\n✨ tsconfig.json に追加設定を行うことで、型定義ファイルと実体モジュールのパスの不一致を解消できます。",
+            "tags": [
+              "Web",
+              "Software",
+              "Recommend"
+            ]
+          },
+          {
+            "title": "米司法省、病院へのランサムウェア攻撃で北朝鮮ハッカーを起訴",
+            "url": "https://thehackernews.com/2024/07/us-doj-indicts-north-korean-hacker-for.html",
+            "summary": "🚨 **米国司法省が病院へのランサムウェア攻撃で北朝鮮ハッカーを起訴** 🚨\n\n*   米国司法省（DoJ）は北朝鮮軍事情報部門のオペレーターに対する起訴状を公開し、米国の医療機関へのランサムウェア攻撃で逮捕したと発表した。\n*   起訴されたのはRim Jong Hyokという名前で、同僚と共に米国の病院やヘルスケア会社にランサムウェアを使用して脅迫し、その後、支払い金額を北朝鮮の違法行為に流用した疑いで起訴された。\n*   FBIのポール・アッバテ副長官は、この行動が米国の病院やヘルスケア会社を標的にし、無実の人々に危険をもたらしたと述べた。\n*   また、米国国務省は、この男について情報を提供する者に対して最大100万ドルの報奨金を発表した。\n\n🇰🇷 **北朝鮮のサイバー攻撃グループAndarielが韓国の組織や米国を標的に** 🇺🇸\n\n*   Andarielは、主にサイバー戦争とスパイ活動に従事する北朝鮮の軍部隊第91部隊の一部である。\n*   2015年以降に活動が確認されているAndarielは、韓国の組織や米国を標的にしてきた。\n*   グループは、韓国におけるサイバー攻撃の主犯と見なされており、米国での活動も活発化している。\n*   Andarielは、北朝鮮のサイバー戦略の一環として、他国の軍事機密情報や技術を入手することを目的としている。",
+            "tags": [
+              "Software",
+              "Security"
+            ]
+          },
+          {
+            "title": "Appleデバイスでブラウジングに問題がありますか？あなただけではありません。Appleのプライベートリレーシステムに問題が発生しています",
+            "url": "https://www.tomsguide.com/phones/iphones/having-browsing-trouble-on-apple-devices-youre-not-alone-apples-private-relay-system-is-having-problems",
+            "summary": "📊 Appleデバイスでのブラウジングの問題は、プライベートリレーシステムの障害によって発生する可能性があります。🕒 この障害は2023年某日午後2時ETから始まりましたが、その後も継続しています。\n\n📊 以下に解決方法を箇条書きで示します。\n💻 iCloudプライベートリレーを一時的に無効にすることができます。設定 > [ユーザー名] > iCloud > プライベートリレーにアクセスし、一時的にオフにすることができます。\n📝 iCloudプライベートリレーを完全に無効にすることも可能です。設定 > [ユーザー名] > iCloud > プライベートリレーにアクセスし、オフにすることができます。この方法はより恒久的な解決策であり、プライベートリレーを再び手動でオンにする必要があります。",
+            "tags": [
+              "Web"
+            ]
+          },
+          {
+            "title": "Rust 1.80がリリース ―遅延初期化が安定して利用可能に",
+            "url": "https://gihyo.jp/article/2024/07/rust-1.80?utm_source=feed",
+            "summary": "🚀 Rust 1.80がリリースされた\n💻 Rustチームは2024年7月25日にプログラミング言語Rustの最新バージョンRust 1.80をリリースした。\n📈遅延初期化を行うLazyCell型とLazyLock型が標準ライブラリで採用された\n🔒LazyLockはスレッドセーフなので同じ初期化を何度も行わず、最初の1度だけ初期化を実行する\n🔄LazyCellもスレッド同期なしで同じことを行うが、staticで必要となるSyncを実装しておらず、スレッドごとに個別の初期化を使用する。\n🔍コンパイラでは条件付きコンパイルでプラットフォームや環境などを指定するcfg設定で設定ファイルにあるすべてのcfg名が想定される構成名/値と一致するかどうかを自動でチェックする機能が実装された\n🎯パターンマッチングの範囲指定では排他的な範囲が指定できるようになった",
+            "tags": [
+              "Software"
+            ]
+          },
+          {
+            "title": "Gemini 1.5 のロングコンテキストを活かして AI を育てるアプローチ 〜 RAG の限界を軽やかに突破するために",
+            "url": "https://zenn.dev/google_cloud_jp/articles/598d52341cc56f",
+            "summary": "📝 記事の要約：\n\n* Gemini 1.5 のロングコンテキストを活かすアプローチが提案されており、RAG (Retrieval-Augmented Generator) の限界を突破することが可能である。\n* Gemini 1.5 Pro / Flash は、より長いプロンプトを処理できる AI モデルであり、ロングコンテキスト対応により、大量のデータを一括してプロンプトに入力することができる。\n* このアプローチは RAG システム構築においても有効であり、質問内容に応じた適切な情報を検索するためのシステムを用意しなくても、集めたデータをすべてプロンプトに入力することで実現可能である。\n* また、このアプローチにより、RAG の限界を超え、より高度な自然言語処理タスクに取り組むことが可能になる。",
+            "tags": [
+              "AI"
+            ]
+          },
+          {
+            "title": "ChatGPTが人間のように話す新機能、いよいよ来週公開へ",
+            "url": "https://ascii.jp/elem/000/004/212/4212223/?rss",
+            "summary": "📰 Webページから抽出した以下の内容が、要約されています。\n\nChatGPTの新機能がいよいよ来週公開へです。Dropboxを活用し、電帳法対応から建設現場のナレッジ蓄積まで拡大していることが紹介されています。また、システム障害への対応やリファビッシュ品についても記載されています。\n\n📰 ピックアップ記事の要約\n\n* 🍟 カルビーから新作ポテトチップス「濃厚キング」が登場。濃い味わいと旨さを実現した決定版。\n* 📺 4K/144HzゲーミングディスプレーのAmazon限定モデルJN-i27144URが6万円切りに。PS5とも相性抜群のお手頃モデル。\n* 🔒 中堅・中小企業向けの「優しいIDaaS」である「ID Entrance」で、セキュリティ向上と管理負担軽減を両立させよう。\n* 📺 今どきのゲーミング環境は4K＆160Hz駆動!? ASUSの27型ディスプレーがちょうど良さそう。PS5やXbox Series Xにもオススメな「ROG Strix XG27UCS」。\n\n以上、要約した内容になります。",
+            "tags": [
+              "Other"
+            ]
+          },
+          {
+            "title": "Telerik レポート サーバーの重大な欠陥によりリモート コード実行のリスクが生じる",
+            "url": "https://thehackernews.com/2024/07/critical-flaw-in-telerik-report-server.html",
+            "summary": "📰 Web ページの要約:\n\n以下は、Telerik Report Server の重大な欠陥に関する記事の要約です。\n\n* 🔍 Telerik Report Server に重大な欠陥が発見されました。これによりリモート コード実行のリスクが生じる可能性があります。\n* 🚨 この欠陥は Report Server version 2024 Q2 (10.1.24.514) とそれ以前のバージョンに影響します。\n* 💻 Progress Software は、Report Server のアップデートを推奨しています。また、一時的な対策として、Report Server Application Pool のユーザーを権限が限定されたユーザーに変更することを推奨しています。\n* 🔍 この欠陥は CVE-2024-6327 として登録されています。CVSS スコアは 9.9 です。\n* 📝 Progress Software は、この欠陥についてのアドバイザリを公開しました。このアドバイザリーでは、サーバーが攻撃に脆弱であるかどうかを確認する手順も説明されています。",
+            "tags": [
+              "Web",
+              "Security"
+            ]
+          },
+          {
+            "title": "Acer・Dell・GIGABYTE・Intel・Supermicroの数百以上のデバイスでUEFIセキュアブートのプラットフォームキーが漏えいしていたと発覚、システム侵害のリスクあり",
+            "url": "https://gigazine.net/news/20240726-pkfail/",
+            "summary": "🚨 PKfailは、Intel、AMI、およびInsydeのUEFIファームウェアが影響を受ける可能性のある脆弱性です。この脆弱性により、攻撃者は信頼されていないコードを起動プロセス中に実行でき、セキュリティチェーン全体に危険が及ぶ可能性があります。Binarlyは、この脅威を軽減するためのスキャンツールを無料で公開しています。",
+            "tags": [
+              "Security"
+            ]
+          }
     ]
 }
