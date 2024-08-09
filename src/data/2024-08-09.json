@@ -1,0 +1,483 @@
+{
+    "title": "2024-08-09 までの技術動向",
+    "published": "2024-08-08T16:00:00+09:00",
+    "articles": [
+        {
+            "title": "RAGのベンチマークツール、Recursiveがオープンソースで公開",
+            "url": "https://ascii.jp/elem/000/004/214/4214552/?rss",
+            "summary": "📊 Webページの内容は次のように要約できます。\n\n• AIスタートアップのRecursiveは、RAGシステム向けのオープンソースベンチマークツール群「Flow Benchmark Tools」を公開しました。\n• Flow Benchmark Toolsは、セマンティック検索やクエリ生成、LLMに基づいた回答生成など、RAGシステムの実用的な性能を評価するツールです。\n• 英語だけでなく日本語のパフォーマンスも測定できます。\n• Recursiveは、RAGシステムの評価における業界標準になることを目指し、実社会のシナリオを反映した評価と最適化が行えるようFlow Benchmark Toolsを開発しました。",
+            "tags": [
+                "AI",
+                "Software"
+            ]
+        },
+        {
+            "title": "PFN、日本語LLM「プラモ」の無料トライアル",
+            "url": "https://www.watch.impress.co.jp/docs/news/1614637.html",
+            "summary": "📊PFNが開発する大規模言語モデル「PLaMo(プラモ)」β版のトライアルAPIの利用申込みが開始された。アカウント発行後、無料で利用できる（10月までの期間限定）。\n\n• トライアルの検証結果をふまえた改善や追加学習などを実施し、商用版のPLaMo 1.0 Primeとして今秋発売予定。\n\n• 「GENIAC」において、PFNが開発した1000億パラメータのマルチモーダル基盤モデル「PLaMo-100B」の成果を一般に公開するもの。\n\n• PLaMo-100Bは既存モデルをベースとせず、事前学習で合計2兆トークンの日本語と英語のテキストデータを学習させてフルスクラッチ開発しており、日本語性能を評価する標準的なベンチマークJaster 0-shotと4-shotsにおいて、国内外の主要な大規模言語モデル(LLM)を超える高い日本語性能を示しているという。\n\n• 無料トライアルでは、PFEがPLaMo-100Bをベースに指示学習やモデルマージを行ない、日本語・英語の文章生成能力をさらに強化した「PLaMo β版」を法人・個人問わず期間限定で提供。チャット形式による日本語の対話や、アプリ開発のバックエンドへの導入を試せる。商用利用も可能。\n\n• PFNグループは、PLaMo 1.0 Primeの提供開始に向け、製造業、素材産業、医療、金融、自治体などを中心に各分野特有の専門性を持つLLMとして、機能強化と安全性の検証を行なう。また、PFNが生成AIを活用してチャットボットや文書生成などの特定用途向けパッケージ製品群として提供する「PreferredAI」との連携や、外部ベンダーのAIサービスのバックエンドとしての提供も進める。",
+            "tags": [
+                "AI",
+                "Web"
+            ]
+        },
+        {
+            "title": "Androidスパイウェア「LianSpy」発見、感染経路・攻撃者・目的すべて不明",
+            "url": "https://news.mynavi.jp/techplus/article/20240807-3000165/",
+            "summary": "📊 スパイウェア「LianSpy」に関する要約：\n\n*   Android向けスパイウェア「LianSpy」が発見された。\n*   2021年7月から活動していたとされるが、2024年3月に発見された。\n*   メッセージの窃取に重点を置いた高度なマルウェアである。\n*   専用のインフラストラクチャを持たず、自律的に動作する。\n*   特定の標的の情報を収集する目的があるとみられている。\n*   収集したデータをクラウドストレージの「Yandex Disk」に暗号化して保存する。\n*   AES暗号を使用し、その鍵の生成に安全な疑似乱数生成器（PRNG）を使用する。\n*   動的に生成された鍵は公開鍵を使用して暗号化され、Yandex Diskに保存される。\n*   秘密鍵を知る攻撃者のみが復号できる。\n\n📝 LianSpyの主な機能：\n\n*   メッセージの窃取\n*   インストールされているアプリ一覧の窃取\n*   通話記録の窃取\n*   連絡先リストの窃取\n*   通知を無効にしたスクリーンショットの窃取\n*   通知を無効にした画面キャプチャー\n\n🔍 未知の攻撃者：\n\n*   LianSpyの初期感染経路は明らかになっていない。\n*   過去のマルウェアキャンペーンと重複する点も発見されていない。\n*   攻撃者とその目的は不明とされる。",
+            "tags": [
+                "Security"
+            ]
+        },
+        {
+            "title": "レノボ、Copilot+ PC対応ビジネス向け次世代AI PC「ThinkPad T14s Gen 6」",
+            "url": "https://news.mynavi.jp/techplus/article/20240806-3000042/",
+            "summary": "📰 レノボ・ジャパンは、ビジネス向けAI PC「ThinkPad T14s Gen 6」を発表しました。\n\n💻 本製品にはSnapdragon X Eliteプロセッサーが採用されており、「Copilot+ PC」対応のWindows搭載モバイルノートPCとなっています。\n\n🔍 本製品には、クリエイティブフィルターや背景ぼかしなどの強化されたWindowsスタジオエフェクト、映像や音声のリアルタイム翻訳などの機能が搭載されており、ビジネス向けAI PCとしての機能を提供します。\n\n📈 本製品は、最大64GBの高速LPDDR5xメモリを搭載し、4辺狭額縁の14型ディスプレイをコンパクトな薄型筐体に搭載しています。カメラはフルHD解像度に対応し、プライバシーシャッター付きでWindows Hello顔認証が可能です。\n\n📊 通信機能はWi-Fi 7とオプションの5G sub6に対応し、バッテリーは58Whの長時間駆動タイプとなります。セキュリティ面ではSecured-Core PCやMicrosoft Plutonに対応するなど、ビジネス向けAI PCとしての機能を提供します。\n\n📁 主な仕様は、CPUがSnapdragon X Elite、NPUがQualcomm Hexagon NPU、グラフィックスがQualcomm Adreno GPU、メモリが最大64 GB、ストレージは最大1TB、ディスプレイは14型となります。",
+            "tags": [
+                "AI",
+                "Web"
+            ]
+        },
+        {
+            "title": "OpenAIはついに開発者が待ち望んでいたNo.1の機能をリリースした",
+            "url": "https://venturebeat.com/ai/openai-has-finally-released-the-no-1-feature-developers-have-been-desperate-for/",
+            "summary": "📣 OpenAIが長年待ち望まれていたNo.1の機能「構造化された出力（Structured Outputs）」をリリースしました。この機能により、モデル生成の出力がJSONスキーマに一致するようになります。\n\n🔍 JSONは人間にとっても機械にとっても読みやすい業界標準のデータ交換フォーマットです。しかし、大規模な言語モデル(LLM)はJSONをうまく扱えず、hallucination（幻覚）を起こしたり、部分的なしかも不正確な出力が発生したりすることがあります。\n\n🚀 OpenAIの新しい機能「構造化された出力」は、これらの問題に対処するためにリリースされました。この機能により、開発者はモデルにJSONスキーマを指定し、出力がそのスキーマに一致するように指示できます。\n\n📊 これにより、開発者は出力を検証したり、再試行したりする必要がなくなります。また、よりシンプルなプロンプトを使用でき、明確な拒否も可能になります。\n\n🔒 OpenAIでは、安全性を最優先しており、この新しい機能は既存の安全性ポリシーに従って動作します。",
+            "tags": [
+                "Web",
+                "Software"
+            ]
+        },
+        {
+            "title": "AI Shift フロントエンドトーク 2024-07",
+            "url": "https://zenn.dev/aishift/articles/81ca0d89486ba3",
+            "summary": "📄 **フロントエンド トーク 2024-07**\n\n* React の内部仕組みについて jser による解説があります。\n* JavaScript Set の集合演算がブラウザで実行できるようになりました。\n\n💻 **テクノロジー関連ニュース**\n\n* toB SaaS のインフラアーキテクチャのまとめがあります。\n* State of React 2023: React に関するアンケート結果が発表されました。\n* TanStack Form がリリース間近です。\n* React Flow v12 がリリースされ、サーバーサイドレンダリングやダークモードが追加されました。\n\n🚀 **Cloudflare Zaras**\n\n* X (旧 Twitter)、Instagram に対応しました。\n* HTML に埋め込まれたスクリプトを Cloudflare のエッジ上で実行し、ページレンダリング速度を上げる機能があります。\n\n💻 **Node.js**\n\n* TypeScript を直接実行できるようにする試験的なオプションの実装がマージされました。\n\n📊 **レンダリング戦略のまとめ**\n\n* Vercel による SSG、SSR、CSR、ISR、PPR 各レンダリング戦略の使用例とトレードオフのまとめがあります。",
+            "tags": [
+                "Web",
+                "Software"
+            ]
+        },
+        {
+            "title": "PyCoder's Weekly: 第641号 (2024年8月6日)",
+            "url": "https://pycoders.com/issues/641",
+            "summary": "💡 Python Software Foundation の財政責任者は、財団が無制限な財政的責任にさらされる可能性があると判断したため、理事会主導の変更を実施しました。\n\n📊 Fear of Over-Engineering Has Killed Engineering Altogether という記事では、速い納品文化が品質エンジニアリングをどのように損なったかについて説明しています。\n\n🔍 Tracing the Evolution of a Python Function With <code>git log</code> では、<code>git log</code> コマンドの引数を使用してコミットの一部のみを調べる方法が紹介されています。\n\n📊 tea-tasting: Statistical Analysis of A/B Tests という記事では、新しい tea-tasting プロジェクトを紹介し、A/B テストの統計分析を行うことができます。",
+            "tags": [
+                "Software",
+                "Other"
+            ]
+        },
+        {
+            "title": "Google、Androidカーネルのバグなど、デバイスの乗っ取りに悪用される脆弱性を指摘",
+            "url": "https://go.theregister.com/feed/www.theregister.com/2024/08/06/google_fixes_linux_kernal_rce/",
+            "summary": "📊 以下は、Androidデバイスにおける脆弱性に関する重要なポイントです。\n\n💻 Android 11以降のバージョンには、高度な重大性レベル（CVSSレーティング：7.8/10）に分類されるリモートコード実行 (RCE) につながる可能性がある脆弱性があります。この問題は「CVE-2024-36971」として追跡されており、デバイス上でのコード実行が可能になります。\n\n🚨 この脆弱性は制限付きのターゲット攻撃に使用されている可能性があるとGoogleは示唆しています。 Google Threat Analysis Group (TAG) によって発見され、報告されています。また、TAGは国家が後ろ盾となっているサイバー スパイを追跡し、約40社の商業監視ベンダーについて調べていることにも留意する必要があります。\n\n💡 Androidデバイスを更新することが重要です。CVE-2024-36971以外にもQualcommコンポーネントやFrameworkコンポーネントの脆弱性が報告されており、注意が必要です。",
+            "tags": [
+                "Security"
+            ]
+        },
+        {
+            "title": "Proton が新しい VPN プロトコル「Stealth」のリリースを発表",
+            "url": "https://protonvpn.com/blog/stealth-vpn-protocol",
+            "summary": "📊 Proton が新しい VPN プロトコル「Stealth」のリリースを発表しました。\n\n Stealth の特徴:\n 🔍 インターネットの検閲と VPN のブロックを回避できるように設計されています。\n 🔒 すべての Proton VPN プランで利用可能であり、無料プランも含まれます。\n 💻 高性能に最適化されており、Proton VPN アクセラレータ技術との互換性があります。\n\n Stealth の使用方法:\n 1. Proton VPN アプリを起動します。\n 2. 設定からプロトコルを選択して Stealth に切り替えます。\n 3. Stealth が有効になっていることを確認します。",
+            "tags": [
+                "Web",
+                "Software"
+            ]
+        },
+        {
+            "title": "Flutter 3.24 の新機能: 機能、拡張機能、その他! 🚀",
+            "url": "https://dev.to/blup_tool/whats-new-in-flutter-324-features-enhancements-and-more-ng7",
+            "summary": "🚀 Flutter 3.24 の新しい機能や改善点について以下にまとめます。\n\n💡 新機能:\n* Flutter 3.24 は公式にリリースされました。\n* このバージョンには、新機能、パフォーマンスの向上、開発ツールのアップデートなどが含まれています。\n\n🚀 改善点:\n* パフォーマンスが向上しました。\n* 開発ツールが更新されました。",
+            "tags": [
+                "Software"
+            ]
+        },
+        {
+            "title": "新たな Linux カーネル攻撃が現代の防御をすり抜ける — SLUBStick は 99% の成功率を誇る",
+            "url": "https://www.tomshardware.com/tech-industry/cyber-security/new-linux-kernel-attack-slips-past-modern-defenses",
+            "summary": "🚨 Linuxカーネル攻撃に関する重要な情報です。\n\n・SLUBStickという新たなLinuxカーネル攻撃が現代の防御をすり抜けることが明らかになりました。成功率は99%と高く、サンドボックス環境から抜け出し、ホストシステムにルートアクセスを取得することができます。\n\n📊 この攻撃はLinuxカーネルのメモリ管理にあるヒープ脆弱性を利用し、権限を昇格させてサイドチャネル攻撃を使用してメモリの使用状況を観察します。メモリハッシュの再割り当てのタイミングを判断することで、成功率を高めるためにメモリの再利用を予測および制御することができます。\n\n📊 SLUBStickが動作するには、アタッカーにローカルアクセス権限が必要であり、Linuxカーネルのヒープ脆弱性が存在する必要があります。x86とaarch64の仮想マシンで同じように効果的であることがわかりました。\n\n🚨 SLUBStickは、9つの実際のCVEを使用してテストされ、IntelとAMDベースのプロセッサ、およびArm CPUも効果的なことがわかりました。",
+            "tags": [
+                "Security",
+                "Other"
+            ]
+        },
+        {
+            "title": "Android Device Streaming: Announcing Early Access to Samsung, Xiaomi, and Oppo Device Labs",
+            "url": "http://android-developers.googleblog.com/2024/08/android-device-streaming-announcing-early-access.html",
+            "summary": "📱 Android StudioでのAndroid Device StreamingのEAP（Early Access Program）が発表されました。🎉\n\n* 📈 EAPには、Samsung、Xiaomi、OppoなどのOEMデバイスラボへのアクセスが含まれます。\n* 🔗 Firebaseプロジェクトの管理者は、個々のOEMラボを有効または無効にすることができます。\n* 📨 EAPに参加するには、このフォームを提出してください。EAP中、OEM提供のデバイスは請求されず、プロモーショナル月間クォータにはカウントされません。\n* 🔜 Android Device Streamingプログラムは現在、約2025年2月まで無料で利用できます。\n* 📊 OmniLabがAndroid Test Station（ATS）フレームワークをオープンソース化し、OEMデバイスラボの背後にある技術として使用されています。",
+            "tags": [
+                "Software"
+            ]
+        },
+        {
+            "title": "グーグル、新ストリーミングデバイス「Google TV Streamer」 1.6万円",
+            "url": "https://www.watch.impress.co.jp/docs/news/1614476.html",
+            "summary": "📺 Googleは6日、Chromecastに変わる新たなストリーミングデバイス「Google TV Streamer」を発表した。発売日は9月24日で、日本では7日から予約開始となり、価格は16,000円。\n\n💻 ストリーミングデバイスとしてスマートハブ機能も備えた「Google TV Streamer」に刷新し、YouTube TVやNetflix、Disney+、Apple TVなどの動画ストリーミングのほか、Google HomeやMatterデバイスのスマートホームハブとしても利用できる。\n\n🎬 GoogleのAIがユーザーの嗜好を活用し、契約サービスからコンテンツ候補をキュレーションして1カ所で整理。家庭のメンバー全員にオススメ番組リストを作成できるとともに、次の番組を見つけやすくする。\n\n📺 テレビの画面を環境映像的に活用する「アンビエントモード」も装備し、Googleフォトからお気に入りの画像や生成AIを使ってプロンプトで作成した自分だけのスクリーンセーバーアートを画面に表示できる。\n\n📊 ストリーミングデバイスとしては、最新プロセッサや2倍のメモリ、32GBのストレージを搭載し、前世代のChromecastよりもアプリのロード時間を短縮。ナビゲーションもスムーズに動作可能とする。\n\n📺 Android TVベースのストリーミングデバイスで、Google Homeパネルを搭載。ホームパネルで、セキュリティカメラの確認や照明の調整などが可能となる。\n\n👋 11年間にわたって展開してきたChromecastシリーズは、現行機種を持って終了となる。",
+            "tags": [
+                "Web"
+            ]
+        },
+        {
+            "title": "動画：OpenAI が支援する Figure が次世代の「自己修正型」ヒューマノイド ロボットを披露",
+            "url": "https://venturebeat.com/ai/watch-openai-backed-figure-shows-off-next-gen-self-correcting-humanoid-robot/",
+            "summary": "🤖 Figure 02は、Figureが開発した新しいAIロボットです。\n\n📈 Figure 02は、Figure 01よりも3倍の計算能力とAI推論力を備えており、実世界でのタスクを完全に自律的に実行でき、さらに速くなります。\n\n🔋 Figure 02には2.25 KWhのバッテリーが搭載されており、最大20時間稼働することができます。\n\n🚀 Figureは、このロボットを改良し続け、2026年以降に「非常に手頃な価格」で出荷予定です。\n\n💡 このロボットは工場や倉庫などの環境で人間のタスクを実行できる可能性がありますが、ハードウェア面での改善も必要だと考えられます。",
+            "tags": [
+                "AI",
+                "Other"
+            ]
+        },
+        {
+            "title": "Firefox 129.0: リーダービューの機能強化、HTTPS と DNS の改善、セキュリティの修正",
+            "url": "https://www.ghacks.net/2024/08/06/firefox-129-0-reader-view-enhancements-https-and-dns-improvements-and-security-fixes/",
+            "summary": "📰 Firefox 129.0 の主な変更点は以下です。\n\n🔍 Reader View の機能強化: ページ幅変更オプションの追加など。\n🔒 HTTPS と DNS に関連する改善: TLS 1.3 のサポート強化、DNS-over-HTTPS (DoH) のサポート拡大。\n🛠️ セキュリティ更新: 14 個のセキュリティ脆弱性に対処。\n📚 Enterprise 変更: DisableFirefoxStudies ポリシーの更新。\n📊 Firefox 115 ESR の終了: Windows 7 および 8.1 専用バージョンへの影響については不明。\n\nこれらの変更点は、Firefox の最新のセキュリティと機能強化に重点を置いています。",
+            "tags": [
+                "Web",
+                "Software",
+                "Security"
+            ]
+        },
+        {
+            "title": "Cloudflareの接続クラウドを支えるバックボーン",
+            "url": "https://blog.cloudflare.com/backbone2024",
+            "summary": "🌐 Cloudflare のバックボーンは、自社のネットワークインフラストラクチャーの一部であり、ユーザーのトラフィックを最適なルートで転送することを目的として設計されています。\n\n📈 Cloudflare のグローバルなプライベート バックボーンと Argo Smart Routing は、ユーザー リクエストを最適なパスで転送することで、ネットワーク パフォーマンスの向上に役立ちます。これにより、ユーザーはより高速かつ安定したサービスを利用できます。\n\n📊 Cloudflare のグローバルなプライベート バックボーンと Argo Smart Routing を使用することで得られる利点として、ネットワーク パフォーマンスの向上やトランザクション レベルでのラグやレイテンシの削減などが挙げられています。\n\n🚨 Cloudflare のバックボーンは、特定のサードパーティ IP トランジット プロバイダが混雑により遅延を発生させた際に、安定した性能を維持し、トラフィック エンジニアリングによって問題が解決されたと説明されています。\n\n📈 Argo が Cloudflare ネットワークを最適化することでパフォーマンスの向上に貢献しており、これは Cloudflare Network Interconnects (CNIs) を使用することによる利点であると述べられています。\n\n💼 Cloudflare はエンタープライズ顧客に、可能な限り CNIs を使用してネットワークへのアクセス権を提供し、全体的なパフォーマンスの向上を実現することを奨励しています。\n\n🌐 Cloudflare はインターネットを改善するための取り組みとして、パートナー企業と協力してセキュアで信頼できる接続性を提供することが強調されています。",
+            "tags": [
+                "Web"
+            ]
+        },
+        {
+            "title": "Nest 学習サーモスタットはこれまで以上にスマートでスタイリッシュになりました",
+            "url": "https://blog.google/products/google-nest/new-learning-thermostat/",
+            "summary": "📊 以下は、提供された Web ページのコンテンツを要約したものです。\n\n• Google の Nest Learning Thermostat (4th gen) が新しくリニューアルされました。\n• この新しいモデルはスマートでスタイリッシュにデザインされており、エネルギー効率を向上させるために自動的に温度を調整することができます。\n• ユーザーが自宅で環境に優しい方法で生活し、気候変動に対処できるように設計されています。Nest Renew という機能では、ユーザーのサーモスタットは小さな温度調節を行い、よりクリーンで安価な時間帯にエネルギー使用をシフトすることができます。\n• Nest Learning Thermostat は簡単にインストールおよび設定が行え、Google Home アプリ経由での操作が可能です。サーモスタットは Matter 認定であり、他の Matter 対応スマートホームアプリでも制御可能です。\n• 新しいモデルは Google Store および特選小売店にて事前注文可能で、米国では 279.99 ドル、カナダでは 379.99 カナダドルでの発売を予定しています。サーモスタットには Nest Temperature Sensor が同梱されており、追加センサーは 39.99 米ドルまたは 3 パックで 99.99 米ドルの価格で購入可能です。\n• サーモスタットの制御やスケジュール設定などの人気機能が、より使いやすく直感的なデザインに刷新されています。",
+            "tags": [
+                "Web",
+                "Other"
+            ]
+        },
+        {
+            "title": "Bye Russ, but also hi Russ",
+            "url": "https://golangweekly.com/issues/518",
+            "summary": "📚 Webページ「Bye Russ, but also hi Russ」の内容を要約します。\n\n* 🌴 Hi! 次号は8月20日に出ます。もし可能ならクリックしてね😊\n* 👋 12年間Goのリードを務めたRuss Coxが退任し、Austin Clementsが新たに就任しました。\n* 💻 Russ Coxは、新しいプロジェクト「Oscar: An Open-Source Contributor Agent Architecture」に取り組んでいます。AIエージェントシステムを使ってオープンソースプロジェクトをメンテナンスするためのツールです。\n* 📈 Ardan Labsは、Go、Rust、Postgresなどのスキルを持つ人材育成サービスを提供しています。\n* 🚀 River 0.11、env 11.2、Dgraph 24.0、Kagome 2.10、Resty 2.14、webdav 5.1、GoBGP 3.29などのライブラリやツールが更新されました。",
+            "tags": [
+                "AI",
+                "Web",
+                "Software"
+            ]
+        },
+        {
+            "title": "北朝鮮のハッカー「ムーンストーン・スリート」が悪意のある JS パッケージを npm レジストリにプッシュ",
+            "url": "https://thehackernews.com/2024/08/north-korean-hackers-moonstone-sleet.html",
+            "summary": "🚨 以下は、North Koreaのハッカー集団Moonstone Sleetがnpmパッケージリポジトリで攻撃を仕掛けたことに関する要約です。\n\n📍 Moonstone Sleetがnpmパッケージリポジトリを通じて攻撃を加えたことが明らかになりました。\n📍 Checkmarxの調査によると、 Moonstone SleetはBrazilian construction and machinery sectorのユーザーに不正なnpmパッケージをダウンロードさせ、それらのパッケージがWindows上でマルウェアを実行するように設計されていたことがわかりました。\n📍 npmパッケージリポジトリでは、 Moonstone Sleetはそれぞれ\"moon-stone\"と\"sweet-ls\"という名前の2つの不正なパッケージを展開しました。\n📍 これらのパッケージはpackage.jsonファイルに指定されたpre-installスクリプトを実行するように設計されていました。\n📍 スクリプトはWindowsシステム上で実行されるかどうかをチェックし、それから外部サーバーに接続してDLLファイルをダウンロードしました。\n📍 ダウンロードされたDLLは、rundll32.exeバイナリを使用してsideloadされました。",
+            "tags": [
+                "Software",
+                "Security"
+            ]
+        },
+        {
+            "title": "どんなに良いものにも終わりは来る ―Gentoo Linux派生プロジェクト「Funtoo」の終了を発表",
+            "url": "https://gihyo.jp/article/2024/08/daily-linux-240806?utm_source=feed",
+            "summary": "📰 Gentoo Linux派生プロジェクト「Funtoo」の終了を発表 \n\n💻 Funtoo Linuxは、Gentoo LinuxのファウンダーであるDaniel Robbinsが2008年に開始したプロジェクトです。\n\n📅 2024年8月末でFuntooプロジェクトの運営を終了することが明らかにされました。\n\n👥 後継者（BDFL：Benevolent dictator for life）は指名せず、プロジェクトを誰かに譲渡する予定もないと Robbinsは述べています。\n\n💬 Robbinsは「Funtooは素晴らしいものを一緒にビルドするコントリビュータたちが楽しく集えるコミュニティを作るというフィロソフィーのもとでスタートした。私にとって（Funtooは）もうそういう存在ではなく、ほかのことに移る必要がある」とコメントしています。\n\n🚨 Funtooコンテナをもつユーザに対しては、オンラインである8月末までに別のホスティングソリューションに移行することが推奨されています。",
+            "tags": [
+                "Software"
+            ]
+        },
+        {
+            "title": "Google Workspaceアプリの生成AIアシスタントGemini for Google Workspaceが9月より順次日本語に対応",
+            "url": "https://gihyo.jp/article/2024/08/gemini-google-workspace-jp?utm_source=feed",
+            "summary": "📰 Googleは2024年9月より順次、Google Workspace内に生成AIアシスタント機能を導入した「Gemini for Google Workspace」のサイドパネル機能が日本語に対応していくことを発表しました。\n\n💻 この機能により、GmailやGoogleドキュメントなどのWorkspaceアプリでメールのドラフト作成や文書作成、スライド作成などができるようになります。\n\n📈 また、この機能はGemini 1.5 Proモデルを搭載しているため、大容量ファイルの要約・分析も可能です。\n\n📊 この機能により、ユーザーはアプリ内でのプロンプト入力によって使用中のアプリを離れることなくGeminiが文脈に合ったプロンプトを提案することができます。",
+            "tags": [
+                "AI",
+                "Web"
+            ]
+        },
+        {
+            "title": "React のカスタムフックの利点をオブジェクト指向の観点で考えてみる",
+            "url": "https://zenn.dev/cybozu_frontend/articles/7885e0c73b3ab8",
+            "summary": "📝 React のカスタムフックは、宣言的 UI をより宣言的に記述するための重要な役割を担っており、React の公式ドキュメントに掲載されているコードの一部では、その役割が示されています。\n\n💡 その例では、カスタムフックを使用していない場合と比較して、カスタムフックを使用することでロジックを抽象化し、コンポーネントの保守性を向上させることができます。\n\n📄 記事「React におけるカスタムフック設計」の要約は以下です。\n\n🔹 React のカスタムフックは、ロジックの再利用を可能にするものであるが、オブジェクト指向における SOLID の原則と似通った考え方がある。\n\n🔹 カプセル化と単一責任の原則を意識することで、保守性の高いコードを書くことができる。\n\n🔹 React の公式ドキュメントに記載されているように、「良いカスタムフックとは、動作を制約することで呼び出し側のコードをより宣言的にするものである」と述べられている。\n\n🔹 カスタムフックはロジックを隠蔽するために使用されるが、イベントハンドラとして切り出すなど他の方法も検討すべきである。\n\n🔹 React の基本となる内容とオブジェクト指向の設計思想を活かして、メンテナンス性の高いコードを書くことができる。",
+            "tags": [
+                "Web",
+                "Software"
+            ]
+        },
+        {
+            "title": "Windows 10や11の「Smart App Control」と「SmartScreen」をすり抜けて警告なしでプログラムが起動できる不具合の存在が判明",
+            "url": "https://gigazine.net/news/20240806-windows-smart-app-control-smartscreen-bypass/",
+            "summary": "🚨 Windows 10や11のSmart App ControlとSmartScreenを回避する不具合が判明しました。攻撃者は企業になりすましてExtended Validation(EV)証明書を取得し、評判のいいアプリを乗っ取る「レピュテーション・ハイジャック」や、「LNKストンピング」と呼ばれるLNKファイルの処理の不具合によってもSmart App ControlやSmartScreenをくぐり抜けることが可能だとElastic Security Labsは指摘しています。",
+            "tags": [
+                "Software",
+                "Security"
+            ]
+        },
+        {
+            "title": "MDMベンダーのMobile Guardianが攻撃を受け、13,000台のデバイスがリモートワイプされる",
+            "url": "https://go.theregister.com/feed/www.theregister.com/2024/08/06/mobile_guardian_mdm_attack/",
+            "summary": "📊 MDMベンダーのMobile Guardianは、8月4日にセキュリティインシデントによりiOSとChromeOSデバイスへの未認可アクセスを受けたことを認めた。 🚨\n\n🌎 このインシデントにより、シンガポールの教育省管轄下にある13,000台の端末がリモートで消去された。 🔥\n\n📈 Mobile Guardianは、ユーザーデータへのアクセスはなかったと主張している。 🙅‍♂️\n\n🌐 ただし、シンガポールの教育省は、Mobile Guardianのソフトウェアを端末から削除するように指示した。 👋\n\n🤝 これは、同社が直面している困難な数ヶ月の続きである。 😬",
+            "tags": [
+                "Security"
+            ]
+        },
+        {
+            "title": "RAGエージェントを10倍速くする「REAPER」",
+            "url": "https://zenn.dev/knowledgesense/articles/7fc387fc132c76",
+            "summary": "📄 RAGシステムはLLMと検索エンジンを組み合わせたものですが、通常は「計画」みたいな複雑なことをモデルにやらせるとハルシネーションします。\n\n✨ REAPERという手法が提案された。REAPERでは、小型LLMのファインチューニングにより、「計画」を小さいモデルでも実行可能にすることで高速化を目指しています。\n\n📝 REAPERは、ツール選択で96%の正確性、引数抽出で92%の正確性を達成。また、新しい「ツール」を追加する際も286のサンプルを追加するだけで対応可能でした。さらに、計画生成の速度が10倍以上高速になりました。\n\n💡 REAPERは社外向けRAGシステムに有用であり、今後もLLMを使った検索システムのデメリットが解消されていく可能性があります。",
+            "tags": [
+                "AI",
+                "Web",
+                "Software"
+            ]
+        },
+        {
+            "title": "rqlite 9.0 の構築 – 軽量分散 DB: ディスク使用量を半分に削減",
+            "url": "https://www.philipotoole.com/building-rqlite-9-0-cutting-disk-usage-by-half/",
+            "summary": "📝 次のような記事です。\n\nrqlite 9.0 のリリースに向けた取り組みについての記事です。rqlite は、分散システムを構築するための SQLite ベースのストレージ エンジンです。この新しいバージョンでは、Raft スナップショット ストアにデータを保存する方法が変更される予定です。\n\n📈 rqlite 9.0 の主な目標は、リード・リプライズとライトのレイテンシを改善し、rqlite をより高速で効率的なストレージ エンジンにしたいということです。\n\n🔍 記事では、rqlite 9.0 の開発の背景と、どのようにしてこの目標を達成しようとしているのかについて説明しています。また、rqlite 9.0 に向けた取り組みの進捗状況や将来の展望についても触れています。",
+            "tags": [
+                "Software"
+            ]
+        },
+        {
+            "title": "三菱電機子会社のサーバに2回の不正アクセス - 231万人の顧客情報が閲覧できる状態に",
+            "url": "https://news.mynavi.jp/techplus/article/20240805-2999373/",
+            "summary": "📰 三菱電機ホーム機器は、同社が管理する個人情報が登録された情報システムサーバに外部から不正アクセスされたことが判明したと発表しました。\n\n\n💻 2回のアクセス(13秒と12秒)により、約231万人分の顧客情報を保管しているサーバへのアクセスが認められました。\n\n📝 流出の可能性がある情報は氏名、住所・電話番号・メールアドレスのいずれかであり、クレジットカードなどの情報は含まれていないと伝えています。\n\n\n🔒 会社では今回の事態を重く受け止め、情報セキュリティの管理体制強化に努めるという。",
+            "tags": [
+                "Security"
+            ]
+        },
+        {
+            "title": "Snowflake Cortex AI、Llama 3.1 405Bのホストを発表",
+            "url": "https://news.mynavi.jp/techplus/article/20240805-2999236/",
+            "summary": "🌟 SnowflakeはMetaのオープンソースLLM「Llama 3.1コレクション」をSnowflake Cortex AIにホストすることを発表した。\n\n💡 Snowflake Cortex AIとは、LLMへのアクセスを提供し、AIを活用したアプリケーションを簡単に構築・展開するフルマネージド型のサービスである。\n\n📊 SnowflakeはLlama 3.1 405Bを最適化し、リアルタイム推論を実現するとともに、大規模モデルをファインチューニング可能なようにした。",
+            "tags": [
+                "AI",
+                "Web"
+            ]
+        },
+        {
+            "title": "Runway Gen-3 Alpha で AI 動画を締めくくることができるようになりました。クリエイターの皆さん、注目してください。",
+            "url": "https://venturebeat.com/ai/runway-gen-3-alpha-can-now-bookend-your-ai-videos-creators-take-note/",
+            "summary": "📹 AIビデオ生成ツール「Runway Gen-3 Alpha」が新機能を追加した。 \n• ユーザーは、動画の最初または最後のフレームとして画像を使用できるようになった。 \n• これにより、クリエイターはAIによって生成された動画に制御性を持たせることが可能になる。 \n• Runwayは、AIビデオ生成市場で他の企業と競争している。 \n• この新機能は、Runwayがユーザーのニーズを満たすために迅速な開発サイクルを維持する上での重要なステップとなる。",
+            "tags": [
+                "AI",
+                "Web"
+            ]
+        },
+        {
+            "title": "Groq が次世代 LPU で AI 推論を強化するために 6 億 4,000 万ドルを確保",
+            "url": "https://venturebeat.com/ai/groq-secures-640m-to-supercharge-ai-inference-with-next-gen-lpus/",
+            "summary": "🌐 Webサイト「Groq」は、次世代LPU（Language Processing Unit）でAI推論を強化するために6億4000万ドルを調達した。\n\n💡 Groqは、BlackRock Private Equity PartnersをリードインベスターとしてNeuberger Berman、Type One Ventures、Cisco、KDDI、Samsung Catalyst Fundなどの戦略的投資家からの参加を受けてシリーズDラウンドで6億4000万ドルを調達した。\n\n🚀 これはAIインフラストラクチャー景観の重要なシフトを示唆しており、Groqは急速にスケールアップし、次世代LPUの開発を加速するために資金を利用する予定である。\n\n💻 次世代LPUはAI業界が求めるより高速な推論能力に対処することを目的としており、訓練から展開への移行が進む中で重要な位置付けとなっている。\n\n📈 Groqは2025年第1四半期末までに10万8000台以上のLPUを展開し、大手テック企業以外では最大のAI推論コンピューティング能力プロバイダーになることを目指している。\n\n💸 これはGroqが急成長する開発者基盤、GroqCloudプラットフォームに構築されている35万6000人以上のユーザーをサポートするためのものである。\n\n📊 Groqは独自のトークン・アズ・ア・サービス（TaaS）オファリングで注目を集めており、これはスピードとコスト効率性においてベンチマークで確認されている。\n\n💬 また、グロックはLPUの供給チェーン戦略が業界の中でのチップ不足に苦しむことから際立っている点を強調しており、「LPUは基本的に異なるアーキテクチャーであり、長いリードタイムを持つコンポーネントには依存していない」と述べている。\n\n🤝 これはグロックが業界の供給チェーンセキュリティへの懸念と並行して好ましく思われている点であり、アメリカ国産の製造を強調していることもあいまって政府によるAI技術やその起源に対する監視の増加にも適合しているとみられる。",
+            "tags": [
+                "AI",
+                "Web"
+            ]
+        },
+        {
+            "title": "カザフスタンの組織が「ブラッディウルフ」のサイバー攻撃の標的に",
+            "url": "https://thehackernews.com/2024/08/kazakh-organizations-targeted-by-bloody.html",
+            "summary": "📣「Bloody Wolf」によるサイバー攻撃は、カザフスタンの組織を標的にし、CommodityマルウェアであるSTRRAT（Strigoi Master）を配布します。\n\n📨この攻撃は、受信者にPDF添付ファイルを開くよう促すフィッシング電子メールで開始されます。添付ファイルには、マルウェアを実行するために必要なJavaインタープリターのインストールガイドとともに悪意のあるJavaアーカイブ（JAR）ファイルへのリンクが含まれています。\n\n🌐STRRATマルウェアは、Windowsホスト上でレジストリ変更によって永続性を確立し、カザフスタン政府のWebサイトを模倣したWebサイトからJARファイルをダウンロードします。マルウェアは、感染したコンピュータからの機密情報を抽出するためにPastebinサーバーと通信し、その後、追加のペイロードをダウンロードおよび実行してキーログを実行できます。\n\n🔒マルウェアはまた、cmd.exeまたはPowerShellでコマンドを実行したり、システムを再起動またはシャットダウンしたり、プロキシをインストールしたり、マルウェア自体を削除したりするように設計されています。\n\n📝BI.ZONEによると、この攻撃はカザフスタンの組織に多大な影響を及ぼし、企業コンピュータへのアクセスや機密データの盗難につながる可能性があります。",
+            "tags": [
+                "Web",
+                "Security"
+            ]
+        },
+        {
+            "title": "研究者が Windows スマート アプリ コントロールと SmartScreen の欠陥を発見",
+            "url": "https://thehackernews.com/2024/08/researchers-uncover-flaws-in-windows.html",
+            "summary": "🚨 Microsoft Windows 10および11のWindows Smart App Control（SAC）機能が脆弱性により悪用されている。 🚨\n以下は、この問題に関する要点です。\n\n💻 SACはWindows 10および11の機能であり、信頼できるソフトウェアだけを実行し、不明なソースからのダウンロードをブロックします。\n🔗 この脆弱性により、攻撃者は信頼できないファイルをSACの検出を回避する方法を見つけることができます。\n\nこの問題が生じる主な原因には以下のようなものがあります。\n\n🔗 LNK Stomping: Windowsショートカットファイル(LNK)の脆弱性により、MotWラベル（Mark-of-the-Web）が削除される。\n📦 Reputation Seeding: 攻撃者はSACを回避するために信頼できるソフトウェアを使います。\n\nこの問題に対処するには:\n\n🔒 Microsoftはすでにこの問題の修正プログラムを公開しています。\n💡 ユーザーは常に最新のセキュリティ更新プログラムを適用し、不明なソースからのダウンロードを避ける必要があります。",
+            "tags": [
+                "Web",
+                "Software",
+                "Security"
+            ]
+        },
+        {
+            "title": "Stability AI、1枚の画像から立体データを高速で生成するStable Fast 3Dを発表",
+            "url": "https://gihyo.jp/article/2024/08/stable-fast-3d?utm_source=feed",
+            "summary": "📸 Stability AIが開発したAIモデル「Stable Fast 3D」は、1枚の画像からUVアンラップメッシュ、マテリアルパラメータ、照明のベイク処理を抑えたAlbedoカラーなどの3Dデータを迅速に生成します。\n\n🕒 Stability AIがNvidia A100 GPUを使ってテストしたところ、ドラフト品質の3D出力（テクスチャメッシュ）を約0.5秒で生成しました。\n\n📈 このモデルはStability AI APIやStable Assistantチャットボットから簡単に使用でき、3Dビューアで作品を共有したり、AR（WebXR対応デバイス）で操作できます。\n\n📊 Stable Fast 3DのコードはGithubで入手でき、Hugging Faceでもデモを試すことができます。\n\n📝 Stable Fast 3Dは、Stability AI Community Licenseに基づいてリリースされており、非商用、および年間収益が100万ドル以下の個人または組織であれば商用での使用が可能です。",
+            "tags": [
+                "AI",
+                "Web"
+            ]
+        },
+        {
+            "title": "Cloudflare D1 を使った日本語の全文検索を実装する",
+            "url": "https://zenn.dev/cybozu_frontend/articles/cloudflare-d1-fts",
+            "summary": "🌐 Cloudflare Pages と Cloudflare D1 を使用したブログサイトを構築する方法について説明しています。\n\n💻 API の実装: Hono を使用して API エンドポイントを実装し、D1 データベースにデータを登録する方法について説明しています。\n\n🔍 fts テーブルの作成: D1 で fts5 仮想テーブルを作成し、トークン化されたデータを格納します。\n\n📈 POST /api/fts/insert エンドポイント: 受け取ったデータを contents テーブルに追加し、Intl.Segmenter を使用してトークンを抽出し、fts テーブルに追加する方法について説明しています。",
+            "tags": [
+                "Web"
+            ]
+        },
+        {
+            "title": "Wi-Fi Webカメラ(Ubiquiti)に脆弱性、2万台超が対象 - アップデートを",
+            "url": "https://news.mynavi.jp/techplus/article/20240804-2997753/",
+            "summary": "🚨 Wi-Fi Webカメラ(Ubiquiti)の脆弱性について 📸\n• 2万台以上のデバイスが影響を受ける可能性があるという報告がありました。\n• 脆弱性は、攻撃者がIPスプーフィングを行い検出パケットを送信した場合に発生します。\n• デバイスは第三者に対して情報を応答してしまうため、増幅型のリフレクションサービス運用妨害が可能になります。\n🔒 対策 🔒\n• Ubiquitiは最新のファームウェアで対策したと回答しました。\n• 最新のファームウェアでは内部IPアドレスからの検出パケットにのみ応答します。\n• 管理者にはファームウェアのバージョンを確認し、最新版にアップデートすることが推奨されています。",
+            "tags": [
+                "Web",
+                "Security"
+            ]
+        },
+        {
+            "title": "Golang ウィークリー 131 号",
+            "url": "https://golang.thisweekin.io/golang-weekly-issue-131-8af91dbb9a05?source=rss------golang-5",
+            "summary": "📚 この記事は、Go言語に関する週刊ニュースレターです。\n\n📰 Go 1.21のリリースノート\n📊 Go 1.21のパフォーマンス改善\n🔍 Goのコードコンプリーターの紹介\n📚 Go言語に関する記事とチュートリアル\n\n💻 Go言語に関するニュース、ブログ投稿、ライブラリなどを紹介します。\n\n👋 この週刊レターは、Go言語の開発者とユーザー向けに提供されています。",
+            "tags": [
+                "Web"
+            ]
+        },
+        {
+            "title": "SRE NEXT 2024@Abema Tower 登壇資料まとめ",
+            "url": "https://zenn.dev/gmomedia/articles/0d8e8f42508a6b",
+            "summary": "📄 Google Cloudが主催するイベントSRE NEXT 2024の登壇資料まとめです。\n\n*   SRE Conference Japan 2024の会議録\n    🗣️500万人が利用する「友達と遊べるたまり場アプリ パラレル」におけるデータベース基盤の継続的改善\n    📊 SREing：イシューから始める信頼性/生産性向上の実践\n    🤝 事業フェーズの変化を乗り越えるEnabling/Platform SREへの転換\n\n📚 2024/08/04 時点での SRE Next 2024 での発表者紹介\n*   社内留学を通じて加速するプロダクトチームとのコラボレーション\n*   開発チームへのディープダイブで見えてきた顧客 = 開発者の本当の課題\n*   SREが考えるハイブリッド開催の技術イベントのライブ配信における信頼性",
+            "tags": [
+                "Web"
+            ]
+        },
+        {
+            "title": "ハッカーがMinecraftのDDoSツールを再利用して、誤って設定されたJupyter Notebookを悪用",
+            "url": "https://thehackernews.com/2024/08/hackers-exploit-misconfigured-jupyter.html",
+            "summary": "🚨 次のような、Discord経由でのDDoS攻撃キャンペーンが発見されています。\n\n・Discordサーバーとつながり、JARファイルパッケージを実行するためにconn.jarとmineping.jarという2つのJavaアーカイブ(JAR)ファイルが含まれたZIPファイルをインターネット上のノートブックに送信し、DDoS攻撃を引き起こす。\n・conn.jarはDiscordチャンネルへの接続を確立してmineping.jarパッケージを実行するために使用される。\n・このアタックによりサーバーのリソースを消費し、結果はDiscordチャンネルに記録される。\n・攻撃者のGitHubのパブリックリポジトリには、Minecraftサーバー特性ファイルが含まれていることが確認されている。\n・同じような攻撃手法でJupyter Notebooksを標的にする別のキャンペーンも確認されており、これはQubitstrikeと呼ばれるTunisianからの脅威として知られている。",
+            "tags": [
+                "Security"
+            ]
+        },
+        {
+            "title": "東京玉子本舗、個人情報13万9348件漏洩の可能性 ECサイトへ不正アクセス",
+            "url": "https://news.mynavi.jp/techplus/article/20240802-2997512/",
+            "summary": "東京玉子本舗のECサイトが不正アクセスの対象となり、顧客情報が漏洩する可能性があることが判明しました。\n\n📝 個人情報のみの漏洩の可能性があるのは、2019年4月22日から2024年5月28日までにオンラインショップを利用した7万3961件です。漏洩した可能性のある情報は以下の通りです。\n氏名\n住所\nメールアドレス\n電話番号\nFAX番号（任意）\n生年月日（任意）\n性別（任意）\n職業（任意）\n購入履歴\n\n💳 クレジットカード情報の漏洩の可能性があるのは、2021年3月18日から2024年5月28日の間にクレジットカード決済をした6万5387件です。漏洩した可能性のある情報は以下の通りです。\nカード名義人名\nクレジットカード番号\n有効期限\nセキュリティコード\n\n📨 これらに該当する13万9348件の顧客には、電子メールまたは郵送にて個別の連絡を開始しています。\n\n🚫 東京玉子本舗では、クレジットカード会社と連携し、漏洩した可能性のあるクレジットカードによる取引のモニタリングを継続して実施し、不正利用の防止に努めています。",
+            "tags": [
+                "Web",
+                "Security"
+            ]
+        },
+        {
+            "title": "中国のAPT41が台湾のサイバースパイ研究所を標的に",
+            "url": "https://www.darkreading.com/threat-intelligence/chinas-apt41-targets-taiwan-research-institute-for-cyber-espionage",
+            "summary": "📰 記事の概要：中国系ハッカー集団「APT41」が台湾のサイバースパイ研究所を標的にし、ShadowPad RAT（リモートアクセストゥール）を使用してネットワーク内のシステムに不正アクセスし、機密情報を盗み出した。\n\n💻 サイバー攻撃の詳細：ハッカーはShadowPadを使用してシステムに不正アクセスし、機密情報を盗み出した。ShadowPadはBackdoor RATとして機能するマルウェアの一種である。\n\n📊 ShadowPadの特徴：ShadowPadはMicrosoft Windowsオペレーティングシステム用のマルウェアの一種で、最初に2017年に発見された。\n\n🌐 APT41とは：APT41（Advanced Persistent Threat 41）は中国に拠点を置くサイバー攻撃グループの一つ。主に企業や政府機関を標的にし、機密情報を盗み出す。\n\n🚨懸念：このようなサイバー攻撃は重要な組織にとって大きなリスクとなる。機密情報の漏洩やシステムへの不正アクセスなどが発生し、重大な被害を及ぼす可能性がある。\n\n🛡️対策：強力なセキュリティ対策を講じることが必要。パッチ管理やセキュリティソフトのインストールなどが重要である。また、従業員にサイバー攻撃の危険性と対策について教育することも大切である。\n\n📝まとめ：この事件は組織にとってサイバー攻撃がどれほど重大なリスクをもたらすかを示唆している。強力なセキュリティ対策と教育を講じることで、これらのリスクを軽減することができる。",
+            "tags": [
+                "Security",
+                "Other"
+            ]
+        },
+        {
+            "title": "APT41ハッカーが台湾の研究所へのサイバー攻撃でShadowPadとCobalt Strikeを使用",
+            "url": "https://thehackernews.com/2024/08/apt41-hackers-use-shadowpad-cobalt.html",
+            "summary": "📣 以下は、APT41グループによる複数のサイバー攻撃に関する調査結果の要約です。\n\n• APT41グループが、複数の組織に対してサイバー攻撃を仕掛けたことが判明しました。\n• 攻撃の手口には、DLL側読み込み（DLL side-loading）、Mimikatzによるパスワードの抽出、ネットワーク構成情報の収集などがあります。\n• グループは、ScatterBeeという名前のマルウェアを使用して攻撃を行いました。\n• 攻撃には、CVE-2018-0824と呼ばれる脆弱性が利用されていました。\n• グループはまた、UnmarshalPwnという名前のマルウェアも使用していました。\n• APT41グループは中国の国家機関に支援されていると考えられています。\n\n📝 以上は、APT41グループによるサイバー攻撃に関する調査結果の要約です。",
+            "tags": [
+                "Security"
+            ]
+        },
+        {
+            "title": "ウェブレビュー、2024-31週",
+            "url": "https://ervin.ipsquad.net/blog/2024/08/02/web-review-week-2024-31/",
+            "summary": "📊 記事「Scope? How about we talk about thoroughness instead? - The Engineering Manager」は、プロジェクトの成功にはスコープだけでなく、作業の徹底性も必要であることを示唆しています。\n\n📈 記事「Unfashionably secure: why we use isolated VMs – Thinkst Thoughts」は、仮想マシン (VM) を使用することの利点と欠点について説明しています。セキュリティと安全性を確保するために VM を使用するメリットがある一方で、複雑さやコスト増加などデメリットもあることを示しています。\n\n📈 記事「My Favorite Tools + Techniques for Procedural Gamedev」は、ゲーム開発におけるプロシージャル手法の有用性について説明しています。ゲーム開発者が使用できるさまざまなツールやテクニックを紹介し、その利点と欠点について説明しています。\n\n📊 記事「Simulating worlds on the GPU: Four billion years in four minutes」は、GPU を使用したシミュレーションの有用性について説明しています。GPU のパフォーマンスを活用して複雑なシミュレーションを実行する方法について説明し、その利点と欠点についても触れています。\n\n📊 記事「Tracing the evolution of a Python function with git log」は、Git のログ機能を使用して Python 関数の進化を追跡する方法について説明しています。特定の関数の変更履歴を簡単に確認できるように Git ログを活用する方法を示しています。\n\n📚 記事「WAT」は、Python のデバッグツール WAT について説明しています。WAT を使用して Python コードのデバッグを行う方法について説明し、その利点と欠点についても触れています。",
+            "tags": [
+                "Software"
+            ]
+        },
+        {
+            "title": "フォーチュン50社が盗まれたデータの漏洩を阻止するために記録的な7500万ドルの身代金を支払った",
+            "url": "https://go.theregister.com/feed/www.theregister.com/2024/08/02/dark_angels_ransomware/",
+            "summary": "🚨 Fortune 50 社が Dark Angels というランサムウェアグループに 7500 万ドルを支払った 🚨\n・Dark Angels は Fortune 500 企業のデータを盗み、7500 万ドルの身代金を要求した。\n・その会社は、データが流出しないようにするためにその金額を支払った。\n・Dark Angels は、大きな標的に対して個別に攻撃を行う手法を使っている。\n・このグループは標的の企業が保険をかけているか調べ、その金額まで要求しているという。",
+            "tags": [
+                "Security"
+            ]
+        },
+        {
+            "title": "Google Cloud⁠⁠、Spanner Graphのプレビュー開始と⁠BigtableのSQLサポートを発表",
+            "url": "https://gihyo.jp/article/2024/08/google-cloud-db-updates?utm_source=feed",
+            "summary": "📊 Google Cloudは、「Google Cloud Next Tokyo '24」において、データベースサービスに関する新たな機能を発表しました。\n\n🔍 Spanner Graphのプレビュー提供が開始されました。これにより、グラフクエリ言語（GQL）をサポートし、単一の操作で構造化データと接続されたデータのシームレスなクエリを実行できるようになります。\n\n📈 Spannerの全文検索とベクトル検索機能も発表されました。これにより、AIアプリの重要な構成要素といえるキーワード検索、セマンティック検索が容易に実装できる環境が整えられました。\n\n📊 NoSQLタイプのデータベースBigtableで、100以上のSQL関数が直接利用できるようになりました。生成AIアプリケーションの開発のためのkNNや、ログ処理のためのJSON操作などが、これまでより簡単に構築できるようになります。\n\n📈 Bigtable分散カウンタの一般提供開始が発表されました。分散カウンタを使用すると、毎日のユーザーエンゲージメントの集計や最小のセンサの読み取り値を決定するための最小値の確認などが容易になります。",
+            "tags": [
+                "Software"
+            ]
+        },
+        {
+            "title": "Stable Diffusionのオリジナル開発陣がAI企業「Black Forest Labs」を立ち上げ独自の画像生成AIモデル「Flux」をリリース",
+            "url": "https://gigazine.net/news/20240802-black-forest-labs-image-ai-flux/",
+            "summary": "🌟 Black Forest Labsが新しい画像生成AIモデル「Flux」を発表しました。\n🤖 Fluxはより高度な画像生成能力と高速な処理速度を持っており、さまざまなアプリケーションに最適です。\n📸 Fluxの主な特徴は強化された画像品質、高度な人体解剖学とフォトリアリズム、プロンプト遵守の改善、卓越した速度などです。\n🎥 Black Forest LabsはFluxを基盤にテキストから動画を生成することができる動画生成AIモデルを構築する予定です。",
+            "tags": [
+                "AI"
+            ]
+        },
+        {
+            "title": "サイバー犯罪者はCloudflareトンネルを悪用して検出を回避し、マルウェアを拡散している",
+            "url": "https://thehackernews.com/2024/08/cybercriminals-abusing-cloudflare.html",
+            "summary": "📄 記事の要約：\n\n* Proofpoint の研究者は、Cloudflare Tunnels がサイバー攻撃に使用されていることを発見しました。\n* これらのトンネルは、サイバー攻撃者が一時的なインフラストラクチャーを使用してその作戦を拡大するために使用されています。\n* この方法により、サイバー攻撃者は検出と削除の努力に対する脆弱性を減らすことができます。\n* Spamhaus プロジェクトは、Cloudflare に対してその反乱策を再評価するよう呼び掛けており、サイバー犯罪者がそのサービスの使用により悪意のある行動を隠蔽し、その作戦のセキュリティーを高めていると主張しています。",
+            "tags": [
+                "Web",
+                "Security"
+            ]
+        },
+        {
+            "title": "インド、デジタル決済に動的2FAの義務化を検討",
+            "url": "https://go.theregister.com/feed/www.theregister.com/2024/08/02/india_contemplates_compulsory_dynamic_2fa/",
+            "summary": "📰 インドの金融当局（Reserve Bank of India）は、デジタル決済における動的2要素認証（2FA）の義務化を検討中です。\n\n📊 これは、スマートフォンなどの機器に保管されているカード情報や預金残高などの秘密情報と、パスワードや生体認証などユーザーが持つ秘密情報の組み合わせによる2つの要素を用いた認証方法です。\n\n📈 これまでインドでは、デジタル決済における2FAは任意でしたが、今後義務化される見通しです。\n\n🤝 金融当局は、業界からの意見を募集し、9月15日までに草案の提出を求めています。",
+            "tags": [
+                "Web",
+                "Security"
+            ]
+        },
+        {
+            "title": "AIモデルをGitHub内から直接利用できる「GitHub Models」限定パブリックベータ版の提供を開始",
+            "url": "https://gihyo.jp/article/2024/08/github-models?utm_source=feed",
+            "summary": "📊 GitHubは、GitHub上で各種のオープン/クローズドなAIモデルを使った開発をテスト、デプロイできるサービス「GitHub Models」の限定パブリックベータ版の提供を開始しました。\n\n💻 GitHub Modelsでは、MistralやGPT-4o、Llama-3などのAIモデルにGitHubのビルトイン・プレイグラウンドでアクセスし、さまざまなプロンプトやモデルのパラメータを無料でテストすることができます。\n\n📈 GitHub Modelsで利用できるAIモデルは現在20以上あります。限定パブリックベータ版はGitHub Marketplaceから登録することで利用できます。",
+            "tags": [
+                "AI",
+                "Web"
+            ]
+        },
+        {
+            "title": "エレコムの無線LANルータに複数の脆弱性、確認を -JPCERT/CC",
+            "url": "https://news.mynavi.jp/techplus/article/20240801-2996313/",
+            "summary": "📰 記事要約：\n\n* トレンドマイクロが身売りを検討している可能性がある。\n* 会社は「買収の可能性について話し合いを行っている」とコメントした。\n* トレンドマイクロはサイバーセキュリティソフトウェアを提供する会社である。\n* 会社の株価は過去1年間で約30%下落している。\n* トレンドマイクロは2019年に日本の投資ファンドによって買収された。",
+            "tags": [
+                "Other"
+            ]
+        },
+        {
+            "title": "aiOlaが超高速「マルチヘッド」音声認識モデルを発表、OpenAI Whisperに勝利",
+            "url": "https://venturebeat.com/ai/aiola-drops-ultra-fast-multi-head-speech-recognition-model-beats-openai-whisper/",
+            "summary": "🌟 Israeli AI startup aiOla が超高速「マルチヘッド」音声認識モデル Whisper-Medusa を発表しました。\n\n🔥 このモデルは、OpenAI の Whisper モデルに基づいており、10 個のトークンを同時に予測することができます。Whisper の 50% の速度増加を達成し、同じレベルの精度でテキストをトランスクリプションすることができます。\n\n📊 aiOla は、このモデルを弱い監督学習方法を使用して訓練しました。主なコンポーネントを凍結させ、オーディオ トランスクリプションに生成されたラベルを使用して追加のトークン予測モジュールを訓練しました。\n\n🚀 さらに、20 ヘッド モデルを開発中であり、これにより 20 個のトークンを同時に予測し、より高速な認識とトランスクリプションが可能になります。\n\n🤖 この技術は、Alexa や Google Home などの音声アシスタントの応答速度を向上させることができます。",
+            "tags": [
+                "AI"
+            ]
+        },
+        {
+            "title": "ラス・コックスがGoの技術リーダーを退任",
+            "url": "https://groups.google.com/g/golang-dev/c/0OqBkS2RzWw",
+            "summary": "📣Russ Coxは、Goの新しいリードであるAustinとCherryに関する発表を行いました。彼は、これまでの貢献と新しいリーダーシップに対して感謝を述べています。\n\n🤝Austin と Cherry は、それぞれ Go のエコシステムとランタイムの責任者となります。\n\n📣Austin ClementsとCherry GaoがGoチームの新たなリーダーとして引き継ぎます。\n\n💪Josh Bleecher Snyderからは、Russへの感謝のメッセージが送られました。",
+            "tags": [
+                "Software"
+            ]
+        },
+        {
+            "title": "GoogleのGemini 1.5 ProがAIレースで躍進、GPT-4oに挑戦",
+            "url": "https://venturebeat.com/ai/googles-gemini-1-5-pro-leaps-ahead-in-ai-race-challenging-gpt-4o/",
+            "summary": "🤖 Googleは、Gemini 1.5 Proと呼ばれる新しいAIモデルをリリースしました。 \n💻 このモデルは、2百万トークンの膨大な情報を処理する能力を持っており、長いドキュメント、広範囲のコードベース、そして幅広い音声や映像コンテンツに対応できる可能性があります。\n🤝 Gemini 1.5 Proは、データ分析、ソフトウェア開発、顧客対応など、企業運営のさまざまな面で変革をもたらす可能性を持っています。\n🚨 一方、AI開発の急速な進化と社会への影響に関する懸念も高まりつつあります。AIの安全性、倫理的な使用、そして潜在的な誤用についての議論が続いています。\n💻 Googleは、このモデルを早期テスト用にリリースすることで、よりオープンな開発とコミュニティとの関わりを図っており、フィードバックを集めてモデルをさらに洗練し、潜在的な問題に対処しようとしています。\n🚀 Gemini 1.5 Proのリリースは、AIの競争における重要なステップであり、Googleがより汎用的かつ高度なAIシステムを開発する上で大きな進歩を遂げていることを示しています。",
+            "tags": [
+                "AI",
+                "Web",
+                "Software"
+            ]
+        },
+        {
+            "title": "Flux: 12B のパラメータを持つオープンソースのテキストから画像へのモデル",
+            "url": "https://blog.fal.ai/flux-the-largest-open-sourced-text2img-model-now-available-on-fal/",
+            "summary": "📚 Black Forest Labs が開発したオープンソースのテキストから画像へのモデル「Flux」が発表されました。\n\n*   Flux には 12B のパラメータがあり、Midjourney のような美しい画像を生成できます。\n*   3 つのバージョン (dev, schnell, pro) があり、それぞれ特徴や使用方法が異なります。\n*   Flux は高解像度でリアルな画像を生成でき、人間の体の構造や写真のような写実性に優れています。\n*   速度も早くて、Fal の推論エンジンと組み合わせれば Torch よりも 2 倍高速に動作します。",
+            "tags": [
+                "AI",
+                "Other"
+            ]
+        },
+        {
+            "title": "GitHubユーザーをAI開発者に　GitHub内でAIモデルを検証できる「GitHub Models」登場",
+            "url": "https://ascii.jp/elem/000/004/213/4213222/?rss",
+            "summary": "🔥 GitHub Modelsのパブリックベータ版が提供開始\n• GitHubプラットフォーム上でさまざまなAIモデルを無償でテストできる\n• Llama 3.1やGPT-4o、GPT-4o mini、Phi-3、Mistral Large 2などのAIモデルに対応\n• GitHub内のプレイグラウンドで各AIモデルの性能を調べたり比較したりすることができる\n• Codespacesの開発環境にそのまま移行してのコーディングから、Azureを介した運用環境のデプロイまで、GitHub内の開発プロセスでシームレスにAIモデルを扱うことができる\n• GitHub Modelsの利用はこちらのサイトより申し込むことが可能",
+            "tags": [
+                "AI",
+                "Web"
+            ]
+        },
+        {
+            "title": "Mozilla は Google に続き、Entrust の TLS 証明書への信頼を失っている",
+            "url": "https://go.theregister.com/feed/www.theregister.com/2024/08/01/mozilla_entrust/",
+            "summary": "📰 Mozilla は、Entrust という証明機関 (CA) について Google と同じように信頼関係を失っていることを明らかにしました。この決定は Entrust のコンプライアンス違反の長期化に続きました。\n\n📝 Entrust は、Google や Mozilla などのブラウザーの信頼回復に向けた改善計画を発表しましたが、これらの会社にとってその計画は十分ではありませんでした。\n\n🚨 Entrust の不正行為の例として、Mozilla は 22 件のコンプライアンス違反事件を挙げました。これらには遅延や締め切りの期限切れが含まれていました。\n\n💻 Mozilla は、Entrust が SSL.com と提携してデリゲート RA (登録機関) として機能する計画を支持しています。ただし、 Entrust はこのサービスにプレミアム料金を請求しており、ユーザーはすでにこの高額な料金について懸念を表明しています。\n\n📆 Mozilla と Google は、それぞれ 2024 年の後半にEntrust が発行する証明書に対する信頼関係を終了させる予定です。",
+            "tags": [
+                "Web"
+            ]
+        }
+    ]
+}
