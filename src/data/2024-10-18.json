@@ -1,0 +1,1143 @@
+{
+    "title": "2024-10-18 までの技術動向",
+    "published": "2024-10-18T16:00:00+09:00",
+    "articles": [
+        {
+            "title": "北朝鮮のハッカーがLinuxサイバー強盗で素早く現金を手に入れる",
+            "url": "https://www.darkreading.com/cyber-risk/north-korea-hackers-cash-linux-cyber-heists",
+            "summary": "以下が、提供された情報に基づく要約です：\n\n- 🛡️ 北朝鮮の脅威アクターが「FASTCash」マルウェアファミリーのLinux版を使用し、金融目的のサイバー攻撃キャンペーンを行っている。\n- 🕵️‍♂️ FASTCashは2018年10月に米政府によって初めて記録され、当初はアフリカとアジアの銀行を対象としたATMスキームで使用されていた。\n- 💻 このキャンペーンでは、Windows Server上でスイッチアプリケーションをホストしている銀行やインターバンク支払いプロセッサへの攻撃が拡大した。\n- 🐧 最新の調査結果によると、マルウェアはLinuxシステムを標的とするように設計されていることが明らかになった。\n- 💸 マルウェアはISO 8583トランザクションメッセージを改ざんし、不正な引き出しを実行。資金不足で拒否された取引も承認し、トルコリラで12,000〜30,000リラ（約350〜875ドル）を引き出すことができる。\n- 🚦 リサーチャーは、トランザクションメッセージのインターセプトに使用されるプロセスインジェクション技術が、適切な設定で検出できる商用またはオープンソースのLinuxエージェントによってフラグ付けされることを推奨している。\n- 🛡️ サイバーセキュリティおよびインフラストラクチャ安全保障局（CISA）は、デビットカードにチップとPINの要件を実装し、発行金融要求応答メッセージの認証コードの確認と、チップとPIN取引の承認応答暗号文検証を実施することを推奨している。",
+            "tags": [
+                "Security"
+            ]
+        },
+        {
+            "title": "PyCoder's Weekly: 第651号 (2024年10月15日)",
+            "url": "https://pycoders.com/issues/651",
+            "summary": "## PyCoder's Weekly: 第651号 (2024年10月15日) 要約\n\n- 📅 **発行日**: 2024年10月15日\n\n### 記事\n\n- 📘 **Pythonの性能向上について** by SUMER CIP\n  - Pythonの最近の性能向上を詳細に解説。\n  - インタプリターの変更、メモリ管理の改善、新しいJITコンパイラについて述べている。\n\n- 🔧 **Pythonでのエラーハンドリングガイド** by MIGUEL GRINBERG\n  - Pythonでのエラーハンドリングに関する詳細なガイド。\n  - 実践的なアプローチと理論的な背景を説明。\n\n- 💡 **TypedDictの利点** by CHANGS.CO.UK\n  - TypedDictの導入とその用途について解説。\n  - 辞書型の型注釈作成に役立つ。\n\n- 🔎 **DjangoプロジェクトでのTypeGuard使用** by BRUNO ALLA\n  - Djangoプロジェクトでの型チェック問題を解決するためにTypeGuardを使用した経験を紹介。\n\n- 💸 **Django Software Foundationの予算について** by JACOB KAPLAN-MOSS\n  - Django Software Foundationが現在の予算の4倍があった場合の展望について考察。\n\n### プロジェクト & コード\n\n- 🖥️ **srgn: Grep-Like Tool That Understands Code** by ALEXPOVEL\n  - コードを理解するgrepのようなツール。\n\n- 🔧 **streamable: Stream-Like Manipulation of Iterables** by EBONNAL\n  - イテラブルのストリーム風操作を行うライブラリ。\n\n- 🌐 **httpdbg: Pythonプログラム内のHTTP(S)リクエストをデバッグ**\n  - [GITHUB.COM/CLE-B](https://pycoders.com/link/13460/web)\n\n- 🔒 **secure.py: HTTPセキュリティヘッダーを簡単に設定**\n  - [GITHUB.COM/TYPEERROR](https://pycoders.com/link/13436/web) • Caleb Kinneyが共有\n\n- 🖥️ **django-admin-tui: Django Adminをターミナルで利用可能に**\n  - [GITHUB.COM/VALBERG](https://pycoders.com/link/13438/web)\n\n以上が提供された情報に基づいた要約です。",
+            "tags": [
+                "AI",
+                "Software",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "Next.js 15 RC 2",
+            "url": "https://nextjs.org/blog/next-15-rc2",
+            "summary": "✨ **Next.js 15 の主な更新内容:**\n\n- 🧪 進化的な静的生成制御（実験的）を追加。高度なユースケースでの細かい制御が可能になるが、リソース使用量の増加やメモリ不足エラーの可能性があるため、特別な要件がない限り既定値を使用することをお勧め。\n- 📦 Next.js 15がESLint 9のサポートを導入。ESLint 8のサポートは2024年10月5日に終了。\n- 🔧 ESLint 8または9どちらも引き続き使用可能。ESLint 9にアップグレードし、新しい設定フォーマットに移行していない場合、Next.jsが自動的に`ESLINT_USE_FLAT_CONFIG=false`を適用。\n- 🛑 `next lint`コマンド実行時に非推奨のオプション（`—ext`や`—ignore-path`）は削除。これらの設定はESLint 10で使用できなくなるため、早期に移行することをお勧め。\n- 📚 詳細な移行ガイドは[公式ドキュメント](https://eslint.org/docs/latest/use/migrate-to-9.0.0)を参照。\n\n✨ **改善:**\n\n- `NEXT_CACHE_HANDLER_PATH`環境変数を介してキャッシュハンドラを指定可能に。\n- Pages RouterがReact 18とReact 19の両方をサポート。\n- エラー・オーバーレイがNode.js Inspector URLをコピーするボタンを表示（インスペクターが有効な場合）。\n- App Routerでのクライアント側プリフェッチは、`priority`属性を使用。\n- Next.jsがApp RouterでNext.js内部エラーを再スローするために`unstable_rethrow`関数を提供。\n\n✨ **新機能:**\n\n- `next/script` コンポーネント追加。これにより、Next.js アプリケーションの `<head>` タグ内にスクリプトをより制御された方法で挿入可能。\n\n🛠️ **バグ修正:**\n\n- `vercel/og` がメモリリークの修正とともに更新。\n- パッチタイミングが更新され、`msw` のようなAPIのモッキングパッケージを使用可能。\n\n🚀 **貢献者:**\n\n- Kdy1 (Donny)\n- Padmaia (Maia)\n- Mischnic (Niklas)\n- Timneutkens (Tim)\n- Sokra (Tobias)\n- Wbinnssmith (Will)\n\n📝 **Next.js 15 RC 2 のドキュメントチームメンバー:**\n\n- Delba Oliveira\n- Rich Molebox\n- Ismael Rumzan\n- Lee Robinson\n\n🙌 **感謝の言葉:**\n\n- @Kuboczoch, @himself65, @Sam-Phillemon9493, @Shruthireddy04, @Hemanshu-Upadhyay\n- @timfuhrmann, @controversial, @pathliving, @mischnic, @mauroaccornero\n- @NavidNourani, @allanchau, @ekremkenter, @yurivangeffen, @gnoff\n- 他多数のコントリビューター",
+            "tags": [
+                "Software"
+            ]
+        },
+        {
+            "title": "Sqlite3 Webアセンブリ",
+            "url": "https://sqlite.org/wasm/doc/trunk/index.md",
+            "summary": "👍 Webページ「Sqlite3 Webアセンブリ」の要約:\n\n🔹 **sql.js** - Alon Zakaiにより2012年に作成され、WebブラウザでのSQLite3の最初の直接的な使用例である。 ([GitHub](https://github.com/sql-js/sql.js))\n\n🔹 **wa-sqlite** - Roy Hashimotoが開発し、OPFSストレージを使用してSQLite3データベースを保存する最初の実装である。 ([GitHub](https://github.com/rhashimoto/wa-sqlite))\n\n🔹 **absurd-js** - James Longにより作成され、SQLite3データベースをIndexedDBに格納する方法を示している。 ([GitHub](https://github.com/jlongster/absurd-sql))\n\n🔹 **postgres-wasm** - ブラウザ内でPostgresデータベースサーバーを実行するプロジェクトである。 ([Supabase Blog](https://supabase.com/blog/postgres-wasm))\n\n🔹 **Jaccwabyt** - WASMホストされたC構造体をJSコードで操作できる小さなJSライブラリで、OPFS SQLite3_vfs実装をサポートするために作成された。 ([Fossil](https://fossil.wanderinghorse.net/r/jaccwabyt))\n\n🔹 **CoWasm** - サーバーとブラウザ用の協調的WebAssemblyプロジェクトであり、SQLite3シェルアプリケーションのWASMビルドが含まれている。 ([GitHub](https://github.com/sagemathinc/cowasm) および [Demo App](https://cowasm.sh/))\n\n🔹 **Evan Brass's build** - WASI SDKを使用してビルドされ、このプロジェクトのWASMビルドにはない新しい機能を示している。 ([SQLite Forum](https://sqlite.org/forum/forumpost/ca6139791c) および [WASI SDK](https://github.com/WebAssembly/wasi-sdk))\n\n📚 **第三者によるドキュメントや記事:**\n\n🔹 [Google Chrome Dev Team] - WebSQLをOPFSに移植する方法について解説している。 ([Chrome Developer Blog](https://developer.chrome.com/blog/from-web-sql-to-sqlite-wasm/))\n\n🔹 [VMWare OCTO Team] - SQLite3のWASIビルドについて解説している。 ([Wasmlabs](https://wasmlabs.dev/articles/sqlite-wasi-support/))",
+            "tags": [
+                "Web",
+                "Software"
+            ]
+        },
+        {
+            "title": "Celebrating 20 Years of Google Summer of Code",
+            "url": "http://opensource.googleblog.com/2024/10/celebrating-20-years-google-summer-of-code-nurturing-next-generation-contributors.html",
+            "summary": "🎉 **Google Summer of Code (GSoC) 20周年の祝賀**\n\n- 🚀 GSoCは2005年から始まり、2024年に20周年を迎えました。このプログラムは若手開発者とオープンソースコミュニティをつなぐ役割を果たしています。\n- 🌍 123カ国以上から21,000人以上の貢献者が参加し、2005年には51カ国から200人を超える貢献者を輩出。20年間で10,400%の成長を遂げました。\n- 💻 参加者は合計4300万行以上のコードを書き、1,000以上のオープンソース組織に貢献しています。\n- 🌱 GSoC申請プロセスは、組織がドキュメントの改善や初心者向けタスクの開発を行い、コミュニティを強化する機会となっています。申請が採択されなくても、これらの改善が持続的な効果をもたらしています。\n- 🙌 参加者は実践的なプログラミング経験を得ることができ、現実のソフトウェア開発プロセスやコラボレーション手法を学びます。また、ベテラン開発者からのメンターシップにより、スキルを磨き、自信を築きます。\n- 🤝 GSoCは138カ国から20,000人以上のメンターを輩出しており、多くの参加者がプログラム終了後もコミュニティに貢献し続けています。2025年にはGSoC校友とのつながりをさらに強化する予定です。\n- 🎉 2024年のAll Things Openカンファレンスで、GSoCの20周年を祝う基調講演が行われます。\n\n📝 **投稿者**: Timothy Jordan – Google Developer Relations & Open Source ディレクター",
+            "tags": [
+                "Software",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "Android 15の新機能とその他のアップデート",
+            "url": "https://blog.google/products/android/android-15/",
+            "summary": "もちろんです！以下が提供された情報に基づいて統一した文体で要約した文章です。\n\n✨ **タイトル**: Android 15の新機能とその他のアップデート\n\n🔍 **概要**:\n- Android 15では、プライバシー強化や折りたたみ端末・タブレット向けの改善が行われました。\n\n💡 **主な新機能**:\n\n- 🔒 **プライベートスペース機能**:\n  - デジタルセーフのような役割を果たす\n  - SNS、デートアプリ、銀行アプリなどを別に整理可能\n  - 鍵がかかるとアプリは他のユーザーからほぼ見えなくなる\n  - アプリ一覧、最近のアプリ表示、通知、設定から隠される\n  - アクセスするには追加認証が必要\n  - プライベートスペース自体の存在も非表示にできる\n\n- 📱 **折りたたみ端末・タブレット用新機能**:\n  - タスクバーをピン留め/解除可能、好きなアプリへのアクセス向上\n  - アプリペアリングでマルチタスキングが簡単になる\n  - Google DriveとGmailを同時に開いてファイルドラッグ&ドロップ可能\n  - 頻繁に使うアプリ組み合わせを1つのアイコンとして保存可\n  - 1タップで分割表示できるようになり、アクセスが速くなる\n\n以上が要約です。",
+            "tags": [
+                "Other"
+            ]
+        },
+        {
+            "title": "シスコ、BreachForums でデータが販売された後、侵害を調査",
+            "url": "https://www.techradar.com/pro/security/cisco-investigates-breach-after-data-put-up-for-sale-on-breachforums",
+            "summary": "もちろん、提供された情報に基づいて要約を作成いたします。\n\n- 📰 シスコがBreachForums上で自社データが販売されていることを発見し、調査を開始。\n- 💬 IntelBrokerというハッカーが、Ciscoの内部データを流出させたと主張。\n- 🔑 流出したデータにはGitHubプロジェクト、GitLabプロジェクト、SonarQubeプロジェクト、ソースコード、ハードコーディングされた認証情報、証明書、顧客SRCs、機密文書、Jiraチケット、APIトークン、AWSプライベートバケット、CiscoテクノロジーSRCs、Dockerビルド、Azure Storageバケット、公開鍵と秘密鍵、SSL証明書などが含まれている。\n- 🔍 IntelBrokerは主張の証明として小さなサンプルを共有したが、具体的な侵入方法については詳細を述べていない。\n- 🛠️ Ciscoは「この報告を認識しており、調査を開始しています」とコメント。\n- 🔄 IntelBrokerは過去にもT-Mobile、Home Depot、General Electricなど複数の企業からデータを流出させる実績がある。EnergyWeaponUserとともにAMDも攻撃を受けていると主張している。\n- 🚫 IntelBrokerがEuropolの侵入を主張した際には、欧州警察庁は重要なデータが取得されなかったとして否定している。\n- 🚨 このようなデータ侵害により、関係者は個人情報の盗難、フィッシング攻撃、財務的損失のリスクにさらされる可能性がある。影響を受けた人は注意深く対応し、アイデンティティ保護サービスを利用することを推奨している。",
+            "tags": [
+                "Security"
+            ]
+        },
+        {
+            "title": "研究者らがAndroidマルウェアを発見する新しいツールを開発",
+            "url": "https://www.techradar.com/pro/security/researchers-develop-new-tool-for-spotting-android-malware",
+            "summary": "当然です、以下が提供された情報に基づいた要約となります：\n\n- 📝 **研究者らがAndroidマルウェアを発見する新しいツールを開発**\n  - 🛠️ セキュリティ研究者が、Androidユーザー向けに端末内のマルウェアを検出して削除できる新しいツール「Detector of Victim-specific Accessibility (DVa)」を開発しました。\n  - 🚀 DVaはGeorgia Techのサイバーセキュリティ専門家によって開発され、クラウド上で動作し、端末内のマルウェアを検出してユーザーに報告します。\n  - 🛑 検出された場合、ユーザーはアプリをアンインストールしたり、他の方法で端末をクリーンアップできます。\n  - 💻 DVaはGoogleにも直接レポートを送信します。ただし、GoogleのPlayストア自体は比較的清潔で、Androidマルウェアの大半はサードパーティのアプリストアや怪しげなサイトからダウンロードされることが多いです。\n  - 🔐 通常、AndroidマルウェアはAccessibility権限を要求することが多く、この権限は障害を持つユーザーのために設計されています。しかし、悪意のあるアプリが同じ権限を使用すると、データの喪失やワイヤーフraudにつながる可能性があります。\n  - 📄 研究者らは、DVaを用いて調査者がマルウェアの標的となる被害者、具体的な悪用ベクタ、永続化メカニズムを明らかにできると説明しています。",
+            "tags": [
+                "Security",
+                "Software"
+            ]
+        },
+        {
+            "title": "ウェブブラウザエンジニアリング",
+            "url": "https://browser.engineering/index.html",
+            "summary": "📖 **ウェブブラウザエンジニアリング**  \n- 📚 この書籍は、基本的なウェブブラウザを構築する方法について解説しています。ネットワークからJavaScriptまで幅広い内容をカバーし、数千行のPythonコードで実装されます。\n- 🔗 書籍は4つのパートに分かれています：\n  - 🌐 **Part 1: ページの読み込み** - URLとHTTPリクエストの処理、スクリーンへの描画、テキストフォーマットについて説明しています。\n  - 📄 **Part 2: ドキュメントの表示** - HTMLツリーの構築、ページレイアウト、CSSの適用、ボタンとリンクの処理について解説しています。\n  - 🛠️ **Part 3: アプリケーションの実行** - フォームの送信、インタラクティブスクリプトの実行、データのプライバシー確保方法について述べています。\n  - 🚀 **Part 4: 現代のブラウザ** - 視覚効果、タスクとスレッドのスケジューリング、アニメーションと合成、アクセシビリティ、埋め込みコンテンツのサポート、以前の計算の再利用について詳述しています。\n- 📅 本書はOxford University Pressから年内に出版予定で、既に予約注文が可能です。\n- 🔔 更新情報はブログやTwitterで提供され、議論はGitHubディスカッションフォーラムで行われます。\n- 💖 著者を支援したい場合はPatreonを通じて寄付することもできます。また、メールでの連絡も歓迎されています。",
+            "tags": [
+                "Web",
+                "Software",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "RAGのハルシネーション対策をする手法「Astute RAG」",
+            "url": "https://zenn.dev/knowledgesense/articles/1ecd331dc6b589",
+            "summary": "✅ Astute RAGは、NQ、TriviaQA、BioASQ、PopQAなどのデータセットにおいて、既存のRAG手法を上回る性能を達成しています。\n\n✅ 外部ソースの質が低い場合でも（検索精度がゼロに近い最悪な場合）、Astute RAGはRAGを使用しない場合と同等以上の性能を維持します。\n\n✅ ソースとなる情報が矛盾している場合でも、Astute RAGは最も信頼性のある情報に基づいて回答生成が可能です。\n\n✅ 法人向けのRAGサービス提供において、お客様から「情報ソースの中に最新でないものがあったら、RAGの回答はどうなるのか？」という質問がよく寄せられます。これに対し、従来は利用者側に情報を更新するよう求められていました。\n\n✅ Astute RAG の利点は、ユーザー負担を軽減しながらシステムとして問題解決できる可能性があることです。また、RAGのハルシネーション（幻覚）を抑えるための他の手法としてはSelf-RAGやCRAGがあります。\n\n✅ 今後も、RAGの回答精度向上に向けた工夫や研究について記事にしていく予定です。",
+            "tags": [
+                "AI",
+                "Software",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "研究者らが盗まれたコード署名証明書を使ったハイジャックローダーマルウェアを発見",
+            "url": "https://thehackernews.com/2024/10/researchers-uncover-hijack-loader.html",
+            "summary": "✅ SonicWall Capture Labsが、Windowsマシンを感染させるCoreWarriorというマルウェアによる攻撃の増加を警告しています。このトロイの木馬は自己複製や多数のIPアドレスへの接続、バックドアアクセスの開設などを行う可能性があります。\n\n🔒 フィッシングキャンペーンでは、XWormというステーラーとローダマルウェアがWindows Script File (WSF)を介して配布されています。このスクリプトは、paste[.]eeからPowerShellスクリプトをダウンロードし実行します。\n\n💻 PowerShellスクリプトはVisual Basic Scriptを起動し、これにより一連のバッチとPowerShellスクリプトが実行され、悪意のあるDLLを読み込んでXWorm（「RegSvcs.exe」）に注入します。\n\n⚠️ 最新のXWorm（バージョン5.6）は、応答時間の報告、スクリーンショットの収集、ホストファイルの読み書き、DoS攻撃の実行、保存されたプラグインの削除などの機能を提供します。\n\n🔍 Netskope Threat Labsのセキュリティ研究者Jan Michael Alcantaraは、「XWormは、攻撃者に幅広い機能を提供する多面的なツールである」と述べています。",
+            "tags": [
+                "Security"
+            ]
+        },
+        {
+            "title": "Deno v2がリリース🎉 - Deno v1.0.0の頃からの変化と現在のプラクティスについて",
+            "url": "https://zenn.dev/uki00a/articles/deno-v2-what-has-changed-from-v1",
+            "summary": "✨ **Deno v2がリリースとその変化**\n\n- 📝 Deno v2のリリースにより、v1.0.0からの約4年半で多くの変更や方針転換があった。\n- ⚙️ `deno.jsonc`ファイルを使用してタスクを定義できる。例えば、`tasks.lint`には複数のLintingコマンドが設定されている。\n- 🛠️ `deno task lint`を実行すると、`deno.json`の`tasks.lint`に記述されたスクリプトが実行される。\n- 🖥️ `deno task`コマンドは内部で`deno_task_shell`を使用して各プラットフォームの差異を吸収し、また`package.json`の`scripts`もサポートしている。\n\n🚀 **Deno v2の改善点**\n\n- 📦 標準ライブラリが安定性や使い勝手において大幅に改善されている。\n- 🚀 JSR（JavaScript Registry）はまだ普及の度合いは不明だが、パッケージの公開体験が良さそうで今後も試してみたいとのこと。\n\n⚙️ **Deno v2の新機能と変更点**\n\n- 💻 `std/testing`モジュールを使用することで、BDD形式でのテスト記述が可能になった。\n- 🛠️ Deno v1.0.0時点では標準的なタスク管理機能がなく、外部ツール（例: Velociraptor, make）を使用していた。特にGo言語の影響からか、`make`の使用が多かった。\n- 🔧 Deno v2.0.0からは`deno task`コマンドが導入され、npm scriptsに似た形でタスクを管理できる。タスクは`deno.json`内の`tasks`フィールドで定義する。\n\n🛡️ **セキュリティとパーミッション**\n\n- ⚙️ `--allow-read`フラグを使用してファイルやディレクトリへの読み取りアクセスを許可する。\n- 💡 新たに導入された`--allow-import`フラグは、リモートホストからのモジュールインポートを制限するためのもの。デフォルトで信頼できる特定のホスト（`deno.land`, `jsr.io`, `esm.sh`, `raw.githubusercontent.com`, `cdn.jsdelivr.net`）からのインポートのみが許可される。\n- 🚨 信頼できないホストからモジュールをインポートする際には、`--allow-import`フラグを使用して明示的にアクセスを許可しなければならない。例えば、`unpkg.com`からモジュールを読み込む場合には、このフラグの指定が必須となる。\n- 🔄 `deno test`などのコマンド実行時にはパーミッションプロンプトは表示されず、事前に必要なアクセス権限を与える必要がある。\n\n🔗 **参考リンク**\n\n- 🌐 [Deno v1.0.0](https://github.com/denoland/deno/tree/v1.0.0)\n- 🌐 [Deno v2.0.0](https://github.com/denoland/deno/tree/v2.0.0)\n\n🏃‍♂️ **脚注**\n\n- 🔗 DenoのURLインポートは便利だが、semverに基づいた依存解決がないと依存パッケージの重複が発生する問題があった。これがJSR開発の動機の一つ。\n- 🏃‍♂️ JSRはDeno社が開発しているサーバーレスTypeScript/JavaScriptランタイム。",
+            "tags": [
+                "Software",
+                "Security",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "WordPress プラグイン Jetpack が 2,700 万サイトに影響する重大な脆弱性を修正",
+            "url": "https://thehackernews.com/2024/10/wordpress-plugin-jetpack-patches-major.html",
+            "summary": "### 要約\n\n✅ **2023年6月、Jetpackプラグインが更新され、2,700万サイトに影響する重大な脆弱性が修正された。**\n\n🚫 **この更新は、WordPressの創設者Matt MullenwegとホスティングプロバイダーWP Engineとの間での紛争中に実施された。**\n\n🔗 **WordPress.orgは、WP EngineのAdvanced Custom Fields (ACF) プラグインを制御し、Secure Custom Fields (SCF) という新しいフォークを作成した。**\n\n🔒 **Mullenwegは、「SCFは商業的なアップセルを削除し、セキュリティ問題を修正するための最小限の更新が行われた」と述べた。**\n\n⚠️ **WordPressは、この脆弱性の詳細を開示しなかったが、$_REQUESTに関連していると説明した。**\n\n🛠 **この問題はSecure Custom Fields 6.3.6.2版で対処された。**\n\n🚨 **WordPressはWP Engineに対して、顧客への責任を怠っていると非難し、SCFのセキュリティ問題が修正されるまでそれを避けるべきだと指摘した。**\n\n📝 **WP Engineは、WordPressが「開発者の同意なしに積極的に開発されているプラグインを取り上げた」と主張した。**\n\n⚖️ **これに対し、WordPressは過去にも同様の措置がとられたことがあると反論し、必要に応じて開発者からの許可なくプラグインを無効化または削除する権利があると述べた。**",
+            "tags": [
+                "Security",
+                "Software"
+            ]
+        },
+        {
+            "title": "米国の医療機関、最大40万人の個人情報が盗まれたことを認める",
+            "url": "https://go.theregister.com/feed/www.theregister.com/2024/10/14/gryphon_healthcare_breach/",
+            "summary": "✨ **タイトル:** 米国の医療機関、最大40万人の個人情報が盗まれたことを認める\n\n⚠️ Gryphon Healthcareは、Houstonに本社を置く医療サービスプロバイダーで、最大40万人の個人情報が不正アクセスを受けた可能性があると報告しました。\n\n📄 患者の名前、生年月日、住所、社会保障番号などが不正にアクセスされた可能性があります。さらに、診断、治療内容、処方箋、健康保険情報なども含まれる可能性があります。\n\n🔒 会社は、プライバシーとセキュリティを非常に重視していると述べました。\n\n👀 会社は、データがまだ悪用されていないと信ずるとし、被害者には12ヶ月間のクレジット監視と身元保護サービスを提供しています。\n\n👥 393,358人の個人情報が医療請求サービスを提供する組織に保存されていたことが明らかになりました。これらの組織は、病院、救急部門、救急医療サービス、画像診断センター、独立実験室、外来手術センター、私設診療所などを含む可能性があります。\n\n📅 事件は8月13日に発見され、9月3日に影響を受けたデータのレビューが完了し、10月初頭に被害者への通知が始まりました。最初の不正アクセスは7月6日に行われたと報告されています。\n\n🛠️ Gryphonは、この事件を受けてセキュリティ強化措置を取り、同様の事件の再発防止に努めていると述べています。\n\n💔 会社は、患者や関係者への謝罪と被害の最小化に取り組んでいると表明しました。\n\n💰 法的対応として、クラスアクションが提起される可能性があり、過去の類似ケースでは高額な和解金が支払われた例があります。例えば、Med-Dataは今年4月に700万ドルの和解金を支払い、Lehigh Valley Health Networkも6500万ドルの和解金で合意しています。\n\n🌟 これらのクラスアクションでは、被害者や医療パートナー、投資家などが原告として参加することが多いです。",
+            "tags": [
+                "Security",
+                "Other"
+            ]
+        },
+        {
+            "title": "Dockerfileを自前で書かずにCloud Runを動かす技術",
+            "url": "https://zenn.dev/yskn_sid25/articles/e5a727248849d1",
+            "summary": "もちろん、以下がWebページの内容を統一した文体で要約したものです。\n\n- 🚧 ハマりポイント：Buildpackで生成されたイメージURLの取得方法に困った。\n- 💾 Cloud Runの`service.yaml`では、特定のDockerイメージを使用するためにそのURLを指定する必要がある。\n- ⚠️ `:latest`タグだけでは最新のイメージを指定できない。`:@sha256:xxxxxxxx`形式で指定する必要がある。\n- 🛠 CDプロセス内での手順：\n  - `gcloud builds submit --pack image=<IMAGE_URL>`を使ってBuildpackで新しいイメージを作成。\n  - `gcloud artifacts docker images describe <IMAGE_URL>:latest`から最新のURLを取得。\n  - 取得したURLを使用して、Cloud Deployのリリースを作成。\n- 🛠 **Buildpackを使用した理由**：\n  - 小さなマイクロサービスでDockerfileは数行しか必要ないと考えたため。\n  - 自分でDockerfileを書くと将来の脆弱性が生じる可能性があるため、Googleに任せることにした。\n- 🛠 **Buildpackの利点**：\n  - Dockerfileの保守が必要なくなる。デプロイ時にBuildpackが最適化されたコンテナイメージを作成する。\n  - Artifact Registryで脆弱性スキャンを有効にして追加のセキュリティ対策を行うことができる。\n- 🛠 **将来の対応**：\n  - Buildpackが利用できなくなった場合でも、小さなマイクロサービスであればDockerfileを自作しても問題ないと考えている。\n  - その場合はDockerfileの保守に取り組む予定。",
+            "tags": [
+                "Software",
+                "Security"
+            ]
+        },
+        {
+            "title": "中国の科学者がD-Wave量子コンピュータを使用して、最も広く使用されている暗号化アルゴリズムの一部を解読したと報じられる",
+            "url": "https://wccftech.com/chinas-scientists-use-a-d-wave-quantum-computer-to-reportedly-crack-some-of-the-most-widely-used-encryption-algorithms/",
+            "summary": "- 🚀 中国の研究者がD-Wave量子コンピュータを使用して、最も広く使用されている暗号化アルゴリズムを解読したと報じられている。\n- 🔐 上海大学の王超チームは、Present、Gift-64、Rectangleなどの基礎的な暗号化アルゴリズムを解読し、これが銀行や軍事分野で使用される暗号方法に対する「現実的かつ実質的な脅威」であると指摘している。\n- 🧮 量子アニーリングという手法を使用し、量子変動を利用して問題の最小値を見つけ出すことで、従来の数学的手法と組み合わせて新しい計算アーキテクチャを構築した。\n- 🔒 この方法は将来的にAES-256などの「軍事グレード」暗号アルゴリズムも解読できる可能性があるが、まだ完全には実現していない。\n- ⚠️ 限界としては環境要因、未成熟なハードウェア、複数の暗号化アルゴリズムを一括で攻撃する方法の開発などの課題が残っている。",
+            "tags": [
+                "AI",
+                "Security"
+            ]
+        },
+        {
+            "title": "OpenAI が Swarm を発表 — AI にあなたに代わって仕事をさせる新しいオープンソース手法",
+            "url": "https://www.tomsguide.com/ai/chatgpt/openai-reveals-swarm-a-new-open-source-method-for-getting-ai-to-do-things-on-your-behalf",
+            "summary": "🌟 **OpenAI が Swarm を発表 — AI にあなたに代わって仕事をさせる新しいオープンソース手法**\n\n- 🚀 OpenAIがSwarm Frameworkをリリース。これはマルチエージェントシステムの構築、調整、展開を行うための実験的なフレームワークです。\n- 👷‍♂️ このフレームワークは多剤システム（マルチエージェントシステム）の開発に必要なツールセットを提供します。エージェント同士が協力して自動的にタスクや目標を達成することができます。\n- 💡 リリースは低調でしたが、今後のAIとのインタラクションに大きな影響を与える可能性があります。\n- 🚀 Swarm Frameworkにより、エージェント型ソリューションの開発と展開が容易になることが期待されています。\n- 🌐 未来のChatGPTは、複数の情報源から総合的な答えを提供することができるようになります。異なるウェブサイトや現実世界でユーザーに代わってタスクを実行することも可能になります。\n- 💼 Sequoia Capital の報告によると、SaaS から Outcome as a Service (OaaS)へのシフトが予想されます。Sierra AIなどの新しいシステムは、タスクの達成に応じて報酬を受け取ります。\n- 🌱 この技術革新は、ソフトウェアアプリケーションの革命をもたらし、私たちの生活を大きく変える可能性があります。\n- 🧠 Dario Amodei は、強力なAIが人間の仮想的な作業に利用可能なすべてのインターフェースを持つと述べています。このAIは質問に答えるだけでなく、数時間から数週間かかるような複雑なタスクを自律的に実行できます。\n- 👥 Ilya Sutskever は2018年に「エージェントの社会」について話し、これらのエージェントが日々の生活に溶け込むことを予測していました。OpenAI の高度な音声モードがその初期段階を示しています。\n- 🏗️ Amodei は、「データセンター内の天才国のビジョン」を語り、多数のエージェントが協力して形成される可能性について述べています。このビジョンは現実味を帯びており、AI開発の高速化と継続的な製品・研究リリースによって、その実現は近いと考えられています。\n- ⏳ Amodei は、一部のプロジェクト（例：がん治療の開発）には最小限の時間が必要であり、AIの進化でも短縮できないと指摘しています。予測不可能性や物理法則も制約として挙げられています。\n- 📝 Anthropic は、安全な AI 製品の開発で知られています。これらの製品は、人工知能の恩恵を提供しつつ、リスクを最小限に抑えようとする。\n- 👥 Nigel Powell は30年以上のテクノロジー業界での経験を持つ著者兼コラムニストです。日曜日のタイムズ新聞で16年間「Don't Panic」技術欄を担当し、BBC ラジオやスカイテレビにも出演しています。\n- 🏛️ 彼は法学の学位（LLB）と経営学修士（MBA）を持ち、ソフトウェア、AI、セキュリティ、プライバシーなど幅広い分野の専門家です。",
+            "tags": [
+                "AI",
+                "Software"
+            ]
+        },
+        {
+            "title": "DeepSeek: 大規模な合成データによる LLM の定理証明の進歩",
+            "url": "https://arxiv.org/abs/2405.14333",
+            "summary": "もちろん、以下が統一された文体での要約です：\n\n- 📚 **数学的証明アシスタント**：Leanなどの証明アシスタントは、数学的な証明の検証を革新し、高精度と信頼性を確保しています。\n- 🤖 **大規模言語モデル（LLM）の課題**：大規模言語モデル（LLM）は数学的推論に有望ですが、形式的な定理証明における進歩は訓練データの不足により制限されています。\n- 💡 **合成データ生成アプローチ**：この問題を解決するために、高校レベルと大学初年レベルの数学コンペティション問題から広範なLean 4証明データを生成する方法が導入されました。このアプローチは自然言語の問題を形式的なステートメントに翻訳し、低品質のステートメントをフィルタリングして証明を生成します。\n- 📊 **DeepSeekMath 7Bモデルの成果**：合成データセット（800万件の形式的ステートメントと証明）で微調整されたDeepSeekMath 7Bモデルは、Lean 4 miniF2Fテストで64サンプルでの全体的な証明生成精度が46.3%、累積で52%を達成しました。これは基準となるGPT-4（64サンプルで23.0%）と強化学習手法（41.0%）を上回っています。\n- 🏆 **FIMOベンチマークでの成果**：DeepSeekMath 7Bモデルは、Lean 4 Formalized International Mathematical Olympiad (FIMO) ベンチマークの148問題中5つの証明に成功し、GPT-4はどの証明も成功しませんでした。\n- 📦 **データセットとモデルの公開**：合成データセットとモデルは公開され、この有望な分野でのさらなる研究を促進する予定です。",
+            "tags": [
+                "AI"
+            ]
+        },
+        {
+            "title": "Bun の C Compile を試してみた",
+            "url": "https://zenn.dev/ryoppippi/articles/34963c374dc178",
+            "summary": "🎉 記事の内容を以下のように要約します：\n\n- 📚 `cmigemo` の関数をラップしたC言語の関数を定義。主な関数：\n  - 🛠️ `migemoOpen`: 辞書ファイルを開いて `migemo` インスタンスを作成。\n  - 🔄 `migemoQuery`: `migemo` インスタンス、クエリ、callback 関数を受け取り、マッチする文字列を callback 関数に渡す。その後結果を解放。\n  - 🗑️ `migemoClose`: `migemo` インスタンスを解放。\n- 🛠️ `bun cc` 関数を使ってJSのcallback関数をCに渡せるように定義。\n- 📦 `Migemo` クラスを作成。主な機能：\n  - 🔓 `using migemo = new Migemo('./migemo-dict');` でインスタンス化し、scopeから外れると自動的に `migemoClose` が呼ばれる。\n  - 🚀 `migemo.query` でクエリと callback 関数を渡すことで、結果は callback 関数に渡され、終了後にメモリが解放される。\n- 🎉 最後に、他のライブラリも試してみたいという意欲的なメッセージ。",
+            "tags": [
+                "Software",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "アドビ、動画生成AIを正式発表　映像業界の常識が変わる",
+            "url": "https://ascii.jp/elem/000/004/227/4227830/?rss",
+            "summary": "Certainly! Here’s the summarized version of the provided web page content:\n\n---\n\n🎥 **アドビが「Adobe MAX 2024」を開催し、100種類以上の新機能を発表。特に生成AI「Adobe Firefly」の動画生成機能「Firefly Video Model（ベータ）」が注目。**\n\n🤖 **「Firefly Video Model（ベータ）」は商用利用可能で、短尺ながら高品質な映像を生成できる。**\n\n🎨 **Adobe Fireflyには画像、ベクターデータ、デザイン、3Dデータを生成するモデルがあり、「ビデオモデル」が新たに加わった。**\n\n🔍 **「Firefly Video Model（ベータ）」はテキストから動画と1枚の画像から動画を生成する2つの機能を持つ。**\n\n📝 **テキストから動画を生成する機能はWeb版で利用可能。初期は英語のみ対応。カメラワークも指定可能。**\n\n🖼 **1枚の画像から動画を生成する機能は、コマ撮り風やモーショングラフィックなど多様な用途に使用できる。**\n\n⏳ **1回に生成できる動画は最長5秒で、生成時間は2分以内。特殊効果の生成も可能。**\n\n🚀 **AI業界では動画生成競争が激化しており、OpenAIやRunwayなどの企業が高精度なモデルを開発している。**\n\n🎥 **映画スタジオや法的規制など、AIと映像業界の関係が整理されつつある。**\n\n💡 **Firefly Video Model（ベータ）は広告や映像制作にAI活用の普及を促進し、映像業界の常識が激変する可能性がある。**\n\n---",
+            "tags": [
+                "AI",
+                "Software",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "数千のフォーティネットインスタンスが、現在悪用されている欠陥に対して脆弱",
+            "url": "https://go.theregister.com/feed/www.theregister.com/2024/10/14/fortinet_vulnerability/",
+            "summary": "もちろんです、以下が統一された文体での要約です：\n\n- 🚨 86,000以上のフォーティネットのインスタンスが脆弱性に晒されている。この数字は日曜日の時点で86,602であり、前日と比較して若干減少している。\n- 🗺️ 脆弱なデバイスの大半はアジア（38,778）にあり、次いで北米（21,262）、ヨーロッパ（16,381）が続いている。\n- 📅 CVE-2024-23113は2月に最初に公表されたが、攻撃者は他の重要な脆弱性の修正に忙しく、この脆弱性への注目が最近になって高まった。\n- 🛡️ CISA（サイバーセキュリティ・インフラストラクチャ保安局）は先週、この脆弱性が積極的に悪用されていることを明らかにし、KEVカタログに追加した。KEVカタログには既に悪用され、連邦政府機関にとって深刻な脅威となっている脆弱性のみが掲載される。\n- ⏳ FCEB（連邦民間執行部門）機関は21日間の猶予期間を与えられており、この期間内に対策を講じる必要がある。対策としては、安全なバージョンへのアップグレードまたは影響を受けたデバイスの接続切断が挙げられる。\n- 💻 この脆弱性はCVSS v3の深刻度評価で9.8と非常に高い値を示しており、データの機密性、システムの整合性、サービス可用性に大きな影響を与える可能性がある。特権やユーザー操作を必要とせずに悪用可能である。\n- 🛠️ FortiOS、FortiPAM、FortiProxy、FortiWebのさまざまなバージョンが影響を受けている。管理者は安全なバージョンへのアップグレードまたはフォーティネットのアドバイザリに記載された緩和策を実施することをお勧めされる。\n- 🛑 緩和策として、脆弱性のあるインターフェースのfgfmデーモンアクセスを削除することが推奨されているが、これによりFortiManagerがFortiGateデバイスを検出できなくなる。",
+            "tags": [
+                "Security"
+            ]
+        },
+        {
+            "title": "Veeam の脆弱性を悪用し、侵害された VPN 認証情報を介してマルウェアを展開",
+            "url": "https://www.techradar.com/pro/security/veeam-vulnerability-exploited-to-deploy-malware-via-compromised-vpn-credentials",
+            "summary": "以下の情報は提供されたWebページのタイトルとコンテンツから作成した要約です：\n\n🚨 **Veeam の脆弱性が悪用される**\n- 🚨 ハッカーがVeeam Backup & Replicationの脆弱性（CVE-2024-40711）を悪用して、FogとAkiraのランサムウェアを展開しようとしている。\n- 🔐 この脆弱性は未認証のリモートコード実行（RCE）を可能にする。\n\n🔐 **攻撃手法**\n- 🔒 ハッカーは最初に、弱いパスワードや多要素認証（MFA）が設定されていないVPNゲートウェイを狙う。\n- 🛑 これらのVPNには、サポート終了したソフトウェアバージョンも含まれていた。\n- 💥 次に、CVE-2024-40711を悪用してローカルアカウントを作成する。\n\n🔥 **攻撃の実態**\n- 🔍 Sophosの研究者たちはこれまで4つの攻撃試みを観測している。\n- 🛠️ 管理者は最新バージョン（12.2 build 12.2.0.334）にアップデートすることにより、この脆弱性のリスクを軽減できる。\n\n💡 **セキュリティ対策**\n- 🔧 脆弱性のパッチ適用、サポート終了したVPNの更新や置き換え、多要素認証の使用が重要である。\n- 🕵️ Sophos X-Opsは引き続きこの脅威行動を追跡している。\n\n🚨 **NHS Englandの注意喚起**\n- 🔰 NHS Englandは、エンタープライズバックアップと災害復旧アプリケーションがサイバー犯罪者の「価値ある標的」であるとのアドバイザリを出した。",
+            "tags": [
+                "Security"
+            ]
+        },
+        {
+            "title": "Veeam の重大な脆弱性が悪用され、Akira および Fog ランサムウェアが拡散される",
+            "url": "https://thehackernews.com/2024/10/critical-veeam-vulnerability-exploited.html",
+            "summary": "以下の通り、Webページの内容を要約しました：\n\n✅ **Lynxランサムウェア**：2024年3月頃にINCランサムウェアのソースコードの売却を受け出現。LynxとINCは多くのソースコードを共有している。\n\n🔒 **INCランサムウェア**：2023年8月に最初に現れ、WindowsとLinuxの両方で動作するバリアントがあった。\n\n⚠️ **Trinityランサムウェア**：2024年5月に米国保健社会福祉省（HHS）ヘルスセクター・サイバーセキュリティ・コーディネーションセンター（HC3）が被害を報告。Trinityは2023LockとVenusランサムウェアの再ブランド化とみられる。\n\n💻 **Trinityランサムウェアの侵入方法**：フィッシングメール、悪意のあるウェブサイト、ソフトウェア脆弱性の搾取を通じてシステムに侵入し、ダブル讹诈戦略を用いて被害者を攻撃する。\n\n💰 **MedusaLockerランサムウェア**：2022年10月から活動している金銭目的の脅威アクターが、主にEU諸国と南米で標的にする「BabyLockerKZ」バリアントを配布している。\n\n🛠 **攻撃者の手法**：公開されている攻撃ツールやLIVING OFF THE LAND (LoL) バイナリを使用し、組織内の認証情報窃取と横展開を支援する一連のツールを用いている。",
+            "tags": [
+                "Security"
+            ]
+        },
+        {
+            "title": "Golangウィークリー第141号",
+            "url": "https://golang.thisweekin.io/golang-weekly-issue-141-45226b18ec74?source=rss------golang-5",
+            "summary": "- 💰 Mediumが収益を約80%削減したため、寄付をお願いしています。\n- ☕ Golang WeeklyにKo-Fiを通じて一回性または月額で寄付をサポートしてください。\n- 🏦 Stripe、PayPalを使用して一回性の寄付をするか、Amazonアフィリエイトリンクを利用する方法があります。\n- 📚 記事とチュートリアルのセクションが紹介されています。\n- 🔒 作者はこの物語をMediumメンバーのみに公開しています。新規ユーザーはアカウントを作成することで物語を読むことができます。\n- 📱 モバイルウェブで続けることも可能です。\n- 👤 既存のアカウントをお持ちの方は、サインインして続きを読みましょう。",
+            "tags": [
+                "Other"
+            ]
+        },
+        {
+            "title": "イランのハッカー集団がWindowsの欠陥を悪用",
+            "url": "https://tugatech.com.pt/t62833-grupo-de-hackers-no-irao-estao-a-explorar-falha-no-windows",
+            "summary": "もちろん、以下が統一された文体での要約です：\n\n💻 **イランのハッカー集団OilRigがWindowsの欠陥を悪用**\n- 🌍 Trend Micro社による調査によると、イランのハッカー集団OilRigがWindowsの脆弱性を利用して大規模な攻撃を行っている。\n- 🔒 OilRigはWindowsシステムにバックドアを設置し、Microsoft Exchangeサーバーを感染させてアクセス情報を窃取する。\n- 🚨 最新の攻撃では、脆弱性のあるサーバーに対してスクリプトを送信し、リモートでコマンドを実行して内部データやリモート制御を取得している。この脆弱性はCVE-2024-30088として知られている。\n- 🛡️ この脆弱性は6月にMicrosoftによって修正されたが、未更新のシステムがまだ存在し、これらのシステムが大規模な攻撃の対象となっている。\n- 💻 システムを最新バージョンに更新し、すべての最新のパッチを適用することが重要。さらに、適切なセキュリティソフトウェアを使用することも必要。",
+            "tags": [
+                "Security"
+            ]
+        },
+        {
+            "title": "React Router v7 がプレリリースされた🎉",
+            "url": "https://zenn.dev/jiiyaaa/articles/a937b4a66a4bb6",
+            "summary": "🎉 **React Router v7 (RR v7) のプレリリース版が公開された**\n\n🛠️ **新機能と改善点**\n- 📂 ファイルベースのルーティング：ディレクトリ構造に基づいてルートを自動生成。\n- 🔄 コンフィグベースのルーティング：設定ファイルでルートを管理可能。\n- ⚡ PreRendering (静的サイトジェネレーション)：ビルド時にページを事前にレンダリングし、パフォーマンスを向上。\n- 🗂 コード分割\n- 🔄 データローディングの型安全の向上\n- 💾 サーバーアクション\n- 💻 サーバーレンダリング (CSR, SSR, Static Pre-Rendering)\n- 🖥 React Server Components：`loader` 関数と `App` コンポーネントを使用。\n\n🛠️ **RR v6 からの移行**\n- 💻 URLを参照\n\n📦 **Remix v2 (vite) からの移行**\n- 📦 RRの関連パッケージ導入\n- ⚙️ viteのプラグイン変更\n- 🔗 RemixからimportしていたものをRRからimport\n\n📚 **コンフィグベースのルーティングの例**\n- 📁 構成例: `app/routes.ts`, `app/routes/home.tsx`, `app/routes/about.tsx`, `app/routes/users/profile.tsx`, `app/routes/users/settings.tsx`, `app/routes/todos/list.tsx`, `app/routes/todos/detail.tsx`, `app/layouts/base-layout.tsx`\n- ✨ 自動生成ツールの導入により、型定義が楽になる\n- 🛠️ `T.createRouteType` を使って route ごとの型を自動生成できる\n- 📚 生成された型ファイルを使用して loader 関数や action 関数の引数の型付けができる\n\n🔥 **Remix との比較**\n- 🔧 Remix v1 → v2 の変更時に大きな変化があった。\n- 🛠 RR v7 で middleware が導入されるかは未定。`getLoadContext` を使用するのが現状の推奨。\n\n💡 **まとめ**\n- 📝 RR v5 や `<Route>` コンポーネントを使用している人は、RR v7 の正式リリースを待ってから移行を考えるのがよさそう。\n- 💡 今回のプレリリースには期待が持てる内容で、今後の進展も注目したい。",
+            "tags": [
+                "Web",
+                "Software"
+            ]
+        },
+        {
+            "title": "Wi-Fi の信頼性を向上させる新しいチャネル競合メカニズム",
+            "url": "https://arxiv.org/abs/2410.07874",
+            "summary": "もちろんです、以下が要約です：\n\n- 📡 **Wi-Fi 8 (IEEE 802.11bn)の目的**：パフォーマンス向上と信頼性強化を目指しています。\n- 🛠️ **問題点**: 現行のDistributed Channel Access（LBT）が信頼性の低下要因となっています。\n- 🔍 **新しいメカニズム \"It's Your Turn\" (IYT)**：既存のDCFを拡張し、近隣デバイスの活動状況を把握することで順番に送信を行うことで、LBTの信頼性を改善します。\n- 📊 **シミュレーション結果**: IYTはチャネルアクセス遅延を制御し、パフォーマンスの信頼性向上を示しています。また、異なるトポロジー、既存デバイスとの共存、ネットワーク密度の増加に対しても効果的であることが確認されています。",
+            "tags": [
+                "AI",
+                "Web",
+                "Security"
+            ]
+        },
+        {
+            "title": "2024/10/07〜2024/10/13の最新情報",
+            "url": "https://uki00a.github.io/deno-weekly/articles/2024/10/13.html",
+            "summary": "### 2024/10/07〜2024/10/13の最新情報\n\n- ⭐ **Deno v2.10.3 がリリース**\n  - 📦 v2.10.3 が公開されました。\n\n- 🌟 **JavaScript Runtime Standard Registry (JSR) の更新**\n  - 💼 @std/streams/buffer@0.57.4、@std/log@0.224.9 などがリリースされました。\n  - 🛠 @std/streams/buffer@0.57.4 の主な変更点:\n    - readShort, readInt, readLong, readStringDelim, readRange, sliceLongToBytes, copyN, readLines などのメソッドが追加または更新されました。\n  - 🛠 @std/log@0.224.9 の主な変更点:\n    - 非公開メソッド Logger#asString, Logger#applyColors が削除されました。\n\n- 🌟 **UnJS プロジェクトの動向**\n  - 🤔 UnJS プロジェクトにおいて、Deno サポートを進めることが検討されています。\n  - 🚀 現在、Nitro v2.5.0 と crossws で Deno サポートが導入されています。\n  - 🛠 今後リリース予定の h3 v2 では、Web 標準の API をベースとすることで Deno でも動作できるようにすることが想定されています。\n  - 📦 jsr へのパッケージ公開も検討されています。",
+            "tags": [
+                "Software",
+                "Web"
+            ]
+        },
+        {
+            "title": "Fluxは高速でオープンソースです",
+            "url": "https://replicate.com/blog/flux-is-fast-and-open-source",
+            "summary": "### Webページの要約: Fluxは高速でオープンソースです\n\n- 🏃‍♂️ **FLUXの速度向上**: FLUXがReplicate上で大幅に高速化され、最適化がオープンソースで公開されました。これにより、ユーザーはその仕組みを確認し、さらに改善することができます。\n- 📊 **具体的な速度**:\n  - 512x512ピクセル、4ステップ: 0.29秒（P90: 0.49秒）\n  - 1024x1024ピクセル、4ステップ: 0.72秒（P90: 0.95秒）\n  - 1024x1024ピクセル、28ステップ: 3.03秒（P90: 3.90秒）\n- 🛠️ **最適化の方法**:\n  - モデルの最適化: Alex Reddenの`flux-fp8-api`を基に、`torch.compile`とNightly Torchビルドの高速CuDNNアテンションカーネルを使用しました。\n  - 新しい同期HTTP APIの導入: すべての画像モデルがReplicate上で高速化されました。\n- 🕵️‍♂️ **品質比較**: `flux-fp8-api`による量子化は出力をわずかに変更しますが、品質への影響は最小限です。詳細な比較ツールが用意されています。\n- 🔓 **オープンソースへの貢献**: ReplicateはFLUXの最適化をオープンソースで公開し、コミュニティとの協力により、さらに高速化を目指しています。\n- 🚀 **今後の展開**: 新しい技術の導入により、さらなる高速化が期待されます。ユーザーはFLUXをファインチューニングしたり、カスタムバージョンをデプロイすることもできます。",
+            "tags": [
+                "AI",
+                "Software",
+                "Security"
+            ]
+        },
+        {
+            "title": "deno.json の隠し設定 \"patch\" についての話",
+            "url": "https://zenn.dev/5t111111/articles/hidden-config-patch-in-deno-json",
+            "summary": "- 🛠️ **インストールした依存モジュールにパッチを適用する方法**\n  - `deno.json` の `patch` フィールドに、パッチを適用したいモジュールのパスを指定するだけで完了。\n  - `imports` 内で定義されているモジュールの URL は書き換え不要。\n\n- 🚀 **`patch` 機能の現状**\n  - 現在、公式にはアナウンスされていない実験的な機能。\n  - Deno 1.46 からフィードバックを集める目的で導入された。\n  - フィードバックは GitHub の issue で募集しているが、まだ積極的な反応は少ない。\n\n- 🤝 **この機能の重要性**\n  - デベロッパーフレンドリーな Deno 環境を構築するために欠かせない。\n  - 早期に安定版として正式リリースされることを期待している。",
+            "tags": [
+                "Software"
+            ]
+        },
+        {
+            "title": "Mastodon 4.3",
+            "url": "https://blog.joinmastodon.org/2024/10/mastodon-4.3/",
+            "summary": "🎉 **Mastodon 4.3 のリリース**\n- 📢 Mastodon 4.3がリリースされ、新機能が導入されました。`mastodon.social`ユーザーは既に利用可能ですが、他のサーバーのユーザーはアップグレード後に利用できます。\n\n🔔 **通知機能の改善**\n- 🔍 フォロワーを失った場合や他サーバーとのフォローができなくなった場合に通知が届きます。影響を受けたプロフィールの一覧をエクスポートすることも可能です。\n- 🚨 自身のアカウントに関するモデレーション決定にもアプリ内通知があります。\n- 📝 通知グループ化機能が導入され、話題となった投稿の多数の通知をまとめ表示します。\n- 🛑 特定のユーザーからの通知や特定のキーワードを含む通知をフィルタリングする新システムが追加されました。\n\n🎨 **デザインと機能の改善**\n- 👀 リンクプレビューで作家やジャーナリストのプロフィールを表示できるようになりました。これにより、リンクが共有された際に作者を簡単にフォローできます。\n- 🌐 マストドン投稿のウェブサイト埋め込み機能が改良され、より美しく表示されます。\n\n💡 **ユーザー体験の向上**\n- 🔄 4時間以上の古い投稿の上に新しいフォローリコメンデーションが表示されるようになりました。言語別の人気プロフィールと個別の推薦を組み合わせています。\n- 🕵️ フォローリコメンドの理由も表示され、透明性が向上しました。\n\n🚀 **今後の計画**\n- 📝 次のリリースでは、引用投稿機能やマネージドブロックリストの導入を予定しています。\n- 💻 また、`fediscovery.org`との連携により、中小規模のサーバー運営が容易になります。\n\n🙏 **サポートのお願い**\n- ❤️ Mastodonは広告やVC投資に頼らず、年間50万ドル以下の予算で4人のフルタイム従業員と複数の契約者が開発しています。Patreonなどを通じてご寄付をお願いします。\n\n🎁 **その他のニュース**\n- 🧸 Mastodonのぬいぐるみが間もなく販売開始されます。詳細は元の発表ページを参照してください。",
+            "tags": [
+                "Software",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "中国とイランのハッカーは、ChatGPTとLLMツールを使用してマルウェアとフィッシング攻撃を作成しています。OpenAIのレポートでは、ChatGPTを使用して作成された20件以上のサイバー攻撃が記録されています。",
+            "url": "https://www.tomshardware.com/tech-industry/cyber-security/chinese-and-iranian-hackers-use-chatgpt-and-llm-tools-to-create-malware-and-phishing-attacks-openai-report-has-recorded-over-20-cyberattacks-created-with-chatgpt",
+            "summary": "以下が統一された文体での要約です：\n\n- 🚨 OpenAIのレポートによると、ChatGPTを用いて20件以上のサイバー攻撃が行われたことが確認された。\n- 🕵️‍♂️ 2024年11月に中国の脅威アクターがアジアの政府を標的とした攻撃が最初に記録され、SweetSpecterという手法を使用した。この方法ではZIPファイル内の悪意のあるファイルをダウンロード・開くことでユーザーのシステムに感染チェーンが作成される。\n- 💻 イランのグループ「CyberAv3ngers」はChatGPTを使ってmacOSベースのPCからユーザーのパスワードを盗むことを目論んだ攻撃を行った。\n- 📱 イランのグループ「Storm-0817」もChatGPTを利用してAndroid向けのマルウェアを開発した。このマルウェアは連絡先リスト、通話履歴、ブラウザ履歴を盗み出し、デバイスの正確な位置情報を取得し、感染したデバイス上のファイルにアクセスすることができた。\n- 🛡️ これらの攻撃は既存の手法を利用していたが、ChatGPTを使って容易に悪意のあるツールを作成できることを示している。これにより、必要な知識を持つ誰でもChatGPTを利用して悪意のある行為を行うことが可能となる。\n- ⚙️ OpenAIは今後、内部の安全およびセキュリティチームと協力し、このような手法が使用されるのを防ぐためにAIの改善に取り組む方針である。また、同社は業界の仲間や研究コミュニティと情報を共有し、状況を防止するための努力を行う予定だ。\n- 🤝 他の主要なAIプラットフォームも保護措置を取り、このような攻撃を防ぐことが重要だと指摘されている。ただし、完全に防ぐことは難しいため、それぞれのAI企業が事前に問題に対処するための対策が必要である。",
+            "tags": [
+                "AI",
+                "Security"
+            ]
+        },
+        {
+            "title": "東京ガス子会社で個人情報416万件が漏洩した可能性、業務委託元の51事業者に飛び火",
+            "url": "https://xtech.nikkei.com/atcl/nxt/column/18/01157/100900120/",
+            "summary": "- 🚨 **東京ガス子会社での個人情報漏洩**\n  - 📊 約416万件の顧客情報が漏洩の可能性があることが判明\n  - 💻 東京ガスエンジニアリングソリューションズ（TGES）が不正アクセスを受け、システム運用に必要な個人データが被害を受けた\n  - 🛡 攻撃者は従業員情報を使ってVPN装置を経由し、社内サーバーに侵入したとみられる\n\n- 🏦 **影響範囲**\n  - 💧 ガスや水道事業者51社が被害を受けた\n  - 📋 各事業者の顧客情報を含む\n    - 👤 千葉県の京葉ガス：約81万件\n    - 👤 北海道ガス：約69万件\n    - 👤 埼玉県越谷・松伏水道企業団：約19.3万件\n    - 👤 福岡市水道局：約22.4万件\n\n- 🛑 **対応**\n  - ⚠ 東京ガスは7月17日に漏洩の可能性を公表\n  - ❌ 東京ガスの家庭用顧客情報は含まれていないが、一部法人データは影響を受けた可能性がある\n\n- 📝 **詳細**\n  - 🕒 2024年7月以降、各事業者が謝罪と対応に追われている\n  - 📈 被害事業者は30社以上に及ぶ",
+            "tags": [
+                "Security",
+                "Other"
+            ]
+        },
+        {
+            "title": "INC ランサムウェアが Lynx に改名 – コードは同じ、名前は新しく、依然として悪質",
+            "url": "https://go.theregister.com/feed/www.theregister.com/2024/10/11/inc_ransomware_lynx/",
+            "summary": "### Webページの要約\n\n✨ **Palo Alto NetworksのUnit 42研究チームによると、INCランサムウェアグループが3ヶ月間でLynxに改名したとみられる。**\n\n📅 **INCは2023年10月に活動を開始し、UKのLeicester City CouncilやNHS Scotlandなどの高プロファイルな標的への攻撃で注目を集めた。**\n\n📊 **Lynxは2024年7月に初めて確認され、その後検出数がINCを上回っている。**\n\n📉 **2024年9月にはINCの検出数がゼロとなったが、これは長期的な終了を意味するわけではない（過去にも1月、2月、5月に検出数がゼロとなった）。**\n\n💻 **コード比較では、LynxとINCのサンプル間に70.8%の関数共有があることが確認された。**\n\n📝 **この関数共有は、Lynxの開発者がINCのコードベースを借用して再利用していることを強く示唆している。**\n\n🔗 **INCのソースコードが2023年3月からサイバー犯罪フォーラムで公開されているため、他のグループも同様のコードを使用する可能性がある。**\n\n🚨 **INCは依然として被害者を投稿しており、2024年10月4日にも新しいエントリが追加された。**\n\n🏠 **LynxとINCのリークサイトには明显的な類似性があり、ウェブサイトのレイアウトやセクション名がほぼ同一である。**\n\n🚫 **Lynxは病院、政府機関、非営利団体を標的としないとしているが、INCはNHS ScotlandやLeicester City Councilなどを攻撃していた。**",
+            "tags": [
+                "Security"
+            ]
+        },
+        {
+            "title": "カシオ、最近の攻撃で顧客データが盗まれたことを確認",
+            "url": "https://tugatech.com.pt/t62812-casio-confirma-roubo-de-dados-de-clientes-em-recente-ataque",
+            "summary": "もちろんです。以下が要約した内容です：\n\n💡 **カシオがサイバー攻撃を受けたことを確認**\n- 🛡️ カシオの内部システムがサイバー攻撃により侵害されたことが明らかになった。\n- 🔍 企業は当初、詳細な情報が限られていたが、その後、より多くの情報を公開した。\n\n💡 **攻撃の詳細と影響**\n- 💥 攻撃はランサムウェアグループ「Underground」によって引き起こされた。\n- 📄 パートナーと顧客のデータも侵害され、名前、住所、メールアドレス、電話番号などの個人情報が盗まれた可能性がある。\n\n💡 **対応措置**\n- 🔒 カシオはシステムを予防的に停止し、調査を進めている。\n- 📧 支払い手段やクレジットカードの情報は侵害されていないと確認されている。\n- 👥 企業は影響を受けたユーザーに個別に通知を行っている。\n\n💡 **注意喚起**\n- ⚠️ カシオは、盗まれたデータが悪用される可能性があることを警告し、ユーザーに対策を講じることを勧めている。",
+            "tags": [
+                "Security"
+            ]
+        },
+        {
+            "title": "GoFr の探索: 最新の Go Web フレームワーク",
+            "url": "https://medium.com/@atul24jha/exploring-gofr-a-modern-go-web-framework-1de203364fcf?source=rss------golang-5",
+            "summary": "### GoFr の探索: 最新の Go Web フレームワーク\n\n🚀 **GoFr とは？**\n- 新たな Go フレームワークで、API 開発に向けた包括的なアプローチを提供している。\n- 機能性とパフォーマンスを両立し、大規模アプリケーションの開発に適している。\n\n🛠 **主な特徴**\n- 🧩 モジュラリティ: 大きなコードベースや複雑なアプリケーションの管理に役立つ。\n- 💾 統合 ORM: データベース操作を簡素化するオブジェクト-関係マッピングシステムが組み込まれている。\n- 🛠 ミドルウェアとルーティング: 現代のウェブアプリケーションに必要な強力なサポートがある。\n- 💉 標準搭載の依存性注入: コードのメンテナビリティとテスト性を向上させる。\n- 🚀 パフォーマンス: 機能性を重視しつつ、競合するフレームワークに匹敵するパフォーマンスを維持。\n\n📝 **GoFr を選ぶ理由**\n- 📈 複雑さの増加に対応: プロジェクトが成長するにつれて管理が容易。\n- 🔧 完整なツールキット: ORM や依存性注入などの機能を標準で提供。\n- ⚖️ バランスの良さ: 基準テストでは最速ではないが、性能と機能のバランスが取れている。\n- 🏗 現代的なアーキテクチャ: マイクロサービスや複雑な API 設計に適している。\n\n📊 **他のフレームワークとの比較**\n- 💼 統合 ORM: Gin-Gonic などと比べて、All-in-One ソリューションの利点がある。\n- 🧩 モジュラリティ: 長期的にはよりメンテナブルなコードベースを実現。\n- 📈 学習曲線: 綜合的な機能により初期学習が少し難しいが、大規模プロジェクトでは生産性が向上。\n\n🚧 **注意点**\n- GoFr は新しいフレームワークであるため、コミュニティやエコシステムがまだ成長途上。\n\n💡 **結論**\n- 新規プロジェクトの開始や既存アプリケーションの切り替えを検討している場合、GoFr のバランスの良さと現代的な設計原則は将来の Go ウェブ開発に適している。",
+            "tags": [
+                "Web",
+                "Software"
+            ]
+        },
+        {
+            "title": "Lm.rs 依存関係のない Rust での最小限の CPU LLM 推論",
+            "url": "https://github.com/samuel-vitorino/lm.rs",
+            "summary": "✨ **Lm.rs 依存関係のない Rust での最小限の CPU LLM 推論**\n\n🌟 **モデル変換**\n- 📁 `export.py` スクリプトを使用して、モデルの bfloat16 重みを LMRS 形式に変換する。\n- 🚀 変換コマンド: `python export.py --files [ordered .safetensor files] --config [model config.json] --save-path [name and path to save] --type [model type (GEMMA/LLAMA/PHI)]`\n- 📜 量子化バージョンをエクスポートするには `--quantize` と `--quantize-type` フラグを使用。int8 量子化モデルのサイズは4倍小さくなる（約9.8Gから約2.5G）。\n- 🖼️ 多モーダルモデルの場合、`--vision-config` 引数を含める。\n\n🌟 **トークナイザー変換**\n- 📁 `tokenizer.py` スクリプトを使用して、トークナイザー モデルを LMRS トークナイザー形式に変換する。\n- 🚀 変換コマンド: `python tokenizer.py --model-id [huggingface model_id] --tokenizer-type [type of the tokenizer (GEMMA/LLAMA/PHI)]`\n\n🌟 **ビルド**\n- 🔨 Rust コードをcargoでコンパイル。`RUSTFLAGS=\"-C target-cpu=native\"` を使用。\n- 🚀 ビルドコマンド: `RUSTFLAGS=\"-C target-cpu=native\" cargo build --release --bin chat`\n- 🖼️ 多モーダル機能を有効にするには、`--features multimodal` 引数を追加する。\n- 🗂️ 実行コマンド: `./target/release/chat --model [model weights file]`\n\n🌟 **WebUI バックエンドの実行**\n- 🔨 WebUI バックエンドをコンパイル。`RUSTFLAGS=\"-C target-cpu=native\"` を使用。\n- 🚀 コンパイルコマンド: `RUSTFLAGS=\"-C target-cpu=native\" cargo build --release --features backend --bin backend`\n- 🖼️ 多モーダル機能を有効にするには、`--features backend-multimodal` 引数を使用する。\n- 🗂️ 実行コマンド: `./target/release/backend --model [model weights file]`\n\n🌟 **TODOs**\n- 🛠️ 他のサンプリング方法を追加。\n- 🧪 9Bと27Bモデルのテスト（9Bはテスト済み、27Bは遅すぎる）。\n- 🔄 マルチヘッドアテンションループの並列化。\n- 📊 パフォーマンスメトリクスを追加。\n- 🛒 システムプロンプトの提供機能。\n- 💾 量子化サポート（int8, int4）。\n\n🌟 **ライセンス**\n- 🔓 MIT License",
+            "tags": [
+                "AI",
+                "Software"
+            ]
+        },
+        {
+            "title": "AIコールセンターがハッキングされ、数百万件の会話が漏洩",
+            "url": "https://www.techradar.com/pro/security/millions-of-conversations-leaked-after-ai-call-center-hacked",
+            "summary": "以下が、提供された情報に基づく要約です。\n\n- 🚨 AIコールセンターがハッキングされ、数百万件の会話データが漏洩した。\n- 📊 事件の詳細や影響範囲については明らかにされていない。",
+            "tags": [
+                "AI",
+                "Security"
+            ]
+        },
+        {
+            "title": "オープンソースの「住所正規化エンジン」が“地番住所”にまで対応",
+            "url": "https://ascii.jp/elem/000/004/227/4227498/?rss",
+            "summary": "✨ Geoloniaが2024年10月10日にオープンソースの住所正規化エンジン「normalize-japanese-addresses」のバージョン3を公開。\n📍 新バージョンでは、アドレス・ベース・レジストリ（ABR）を基に住所マスターを作り直し、「地番住所」への対応を実現。\n📈 これにより、住所の網羅性と精度が向上し、更新頻度も安定化。\n🔗 デモサイトが公開されており、新バージョンを試すことができる。\n⚠️ 商用利用の際にはデータ量が多いため、一時的に停止または変更・制限される可能性がある。\n💰 今後、Geoloniaは有償でのデータ管理・ホスティングサービスを提供予定。",
+            "tags": [
+                "Software",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "GitLab の新しい重大な脆弱性により、任意の CI/CD パイプラインの実行が可能になる可能性がある",
+            "url": "https://thehackernews.com/2024/10/new-critical-gitlab-vulnerability-could.html",
+            "summary": "もちろん、以下のように要約しました：\n\n✅ GitLabがCommunity Edition (CE)とEnterprise Edition (EE)向けに8つのセキュリティ脆弱性を修正しました。\n\n⚠️ 最も深刻な脆弱性であるCVE-2024-9678（CVSSスコア: 9.9）は、攻撃者が任意のユーザーとしてパイプラインジョブを実行できる可能性があります。\n\n🚨 その他の重要な脆弱性：\n- CVE-2024-8970 (CVSSスコア: 8.2)：特定の状況下で別のユーザーとしてパイプラインをトリガーする可能性があります。\n- CVE-2024-8977 (CVSSスコア: 8.2)：Product Analytics Dashboardが設定および有効になっているGitLab EEインスタンスでSSRF攻撃が可能になります。\n- CVE-2024-9631 (CVSSスコア: 7.5)：マージリクエストのコンフリクトを表示する際に遅延が発生します。\n- CVE-2024-6530 (CVSSスコア: 7.3)：新しいアプリケーションをOAuthページで認証する際にクロスサイトスクリプティングが起こります。\n\n🔄 この修正は、GitLabが最近数ヶ月間に公開した一連のパイプライン関連の脆弱性の最新のものであり、前月にはCVE-2024-6678（CVSSスコア: 9.9）も修正されました。\n\n🔍 現在までに、これらの脆弱性が積極的に悪用されている証拠は見つかっていませんが、ユーザーは最新のバージョンに更新することを推奨されています。",
+            "tags": [
+                "Security",
+                "Software"
+            ]
+        },
+        {
+            "title": "Scuda – IP 経由の仮想 GPU",
+            "url": "https://github.com/kevmo314/scuda",
+            "summary": "もちろん、以下が要望に基づいた要約となります。\n\n---\n\n👍 **SCUDA の目的**\n- 開発者がネットワーク経由で GPU と簡単にやり取りできるようにすること。\n- 分散 GPU プールの利点を活用するための手段。\n\n💡 **使用例 / 動機**\n- 🛠️ **ローカルテスト** - TCP のレイテンシが許容範囲内で、互換性とパフォーマンスの確認を行う。\n- 💾 **集約 GPU プール** - GPU の管理とリソース割り当てを中央で一元化し、コンテナ化アプリケーションの展開や拡張を容易にする。\n- 🤖 **リモートモデル学習** - ラップトップや低消費電力デバイスから GPU を使用してモデルを学習できる。\n- 💡 **リモート推論** - 地元でアプリケーションをセットアップし、モデルの推論用に CUDA 呼び出しをリモート GPU サーバーに向けられる。\n- 📊 **リモートデータ処理** - フィルタリング、結合、集計などの操作をリモート GPU で直接実行し、結果はネットワーク経由で転送される。\n- 📈 **リモートファインチューニング** - 事前学習済みモデルのファインチューニングを行い、PyTorch CUDA 呼び出しを TCP 経由でリモート GPU にルーティングする。\n\n🛠️ **将来の目標**\n- TODO ファイルを参照。\n\n📚 **先行技術**\n- ThunderCompute (https://www.thundercompute.com/)\n- JuiceLabs (https://www.juicelabs.co/)\n- RCUDA (https://en.wikipedia.org/wiki/RCUDA)\n\n📊 **ベンチマーク**\n- 今後の作業項目。",
+            "tags": [
+                "AI",
+                "Software",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "Deno 2 がついに登場: 主なハイライト",
+            "url": "https://dev.to/grenishrai/deno-2-is-finally-here-key-highlights-35ml",
+            "summary": "🎉 **Deno 2 の主なハイライト:**\n\n✨ Node.jsとnpmとの互換性:\n- Deno 2 は Node.js エコシステム内に存在し、開発者は Node アプリケーションを実行したり npm パッケージを使用したりできます。\n- package.json、node_modules、npm workspaces のサポートが含まれています。\n- Deno 2 は Node と npm とのバックワードコンパチブルであり、既存の Node プロジェクト内で Deno を実行したり、Deno のツールチェーンを段階的に統合したりできます。\n\n🚀 依存関係管理の強化:\n- `deno install`、`deno add`、`deno remove` などの新コマンドが導入され、依存関係の管理がより簡素化されました。\n- これらのコマンドは Node.js のワークフローと類似しており、npm よりも高速な依存関係のインストールを提供します（冷キャッシュ時15%速く、ホットキャッシュ時90%速い）。\n\n📚 JSR: 現代的な JavaScript レジストリの導入:\n- JSR は native TypeScript サポート、高速なモジュールロード、自動ドキュメンテーション生成を特徴とする新しいレジストリです。\n- 外部依存関係への頼りを減らし、開発プロセスを合理化します。\n\n🛠 安定した標準ライブラリ:\n- Deno 2 では、審査済みのユーティリティモジュールを集めた Standard Library が安定版として提供されます。\n- コモンタスクに役立つ信頼性の高いツールセットを提供し、外部依存関係への依存を減らします。\n\n📅 LTS リリース:\n- 企業ユーザーのニーズに対応するため、Deno 2 は Long Term Support (LTS) リリースを導入しました。\n- 生産環境での安定性と安心感を提供します。\n\n⚡ 性能向上:\n- 起動時間やリクエスト処理などのさまざまなメトリックで性能が改善されています。\n- HTTP ベンチマークでは、Deno 2.0 は実際には 20% 程度遅くなっています（V8 ポインター圧縮の無効化による影響）。\n\n💡 Deno のビジョン:\n- Deno の目標は Node クローンや置き換えではなく、JavaScript を進化させることです。\n- 2010 年代の CommonJS を超え、サーバーサイドとブラウザ環境のギャップを縮めつつ、開発者が実用的に採用できるようにすることを目指しています。\n\n🔧 Deno 2 の特徴:\n- 既存の JavaScript エコシステムとの互換性と新たな開発ツールやワークフローの導入をバランスよく推進します。",
+            "tags": [
+                "Software",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "llama-guard3                                                       Llama Guard 3 is a series of models fine-tuned for content safety classification of...",
+            "url": "https://ollama.com/library/llama-guard3",
+            "summary": "もちろんです。以下が統一された文体での要約です。\n\n- 📘 **Llama Guard 3** は、入力されたプロンプトやレスポンスの安全性を判定する言語モデル（LLM）です。安全性に問題がある場合は、違反した内容カテゴリもリストアップします。\n- 🛡️ Llama Guard 3 は MLCommons の標準化された危険性タクソノミーに基づいて調整され、Llama 3.1 機能をサポートするために設計されています。特に、8言語でのコンテンツモデレーションと、検索やコードインタプリターの呼び出しの安全性を確認する機能が含まれています。\n- 🖥️ **利用可能なバージョン**:\n  - 🔹 Llama Guard 3-1B: 英語、フランス語、ドイツ語、ヒンディー語、イタリア語、ポルトガル語、スペイン語、タイ語をサポート\n  - 🔹 Llama Guard 3-8B: Hugging Face 上で利用可能\n- 📝 **危険性カテゴリ**:\n  - ❌ S1: 違法な暴力行為（人間や動物への）\n  - ❌ S2: 違法な非暴力犯罪（個人、財務、財産、薬物、武器、サイバー犯罪）\n  - ❌ S3: 性犯罪\n  - ❌ S4: 未成年者に対する性的搾取\n  - ❌ S5: 名誉毀損\n  - ❌ S6: 専門的な助言（金融、医療、法的）や危険な活動の安全性に関する誤った情報\n  - ❌ S7: プライバシー侵害\n  - ❌ S8: 知的財産権の侵害\n  - ❌ S9: 化学、生物、放射線、核、高威力爆発兵器の製造\n  - ❌ S10: 差別や人間性の否定\n  - ❌ S11: 自殺や自傷行為の誘導\n  - ❌ S12: エロティックな内容\n  - ❌ S13: 選挙に関する虚偽情報",
+            "tags": [
+                "AI",
+                "Security"
+            ]
+        },
+        {
+            "title": "PFN、推論コスト1/10で日本語最高性能モデル開発へ",
+            "url": "https://www.watch.impress.co.jp/docs/news/1630536.html",
+            "summary": "✅ **PFNとPFEが「GENIAC」第2サイクル事業者に採択**\n  - 📢 PFN（Preferred Networks）とPFE（Preferred Elements）が経済産業省とNEDOの「GENIAC」第2サイクル事業者に選ばれた。\n\n📊 **1,000億トークンの高品質データセット構築**\n  - 📚 日本語と英語で約1,000億トークンの高品質データセットを大規模言語モデル（LLM）を使って構築する。\n  - 🔍 このデータセットは日本語Wikipediaの約50倍の大規模なデータとなる。\n\n💡 **推論コスト低減を目指した高性能モデル開発**\n  - 🚀 推論コストを1/10以下に抑えることを目指す。\n  - ⚙️ モデルサイズ300億パラメータで、PLaMo-100Bと同等またはそれ以上の性能を目指す。\n  - 📈 Mixture of Expert (MoE) および状態空間モデルを採用し、利用時のアクティブパラメータを80億相当に抑える。\n\n🔍 **検証用モデルの開発**\n  - 🧑‍💻 20億パラメータモデルと80億パラメータモデルも開発予定。\n\n📝 **ノウハウの公開と商用展開**\n  - 💡 取得したノウハウは部分的にPFNのテックブログなどで公開する。\n  - 💼 PLaMoシリーズとしてAPIやプロダクトの商用展開を予定している。",
+            "tags": [
+                "AI",
+                "Software"
+            ]
+        },
+        {
+            "title": "Citadel AI、大規模言語モデル評価ツール「Lens for LLMs」を商用リリース",
+            "url": "https://ascii.jp/elem/000/004/227/4227028/?rss",
+            "summary": "- 🚀 **Citadel AI、大規模言語モデル評価ツール「Lens for LLMs」の商用版リリース**\n  - 🛠️ 独自の自動評価と目視評価を融合させた技術で、高速かつ精度の高い評価を実現\n  - 👁️ 生成AIのリスクを可視化し、継続的にモニタリングすることで、安全で安心な生成AIの普及を支援\n  - 🔒 ベータ版リリース以降、セキュリティ対策やアプリケーションごとのカスタムメトリクス機能を大幅に強化\n  - 🛡️ 商用版には21種類の自動レッドチーム機能が追加され、ジェイルブレイクなどのセキュリティリスクへの対策が強化\n  - 💼 各アプリケーションの用途に即した「カスタムメトリクス」が組み込まれ、安全性の評価や質問内容の分類が可能\n  - 🤝 LLMの出力品質向上のための人手評価機能も拡充され、ヒューマン・イン・ザ・ループの仕組みを活用したダブルチェックが可能\n  - 📊 バージョンごとのパフォーマンス変化を即座に可視化するモニタリング機能も搭載",
+            "tags": [
+                "AI",
+                "Security"
+            ]
+        },
+        {
+            "title": "TypeScript 5.7 ベータ版が利用可能になりました",
+            "url": "https://tugatech.com.pt/t62793-typescript-5-7-beta-encontra-se-agora-disponivel",
+            "summary": "当然です。以下が提供された情報に基づいた要約です：\n\n🌟 **MicrosoftがTypeScript 5.7 ベータ版のリリースを確認**\n📚 **新機能の追加により開発者の体験が改善**\n🛠️ **`tsconfig.json` の修正が大規模プロジェクトでも効率化**\n🔍 **過去のフォルダやコンテンツも検査対象に**\n🚀 **コードのパフォーマンス向上とNode.jsキャッシュとの統合が実現**\n⚠️ **ベータ版のため、最終リリースまでの変更の可能性あり**\n🛠️ **公開プロジェクトでの使用は推奨されず、テスト用途のみを推奨**\n\nこの要約では、Webページから抽出した情報を適切にまとめました。",
+            "tags": [
+                "Software"
+            ]
+        },
+        {
+            "title": "クアルコムのチップセットを搭載した Android デバイスがゼロデイ脆弱性を悪用され、合計 64 個のチップが影響を受ける",
+            "url": "https://wccftech.com/android-devices-with-qualcomm-chipsets-have-been-exploited-due-to-zero-day-vulnerability-affecting-64-chips-in-total/",
+            "summary": "もちろんです。以下が提供された情報に基づいた要約です：\n\n- 💡 クアルコムのチップセットにゼロデイ脆弱性（CVE-2024-43047）が発見され、64種類のチップセットが影響を受けている。\n- 🛠️ この脆弱性はセキュリティ上の欠陥で、攻撃者が悪用することでデバイスを制御できる可能性がある。\n- 🔍 GoogleのThreat Analysis GroupとAmnesty InternationalのSecurity Labによってこのゼロデイ脆弱性が検出された。主に高価値の標的や特定の人々を対象としていた。\n- 📝 クアルコムはセキュリティBulletinで影響を受けたチップセットを公表。影響範囲にはSnapdragon 8 Gen 1、Snapdragon 888+などハイエンドSoCとミッドレンジチップが含まれている。\n- 💻 Samsung、OnePlus、Motorolaなどの大手企業の製品に影響がある。iPhone 12にも搭載されているSnapdragon X55 5Gモデムも影響を受けている可能性がある。\n- 🔒 クアルコムはOEM向けにパッチを発行し、迅速な更新を要請している。\n- 🚨 ユーザーはソフトウェアのアップデートを行い、信頼できるソースからのアプリのみをインストールするなどしてデバイスの保護に努めるべきである。",
+            "tags": [
+                "Security"
+            ]
+        },
+        {
+            "title": "Google Gemini：AI画像生成「Imagen 3」が全ユーザー向けに展開開始",
+            "url": "https://www.pcgameshardware.de/Kuenstliche-Intelligenz-Hardware-279517/News/Google-Gemini-KI-Imagen-3-Rollout-1457354/",
+            "summary": "もちろん、以下が統一された文体での要約です。\n\n🌟 **タイトル**: Google Gemini：AI画像生成「Imagen 3」が全ユーザー向けに展開開始\n\n📅 発表日時: 2024年10月10日 18:15\n\n🏷️ タイプ: ニュース\n\n🌍 概要:\n- 🌟 GoogleのAIモデル「Gemini」の一環として、「Imagen 3」がリリースされました。\n- 📡 Imagen 3は、画像生成機能を提供し、世界中で段階的に展開されています。\n- 💸 この機能は無料版と有料版（Gemini Advanced）の両方で利用可能ですが、一部の高度な機能は有料ユーザーに限定されます。\n\n🖼️ 主な特徴:\n- 🎨 Imagen 3は「新しい画像品質の標準」を提供すると謳われています。\n- 🔍 ユーザーは数少ないキーワードを使って様々なスタイル（例えば、写実的な風景、構造化された油絵、奇妙なクレイメーションシーン）の画像を生成できます。\n- 📌 生成された画像にはSynthIDツールを使用してウォーターマークが付与され、AI生成であることを識別できます。\n\n👤 人物画像生成:\n- 🚫 人物画像の生成は、特に写実的なものや未成年者、過激な暴力的または性的シーンの表現はサポートされていません。\n- 🛡️ 当面、人物画像生成機能は英語版のGemini Advanced、Enterprise、Businessユーザーに限定されます。\n\n💬 コメント:\n- 💬 記事では、読者からの意見を求めています。コメントを投稿するにはPCGHまたはExtremeフォーラムへのログインが必要です。\n\n以上がWebページの要約です。",
+            "tags": [
+                "AI",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "マリオット、セキュリティ侵害訴訟の和解で巨額の罰金を科される",
+            "url": "https://www.techradar.com/pro/security/marriott-hit-with-major-penalty-to-settle-security-breach-claims",
+            "summary": "### マリオット、セキュリティ侵害訴訟の和解で巨額の罰金を科される\n\n- 🚨 詳細なマルウェアがシステムをハックし、アンチウイルスを無効化してさらに被害を与える可能性がある。\n- 💼 内部イノベーションとサードパーティベンダーのリスクバランスを取りながら進める方法について。\n- ⚠️ ブラウザ更新通知が偽物で、マルウェアを広めているケースに注意する必要がある。\n- 📱 iOS 18のダウンロード方法について解説している記事（ただし現時点ではiOS 18は未発表）。\n- 🛡️ 最大規模のDDoS攻撃がブロックされた経緯とその対策方法について報告されている。\n- 💰 Truist銀行のデータ侵害について、オンラインで盗まれた情報が流出したことを確認している。\n- ⚠️ StackExchangeが悪用され、回答として悪意のあるPyPIパッケージが配布された事例がある。\n- 📄 中国市民ID数百万件がオンラインストアによって公開される事件があった。\n\n### セキュリティ対策ツールの推奨記事\n- 🔒 最高のファイアウォールを紹介している記事\n- 💻 現在最高のエンドポイント保護ツールを紹介している記事\n\n### 著者情報\n- 📝 Seadは、ボスニア・ヘルツェゴビナのサラジェヴォに拠点を置く経験豊富なフリーランスジャーナリスト。IT（クラウド、IoT、5G、VPN）とサイバーセキュリティについて執筆しており、10年以上のキャリアを持つ。\n- 📢 代表的な媒体としてAl Jazeera Balkansで記事を掲載している実績がある。\n- ✍️ コンテンツライティングについて講座を開催した経験もある。",
+            "tags": [
+                "Security",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "Go 1.23 ではタイマー管理が改善され、メモリ使用量が削減される",
+            "url": "https://gozone.dev/how-go-1-23-improves-timer-management-and-reduces-memory-usage-a59cdcc2e259?source=rss------golang-5",
+            "summary": "✨ **導入**\n- 🚀 Go 1.23リリースにより、`time.Timer`と`time.Ticker`に重要な改善が加えられました。これらの変更はメモリー効率と信頼性を向上させます。\n\n🛠 **Go 1.23以前のタイマの問題**\n- 🤔 タイマーが明示的に停止されないと、不要になった後もメモリーに残り続けることがありました。\n- 😕 `Reset`と`Stop`メソッドは使用方法が複雑で、混乱を招くことがあります。",
+            "tags": [
+                "Software"
+            ]
+        },
+        {
+            "title": "Deno 2.0リリース ―大規模プロダクトにも対応可能なJavaScript環境へ",
+            "url": "https://gihyo.jp/article/2024/10/deno2?utm_source=feed",
+            "summary": "🌟 **Deno 2.0リリース**\n- 📣 Deno Land Inc.が2024年10月9日に、JavaScript/TypeScriptランタイム環境Denoの新バージョンDeno 2.0をリリース。\n- 🔗 [公式アナウンス](https://deno.com/blog/v2.0)\n\n🚀 **主な特徴**\n- ⚖️ Node.jsおよびnpmとの下位互換性を持ち、ネイティブTypeScriptサポートやWeb標準APIを提供。\n- 🔐 デフォルトセーフな実行モデルと完全なツールチェーンが特徴。\n\n🛠 **新機能**\n- 💼 package.jsonおよびnode_modulesのネイティブサポート。\n- ➕ `deno install`、`deno add`、`deno remove`コマンドでパッケージ管理を容易に。\n- 📦 JSR（JavaScript Standard Registry）を採用し、モジュール読み込みの複雑さを軽減。\n\n💪 **機能強化**\n- ✏️ `deno fmt`：HTML、CSS、YAMLのフォーマット対応。\n- 🛠 `deno lint`：Node固有のルールとクイックフィックスサポート。\n- 🔍 `deno test`：`node:test`を使用したテスト実行サポート。\n- ⚙️ `deno task`：package.jsonスクリプトの実行可能化。\n- 📄 `deno doc`：HTMLアウトプットのデザイン改善と検索性向上。\n- 💾 `deno compile`：Windowsでの電子署名とアイコンサポート。\n- 🚦 `deno serve`：複数コアにまたがるHTTPサーバーの並列実行可能化。\n- 🛑 `deno init`：ライブラリやサーバーのscaffoldサポート。\n- 📊 `deno jupyter`：画像、グラフ、HTMLの出力対応。\n- ⏱️ `deno bench`：クリティカルセクションサポートでより正確な計測可能化。\n- 📈 `deno coverage`：HTMLでのレポート出力可能化。\n\n💻 **ダウンロード**\n- 👉 MacOS/Linux版、Windows版は[deno.com](https://deno.com)からダウンロード/インストール可能。",
+            "tags": [
+                "Software",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "Deno v2 が来たので何が変わったのか紹介",
+            "url": "https://zenn.dev/ame_x/articles/d1742e77fa1351",
+            "summary": "🌟 **Deno v2 の主な変更点**\n\n- 🚀 **新機能と改善**\n  - 📊 `deno coverage` がHTML形式のカバレッジ出力をサポート\n  - 🛠️ `import assertion` の仕様が `assert` から `with` に変更され、非推奨の仕様がDeprecateされた (#25281)\n  - 📦 `deno install`と`deno add`が強化されました (#25698)\n  - 🔄 `require(esm)` のサポートが追加されました (#25848)\n  - 💻 環境変数 `NPM_PROCESS_STATE` が一時ファイル経由でサブプロセスに渡されるように変更され、環境変数での伝達が廃止されました (#25896)\n\n- 🛠️ **修正された内容**\n  - 🐛 `deno info` コマンドが npm スペシファイアに対して適切にエラーを返すようになりました (#25947)\n  - 🐛 `--check` オプションが CSS, YAML, HTML ファイルで正しく機能するように修正されました (#25848)\n  - 🐛 URL に対するフラグ処理が適切にエラーを返すようになりました (#25770)\n\n- 🔗 **詳細情報**\n  - 📄 詳細は [Deno公式リリースノート](https://github.com/denoland/deno/releases/tag/v2.0.0) を参照してください。",
+            "tags": [
+                "Software"
+            ]
+        },
+        {
+            "title": "This Week in Rust 568",
+            "url": "https://this-week-in-rust.org/blog/2024/10/09/this-week-in-rust-568/",
+            "summary": "🎉 **2024-10-30 | ハンブルグ, ドイツ**  \n- 📝 [Rust Hack & Learn October 2024](https://www.meetup.com/rust-meetup-hamburg/events/303373054/)\n\n🎉 **2024-10-31 | ベルリン, ドイツ**  \n- 📝 [詳細なし]\n\n📅 **2024-11-06 | パリ, フランス**  \n- 📢 [Rust Meetup in Paris](https://www.eventbrite.fr/e/rust-meetup-in-paris-tickets-1037795553437)\n\n🌍 **北アメリカ**  \n- 📅 2024-10-15 | サンフランシスコ, CA, US  \n  - 🌐 [Rust Hacking in Person](https://www.meetup.com/san-francisco-rust-study-group/events/302638250/)\n- 📅 2024-10-16 | オンラインおよびバンクーバー, BC, CA  \n  - 🌐 [Rust Study/Hack/Hang-out](https://www.meetup.com/vancouver-rust/events/298631737/)\n- 📅 2024-10-17 | オンラインおよびシアトル, WA, US  \n  - 🌐 [October Meetup](https://www.meetup.com/join-srug/events/303545170/)\n- 📅 2024-10-19 | カムブリッジ, MA, US  \n  - 🍽️ [North End Rust Lunch, Oct 19](https://www.meetup.com/bostonrust/events/303708335/)\n- 📅 2024-10-23 | オースティン, TX, US  \n  - 🍽️ [Rust Lunch - Fareground](https://www.meetup.com/rust-atx/events/xvkdgtygcnbfc/)\n- 📅 2024-10-27 | カムブリッジ, MA, US  \n  - 🍽️ [Kendall Rust Lunch, Oct 27](https://www.meetup.com/bostonrust/events/303708359/)\n- 📅 2024-11-04 | ブルックライン, MA, US  \n  - 🍽️ [Coolidge Corner Brookline Rust Lunch, Nov 4](https://www.meetup.com/bostonrust/events/303708387/)\n\n🌍 **オセアニア**  \n- 📅 2024-10-29 | キャンベラ, ACT, AU  \n  - 📢 [June Meetup](https://www.meetup.com/rust-canberra/events/303128131/)\n- 💼 Rustイベントをカレンダーやコミュニティチームに追加するように呼びかけている。\n- 🗞️ 今週の名言：45歳以上のプログラマがRustを選択する理由として、Cと比較して開発効率やツールの質、プラットフォーム間での互換性などの点を挙げている。\n- 👥 This Week in Rustは多数の編集者によって編纂されている。主な編集者はnellshamrell, llogiq, cdmistmanなど。\n- 📧 メーリングリストホスティングはRust Foundationがスポンサーとなっている。",
+            "tags": [
+                "Software",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "CSS新機能のWorking Draft公開など: Cybozu Frontend Weekly (2024-10-08号)",
+            "url": "https://zenn.dev/cybozu_frontend/articles/frontend_weekly_20241008",
+            "summary": "### CSS新機能のWorking Draft公開など: Cybozu Frontend Weekly (2024-10-08号)\n\n- 📝 一般社団法人ダークパターン対策協会が発足し、非ダ―クパターンWebサイト制度を運用\n- 👀 対策としては、消費者が内容を読まずに同意ボタンをクリックする問題や、ブラウザの設定により何度もCookieバナーが出る「同意疲れ」の問題に対応予定\n- 📆 年末までに有識者/政府とガイドライン v1.0 を構築し、2025年7月から審査を開始予定\n\n- 🛠️ @property のベンチマークに関する記事が公開\n- 💻 CSS Selector Benchmarkを使用してCSSのパフォーマンスを測定\n- ⚙️ PerfTestRunnerを使用し、1秒あたりのスタイル再計算回数でパフォーマンスを評価\n- 📊 一般的なカスタムプロパティは最も遅く、UnRegistered（`inherit: false;`）状態が最高速\n\n- 💬 Vite Conf の keynote が公開\n- 👥 社内ではViteConfでのQwikの発表が話題に\n\n- 🤔 個人的な感想：CSS Values and Units Module Level 5の内容が興味深く、特に`random()`や`random-item()`関数を用いたランダム値生成が面白い",
+            "tags": [
+                "Web",
+                "Software"
+            ]
+        },
+        {
+            "title": "インターネット アーカイブのユーザー情報がサイバー攻撃で盗まれ、DDoS 攻撃に屈する",
+            "url": "https://go.theregister.com/feed/www.theregister.com/2024/10/10/internet_archive_ddos_data_theft/",
+            "summary": "以下の通り、記事の内容を要約しました。\n\n- ⚠️ インターネット アーカイブがサイバー攻撃を受け、DDoS 攻撃により最大5時間のダウンタイムがあった。\n- 💥 Have I Been Pwned によると、31,081,179 のユーザー情報（メールアドレス、スクリーンネーム、bcryptでハッシュ化されたパスワード）が盗まれた。\n- 🖥 サイトのデジタルライブラリアン Brewster Kahle はデータ流出を確認し、JavaScript ライブラリを通じてサイトが改ざんされ、「インターネット アーカイブは常に重大なセキュリティ侵害の瀬戸際にある」というメッセージが表示されたと明らかにした。\n- 🛠 インターネット アーカイブは被害を受けた JavaScript ライブラリを無効化し、システムのクリーニングとセキュリティ強化に取り組んでいる。\n- 🤔 DDoS 攻撃とデータ流出が関連しているかどうかは不明であり、インターネット アーカイブからの公式コメントは得られていない。\n- 📅 2024年には、著作権侵害の訴訟での敗北や電力障害によるダウンタイムなど、いくつかの問題が発生しており、これらの一連の出来事はインターネット アーカイブにとって苦しい年となっている。",
+            "tags": [
+                "Security"
+            ]
+        },
+        {
+            "title": "サイバーエージェント、月間20万件の予定を生成AIとの対話で調整‐独自アプリ開発",
+            "url": "https://news.mynavi.jp/techplus/article/20241009-3041713/",
+            "summary": "もちろん、以下が要約になります。\n\n- 📅 サイバーエージェントは10月9日、「サイスケ(Cyber AI Scheduler)」という生成AIを使った予定調整アプリを自社開発し、全社員に導入した。\n- 💻 過去の予定調整ツールではカレンダー上の操作が主だったが、新アプリはSlack上で参加者や希望日時を入力するだけでAIが最適な日時を提案する。\n- 📨 AIは自動応答により24時間対応し、設定時には予定参加者への通知まで行う。\n- 💡 月間約20万件の予定が作成されており、アプリの導入により予定調整にかかる時間を削減し、新事業創出につなげる方針だ。\n- 🤖 今後は独自アルゴリズムによる日程候補の提案機能を追加。機械学習で予定の優先度を判断し、重複予定がある場合でも最適な組み直しを提案する。\n- 🏢 さらに、将来的には同アプリを他の企業に提供することも視野に入れている。",
+            "tags": [
+                "AI",
+                "Software",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "Microsoft、文書を保存せずに削除してしまうWordのバグを修正",
+            "url": "https://tugatech.com.pt/t62772-microsoft-corrige-bug-no-word-que-eliminava-documentos-inves-de-guardar",
+            "summary": "もちろんです。以下が要約です：\n\n💥 **Microsoft、Wordの重大バグを修正**\n- 🐞 **バグの詳細**: Wordの特定の状況下で文書が削除されるバグが発生していた。\n- 👤 **影響範囲**: Microsoft 365 for Windowsの一部ユーザーに影響があった。\n- 🕰️ **発生条件**: ドキュメントを編集後、Wordを閉じる際に「保存」を選択すると、文書が削除される問題だった。\n- 🛠️ **対応バージョン**: このバグはビルド18025.20104で発生していた。\n- 📢 **ユーザーの影響**: 複数のユーザーが重要なコンテンツを失う事態となった。\n- 🔧 **解決策**: Microsoftが修正パッチをリリースし、自動的にインストールされる予定。\n- 💻 **ユーザーへのアドバイス**: すべてのMicrosoft 365アプリケーションやシステムの再起動が推奨されている。",
+            "tags": [
+                "Software"
+            ]
+        },
+        {
+            "title": "Firefox には脆弱性があり、悪用が活発に行われている",
+            "url": "https://tugatech.com.pt/t62771-firefox-possui-uma-vulnerabilidade-a-ser-ativamente-explorada",
+            "summary": "もちろんです、以下が要約になります：\n\n✨ **Firefox には脆弱性があり、悪用が活発に行われている**\n- 🔍 脆弱性 CVE-2024-9680 は調査員 Damien Schaeffer によって発見され、修正されました。\n- 🚨 この脆弱性は Web Animations API に関連しており、悪用されると他のプログラムがシステムのメモリにコードを注入し、任意のコードを実行する可能性があります。\n- 🔧 現在、この脆弱性は Firefox の最新版と ESR 版で確認されており、ユーザーはできる限り早く Firefox 131.0.2、Firefox ESR 115.16.1、または Firefox ESR 128.3.1 に更新することを推奨されます。\n- 🛡️ 詳細情報は現在公開されていませんが、大多数のユーザーが最新版に更新された時点でさらなる情報が提供される予定です。",
+            "tags": [
+                "Web",
+                "Security"
+            ]
+        },
+        {
+            "title": "多様な顧客案件の脆弱性管理成功事例：電通総研がSSVCで実現した自動リスク判断の秘訣［株式会社電通総研］",
+            "url": "https://scan.netsecurity.ne.jp/article/2024/10/09/51743.html",
+            "summary": "✨株式会社電通総研では、FutureVulsを導入することで脆弱性への対応方針が定められ、対応の進捗状況も可視化できるようになりました。  \n🔥各プロジェクトチームは脆弱性情報を一元管理し、SSVCによって優先度を付けて判断することが可能になりました。  \n📢顧客からの脆弱性管理に関する問い合わせにも、FutureVulsを使用して明示的なパッチ適用基準に基づいて対応しています。  \n💡今後はEPSSの活用も視野に入れつつ、より良い脆弱性管理方法を探求する方針です。  \n👥福山賢太氏、小笠原将太氏、柴田俊介氏がFutureVulsを主導し、セキュリティ意識と提供システムの品質向上に取り組んでいます。  \n🔧FutureVulsは、米国政府機関CISA推奨の「SSVC」による自動トリアージ機能を持つ脆弱性管理ソリューションで、リスクベースの脆弱性評価から対応指示までを全自動化しています。",
+            "tags": [
+                "Security"
+            ]
+        },
+        {
+            "title": "HNを表示: FinetuneDB – カスタムLLMを作成するためのAI微調整プラットフォーム",
+            "url": "https://finetunedb.com/",
+            "summary": "🌟 **FinetuneDB について**\n- 💻 Python & JS/TS の SDK を使用することで、プロダクションデータを完全に非同期で FinetuneDB に送信可能。何を送るかはユーザーが完全にコントロールできる。\n- 🔗 より詳細な制御が必要な場合は、FinetuneDB API を利用してログのインジェストや独自の統合を作成することが可能。\n- 🔧 Langchain 統合により、アプリに FinetuneDB コールバックハンドラーを簡単に追加し、完全な実行トレースを得ることができる（約5分）。\n- 🛡️ FinetuneDB SDK は OpenAI SDK を拡張しており、数分で利用開始可能。具体的な使用例が提供されている。\n\n🔒 **セキュリティ**\n- 🔐 全てのデータは TLS 1.2+ 使用により転送時に暗号化され、完全前方シークロジーが保証される。サーバー上でのデータは AES 256 暗号化で保護。\n- 👥 ユーザーロールと権限を厳格に管理でき、権限変更はすぐに反映される。\n- 📚 SOC 2 合規の取得に向けて積極的に取り組んでおり、システムとプロセスの安全性と信頼性が確保されている。",
+            "tags": [
+                "AI",
+                "Security"
+            ]
+        },
+        {
+            "title": "Meta AIは本日、英国を含む6か国で発売される。",
+            "url": "https://www.engadget.com/ai/meta-ai-will-launch-in-six-more-countries-today-including-the-uk-150057934.html?src=rss",
+            "summary": "✅ Meta AIが国際展開を開始。ブラジル、ボリビア、グアテマラ、パラグアイ、フィリピン、英国で本日サービス開始。\n✅ 今後数週間以内にアルジェリア、エジプト、インドネシア、イラク、ヨルダン、リビア、マレーシア、モロッコ、サウジアラビア、スーダン、タイ、チュニジア、アラブ首長国連邦、ベトナム、イェメンでもサービス開始予定（具体的な日程は未発表）。\n✅ 新たにタガログ語のサポートを追加。今後、アラビア語、インドネシア語、タイ語、ベトナム語も追加される予定。\n✅ Meta AI アシスタントはウェブやMetaのソーシャルメディアアプリ（Facebook、Instagram、WhatsApp、Messenger）で利用可能。\n✅ 英国とオーストラリアではRay-Ban Metaスマートグラスでもサービス提供開始。英国では現状音声サポートのみ。\n✅ EUでは規制上の懸念から多様なAIサービスの導入を見送る方針。\n✅ CEOマーク・ザッカーバーグは、欧州でのAI規制について批判的であることを公に表明している。",
+            "tags": [
+                "AI",
+                "Web",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "OpenBSD 7.6 リリース",
+            "url": "https://undeadly.org/cgi?action=article;sid=20241007204213",
+            "summary": "✅ OpenBSDプロジェクトが57回目のリリースとしてOpenBSD 7.6を発表しました。\n\n✨ 主な改善点：\n- 🌟 Qualcomm Snapdragon X Elite (arm64) ラップトップの初期サポート。\n- 💤 Suspend-to-Idleの初期サポートがamd64とi386に追加され、S3をサポートしないマシンでのサスペンドが可能になりました。\n- 🔗 UDP並列入力が有効化されました。\n- 🎨 LibvaのVA-API（ビデオ加速API）がxenocaraにインポートされました。\n- 📦 `tar(1)`のデフォルト書き込み形式が\"pax\"に変更されました。\n- 📊 `pfctl(8)`と`systat(1)`がフラグメント再構成統計を表示するようになりました。\n- 🔐 ブート時のディスク暗号化用パスフレーズのタイムアウト設定（バッテリー寿命を延ばす可能性あり）が追加されました。\n- 📈 `pf(4)`ルールでローカル-to-anchorテーブルが利用可能になりました。\n- ⚡ `rport(4)`ドライバーが追加され、rdomainインスタンス間のレイヤ3接続を提供します。\n- 💻 `dhcp6leased(8)`, DHCPv6クライアントデーモン（IPv6 PD用）が追加されました。\n- 🗑️ 既に確立された`dhcpleased(8)`の代わりに、`dhclient(8)`が削除されました。\n- 🔒 OpenSSH 9.9が導入され：\n  - `sshd(8)`が複数のバイナリに分割されました。\n  - 不適切な動作に対するペナルティオプションが追加されました。\n  - 新しいハイブリッド量子後対応鍵交換がサポートされました。\n\n📚 完全な変更履歴は[公式サイト](https://www.openbsd.org/plus76.html)で確認できます。\n\n📖 新規インストールの場合は、[インストールガイド](https://www.openbsd.org/faq/faq4.html)を参照してください。既存のリリースユーザーは、[アップグレードガイド](https://www.openbsd.org/faq/upgrade76.html)に従って`sysupgrade(8)`を使用してシステムをアップグレードできます。\n\n🙏 OpenBSDプロジェクトへの寄付も歓迎されています。",
+            "tags": [
+                "Security",
+                "Software"
+            ]
+        },
+        {
+            "title": "クアルコムが大量のセキュリティパッチをリリース、ユーザーに今すぐ修正するよう呼びかけ",
+            "url": "https://www.techradar.com/pro/security/qualcomm-releases-raft-of-security-patches-urges-users-to-fix-now",
+            "summary": "🎉 記事の主な内容:\n\n📚 ハッカーがトップクラスのQualcomm GPUの複数のセキュリティ脆弱性を悪用\n\n⚠️ 悪質なマルウェアがシステムをハックし、アンチウイルスソフトウェアを無効化してより深刻な被害をもたらす可能性がある\n\n🔄 ブラウザ更新プログラムが偽装され、マルウェアの拡散に利用される事例\n\n🛡️ これまでで最大規模のDDoS攻撃が阻止された方法について解説\n\n💰 Truist銀行がデータ侵害を確認し、オンラインで盗まれたデータが公開される\n\n🛠️ StackExchangeが悪用され、PyPIパッケージとしてマルウェアが広まる事例\n\n👥 中国のオンラインストアが何百万人もの市民IDを露出させる\n\n🔥 現在最高のファイアウォールリスト\n\n🎯 現在最良のエンドポイント保護ツールまとめ",
+            "tags": [
+                "Security",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "GoogleはGemini AIを使ってビジネス用のコード作成をさらに簡単にしたいと考えています",
+            "url": "https://www.techradar.com/pro/google-wants-to-make-writing-code-for-your-business-even-easier-using-gemini-ai",
+            "summary": "✅ Googleが2024年4月にCode Assistを発表し、Gemini 1.5 Pro AIモデルを使用することでコードの迅速な分析と複雑な変更を可能にした。\n\n💡 Code Assist EnterpriseはIDE内のAIコーディング支援をさらに進化させ、開発者がより正確で関連性の高いアプリケーション用のコードを生成または変換できるようにする。\n\n📈 このツールではGeminiの大規模トークンコンテキストウィンドウが活用され、開発セッションの詳細やローカルコードベースを考慮に入れた支援が可能となる。\n\n🔗 Code Assist EnterpriseはFirebase、Databases、BigQuery、Colab Enterprise、Apigee、Application Integrationで利用でき、追加購入は不要。特にBigQueryユーザーはSQLとPythonのコード支援も利用できる。\n\n💼 Google Cloudのデベロッパーツールおよびオペレーション担当シニアディレクター、Ryan J. Salvaは、ソフトウェア開発が現代経済のエンジンであると指摘し、Gemini Code Assist Enterpriseが技術スタック全体での開発課題解決に寄与すると述べた。\n\n💰 Gemini Code Assist Enterpriseの価格は月額45ドル（ユーザー1人あたり）で、2025年3月31日までの年間サブスクリプションでは月額19ドルで利用可能。",
+            "tags": [
+                "AI",
+                "Software"
+            ]
+        },
+        {
+            "title": "総務省、FCNTに行政指導　スマホ「arrows」一部端末で電波法違反",
+            "url": "https://ascii.jp/elem/000/004/226/4226914/?rss",
+            "summary": "- 📢 総務省がFCNTに対し、電波法に基づく行政指導を実施した。10月9日に公表された。\n- 📱 対象機種は「arrows We2」のM07（オープンマーケットモデル）、F-52E（NTTドコモ向け）、FCG02（au／UQmobile向け）。\n- 🔍 行政指導の理由は、電波法における工事設計合致義務違反。実際の仕様が認証時のものと異なっていた。\n- 📝 総務省によると、認証を受けた後も新たな空中線を使用して電波を発射していた。\n- ✅ 対象機種は再試験を行い、技術基準適合が確認され、9月13日時点で正しい工事設計に基づく認証も取得した。\n- 🚨 総務省はFCNTに対して厳重注意し、原因の究明と再発防止策を検討するよう指導。11月8日までに報告を求めている。\n- 🏦 FCNTは富士通コネクテッドテクノロジーズから独立し、2023年に中国レノボ傘下となった企業。",
+            "tags": [
+                "Other"
+            ]
+        },
+        {
+            "title": "カレーハウスCoCo壱番屋で個人情報流出",
+            "url": "https://ascii.jp/elem/000/004/226/4226882/?rss",
+            "summary": "申し訳ありませんが、提供されたコンテンツとWebページのタイトルが一致していないようです。ただし、以下は提供された情報から抽出した要約です。文体を統一し、内容を箇条書きでまとめました。\n\n---\n\n✨ **カレーハウスCoCo壱番屋で個人情報流出**\n- 🛑 カレーハウスCoCo壱番屋で個人情報の流出が発生\n- 🔒 流出した情報には顧客名、住所、電話番号などが含まれる\n- ⚠️ 会社は対策を講じ、今後の再発防止に努めている\n\n---\n\nもし異なる内容や追加の情報があれば、再度ご提供いただけますと幸いです。",
+            "tags": [
+                "Security",
+                "Other"
+            ]
+        },
+        {
+            "title": "第833回　Ubuntu 24.10の変更点",
+            "url": "https://gihyo.jp/admin/serial/01/ubuntu-recipe/0833?utm_source=feed",
+            "summary": "✨ Ubuntu 23.10でのファイルマネージャー初期表示が大きく変わった  \n💻 NVIDIAのプロプライエタリドライバーでもWaylandセッションを使用可能になった  \n📚 プロプライエタリなカーネルモジュールとオープンソース化されたカーネルモジュールを選択できる  \n🔐 セキュリティセンタースナップパッケージが追加された\n以下の通り、記事の内容を要約します：\n\n- 📝 **パーミッションプロンプト**  \n  Ubuntu 24.10では、「パーミッションプロンプト」のフロントエンドが導入されました。これは現在、とりあえず搭載された段階であることが報告されています。\n\n- 🔧 **aptのバージョンアップ**  \n  aptパッケージマネージャーがバージョンアップし、インストール中に表示されるメッセージが改善されました。特に、「インストールするパッケージ」と「要約」がわかりやすくなったとのことです。",
+            "tags": [
+                "Software",
+                "Security"
+            ]
+        },
+        {
+            "title": "マイクロソフトが117件のパッチを公開 ― すでに攻撃を受けている欠陥を修正するものも",
+            "url": "https://go.theregister.com/feed/www.theregister.com/2024/10/08/patch_tuesday_october_2024/",
+            "summary": "🌟 **マイクロソフトの10月パッチリリース**\n- 🚨 マイクロソフトが10月に54件の脆弱性を修正。このうち2件は緊急度が高いもの。\n- 💥 54件の脆弱性の中で、2件が既に悪用されている。\n- 🔒 緊急性の高い2つの脆弱性では、リモートでコード実行が可能。\n\n📦 **アドビの10月パッチ**\n- 📦 アドビが52件のCVEを修正。これらはいずれも低優先度で、悪用されていない。\n- 🔧 修正対象製品にはCommerce, Magento, FrameMaker, InDesign, InCopy, Dimension, Animate, Lightroom, 3D Painter, Substance 3D Stagerが含まれる。\n\n📝 **SAPの10月パッチ**\n- 📝 SAPが12件の問題を報告。そのうち6件は以前のパッチの再修正。\n- 🔥 再修正の中で最も深刻なものはCVE-2024-41730（9.8）。BusinessObjectsの脆弱性で、8月に一度修正済みだったが、再度修正が必要となった。\n- 🚧 新規の最悪の脆弱性はCVE-2022-23302（8.0）。Apache Log4j 1.xのJMSSinkに関連し、SAP Enterprise Project Connectionに影響。\n\n⚠️ **その他の情報**\n- ⚠️ 「Critical」CUPS脆弱性チェインが大規模なDDoS攻撃に利用されやすい。\n- 📩 ZimbraメールサーバーがRCE脆弱性の悪用を受けている。直ちにパッチを適用する必要がある。\n- 🚗 テスラ・サイバートラックが再リコール。バックカメラのソフトウェア問題によるもの。\n- 💻 Windows 11の10月パッチプレビュー版が不具合を引き起こしている。",
+            "tags": [
+                "Security",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "米Google、医療ベンチャーのUbieに出資‐生成AIで医療システムのDXへ",
+            "url": "https://news.mynavi.jp/techplus/article/20241008-3041088/",
+            "summary": "もちろんです、以下が要約となります：\n\n- 💼 **Ubie（ユビー）は10月8日、米Googleからの資金調達を実施したと発表。**\n- 📊 **両社は生成AIなどのデジタルイノベーションを活用し、日本の医療システムのデジタルトランスフォーメーションを推進することに合意。**\n- 💻 **Ubieは症状検索エンジン「ユビー」など生活者向けサービスを提供しており、月間1200万人以上が利用している。**\n- 🏥 **医療機関向けには「ユビーAI問診」という業務効率化サービスを提供し、紙の問診票の代わりにタブレットやスマートホンを使用。**\n- ⏳ **患者の診察前の待ち時間に症状を入力することで、医師の電子カルテ作成時間を削減（1人あたり6分強）。**\n- 🌟 **Ubieの阿部吉倫氏は、Googleとの連携により日本の医療現場と患者体験を大幅に効率化し、患者と治療のミスマッチを解消するとのコメントを発表。**",
+            "tags": [
+                "AI",
+                "Software",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "9月に発表したAI関連ニュース7選",
+            "url": "https://blog.google/technology/ai/google-ai-updates-september/",
+            "summary": "もちろん、以下のように要約します：\n\n- 🎤 **新しいオーディオ概要機能**: NotebookLMが提供するAIによる研究支援ツールで、複雑な概念を音声で理解しやすくする機能を導入しました。\n- 🔥 **FireSatの発表**: Google Researchとパートナー企業が共同で開発した衛星星座システムで、早期に森林火災を検出します。\n- 📚 **AI教育イニシアチブ**: Google.orgが500万人以上の米国の教育者や学生に対してAIスキルの提供を目的とした2500万ドルの基金を設立しました。\n- 💼 **Gemini at Work**: Google CloudとGoogle Workspaceが主催するイベントで、AIがビジネスにどのように影響を与えるかを紹介し、AIエージェントが様々なタスクを支援することを示しました。\n- 🌡️ **Heat Resilienceツール**: AI強化の画像を使用して都市が極端な気温に対応するためのツールです。\n- 🦠 **HeARバイオアコースティックモデル**: 研究者向けに提供され、疾患検出に役立つ基盤モデルです。\n- 💬 **AIに関する議論の推進**: GoogleのSVPであるJames Manyikaが、AIの潜在的な利益と進捗の追跡について公的議論を促しています。",
+            "tags": [
+                "AI",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "dotenvx、ありがとう",
+            "url": "https://zenn.dev/yumemi_inc/articles/fff1cf90a0fead",
+            "summary": "✨ 文字化け箇所があるため、以下では意図した内容を推測し要約しています。\n\n📝 記事の要点:\n- 🛠 CI環境でのビルドが少し複雑になる: GitHub Actionsなどでビルドを行う場合、「Secretsに秘密鍵を登録して〜、コマンドで秘密鍵渡して〜」という手間が必要となる。\n- 🔐 `dotenvx` の利点: `.env`ファイルの出し分けや機密性の高い環境変数の管理が長期的に楽になる。プロジェクト初期に設定しておくと良い。\n- 🚀 導入は簡単: 途中からでも簡単に導入できる。\n- 💡 設定例:\n  - `package.json`内のスクリプトで、開発、ステージング、プロダクション環境用のコマンドを設定している。\n  - 環境変数の設定や暗号化処理も含まれている。",
+            "tags": [
+                "Software"
+            ]
+        },
+        {
+            "title": "コムキャスト、20万人以上の顧客の個人情報を侵害した大規模なデータ侵害を認める",
+            "url": "https://wccftech.com/comcast-confirms-massive-data-breach-that-compromised-personal-information-of-more-than-200000-customers/",
+            "summary": "✅ コムキャストが237,703人の顧客の個人情報が侵害されたことを確認。侵害情報には名前、社会保障番号、住所、生年月日などが含まれている。\n\n🔒 侵害は第三-partyの債務収集会社、Financial Business and Consumer Solutions (FBCS)によるもので、コムキャストは2020年にFBCSとの契約を終了していた。\n\n🚨 FBCSは3月にコムキャストに対してランサムウェア攻撃を受けたことを伝え、7月には顧客情報が侵害されたことを確認した。\n\n📝 侵害データは2021年頃の顧客情報に限られる。Truist Bankも影響を受け、同銀行の顧客情報も侵害された。\n\n🚫 この件はコムキャストにとって今年で2度目の大規模なデータ侵害となり、個人情報保護に対する信頼性が損なわれる可能性がある。\n\n💡 企業は自社システムだけでなくパートナーとの連携においてもユーザー情報を積極的に保護する必要がある。",
+            "tags": [
+                "Security",
+                "Other"
+            ]
+        },
+        {
+            "title": "カシオ、不正アクセスでシステム障害",
+            "url": "https://ascii.jp/elem/000/004/226/4226613/?rss",
+            "summary": "### カシオ、不正アクセスでシステム障害\n\n✨ **カシオ、不正アクセスによるシステム障害**\n- 🚨 不正アクセスによりカシオのシステムに障害が発生。\n- 🛡️ セキュリティ対策を強化中。\n- 🔍 详细な影響範囲や復旧予定は調査中。\n\nもし、より詳細な情報を提供いただければ、より具体的な要約を作成することができます。ご協力よろしくお願いいたします。",
+            "tags": [
+                "Security"
+            ]
+        },
+        {
+            "title": "NTTドコモ、SIMカードの製造不良で通信不能になるおそれ　MVNOにも影響",
+            "url": "https://ascii.jp/elem/000/004/226/4226609/?rss",
+            "summary": "もちろんです、以下が記事の内容を要約したものです：\n\n- 📢 NTTドコモは10月8日、一部のドコモUIMカード（SIMカード）に製造不良の可能性があると発表しました。将来的には通信不能になる恐れがあります。\n- ⚠️ この問題は製造工程での処理不足が原因で、現在は正常に使用できているものの、今後不具合が発生する可能性があるとしています。\n- 💼 影響を受ける可能性のあるSIMカードは約93万枚で、内訳はドコモの直接の顧客が約51万枚（OCNモバイルONEの顧客約18万枚含む）、MVNO事業者の顧客が約42万枚です。\n- 🔍 対象となるのは、ドコモUIMカードVer.6（ライトブルー）で、2021年12月から2022年10月に製造された一部の製品で、製造番号が「GD06」から始まる15桁の番号の一部です。\n- 🔄 ドコモは該当するSIMカードを持つ顧客に対して、正常品への無償交換を行う方針を示しています。\n- 🙏 ドコモは多大な迷惑と心配をかけていることをお詫びし、安心してサービスを利用できるよう対応を進めていくとしています。",
+            "tags": [
+                "Other"
+            ]
+        },
+        {
+            "title": "SAP がオープンソース LLM サポートを追加し、Joule をコラボレーション エージェントに変える",
+            "url": "https://venturebeat.com/ai/saps-joule-collaborative-ai-agent-driving-innovation-with-open-source-llms/",
+            "summary": "🎉 **SAP がオープンソース LLM サポートを追加し、Joule をコラボレーション エージェントに変える**\n\n- 🎉 SAPのBusiness Technology Platform (BTP)内に中心的なノードとしてSAP Generative AI Hubが紹介され、自社開発とオープンソースのモデルを接続。\n- 💡 TechEd 2024で、オープンソースLLM分野でのイノベーションの速いペースに追いつくためのコミットメントが示された。\n- 📊 TechEd 2024でサポートが発表された3つのオープンソースLLM（具体的なモデル名と詳細は未記載）。\n- 🚀 SAPは新しいAI時代への移行を表明し、技術革新と顧客ニーズに対応する姿勢を示している。\n- 📈 SAPはERP市場での優位性を維持しながら、AI時代への転換に成功している。\n- 💡 SAPは顧客が必要に応じてオープンソースLLMを使用する自由を尊重することが、価値創出への最短ルートであると認識している。\n- 🚀 Business Technology PlatformとSAP AI Coreは、この進化した考えに基づいて開発されている。",
+            "tags": [
+                "AI",
+                "Software",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "Llama 3.1ベースに日本語能力を強化した「Llama 3.1 Swallow」公開",
+            "url": "https://gihyo.jp/article/2024/10/llama3.1-swallow?utm_source=feed",
+            "summary": "- 📅 2024年10月8日、東京科学大学の岡崎研究室と横田研究室、産業技術総合研究所の研究チームが「Llama 3.1 Swallow」を公開した。\n- 🔍 「Llama 3.1 Swallow」は、Llama 3.1の英語能力を維持しながら日本語能力を強化した大規模言語モデルである。\n- 💾 公開されたモデルは8Bと70Bの2種類で、ベースモデル（base）と指示チューニングモデル（instruct）が存在する。\n- 📚 日本語学習データの大規模化・高品質化や日本語での指示追従能力の向上が実現されている。\n- 🔗 Llama 3.1 Swallowは、HuggingFace上で公開されており、NVIDIA NIM上でも試すことができる。\n- 💾 モデル利用にはLlama 3.1ライセンスに従う必要がある。",
+            "tags": [
+                "AI",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "東京海上日動、7万2000件情報漏えいの可能性　業務委託先がサイバー攻撃",
+            "url": "https://ascii.jp/elem/000/004/226/4226526/?rss",
+            "summary": "当然です。以下が要約になります：\n\n- 📢 東京海上日動火災保険は10月7日、業務委託先の東京損保鑑定がランサムウェア被害を受け、顧客情報など約7万2000件が漏えいした可能性があると発表。\n- 📄 漏えいの可能性がある情報には、契約者や被保険者の氏名、住所、電話番号、証券番号、保険事故の相手方の氏名などが含まれる。クレジットカードや銀行口座などのセンシティブな情報は漏洩していない。\n- 🕵️‍♂️ 東京損保鑑定では8月29日にサーバー内のファイルが閲覧不能となるトラブルが発生し、調査の結果、情報が漏えいした可能性があることが判明。\n- ⏳ 10月4日の段階では情報漏えいは確認されていないが、外部の専門家と連携して全容把握のための調査を継続中で、終了は11月以降を見込んでいる。\n- 📞 東京海上日動では情報漏えいのおそれがある顧客や事故の相手方の特定を進め、特定でき次第速やかに連絡すると表明。",
+            "tags": [
+                "Security",
+                "Other"
+            ]
+        },
+        {
+            "title": "Git 2.47 のハイライト",
+            "url": "https://github.blog/open-source/git/highlights-from-git-2-47/",
+            "summary": "✨ **Git 2.47 のハイライト**\n\n- ✨ Gitが新しいパッキング機能を導入予定。これは大規模なレポジトリサポートの一環で、詳細は今後公開される予定。\n- 💻 増分マルチパックインデックスの実験には以下のコマンドを使用: `git multi-pack-index write --incremental`\n- 🔍 あるコミットがどのブランチに基づいているかを素早く特定する新機能が導入。`git for-each-ref` コマンドの `--format` オプションに新しいアトム `%(is-base:)` を使用。\n- 💡 例: コミット `fcb2205b77470c60f996a3206b2d4aebf6e951e3` がどのリモートブランチに基づいているかを特定するには:\n  ```\n  $ needle=fcb2205b77470c60f996a3206b2d4aebf6e951e3\n  $ git for-each-ref --format=\"%(refname) %(is-base:$needle)\" refs/remotes/origin | grep '('\n  refs/remotes/origin/tb/incremental-midx-part-1 (fcb2205b77470c60f996a3206b2d4aebf6e951e3)\n  ```\n- 👍 Gitのコードベース全体でのメモリー漏れ検出と修正に取り組む新しい取り組みが続けられ、より多くのメモリー漏れが修正。\n- 💻 この取り組みはGitをライブラリとして再利用することを目指しているため重要。\n- 🌟 Git 2.47 の主な変更点：\n  - 💻 `git mergetool` コマンドが Visual Studio Code 用の新しいツール設定をサポート。これにより、手動での複雑な設定なしに VSCode を 3 方向マージ解決ツールとして簡単に使用可能。\n  - 🛠 リポジトリの設定方法：`git config set merge.tool vscode` を実行し、その後の `git mergetool` 実行時に自動的に正しい設定で VSCode が開く。\n- 🔍 詳細な変更点は、2.47 のリリースノートや Git リポジトリを参照。",
+            "tags": [
+                "Software"
+            ]
+        },
+        {
+            "title": "Longwriter – llama3.1 の出力を 10,000 語に増加",
+            "url": "https://github.com/THUDM/LongWriter",
+            "summary": "タイトル: Longwriter – llama3.1 の出力を 10,000 語に増加\n\n要約:\n💡 **背景設定**\n- ElizaとThomasの間には社会的地位による大きな隔たりがあった。Elizaは貴族の令嬢、Thomasは使用人だった。\n\n💖 **Elizaの心情**\n- ElizaはThomasへの愛情に心を揺さぶられていたが、その感情は希望と絶望の戦いだった。\n- 彼女は高い地位の男性との結婚を目指すよう育てられており、Ashwood家の遺産を守ることが期待されていた。\n\n🔗 **二人の絆**\n- ElizaとThomasの関係が深まるにつれ、Elizaは自分の立場を疑問視し始めた。\n- 彼女の愛情は秘めておく必要があり、その感情を明かすことは自身の夢だけでなく家族の恥にもなることを自覚していた。\n\n👨‍🌾 **Thomasの過去と現在**\n- Thomasは貧しい農家の出身で、幼少期から苦労を知っていた。\n- Ashwood家が使用人を募集した際、彼はより良い未来を見つける機会と捉え、応募した。\n- 広大な庭園の仕事に就き、自然との触れ合いの中で静かな平和を感じていた。\n\n🏠 **Ashwood家の生活**\n- Thomasにとって、Ashwood家での生活は大きく異なり、豪華さや格式に圧倒されたが、すぐに適応した。\n- 厳格なルーチンと使用人としての規律ある生活が彼には合っていた。\n\n👩‍🎨 **Elizaとの出会い**\n- Thomasは仕事中、Elizaの存在を感じるようになった。彼女の優雅さと知性、そして慈悲深さに心を奪われた。\n- 二人の関係は徐々に深まり、互いの理解と共感に基づいた絆が生まれた。\n\n⚠️ **危険な恋**\n- ThomasはElizaへの愛情を感じていたが、社会的地位の差による障壁を痛感していた。\n- 彼の心は希望と恐怖で揺れ動いており、二人の関係が現実的に不可能であることを理解していた。\n\n👍 **決断**\n- ElizaはThomasへの愛が家族の期待よりも重要だと気付いた。\n- 内心の葛藤に苦しんだElizaは、家族を尊重しながらもThomasへの情熱を無視できなくなった。\n- ある夜、鏡を見つめながら決断したElizaは、両親に自分の気持ちを打ち明けることを決めた。\n\n😢 **告白と反応**\n- Elizaは両親にThomasへの愛を告白し、その結果がどのようなものであれ、正直であることを選んだ。\n- 両親の反応は驚きと困惑で、特に母親は涙を浮かべながらElizaに諦めるよう求めた。\n\n💔 **決意**\n- Elizaは家族の失望を見つめつつも、偽りの人生を続けることはできないと断固として主張した。\n- ThomasとElizaが再会し、お互いへの深い愛情と将来の不安を打ち明け合いました。\n- ElizaはThomasに一緒に逃げたいと懇願しますが、Thomasは慎重に計画を立てるべきだと提案します。\n\n✨ **愛の確認**\n- 二人は互いの愛を確認し合い、最後の別れを告げました。\n- エリザはトーマスから離れ、新しい人生を求めることにしました。\n\n🌙 **終わり**\n- 月光の下で、彼らの物語は終わりを迎えました。その愛は強くて美しかったが、同時に悲劇的でもありました。",
+            "tags": [
+                "Other"
+            ]
+        },
+        {
+            "title": "AT&T、Verizonが米国政府の盗聴プラットフォームを狙ってハッキングされたと報道",
+            "url": "https://www.bleepingcomputer.com/news/security/atandt-verizon-reportedly-hacked-to-target-us-govt-wiretapping-platform/",
+            "summary": "⭐️ Webページのタイトル: AT&T、Verizonが米国政府の盗聴プラットフォームを狙ってハッキングされたと報道  \n✅ 記事の内容:  \n- 🔒 www.bleepingcomputer.com は接続のセキュリティを確認するために一時的にページへのアクセスを制限しています。",
+            "tags": [
+                "Security",
+                "Other"
+            ]
+        },
+        {
+            "title": "暗号詐欺を宣伝するためにレゴの公式サイトがハッキングされる",
+            "url": "https://www.techradar.com/pro/official-lego-website-hacked-to-promote-crypto-scam",
+            "summary": "申し訳ありませんが、提供された情報がリンクのみであり、具体的な内容が記載されていないため、要約を作成することができません。それぞれのリンク先にどのような記事があるかを確認した上で、要約を作成することが可能です。ご了承いただけますでしょうか。",
+            "tags": [
+                "Security"
+            ]
+        },
+        {
+            "title": "Python 3.13.0 がリリースされました",
+            "url": "https://docs.python.org/3.13/whatsnew/3.13.html",
+            "summary": "✨ **Python 3.13.0 のリリース**\n\n📚 **モジュールおよびクラススコープでの `locals()` 呼び出し**\n- 🛠️ 推論式内から `locals()` を呼び出すと、ローカル変数が含まれなくなりました。これは PEP 667 により元に戻されました。\n\n🛠️ **最適化スコープでの `FrameType.f_locals` アクセス**\n- 🛠️ 書き込み可能なプロキシが返されるようになりました。スナップショットが必要な場合は、明示的に `dict` や `.copy()` メソッドを使用して作成する必要があります。\n\n✨ **C API での変更点**\n\n🌟 `<Python.h>` のインクルード変更\n- 📅 `<time.h>`, `<sys/select.h>`, `<sys/time.h>` を明示的にインクルードする必要がある。\n- 💻 Windows 上で `<stddef.h>` (含む `offsetof()`, `size_t`, `ptrdiff_t`) を明示的にインクルードする必要がある。\n\n🛠️ **マクロの変更**\n- 🛠️ `Py_LIMITED_API` が定義されている場合、`<Python.h>` で `Py_BUILD_CORE`, `Py_BUILD_CORE_BUILTIN`, `Py_BUILD_CORE_MODULE` マクロが未定義になった。\n- 🗑️ 古いゴミ箱マクロ `Py_TRASHCAN_SAFE_BEGIN` と `Py_TRASHCAN_SAFE_END` が削除され、新しいマクロ `Py_TRASHCAN_BEGIN` と `Py_TRASHCAN_END` の使用が推奨されている。\n\n📚 **フレーム関連の変更**\n- 🔧 `PyEval_GetLocals()` の戻り値を変更した場合、その影響は後続の呼び出しにのみ反映される。\n- 📝 `PyFrame_GetLocals()` は書き込み可能なプロキシを返す。スナップショットが必要な場合は明示的に作成する必要がある。\n- ⛔ `PyFrame_FastToLocals()` と `PyFrame_FastToLocalsWithError()` は効果がなくなった。\n- 🗑️ `PyFrame_LocalsToFast()` は効果がなくなった。\n\n🛠️ **リグレッションテストの変更**\n- 🛠️ `--with-pydebug` オプションを使用してビルドされた Python では、`-X presite=package.module` コマンドラインオプションがサポートされ、`site.py` の実行前に指定したモジュールを早期にインポートできる。",
+            "tags": [
+                "Software"
+            ]
+        },
+        {
+            "title": "PHP 8.4 の最初のリリース候補がリリースされました。新しい PHP リリース サイクル戦略が採用されました",
+            "url": "https://dev.to/servbay/php-84-first-release-candidate-released-new-php-release-cycle-strategy-adopted-4og3",
+            "summary": "✅ PHP 8.4が新たに追加された機能として属性フック、非対称可視性サポート、遅延オブジェクト、Unicode 16のサポートなどが含まれています。\n\n🛠️ 現在PHP 8.4はプロダクションシステムには適していません。しかし、WindowsバイナリやDocker/OCIイメージ、Ondrej/RemiリポジトリからのLinuxパッケージが利用可能です。\n\n💻 ServBayでは既にPHP 8.4をサポートしています。ユーザーはServBayからダウンロードできます。\n\n🤝 ServBayのユーザーサポートについても触れられており、質問や助けが必要な場合はDiscord、Telegram、WhatsAppなどでスタッフに連絡できることが紹介されています。",
+            "tags": [
+                "Software",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "ByteDanceは他の企業よりも速くウェブをスクレイピングしている",
+            "url": "https://fortune.com/2024/10/03/bytedance-tiktok-bytespider-scraper-bot/",
+            "summary": "✅ ByteDance傘下のBytespiderが積極的にウェブからデータをスクレイピングしている。\n\n⚠️ これは、ByteDanceが生成型AI技術での遅れを取り戻そうとしている兆候と見られている。昨年はOpenAIの技術を利用して自社のLLM（大規模言語モデル）を開発していたが、これはOpenAIの利用規約違反だった。\n\n💡 ByteDanceは今年、チャットベースのLLM「Doubao」をリリースしたが、このモデルには最新のスクレイピングデータは含まれていない。\n\n🔍 1人の情報筋によると、ByteDanceは新しいLLMを開発中で、その目的の1つはTikTokの検索機能の改善である。\n\n📈 TikTokは先週、広告キーワードのリアルタイム検索を可能にするアップデートをリリースした。これは、広告主が最新のトレンドに関連する広告を作成しやすくするものだ。\n\n💡 新しいAIモデルにより、TikTokの検索環境はさらに拡大し、改善される可能性がある。これによって、Googleに大量の広告費を支払っている企業にとっても魅力的なプラットフォームになると考えられている。",
+            "tags": [
+                "AI",
+                "Web",
+                "Software",
+                "Security"
+            ]
+        },
+        {
+            "title": "Apache HTTP Serverのこれらの脆弱性により、HTTPリクエストスマグリングとSSL認証バイパスが可能になり、世界中の組織に深刻な脅威をもたらします。",
+            "url": "https://www.techradar.com/pro/vulnerabilities-in-apache-http-server-enable-http-request-smuggling-and-ssl-authentication-bypass",
+            "summary": "✅ **Apache HTTP Serverの脆弱性に関する要約:**\n\n⚠️ 脆弱性とPoCエキスプロイトコード:\n- 2つのApache HTTP Serverの脆弱性が発見され、PoC（Proof of Concept）エキスプロイトコードが存在している。\n- これらのエキスプロイトコードは攻撃者が未パッチの組織を対象とするのに利用しやすくしており、特別に作成されたSSLリクエストを送ることで不正アクセスを可能にする。\n\n💻 ダークウェブフォーラムでの活動:\n- ダークウェブフォーラムでは、これらの脆弱性に関する技術的な詳細、標的情報、およびエキスプロイトが積極的に共有されており、実際の攻撃への関心が高まっている。\n- 漏洩したIPアドレスはアクティブに流通しており、対策の急務となっている。\n\n🛠️ 対策:\n- 最新のパッチを適用し、Apache HTTP Serverを2.4.62以降のバージョンに更新することが最も重要なステップである。\n- `mod_proxy` と `mod_ssl` モジュールの設定を見直し、`ProxyPass` ディレクティブとURLリライト設定を安全に構成する必要がある。\n- SSLVerifyClientの適切な設定により、認証バイパス攻撃を防ぐことができる。\n\n🛡️ 追加のセキュリティ対策:\n- Web Application Firewall (WAF) を導入することで、悪意のあるHTTPおよびSSLトラフィックをフィルタリングし、追加の保護層を提供する。\n- 定期的なセキュリティ評価と脆弱性スキャンを行い、設定の問題や新しい脆弱性を早期に発見して対応する。\n\n💼 影響を受けやすい業界と地域:\n- 金融、医療、政府、小売、技術などの業界は特に影響を受けやすく、これらの業界では敏感なデータが扱われている。\n- 米国、ドイツ、インド、オランダ、英国など、Apache HTTP Serverの使用が広範囲にわたる地域は高リスクとされる。\n\n📝 著者について:\n- 著者のEfosaは7年以上テクノロジーについて執筆しており、修士号と博士号を取得している。彼はプライバシーと技術政策に特に興味を持ち、データ保護やサイバーセキュリティに関する規制フレームワークの影響について研究を行っている。",
+            "tags": [
+                "Security",
+                "Web"
+            ]
+        },
+        {
+            "title": "FlutterKaigi2024、11/21、22に開催、チケット販売開始",
+            "url": "https://gihyo.jp/article/2024/10/flutterkaigi2024-ticket?utm_source=feed",
+            "summary": "- 📅 FlutterKaigi 2024は2024年11月21日（木）、22日（金）に東京の有明セントラルタワー ホール＆カンファレンスで開催される。\n- 🎟️ チケット販売は2024年10月7日に開始された。\n- 💻 イベントの詳細情報は公式ウェブサイト（https://flutterkaigi.jp/2024/）で確認できる。\n- 🎫 一般チケットは6,000円で、カンファレンス本編への参加、懇親会への参加、ノベルティが含まれる。\n- 💰 個人スポンサー付き参加チケットは30,000円で、一般チケットの特典に加えてセッションルーム前方優先エリアでの参加、専用FlutterKaigiグッズ、開会式でのメッセージ紹介、公式Webサイトへのアイコン掲載が含まれる。\n- 📚 学生（高校、大学、大学院、高等専門学校）は学割が適用され、カンファレンス当日受付で学生証を提示するとチケット代金の全額が返金される。",
+            "tags": [
+                "Software",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "2024/09/30〜2024/10/06の最新情報",
+            "url": "https://uki00a.github.io/deno-weekly/articles/2024/10/06.html",
+            "summary": "🎉 **Deno v2.0.0-rc.3 の警告削除:**\n- `--allow-run` を使用する際の allow-list なしでの警告が、方針の見直しにより削除された。\n\n🛠️ **`node:worker_threads` の修正:**\n- Angular サポートに向けて `node:worker_threads` の実装が修正された。\n\n📦 **ESLint 関連パッケージの jsr 公開:**\n- `@eslint/core`, `@eslint/compat`, `@eslint/json` などの ESLint 関連パッケージが jsr に公開された。\n- ESLint は言語非依存となり、JSON, Markdown などもLint可能になった。\n\n🔄 **fresh 1.7.2 のリリース:**\n- Island 内の `f-client-nav={false}` 指定の効かない問題が修正された。\n- Partials が有効なボタンやリンク配下の SVG 要素をクリック時のクライアントナビゲーションが動作しない問題が修正された。\n- Deno v2 の `URLPattern#exec` の振る舞い変更に対応した。\n\n🚀 **Danet フレームワークの jsr 公開:**\n- Deno の Web フレームワーク Danet が jsr に公開された。\n- `@danet/core` などのパッケージが利用可能となった。",
+            "tags": [
+                "Software",
+                "Web"
+            ]
+        },
+        {
+            "title": "Tanuki-8BにMagpieを適用して日本語の合成対話データセットを作成する",
+            "url": "https://zenn.dev/aratako_lm/articles/a5ae43fb2bfbb3",
+            "summary": "✨ **MagpieとTanuki-8Bを使用した日本語の合成対話データセット作成**\n\n- 📝 **Magpieとは**\n  - Magpieは、モデル自身を使って新しいinstructionを生成する手法です。\n\n- 💡 **良い点**\n  - 多様性のあるinstructionが合成できる\n    - オリジナルのInstruction Tuningデータにないような新しい指示や表現が生成される。\n  - 指示を誘導できる\n    - 特定のトピックや形式に傾向を持たせられる（例：数学に関する質問）。\n  - 同じモデルでのresponse合成は品質が高いと推測される\n    - モデルが既に学習済みのinstructionを生成するため、品質が保たれやすい。\n\n- ⚠️ **悪い点**\n  - モデルによって向き不向きが大きく分かれる\n    - 向いていないモデルでは多様性に欠けるinstructionしか生成できない。\n  - 一部おかしいinstructionが混ざる\n    - 不自然な表現や日本語としての誤りが含まれることがある。\n  - 一部合成が難しいタスクがある\n    - 表を元に回答するなどの特定のタスクは合成しづらい。\n\n- 🚀 **Tanuki-8Bについて**\n  - Tanuki-8Bは、事前学習時に instruction 部分も多量に学習しているため、Magpieに向いているモデルと考えられます。\n\n- 💻 **実行コード**\n  - vLLMを使ってシンプルなスクリプトでinstructionを合成しました。詳細なコードは省略していますが、必要であれば追記できます。\n\n- 📝 **生成されたインストラクションの例**\n  - 記事の内容を簡潔に要約してください。要点だけをまとめることに重点を置いてください。\n  - 特定のキーワードや重要な情報が含まれているか確認し、それらを強調して要約してください。\n  - 元の文章から逸脱せず、追加情報を含めずに正確に要約してください。\n  - 記事の主要な統計データや数値を抜き出し、その重要性を説明しながら要約してください。\n  - Webページのリンクが提供されている場合は、それを含めて引用元を明記してください。\n\n- 📚 **まとめ**\n  - Tanuki-8BとMagpieを使用することで、比較的質の高いinstructionを生成できる。しかし、実際の利用時にはデータの品質向上が重要。\n  - 学習に利用する際はフィルタリングや言い換えなどのデータクリーニングを行うことが推奨される。Evol-Instructのような手法によるプロンプトの改善も有効。\n\n- 🔗 **参考**\n  - 元論文では作成されたデータセットに対して様々な分析や可視化を行っている。",
+            "tags": [
+                "AI",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "Pythagora: LLM を使用して Node.js テストを自動生成、コーディング不要",
+            "url": "https://github.com/Pythagora-io/pythagora",
+            "summary": "✅ **Pythagora: LLM を使用して Node.js テストを自動生成、コーディング不要**\n\n- 🛑 このレポジトリは非推奨で、新しいプロジェクト「GPT Pilot」に移行中です。\n- 🤖 Pythagoraのミッションは、自動テストを完全に自律化することです。\n- 🔧 コマンドを1つ実行するだけで、GPT-4を使用してテストが生成されます。\n- 💻 Visual Studio CodeでPythagoraを使うには、拡張機能をダウンロードできます。\n- ⚙️ インストール方法: `npm i pythagora --save-dev` を実行し、APIキーを追加後、次のコマンドでテスト生成が可能です: `npx pythagora --unit-tests --func <FUNCTION_NAME>`。\n- 📂 他のオプション（複数のファイルやフォルダに対するテスト生成など）については、オプションセクションを参照してください。\n- 📊 PythagoraはJavaScriptやTypeScriptのユニットテストを自動生成するためのツールです。\n- ⚙️ Pythagoraがユニットテストを生成する際には以下のような手順を踏みます：\n  - 🔍 テストしたい関数を見つけます。\n  - 🌐 その関数から呼び出されるすべての関数を見つけます。これはAST（抽象構文木）解析によって行われます。\n  - 📡 テストしたい関数と関連する関数をPythagoraサーバーに送信し、GPT-4を使用してユニットテストを生成します。このサーバーはオープンソースで、プロンプトも公開されています。\n- 💼 既存のテストを拡張したい場合は、次のコマンドを実行します：\n  - 📁 `npx pythagora --expand-unit-tests --path <PATH_TO_YOUR_TEST_SUITE>`\n  - 🗂️ このコマンドでは、単一のテストファイルまたはフォルダ内のすべてのテストファイルが処理され、拡張されます。\n- 📖 Pythagora の主なオプション：\n  - 🧪 単一の関数に対してユニットテストを生成するには：`npx pythagora --unit-tests --func <FUNCTION_NAME>`\n  - 🗂️ 特定のファイル内の単一の関数に対してユニットテストを生成するには：`npx pythagora --unit-tests --func <FUNCTION_NAME> --path ./path/to/file.js`\n  - 💾 ファイル内のすべての関数に対してユニットテストを生成するには：`npx pythagora --unit-tests --path ./path/to/file.js`\n- 👍 **Pythagoraについての概要:**\n  - 🌟 Pythagoraは、JavaScriptやTypeScriptなどのコードに対して単体テストを自動生成するツールです。\n- 🚀 **Pythagoraの使用方法と注意点:**\n  - ✅ 生成されたテストをレビューすることをお勧めします。誤ったテストが含まれることがあるためです。\n  - 🛠️ テストの自動生成は、コードを考える時間短縮に役立ちますが、手動でのレビューも重要です。\n- 🚦 **アルファ版:**\n  - 🎉 これはPythagoraのアルファ版です。ベータリリースの更新情報や、サポートしてほしい技術（フレームワーク/データベース）に関する提案をメールで送ることができます。\n- 🔗 **コネクション:**\n  - 💬 Discord サーバーでディスカッションに参加できる\n  - 🔉 新機能やベータ版のリリース情報を受け取るためにはメールアドレスを登録できる\n  - 🌟 Pythagoraはオープンソースツールであり、レポジトリをスターして支援することを希望している",
+            "tags": [
+                "AI",
+                "Software"
+            ]
+        },
+        {
+            "title": "Parallels は、小規模言語モデルを含む 14 個のツールをバンドルした AI 仮想マシン プラットフォームを発表し、Windows と Linux でより高速なパフォーマンスを約束します。",
+            "url": "https://www.techradar.com/pro/parallels-debuts-ai-virtual-machine-platform-that-bundles-14-tools-including-small-language-models-and-promises-faster-performance-on-windows-and-linux",
+            "summary": "🚀 Parallels Desktop 20が発表され、macOS SequoiaとWindows 11 24H2に対応しています。\n\n💻 新しいAIパッケージが導入され、14のAI開発ツールセットを含む仮想マシン（VM）が提供されています。このVMは単一クリックでダウンロードでき、小規模言語モデルの実行もサポートしています。\n\n🔒 ネットワークアクセスを無効にすることで、作業環境をさらにセキュアにすることができます。\n\n💡 macOS Sequoiaとの完全互換性があり、新しいAI搭載ライティングツールが利用できます。Apple silicon上でmacOS仮想マシンを使用する際には、Apple IDに直接サインインできる機能が追加されました。\n\n🎉 Parallelsは新しく共有フォルダ技術を導入しました。これにより、MathematicaやNinjaTraderなどのアプリケーションのパフォーマンスが向上し、特にMacファイルをLinux VMで操作する際には速度が4倍になることがあります。\n\n💼 企業向けにParallels Desktop 20 Enterprise Editionが提供され、新しい管理ポータルが追加されました。これにより、仮想マシンの監視と管理を行い、高度なセキュリティポリシーを適用できます。また、Single Sign-On (SSO) やボリュームライセンスなどのライセンスオプションも強化されています。\n\n🔒 このソフトウェアはSOC 2 Type 2認定を取得しており、定期的なサードパーティによるペネトレーションテストを受け、サイバー脅威に対するセキュリティと堅牢性が保証されています。\n\n🛠️ ITプロフェッショナルや開発者向けに、Parallels Desktop 20ではDevOpsサービスの強化が行われ、Windows、macOS、Linux VMでのソフトウェア開発をサポートします。さらに、Visual Studio Code Extensionも改良され、Microsoft Copilotとの統合により自然言語コマンドで仮想マシンを制御できるようになりました。\n\n📸 その他の新機能として、スナップショット機能とOCR対応のPacker for macOS VMs on Apple siliconが強化されています。\n\n🛒 Parallels Desktop 20 for MacはParallelsウェブサイトや認定販売店を通じて購入またはアップグレードできます。提供されるエディションにはStandard、Pro、Businessがあり、2024年からはPro、Business、EnterpriseエディションにParallels AI Packageが無償で含まれます。\n\n🤖 Parallels CTOのPrashant Ketkar氏は、「PCがAI機能を備えるにつれて、すべてのデスクトップにAIが標準装備される日が近づいています。これにより開発者はアプリケーションを更新し、AI対応PCの能力を最大限に活用する必要があります」と述べています。Parallels AI Packageは、経験豊富な開発者から初心者まで、AIモデルとコード提案を提供することで、数分でAI対応アプリケーションを開発できるように支援します。\n\n📚 Efosa氏は、7年以上テクノロジーについて書き続けており、Master'sとPhDの学位を持つ科学者です。彼はプライバシーとテクノロジーポリシーに特に興味を持ち、技術進歩が規制フレームワークや社会的規範に与える影響を研究しています。\n\n🔥 TechRadar Proでは、マルウェア対策ツールのベストセレクトやSquarespaceの最新アップデート、ビジネス向けVPNなどの記事も提供されています。",
+            "tags": [
+                "AI",
+                "Software",
+                "Security",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "Meta、高解像度動画を生成するAIモデル「Movie Gen」発表",
+            "url": "https://www.watch.impress.co.jp/docs/news/1629163.html",
+            "summary": "- 🎥 Metaが4日（米国時間）に、テキストプロンプトから動画と音声を生成できるAIモデル「Movie Gen」を発表。30Bパラメータのモデルで、最長16秒の動画を生成可能。\n- 📈 このモデルは物体の動きや相互作用、カメラの動きを推論し、自然な動きを学習している。\n- 💻 公開されたデモでは、水中シーンが高品質に表現され、魚の動きや草の奥行きなどにも違和感がない。\n- 🌟 Movie Genはパーソナライズされた動画生成に対応し、人物の画像とテキストプロンプトからその人物を含む動画を作成できる。\n- ✂️ 編集機能も搭載され、要素の追加・削除・置換や背景・スタイルの変更などに対応。最大45秒の音声生成にも対応している。\n- 📈 MetaはMovie Genの性能がRunway Gen3、LumaLabs、Soraを上回ると説明し、詳細ページやホワイトペーパーも公開している。\n- 👥 Metaはこのモデルがアーティストやアニメーターの仕事を代替するものではなく、表現を支援するツールであると強調。将来的には誰でも動画や音声を作成できるようにするとしている。\n- 🔒 悪用防止のためにセーフティモデルの組み込みも必要としている。\n- 📝 今後、モデルの改善と映画制作者やクリエイターとの連携を進める計画。具体的な使用例として、「ある一日」の動画をアニメーション化してInstagramで共有するなどしている。\n- 🎥 ザッカーバーグCEOは自身のInstagramでMovie Genを使用した動画を投稿しており、レッグプレスを行っている自身的な衣装や背景が自然に置換されている。",
+            "tags": [
+                "AI",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "Apple、3Dビジョンのルールを書き換えるAIモデル「Depth Pro」をリリース",
+            "url": "https://venturebeat.com/ai/apple-releases-depth-pro-an-ai-model-that-rewrites-the-rules-of-3d-vision/",
+            "summary": "もちろん、以下が要約した文章です：\n\n📅 **公開日時**  \n- 2024年10月4日午後11時52分に記事が公開されました。\n\n🌟 **リリース情報**  \n- AppleがAIモデル「Depth Pro」をリリースしました。\n\n💡 **特徴とパフォーマンス**  \n- Depth Proは3Dビジョンのルールを書き換え、深度推定モデルの中で最高のパフォーマンスを発揮しています。\n- 平均順位2.5で他モデルを上回っています。\n\n✨ **実世界での応用**  \n- **eコマース**: 消費者が家具が部屋にどのようにフィットするかを確認できます。\n- **自動車産業**: 自動運転車の環境認識やナビゲーション、安全性の向上に寄与します。\n\n🛠️ **課題への対応**  \n- **フライングピクセル問題**: Depth Proはこの問題に対処し、3D再構成や仮想環境での精度を高めます。\n- **境界トレーシング**: 他のモデルよりも優れた性能でオブジェクトとそのエッジを明確に区別します。\n\n🌐 **オープンソースとスケーラビリティ**  \n- Depth Proはオープンソース化されており、様々な用途への適用が期待されています。\n- AppleがAIモデル「Depth Pro」をオープンソースとしてGitHubで公開しました。\n\n💻 **開発者向け情報**  \n- Depth Proのコードと事前学習済みモデルの重みがGitHubで公開され、開発者や研究者がこの技術を実験し、さらに改良できるようにしています。\n\n🌟 **可能性の拡大**  \n- Appleはロボティクス、製造業、医療分野でのDepth Proの潜在的な活用を奨励しており、より広範な産業で空間認識に依存する技術への影響が期待されています。\n- Depth Proは単眼深度推定において速度と精度の新しい標準を設定し、高品質かつリアルタイムの深度マップを単一の画像から生成できる能力を持っています。\n\n📈 **実世界への応用**  \n- AIが意思決定や製品開発にますます中心的な役割を果たす中、Depth Proは先端研究が具体的な現実の解決策にどのように翻訳されるかを示しています。\n- このモデルは機械の周囲環境認識の向上や消費者体験の強化など、さまざまな用途を持っています。\n\n🌟 **優れた性能**  \n- 研究者たちはDepth Proが物体境界の明確な線引き、特に髪、毛皮、植物などの細部構造においてこれまでの全ての研究を大幅に上回ると述べています。\n- オープンソースとしてリリースされたことで、自動運転や拡張現実などさまざまな産業で重要な役割を果たす可能性があります。",
+            "tags": [
+                "AI",
+                "Software",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "週刊Cloudflare - 2024/09/22週",
+            "url": "https://zenn.dev/gemcook/articles/weekly-cloudflare_2024_0922-0928",
+            "summary": "### 週刊Cloudflare - 2024/09/22週\n\n✨ **新しい機能とアップデート:**\n- `init --from-dash`コマンドにより不足していたバインディングが追加され、型チェック用の`assertNever()`関数が導入されました。\n- アセットアップロード時の特殊文字（例: `[ ]`, `@`）をエンコードと未エンコーディングの両方のパスでアクセス可能にする修正が行われました。必要に応じてリクエストは正規化され、エンコードされたパスへリダイレクトされます。\n- Worker スクリプトが存在しない場合でもアセットバインディングを提供できるようにエラーが修正されました。\n- 依存関係の更新：\n  - `@cloudflare/workers-shared@0.5.4`\n  - `miniflare@3.20240909.5`\n- Workers Builds 機能追加：GitHub や GitLab のリポジトリを既存の Worker に接続し、git push で自動ビルドおよびデプロイが可能になりました。新規 Worker も対応予定。\n- Vectorize が一般提供（GA）されました。\n\n🚀 **Cloudflare Queues:**\n- スループット：1秒あたりのメッセージ処理速度が400から5,000に増加。\n- 同時消費者数：最大20から250に拡大。\n\n🛠️ **既知の問題:**\n- Cloudflare が macOS 15（Sequoia）での一時的なネットワーク問題を調査中です。\n- 組織で Regional Services が有効な場合、MASQUE トンネルプロトコルの互換性に問題が発生する可能性があります。\n\n🔄 **WARP client for Windows (version 2024.8.458.0) の主な更新内容:**\n- `warp-cli`で PCAP オプションのカスタマイズ機能を追加。\n- `warp-diag`にインストール済みアプリのリストを追加。\n- `warp-dex`のトレースルート結果を JSON 形式で出力。\n- スプリットトンネル構成時のファイアウォールパフォーマンスを向上。\n- 構成変更時に DNS ログがクリアされない問題を修正。\n- 新しい複数構成形式の MDM を導入した後に古い単一構成の MDM ファイルを導入すると、ユーザーが再登録する必要がある既知の問題を修正。\n- ホームネットワークと重複するプライベート IP 範囲の使用問題を修正。\n- 非推奨の`warp-cli`コマンドを削除。\n\n⚠️ **WARP client for Windows (version 2024.8.458.0) の既知の問題:**\n- 組織で Regional Services が有効な場合、MASQUE トンネルプロトコルの互換性に問題が発生する可能性があります。\n- WARP が DNS フィルタリングなし（トンネルモードのみ）の Secure Web Gateway に接続され、カスタム DNS サーバーアドレスがプライマリネットワークアダプターに設定され、WARP 接続中にカスタム DNS サーバーアドレスが変更された場合、DNS 解決が機能しなくなる可能性があります。この問題を回避するには WARP クライアントを再起動して再接続します。\n\n👀 **筆者の感想:**\n- Cloudflare Developers の YouTube チャンネルがあることを紹介。\n- シリーズものが始まっていたり、最近更新が頻繁に行われている。\n- 自動翻訳も利用できるため、気軽に視聴できるとおすすめ。",
+            "tags": [
+                "Software",
+                "Security",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "DrayTek製ルータに緊急の脆弱性、アップデートを",
+            "url": "https://news.mynavi.jp/techplus/article/20241004-3037641/",
+            "summary": "🎉 **DrayTek製ルータの緊急脆弱性と対策**\n\n- 🔧 DrayTekが複数のルータ製品で発見された脆弱性を修正し、新しいファームウェアをリリースしました。以下のモデルは最新のアップデートをインストールする必要があります：\n  - Vigor1000B、Vigor2962、Vigor3910: 4.3.2.8または4.4.3.1\n  - Vigor3912: 4.3.6.1\n  - Vigor165、Vigor166: 4.2.7\n  - Vigor2135、Vigor2763、Vigor2765、Vigor2766: 4.4.5.1\n  - Vigor2865、Vigor2866、Vigor2915: 4.4.5.3\n  - Vigor2620、VigorLTE200: 3.9.8.9\n  - Vigor2133、Vigor2762、Vigor2832: 3.9.9\n  - Vigor2860、Vigor2925: 3.9.8\n  - Vigor2862、Vigor2926: 3.9.9.5\n  - Vigor2952、Vigor3220: 3.9.8.2\n\n- 🚫 支援終了（EOL）製品については以下の通り：\n  - Vigor2620、VigorLTE200、Vigor2133、Vigor2762、Vigor2832、Vigor2860、Vigor2925、Vigor2862、Vigor2926、Vigor2952、Vigor3220 (11製品)\n  - これらの製品はすでにサポートが終了していますが、DrayTekは修正パッチを提供しています。デバイスの交換を検討することをお勧めします。\n\n- 💥 影響と対策：\n  - 約70万台のデバイスがインターネットからアクセス可能で、日本国内にも多くのユーザーがいます。\n  - 最も深刻度の高い脆弱性は緊急（Critical）と評価されており、注意が必要です。\n  - Forescout Research Labsは管理者に対し、影響を確認して速やかにアップデートすることを推奨しています。\n  - DrayTekは2020年に公開したセキュリティアドバイザリーの内容も確認し、追加の対策を実施することをお勧めしています。",
+            "tags": [
+                "Security"
+            ]
+        },
+        {
+            "title": "セキュリティ専門家は、新しい「Perfctl」マルウェアがあらゆるLinuxサーバーに危険をもたらす可能性があると主張している。",
+            "url": "https://www.tomshardware.com/tech-industry/cyber-security/security-experts-claim-new-perfctl-malware-could-pose-a-risk-to-any-linux-server",
+            "summary": "以下がWebページから抽出した情報の要約です：\n\n- 🛡️ **Perfctlマルウェア**：自身を隠蔽し、CPUリソースを盗むルートキット。Tor暗号化トラフィックを使ってマイニングやバックドアクマンドを隠す。\n- ⏳ **長期間の潜伏**：影響を受けたサーバーでは乗っ取られたプロセスを検出するのが困難。CPU利用率から活動を完全に隠せる。\n- 🛡️ **対策推奨事項（Aqua Nautilus）**：\n  - 🛡️ 全ての潜在的な脆弱性をパッチ適用し、特にRocketMQサーバーやPolkit脆弱性に対して最新のライブラリを使用する。\n  - 🗑️ /tmp, /dev/shmなどの書き込み可能なディレクトリで\"noexec\"設定を行い、マルウェアの実行を制限する。\n  - 🔒 オプションまたは使用されていないサービスを無効化し、特に外部からの攻撃にさらされる可能性のあるHTTPサービスなどを停止する。\n  - 📜 厳格な特権管理を実施し、ルートアクセスを重要ファイルやディレクトリに制限。Role-Based Access Control (RBAC)を使用してユーザーとプロセスのアクセス権を限定する。\n  - 🛡️ ネットワークを分割し、重要なサーバーをインターネットから隔離。ファイアウォールを使って外部通信（特にTorトラフィックやマイニングプールへの接続）をブロックする。\n  - 🔎 時間制御保護を展開し、高度なアンチマルウェアと行動検知ツールを使用してルートキットやクリプトマイナー、Perfctlのようなファイルレスマルウェアを検出する。\n- 📝 **サーバー管理者へのメッセージ**：これらの対策によって脅威を防ぎ、既に存在する場合に対処できる。\n- 🔍 **一般ユーザーへのメッセージ**：利用している情報が侵害されたLinuxサーバー上にあるかどうか確認し、日常生活で適切なサイバーセキュリティ習慣を守ることが重要。",
+            "tags": [
+                "Security"
+            ]
+        },
+        {
+            "title": "bolt.new",
+            "url": "https://bolt.new/",
+            "summary": "- 🏗️ **何を作成したいですか？**\n- 💻 **プロンプト、実行、編集、そしてフルスタックのウェブアプリをデプロイします。**",
+            "tags": [
+                "Web",
+                "Software"
+            ]
+        },
+        {
+            "title": "Apple、VoiceOverがパスワードを叫ぶバグを修正",
+            "url": "https://go.theregister.com/feed/www.theregister.com/2024/10/04/apple_voiceover_password_bug/",
+            "summary": "✅ **Apple、iOS 18.0.1およびiPadOS 18.0.1のセキュリティバグを修正**\n- Appleは2つのセキュリティバグを修正しました。そのうち1つは、保存されたパスワードがVoiceOverによって読み上げられる問題でした。\n\n🔊 **VoiceOverユーザーへの影響**\n- 触覚機能に依存するユーザーにとって理想的な状況ではありません。\n- 最新のアップデートを適用することが推奨されます。\n\n🔍 **CVE-2024-44204について**\n- Appleは詳細をあまり公表していませんが、このバグは論理的な問題として分類されました。\n- Appleは検証を改善することで対処しました。\n\n📅 **発生時期と影響範囲**\n- このバグの公開はiOS 18およびiPadOS 18のリリースから約1か月後です。\n- Passwordsアプリが関与しているかどうかは不明ですが、保存されたパスワードに影響があります。\n\n📱 **アップデートが必要なデバイス**\n- iPhone XS以降\n- iPad Pro (13インチ)\n- iPad Pro (12.9インチ第3世代以降)\n- iPad Pro (11インチ初代以降)\n- iPad Air (第3世代以降)\n- iPad (第7世代以降)\n- iPad mini (第5世代以降)\n\n📊 **深刻度スコアの未設定**\n- 国家脆弱性データベースのバックログ問題により、深刻度スコアがまだ割り当てられていません。\n\n🎧 **他のバグの修正**\n- 18.0.1アップデートには、iPhone 16限定の別のオーディオ関連のバグも修正されています（CVE-2024-44207）。\n- このバグはiMessageでの音声メッセージ送信時に発生し、ユーザーインターフェースが示す前に数秒間の音声をキャプチャしていました。\n\n🔍 **プライバシーへの影響**\n- プライバシーに敏感なユーザーにとって気になる問題ですが、Appleはこの問題も改善して修正しました。",
+            "tags": [
+                "Security",
+                "Software"
+            ]
+        },
+        {
+            "title": "Webとネイティブを融合させてRemixのようなデータ取得ができるフレームワーク”One”と、RSCの未来",
+            "url": "https://zenn.dev/trusthub/articles/989823d515fa55",
+            "summary": "✅ Oneフレームワークは現在、RSC（React Server Components）のサポートを行っておらず、将来的にも限られたサブセットのみをサポートする予定です。\n\n💡 ネイティブアプリでのRSC採用は、クライアントとサーバーのDOMツリーが混在することで「function coloring」に似た問題が発生する可能性があるため、推奨されていません。\n\n🔄 OneはZeroを導入し、ローカルファーストなデータ取得・操作方法を提供することで、データ処理の単純化を目指しています。\n\n📱 ネイティブアプリの特徴として、滑らかなアニメーションやオフライン時の使用が可能であることが挙げられます。これらの機能はWebViewでは実現が難しい場合があります。\n\n🛠 Oneはサーバーのラウンドトリップを回避し、メンタルモデルの分割によってより良いユーザー体験を提供することを目指しています。\n\n💻 ExpoとNext.jsを使った単一コードベースでの開発経験者として、私はユニバーサルスタックが現実的に使えるアーキテクチャであると考えています。Oneへの期待も大きいです。\n\n📅 Oneの正式リリースは年末ごろを予定しています。\n\n🎉 10月10日（木）にトラストハブの秋葉原オフィス移転パーティーを開催します。React NativeとRSCの未来について興味のある方はぜひ参加してください！",
+            "tags": [
+                "Web",
+                "Software",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "ESLintがJSONとMarkdownのコードチェック機能をサポ―ト",
+            "url": "https://gihyo.jp/article/2024/10/eslint-json-markdown-support?utm_source=feed",
+            "summary": "以下の通り、Webページの内容を要約しました。\n\n- 📅 2024年10月3日、ESLintプロジェクトがJSONとMarkdownのコードチェック機能を正式にサポートしたことを発表。\n- 🔧 ESLintはオープンソースのJavaScriptコードチェックツールで、JavaScriptやTypeScriptのコードの静的解析を行い、構文エラーやコーディング規約違反を検出する。\n- 💾 **JSONリンティング**:\n  - `@eslint/json`プラグインを使用することで、JSON、JSONC（コメント付きJSON）、JSON5の解析が可能。\n- 📝 **Markdownリンティング**:\n  - `@eslint/markdown`プラグインを用いて、CommonMarkおよびGitHub-Flavored Markdownの解析とルール適用が行える。\n- 🛠️ **AST（抽象構文木）構造**:\n  - JSONとMarkdownもJavaScriptと同じように、ソースコードをASTに変換し、これをトラバースしてルールを実行する機能がある。\n  - カスタムルールの記述と適用が可能。\n- 🚀 **ESLint Code Explorer**:\n  - ASTの展開可能なビューを提供し、カスタムルールの作成に役立つツールとして利用できる。\n- 🔍 **将来的な展開**:\n  - 独自の言語のリンティング機能を作成する方法の例としても意図されている。\n  - Webプロジェクトで使用されるさまざまなファイルをESLintでリンティングできるようにすることを目指している。",
+            "tags": [
+                "Software",
+                "Web"
+            ]
+        },
+        {
+            "title": "アコム出向社員、10万件の個人情報を誤送信　地銀から自社へ",
+            "url": "https://ascii.jp/elem/000/004/228/4228938/?rss",
+            "summary": "もちろんです。以下が要約です：\n\n- 🏦 **八十二銀行と長野銀行の個人情報漏洩**\n  - 💻 2023年10月16日、両行はアコムからの出向者による個人情報の誤送信を公表。\n  - 📊 誤送信の件数は2行あわせて10万件を超える。\n\n- 📋 **漏洩した情報**\n  - 💳 八十二銀行:\n    - 対象：預金取引のある一部個人顧客（104,523件）\n    - 漏洩内容：氏名、電話番号等\n  - 👤 長野銀行:\n    - 対象：2024年3月31日時点でカードローンを契約していた一部個人顧客（1,828件）\n    - 漏洩内容：契約者氏名、住所、年齢、生年月日、電話番号、勤務先名、借入残高等\n\n- 🤝 **業務提携の背景**\n  - 💳 八十二銀行とアコムは「はちにのかん太くんカード」の契約者情報を共有。\n  - 🏦 長野銀行は2026年1月に八十二銀行との合併を予定し、カードローンの移行手続き中に漏洩が発生。\n\n- 🔒 **情報の取り扱い**\n  - 📄 送信された情報はアコム社内での利用や外部への流出はなく、データは破棄されたことを確認。\n  - 🛡️ 被害拡大のおそれはないとする。\n\n- 🛠 **対応策**\n  - 🛑 両行は内部管理や情報管理体制を強化し、出向者や業務提携先の管理も強化。\n  - 💪 再発防止と信頼回復に努める方針。",
+            "tags": [
+                "Security",
+                "Other"
+            ]
+        },
+        {
+            "title": "Qwen2-VLとColPaliでマニュアル用ローカルQAボットを作ってみた",
+            "url": "https://zenn.dev/firstautomation/articles/d05572e54949f3",
+            "summary": "- 📝 Qwen2-VLとColPaliを用いて、マニュアルのような図・文章混在ドキュメントを読み取るローカルチャットアプリを作成しました。\n- 💻 このアプリはStreamlitを使用して実装されており、Qwen2-VL-2B-Instructとcolqwen2-v0.1のモデルが使用されています。\n- 📚 実際のデモでは、経産省のドキュメントに対して操作方法の質問を行い、適切なページと回答が出力されました。\n- 🖥️ AIの回答には参照ページと回答内容が示されます。例えば、「PDFファイルのダウンロード方法」や「法人検索結果のプロフィール表示方法」などの質問に対応しています。\n- 💡 Qwen2-VLはマルチイメージ入力に対応しているため、前後ページや関連ページを含めて入力することでより精度の高い回答が得られる可能性があります。\n- 🙌 株式会社ファースト・オートメーションでは、ローカルLLMを使ったプロダクトに興味のある方や製造業の改善に関心がある方を募集しています。",
+            "tags": [
+                "AI",
+                "Software"
+            ]
+        },
+        {
+            "title": "Perplexityを使用すると、社内のファイルやWebを検索できます",
+            "url": "https://venturebeat.com/ai/perplexity-lets-you-search-your-internal-enterprise-files-and-the-web/",
+            "summary": "✨ ペルプレキシティがチーム向けにSpacesを発表しました。これは、研究を共有および整理するためのツールです。\n📁 Spacesでは、ユーザーはチーム内でファイルを共有でき、PerplexityのAIアシスタントを特定の指示や応答に基づいてカスタマイズできます。\n🔒 企業は情報へのアクセス制御権を持ち、データがデフォルトでAI品質トレーニングから除外されます。プロユーザーは任意でトレーニングに参加できます。\n📊 Perplexityは、CrunchbaseやFactSetとのサードパーティーデータ統合を計画しており、これによりユーザの知識ベースがさらに拡張されます。\n🔍 内部情報検索とSpacesはRAG（リトリーバル・オーギュメンテッド・ジェネレーション）の一形態で、ユーザーは内部データから最適な情報を取得できます。\n💪 PerplexityはGleanやElasticなどの既存のRAGプラットフォーム提供者と競合しています。",
+            "tags": [
+                "AI",
+                "Web",
+                "Security",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "Inkscape 1.4 リリース",
+            "url": "https://inkscape.org/news/2024/10/13/inkscape-launches-version-14-powerful-new-accessib/",
+            "summary": "✨ **Inkscape 1.4 の新機能と更新点**\n\n🔥 **カスタマイズ可能なハンドル**\n- キャンバス上のハンドルのサイズ、色、ストローク幅、アウトライン、不透明度を自由に調整可能。\n- CSS ファイルが保存されると、Inkscape でリアルタイムに更新される。\n\n🛠 **Shape Builderツール**\n- ラスター（ピクセル）画像の部分的な編集が可能になり、必要な部分を選択して切り出すことができる。\n- クリップ解除やクローンのリンク解除が必要だが、迅速な編集をサポート。\n\n🔧 **オブジェクトプロパティダイアログ**\n- Objective Attributes と Object Properties ダイアログが統合され、一か所で多様なオブジェクトのプロパティを変更できる。\n- 回転やコーナー設定も同ダイアログから行える。\n\n📚 **インポート & エクスポート更新**\n- PDF 文書内のページ間リンク（例：目次）の追加が可能になった。\n- Affinity Designer ファイルの開けるようになり、互換性が向上。\n\n🎨 **新しいアイコンセット \"Dash\"**\n- 500以上の新たなアイコンセット \"Dash\" が利用可能に。\n- スケーラブルとシンボリックのバージョンがあり、明るいテーマや暗いテーマでも使用可能。\n\n📖 **詳細情報とダウンロード**\n- Inkscape 1.4 の全変更点の詳細は[リリースノート](https://inkscape.org/doc/release_notes/1.4/Inkscape_1.4.html)で確認できる。\n- [ダウンロードページ](https://inkscape.org/release/inkscape-1.4/)から Linux, Windows, macOS 版を入手可能。\n\n❓ **コミュニティ参加**\n- オンラインコミュニティに参加して、質問したりプロジェクトに関与する方法を探せる：[Inkscape コミュニティ](https://inkscape.org/community/)",
+            "tags": [
+                "Software",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "Anthropic が Claude AI のメジャーアップデートを発表 — 新機能のすべてをご紹介します",
+            "url": "https://www.tomsguide.com/ai/anthropic-just-announced-major-claude-ai-update-heres-everything-thats-new",
+            "summary": "👍 Claude AIがiPad用アプリをリリース  \n📱 これにより、iPadユーザーもスマートフォンやデスクトップと同じようにClaude AIを利用できるようになる  \n💻 アプリには更新されたインターフェースとプロジェクトサポートが追加され、デバイス間での連携が容易に  \n🎯 Anthropicは、これらのアップデートを通じて、Claude AIの使い勝手とアクセシビリティを改善し、さまざまなタスクやユースケースでより柔軟なAIアシスタントを提供している",
+            "tags": [
+                "AI",
+                "Software",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "インターネット アーカイブ、DDoS 攻撃から徐々に復活",
+            "url": "https://www.darkreading.com/cyberattacks-data-breaches/internet-archive-slowly-revives-ddos-barrage",
+            "summary": "🌟 インターネット アーカイブが2023年10月9日にハッカーによるデータ侵害とDDoS攻撃を受け、一時的にシステムをオフラインにしました。3100万件のユーザー情報が流出しました。\n📖 1996年にBrewster Kahleによって設立されたインターネット アーカイブは、ウェブページや映画、音楽などのデジタル資料の保存と公開を行っています。\n🔑 ハッカーによるアタックを受けたユーザーは、「Have I Been Pwned」サイトを通じて自身の情報が侵害されたかどうかを確認できます。\n🛠️ インターネット アーカイブの創設者Brewster Kahleは、システムの復旧に数日から数週間かかると述べました。\n🔎 Wayback Machineは暫定的に読み取り専用モードで再開され、その後完全な機能を回復しつつありますが、他のサービスの安全なオンライン化にはまだ時間がかかっています。\n📊 Netscoutの分析によると、インターネット アーカイブに対して24回のDDoS攻撃が観測されました。最初の攻撃は3時間以上続き、3つのIPアドレスに影響を与えました。\n💡 セキュリティ専門家Bruno Kurticは、データ侵害は避けられず、企業はデータの所在を把握し、アクセス制御や継続的なスキャンなどを通じて保護すべきであると提言しています。",
+            "tags": [
+                "Security",
+                "Other"
+            ]
+        },
+        {
+            "title": "Sana",
+            "url": "https://nvlabs.github.io/Sana/",
+            "summary": "- 🎯 **効率的な線形DiT:**\n  - 新しい線形DiTが導入され、従来の2次元注意機構を置き換え、計算量がO(N²)からO(N)に削減された。\n  - Mix-FFN（3×3深度方向畳み込みをMLPで使用）によりトークンの局所情報が強化される。\n  - 線形注意は従来の2次元注意と同等の結果を達成し、4K画像生成のレイテンシが1.7倍向上した。\n\n- 🎯 **デコーダー専用小規模LLMのテキストエンコーダー利用:**\n  - Gemmaというデコーダー専用のLLMがテキストエンコーダーとして機能し、プロンプト理解と推論能力が向上した。\n  - CLIPやT5とは異なり、Gemmaは優れたテキスト理解力と指示に従う能力を持つ。\n  - 訓練の不安定性に対処し、複雑な人間の指示（CHI）を設計してGemmaのコンテクスト内学習を活用し、画像-テキストの一致度が向上した。\n\n- 🎯 **効率的な訓練と推論戦略:**\n  - テキストと画像の一貫性改善のための自動ラベリングと訓練戦略が提案された。\n  - 複数のVLMが多様な再キャプションを生成し、CLIPScoreに基づく戦略で高CLIPScoreのキャプションを選択して収束と一致度が向上した。\n  - **Flow-DPM-Solver**を使用することで推論ステップが28-50から14-20に削減され、パフォーマンスも向上した。\n\n- 📊 **全体的な性能:**\n  - Sanaは最も進んだテキストから画像へのディフュージョンモデルと比較され、512 × 512解像度ではPixArt-Σ（同程度のモデルサイズ）より5倍高速で、FID、Clip Score、GenEval、DPG-Benchでも優れた性能を示した。\n  - 1024 × 1024解像度では3B未満のパラメータを持つほとんどのモデルを上回り、推論レイテンシも優れている。\n  - 最新の大規模モデルFLUX-devと比較しても競合する性能を示し、DPG-Benchでの精度は同等でGenEvalは若干低いが、Sana-0.6Bのスループットは39倍高速、Sana-1.6Bは23倍高速である。\n\n- 💻 **ラップトップGPUでも実行可能なSana-0.6B:**\n  - Sana-0.6BはラップトップGPUでも実行可能で、デモンストレーションビデオが提供されている。",
+            "tags": [
+                "AI",
+                "Software"
+            ]
+        },
+        {
+            "title": "攻撃者はゼロデイ攻撃に驚くほど長けているとGoogle Mandiantが報告",
+            "url": "https://www.techradar.com/pro/security/attackers-are-getting-worryingly-good-at-exploiting-zero-days-google-mandiant-says",
+            "summary": "✅ 2023年、ゼロデイ脆弱性の利用が大幅に増加し、nデイ脆弱性の利用が減少した。ゼロデイ脆弱性の利用比率は0%、nデイ脆弱性は100%だったのに対し、以前の年では60%と40%だった。\n✅ 攻撃者の平均時間までの攻撃（TTE）も短縮され、2年前は32日だったのが、去年は5日にまで短縮された。\n✅ 組織がゼロデイ脆弱性を検出する能力が向上しており、これにより報告件数が増えている。以前は多くの攻撃が見逃されていた可能性がある。\n✅ 企業のパッチ適用速度も速まっているため、攻撃者もより早く動かざるを得ない状況となっている。\n✅ Mandiantは、今後もゼロデイ脆弱性の利用傾向が増加すると予想している。特に検出ツールの改善により、ゼロデイ脆弱性は引き続き脅威アクターにとって魅力的な攻撃手段となるだろう。\n✅ 今後のトレンドとしては、TTEがさらに短くなる可能性があるとMandiantは見ている。",
+            "tags": [
+                "Security"
+            ]
+        },
+        {
+            "title": "Playwright UI mode を使いコンポーネントテストのテスト動作を視覚的に確認できるかを試してみた",
+            "url": "https://zenn.dev/castingone_dev/articles/component-test-playwright",
+            "summary": "✅ 基本的な機能だけでなく、目的に合った関数やメソッドを使用することが重要。例えばモーダルを開いたり要素が消えたりする場合は `waitForElementToBeRemoved` を使用。\n\n🔑 Playwright ComponentsとPlaywright E2E版でのキー入力の違い。Playwright Componentsでは一文字ずつ入力するのに対し、Playwright E2E版では `type` メソッドで一括入力が可能。\n\n💡 おわりに：適切な関数やメソッドを使用し、ライブラリ毎の挙動を把握することが大切。不安がある場合はAIや先輩からのレビューで解決すべき。\n\n🌟 最後に：CastingONEではスクラムなどの開発手法もアップデートしつつ最高のプロダクトを作成する仲間を募集中。",
+            "tags": [
+                "Software",
+                "Web"
+            ]
+        },
+        {
+            "title": "Google Workspace、サイドパネルの\"Gemini\"が日本語対応",
+            "url": "https://www.watch.impress.co.jp/docs/news/1632129.html",
+            "summary": "以下の通り、Webページの内容を要約しました。\n\n- 📝 **Google Workspaceが新機能\"Gemini\"を追加**  \n  - 🌐 日本語やドイツ語など7言語に対応。  \n  - 💻 サイドパネルからメールや資料の情報を簡単に要約、分析、生成可能。  \n  - 📈 市場調査結果をまとめたり、上司に共有する際の作業が効率化される。  \n  - 🛠 利用には管理者によるアクセス設定が必要。  \n  - 👤 Gemini BusinessやGemini Enterpriseなど特定のアドオンを利用しているGoogle Workspaceユーザー向け。",
+            "tags": [
+                "AI",
+                "Web",
+                "Software"
+            ]
+        },
+        {
+            "title": "This Week in Rust 569",
+            "url": "https://this-week-in-rust.org/blog/2024/10/16/this-week-in-rust-569/",
+            "summary": "もちろんです、以下が統一された文体で要約した情報です：\n\n- 📅 **2024-10-23**  \n  - 🏙️ オースティン（TX, US）：Rust ATX  \n    - 🔗 [Rust Lunch - Fareground](https://www.meetup.com/rust-atx/events/xvkdgtygcnbfc/)\n\n- 📅 **2024-10-27**  \n  - 🌇 カンブリッジ（MA, US）：Boston Rust Meetup  \n    - 🔗 [Kendall Rust Lunch, Oct 27](https://www.meetup.com/bostonrust/events/303708359/)\n\n- 📅 **2024-10-28**  \n  - 💻 ボルダー（CO, US）：Boulder Rust Meetup  \n    - 🔗 [Generics from the Ground Up](https://www.meetup.com/boulder-rust-meetup/events/303766925/)\n  - 🏛️ フェンデール（MI, US）：Detroit Rust  \n    - 🔗 [Rust Community Meetup - Ferndale](https://www.meetup.com/detroitrust/events/303909299/)",
+            "tags": [
+                "Other"
+            ]
+        },
+        {
+            "title": "Nvidia が OpenAI の GPT-4 を圧倒する新しい AI モデルを発表。大きな発表はないが、大きな成果が出た。",
+            "url": "https://venturebeat.com/ai/nvidia-just-dropped-a-new-ai-model-that-crushes-openais-gpt-4-no-big-launch-just-big-results/",
+            "summary": "✅ Nvidiaが700億パラメータを持つ大規模言語モデル「Llama-3.1-Nemotron-70B-Instruct」をリリースした。このモデルは高度な自然言語処理能力と優れた性能を備えている。\n🚀 この新モデルの導入により、AI業界が大きく変化し、企業向けカスタマイズ可能な強力なAIソリューションへの移行が加速している。\n🔍 Nvidiaは、このモデルを使用する際のリスクについても指摘しており、特に数学や法的推論などの専門分野での利用には注意が必要で、エラーまたは誤用を防ぐための対策が必要であると強調している。\n🔥 この新モデルのリリースはAIアームスレースをさらに熱くし、他のテック大手がR&Dを加速させることを迫っている。\n💻 近年、Nvidiaは多様なAIモデル（例：NVLM 1.0ファミリー、720億パラメータのNVLM-D-72B）をリリースし、オープンソースプロジェクトも推進している。\n🚀 Nvidiaの戦略はハードウェアとソフトウェアを組み合わせた総合的なAIソリューションプロバイダーとしての位置づけで、業界の再編を促す可能性がある。\n📊 Llama-3.1-Nemotron-70B-Instructの実際のパフォーマンスと応用が今後の鍵となり、その成功はベンチマークスコアだけでなく、実世界での価値あるソリューションを提供できるかどうかにかかっている。",
+            "tags": [
+                "AI",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "Kindle初のカラー画面「Kindle Colorsoft」登場",
+            "url": "https://www.watch.impress.co.jp/docs/news/1632066.html",
+            "summary": "- 📢 米Amazon.comが10月30日にカラー表示対応の電子書籍リーダー「Kindle Colorsoft Signature Edition」を発売。32GBモデルの価格は279.99ドル。\n- 💻 7型ディスプレイを搭載し、Kindleシリーズで初めてカラーディスプレイを採用。発色や導光板技術の向上により画質と使い勝手が改善された。\n- 📚 小説の表紙や雑誌の誌面をカラー表示可能。文章のハイライトにはイエロー、オレンジ、ブルー、ピンクから選べる。\n- 📊 ディスプレイのピクセル密度はカラー表示で150ppi、モノクロ表示で300ppi。本体は防水(IPX8)に対応し、充電端子はUSB Type-C。バッテリー駆動時間は最大8週間。\n- 📏 本体サイズは127.6×176.7×7.8mmで、重量は219g。\n- 🚀 米アマゾンはKindleシリーズを一新し、4機種を発表。日本では「Kindle Colorsoft Signature Edition」の代わりに「Kindle Paperwhiteシグニチャーエディション」が展開される。",
+            "tags": [
+                "Other"
+            ]
+        },
+        {
+            "title": "英語版Gemini Liveが無料化。他言語への展開も数週間以内",
+            "url": "https://gihyo.jp/article/2024/10/android-weekly-topics-241017?utm_source=feed",
+            "summary": "✅ Googleが5月にGoogle I/Oで発表した対話型AI「Gemini Live」の無料提供が始まりました。  \n💰 20USドル/月のGoogle One AI Premium加入者だけでなく、全ユーザが利用できるようになりました。ただし、英語版のみです。  \n📱 Gemini Liveを使うには以下の手順が必要です：  \n1. 📱 Geminiアプリを起動し、プロフィール画像アイコンをタップします。  \n2. ⚙️ 「設定」＞「言語」を選択します。  \n3. 🇯🇵 使用言語が日本語の場合、「アシスタントの言語」へ遷移します。  \n4. 🇺🇸 「日本語（日本）」をタップし、「English (United States)」を選択します。  \n🔄 アプリを一度終了し、再起動するとGemini Liveアイコンが追加され、音声対話が可能になります。  \n📣 音声入力は画面に表示されませんが、会話履歴は確認できます。  \n🌐 現在は英語版のみの提供ですが、他の言語への展開が数週間以内に予定されています。Android版では40以上の言語に対応します。  \n📅 年内か遅くとも来年の春までには英語以外の言語でも利用可能になる見込みです。  \n🔗 その他のGoogleアプリとの連携も予定されており、特にGoogleカレンダーやToDoとの連携が期待されています。  \n💡 2024年後半には、カメラを通じて見えるものを説明する機能や複雑なタスクを実行する機能の追加が予定されています。",
+            "tags": [
+                "AI",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "PyCon JP 2024 開催レポート",
+            "url": "https://gihyo.jp/article/2024/10/pycon-jp-2024?utm_source=feed",
+            "summary": "🎉 **PyCon JP 2024 開催レポート**\n\n- 📅 PyCon JP 2024 は2024年10月19日（土）と20日（日）に開催されました。\n- 🧑‍💻 来場者数は651名で、大盛況となりました。\n\n📸 **会場での様子**\n\n- 🔗 PyConKyushu 2024のポスター前で参加者の皆さんが写真を撮っていました。\n- 👭 PyLadiesのみなさんは集合写真も撮られ、発信が「参加してみたいけど、仲間ができるか不安だな…」と迷っている方の背中を押す役割をしていることが強調されました。\n\n🤝 **コミュニティの意義**\n\n- 🙌 こういったコミュニティ活動において、「楽しんでいるさま」をそのまま発信することには大きな意義があると感じます。\n- 🤔 私自身、Pythonが好きな人たちがこんなにいることに再認識させられました。\n\n📚 **来年のPyCon JP 2025**\n\n- 📅 PyCon JP 2025は2025年9月26日〜27日に開催予定です。\n- 🏙️ 開催地は広島県広島市の広島国際会議場に決まりました。これは初の地方開催となります。\n- 🤝 来年のイベントを一緒に作り上げていく主催メンバーの募集が予定されています。詳細はPyCon JP Blogでチェックしてください。\n\n🌟 **締め**\n\n- 💫 今年も多くの来場者にお越しいただき、ありがとうございました！\n- 📣 来年もぜひご参加ください。PyCon JP 2025でお会いしましょう！",
+            "tags": [
+                "Recommend",
+                "Other"
+            ]
+        },
+        {
+            "title": "Zustand、君に決めた！！ (AI Radio Makerでは状態管理にZustandを使っています)",
+            "url": "https://zenn.dev/yamada_quantum/articles/c29cef8ef4388b",
+            "summary": "🔥 Reactアプリケーションでの複雑な状態管理について、useStateやuseReducer、Context APIを使用するとコードが冗長になり、永続化処理の追加も面倒になることが指摘されています。\n\n💻 Zustandを導入することで、よりシンプルで効率的な状態管理が可能になると提案されています。\n\n✨ AI Radio Makerでは、画面横断的な状態管理が必要だったため、グローバルな状態管理を採用しました。\n\n📚 Next.jsのApp Routerを使用しており、Providerを使いたくない、またシンプルさが求められたことから、JotaiかZustandの導入を検討しました。\n\n🚫 useReducer+useContextはProviderの使用が必要でボイラープレートが多くなるため、選択肢から除外されました。\n\n🤔 Jotai（Atom型）では、個々にAtomを作りすぎると共通化すべき状態が重複し、修正が困難になる可能性があると考えられました。\n\n🔄 そこでZustand（Store型）を選び、状態が増えたらSliceパターンを使用してモジュール化することにしました。\n\n😉 最終的にZustandを選択した理由は、メンタルモデルの違いだけでできることは同じであるため、好みで選択しても良いと考えたからです。",
+            "tags": [
+                "Software",
+                "Web"
+            ]
+        },
+        {
+            "title": "バリバリ軽量No.1な検証ライブラリ Valibot の紹介",
+            "url": "https://zenn.dev/uttk/articles/introduce-valibot",
+            "summary": "✨ **valibot の基本的な機能**\n\n🌟 **基本型の検証**\n- 📊 `v.string()`: 文字列を検証するスキーマ。\n- 📊 `v.number()`: 数値を検証するスキーマ。\n\n🌟 **オブジェクトのスキーマ定義**\n- 📊 `v.object()`: 定義されていない要素を無視します。\n- 📊 `v.looseObject()`: 定義されていない要素を許容し、型推論の際に余分なプロパティを含めます。\n- 📊 `v.strictObject()`: 定義された要素のみを厳格にチェックし、それ以外の要素が存在するとエラーになります。\n- 📊 `v.objectWithRest()`: 定義されていない要素を別のスキーマで検証します。\n\n🔥 **交差型スキーマ**\n- 🔥 `v.intersect()`: 2つのオブジェクトスキーマを組み合わせて `{ foo: string } & { bar: number }` のような型を作成します。\n- 🔄 複数の `v.object()` を1つにマージするには、各スキーマの `entries` プロパティを使用します。\n\n🔗 **直和型 (union)**\n- 🔗 存在が言及されていますが、具体的な実装例は提供されていません。\n\n✨ **独自の検証スキーマ**\n- ✨ `v.custom()`: 独自の検証ロジックを定義します。例えば、文字列の最後に \"にょ\" があるかを検証するスキーマを作成できます。\n\n🔄 **再帰的な型**\n- 🔄 `v.lazy()`: 自己参照的な構造を持つスキーマを作成します。\n- 💡 入力値からスキーマを生成することも可能です。\n\n📚 **サンプルコード: 再帰スキーマの実装**\n```javascript\nimport * as v from 'valibot';\n\nconst LazySchema = v.lazy((input) => {\n  switch (input) {\n    case \"foo\":\n      return v.object({ type: v.literal(\"foo\") });\n    case \"bar\":\n      return v.object({ type: v.literal(\"bar\") });\n    case \"hoge\":\n      return v.object({ type: v.literal(\"hoge\") });\n    default:\n      return v.never();\n  }\n});\n\ntype SchemaType = v.InferOutput<typeof LazySchema> \n// { type: \"foo\"; } | { type: \"bar\"; } | { type: \"hoge\"; }\n```\n\n💬 **あとがき**\n- 📝 記事の執筆動機はタイトルと冒頭部分に興味があったため。\n- 📄 内容はほとんど同じだが、記事形式に書き直した理由は目次の表示のため。\n- 🛑 逆引きチートシートについては、あまり利用していないが、コメントがあれば対応する。\n- 💬 誤りなどがあればコメントで指摘してほしい。\n- 😊 最後に、参考になれば幸いという思いを伝えています。",
+            "tags": [
+                "Software"
+            ]
+        },
+        {
+            "title": "GitHub Enterprise ServerでCVSスコア9.5の脆弱性　SAML認証をバイパスできてしまう",
+            "url": "https://ascii.jp/elem/000/004/228/4228573/?rss",
+            "summary": "もちろん、以下が要約です：\n\n- 🛡️ GitHub Enterprise Serverにおいて、SAML認証をバイパスできる脆弱性が発見され、セキュリティアップデートがリリースされた。\n- 🔐 この脆弱性を利用すると、攻撃者はユーザーの不正なプロビジョニングやインスタンスへのアクセスを行う可能性がある。\n- ⚠️ 脆弱性は「CVE-2024-9487」として追跡され、CVSスコアが9.5と非常に高い。\n- 📢 管理者は影響を確認し、速やかにアップデートを行うことが推奨されている。",
+            "tags": [
+                "Security",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "サイゼリヤ、ランサムウェア被害で個人情報漏えいのおそれ　 従業員・取引先情報に影響か",
+            "url": "https://ascii.jp/elem/000/004/228/4228530/?rss",
+            "summary": "- サイゼリヤが10月16日にランサムウェア攻撃を受け、個人情報や秘密情報の漏えいの可能性が高いことを発表しました。顧客および関係者に謝罪しています。\n- 🔒 複数のサーバーでシステム障害が発生し、一部サービスが停止したため、影響を受けたサーバーはインターネットや社内ネットワークから隔離されました。\n- 📄 漏えいの可能性がある情報には、従業員（パート・アルバイトを含む）、取引先、過去に採用面接を受けた一部の個人情報、お客様相談窓口に問い合わせた顧客に関する情報が含まれています。ただし、来店客のクレジットカードやポイントカードなどの情報は含まれていません。\n- 🕵️‍♂️ サイゼリヤは外部の情報セキュリティ対策企業と協力して漏えいした可能性がある情報を特定し、影響範囲を調査しています。また、警察に相談し、個人情報保護委員会にも報告しました。\n- 🚨 顧客や関係者に対しては、不審なメールを受け取った場合は開封せずに削除するよう注意喚起しています。今後も被害の全容解明と社内システムの復旧に取り組むとしています。",
+            "tags": [
+                "Security"
+            ]
+        },
+        {
+            "title": "CISA、SolarWinds ヘルプデスク ソフトウェアの脆弱性の積極的な悪用を警告",
+            "url": "https://thehackernews.com/2024/10/cisa-warns-of-active-exploitation-in.html",
+            "summary": "以下の内容は、提供されたWebページから抽出した情報を要約しています。\n\n- ⚠️ CISA（サイバーセキュリティおよびインフラストラクチャセキュリティ庁）がSolarWinds Web Help Desk (WHD) ソフトウェアの深刻な脆弱性をKnown Exploited Vulnerabilities (KEV) カタログに追加しました。\n- 🛡️ この脆弱性はCVE-2024-28987（CVSSスコア: 9.1）と識別され、ハードコーディングされた認証情報の問題に関連しています。リモートからの未認証ユーザーが内部機能にアクセスし、データを変更できる可能性があります。\n- 📝 脆弱性は2024年8月末にSolarWindsによって最初に公表され、Horizon3.aiが1ヶ月後に詳細情報を発表しました。\n- 🔐 安全性研究者Zach Hanleyによると、この脆弱性により、未認証の攻撃者がリモートからヘルプデスクチケットのすべての詳細を読み取り、変更する可能性があります。これにはパスワードのリセット要求や共有サービスアカウントの資格情報など、機密情報が含まれることがあります。\n- 🕵️ 現在、この脆弱性が実際の攻撃でどのように悪用されているか、誰によって悪用されているかは不明です。しかし、2ヶ月前には同ソフトウェアの別の深刻な脆弱性（CVE-2024-28986）がKEVカタログに追加されました。\n- 🗓️ 活動的な悪用が確認されたことを受け、連邦政府機関（FCEB）は2024年11月5日までに最新の修正パッチ（バージョン 12.8.3 Hotfix 2以降）を適用するよう指示されています。",
+            "tags": [
+                "Security"
+            ]
+        },
+        {
+            "title": "リアルタイムLinuxをあきらめない ―20年越しでメインラインに統合されたPREEMPT_RTの物語",
+            "url": "https://gihyo.jp/article/2024/10/daily-linux-241016?utm_source=feed",
+            "summary": "✨ **Linus TorvaldsがPREEMPT_RT開発者たちを賞賛**\n- 2022年9月、Thomas Gleixnerが新しいprintk()パッチセットをRFCとして公開。\n- このパッチセットは「NOBKL（No Big Kernel Lock）」と呼ばれ、後に「NBCON（No Blocking CONsole）」と改名された。\n\n💻 **NBCONの実装詳細**\n- NBCONではメッセージの優先度が通常/緊急/パニックの3つのレベルに分けられる。\n- 高い優先度を持つCPUはプリントスレッドにアクセスできるよう設計されている。\n- 例：「CPU 0」が通常の優先度でメッセージを出力中に、「CPU 1」が緊急の警告を出力しようとする場合、CPU 0はコンソールを手放すか、CPU 1によってテイクオーバーされる。\n- NBCONドライバにはwrite_thread()とwrite_atomic()というコールバックが追加されている。\n\n📅 **Open Source Summit Europe 2024での発表**\n- 2023年9月16日、Linus TorvaldsがPREEMPT_RT開発者たちを賞賛し、Linux 6.12へのマージを明らかにした。\n- Gleixnerは、「printk()のクリーンアップが最後の課題であり、若い世代にレガシーの整理を引き継ぎたい」と述べている。\n\n📚 **PREEMPT_RTプロジェクトの意義**\n- 新しい技術を実装する際、既存のレガシーとどう向き合うかという問題に対する一つの解答を示している。",
+            "tags": [
+                "Software",
+                "Security"
+            ]
+        },
+        {
+            "title": "第834回　Unboundでお手軽に家庭内DNSサーバーを作ろう［Ubuntu 24.04 LTS対応版］",
+            "url": "https://gihyo.jp/admin/serial/01/ubuntu-recipe/0834?utm_source=feed",
+            "summary": "✨ **第834回　Unboundでお手軽に家庭内DNSサーバーを作ろう［Ubuntu 24.04 LTS対応版］**\n\n- 📄 Unboundの設定ファイルの基本的な項目とその説明:\n  - `interface`: Unboundが待ち受けに利用するIPアドレスを指定（プライベートIPアドレスを使用）。\n  - `port`: 待ち受けるポート番号。\n  - `access-control`: 自分自身とLAN内のIPアドレスのレンジからのアクセスを「allow（許可）」とする設定。\n  - `use-syslog`: Syslogを使ってログを出力する設定。\n  - `log-queries`: クエリログを出力する設定。\n  - `hide-version` と `hide-identity`: version.server、version.bind、id.server、hostname.bindクエリを拒否する設定。\n\n- 💻 forward-zoneの設定:\n  - `name: \".\"`: 全ての問い合わせを指定。\n  - `forward-addr`: プロバイダが提供しているDNSサーバーのアドレスを指定。\n\n- 🔄 Unboundの再起動コマンド:\n  - `$ sudo systemctl restart unbound.service`\n\n- 💾 ログの設定変更:\n  - `/etc/rsyslog/30-unbound.conf` を作成。\n  - 内容: `if $syslogfacility-text == 'daemon' and $programname contains 'unbound' then -/var/log/unbound/unbound.log`\n  - `& ~`: 既存のルールを無効化。\n\n- 📝 **Unboundを使ってローカルデータを設定する方法**:\n  - ローカルゾーンのタイプとして `transparent` を使用すると、ローカルデータが存在すればそれを返し、存在しない場合はフォワード先に名前解決を依頼。\n  - `local-data` でローカルなデータ（例えばプライベートIPアドレス）を設定。\n  - ローカルゾーンの設定が完了したら、Unboundを再起動して変更を適用。\n\n- 🔒 **特定ドメインのブロック方法**:\n  - `refuse` タイプを使用すると、指定されたゾーンの名前解決要求に対して「REFUSED」を返す。ただし、ローカルデータが存在する場合はそのレコードを応答。\n  - `always_nxdomain` タイプを使用すると、指定されたドメインに対するすべての名前解決要求に対して「NXDOMAIN」を返し、絶対にブロックしたい場合に使用。\n\n- 🏠 **自宅での運用**:\n  - DNSサーバーはパワーがそれほど必要ではないため、Raspberry Piなどの安価なデバイスでも運用可能。",
+            "tags": [
+                "Software",
+                "Security"
+            ]
+        },
+        {
+            "title": "🚨 新しい Rails バージョンがリリースされました: ReDoS 脆弱性への対処 🚨",
+            "url": "https://dev.to/shahzaib/new-rails-versions-released-addressing-redos-vulnerabilities-28o9",
+            "summary": "以下の通り、Webページの内容を統一された文体で要約します：\n\n- 🚨 **新しい Rails バージョンがリリースされました**:\n  - Rails versions 6.1.7.9, 7.0.8.5, 7.1.4.1, 7.2.1.1 がリリース。\n  - 主な目的は ReDoS (Regular Expression Denial of Service) 脆弱性の対処。\n\n- 🚨 **解決された主な問題**:\n  - CVE-2024-47887: HTTP Token authentication 内の ReDoS 脆弱性。\n  - CVE-2024-41128: query parameter filtering 内の ReDoS 脆弱性。\n  - CVE-2024-47888: `plain_text_for_blockquote_node` 内の ReDoS 脆弱性。\n  - CVE-2024-47889: `block_format` 内の ReDoS 脆弱性。\n\n- 💡 **アップグレードすべき理由**:\n  - Ruby 3.1 のセキュリティサポートが終了し、これらの脆弱性は特に Ruby 3.2 未満のバージョンに影響。\n  - 最新の Rails バージョンへのアップグレードにより、重要な脆弱性をパッチ適用し、アプリケーションのセキュリティと性能を確保。\n\n- 📈 **あなたのアプリケーションへの意味**:\n  - Ruby 3.1 を使用している場合、Ruby 3.2 またはそれ以降にアップグレードが推奨。\n  - Rails 6.1 のサポートが延長され、6.1.7.9 がリリースされたことで、古いバージョンを使用しているチームの移行時間が確保。\n\n- 🚀 **次にすべきこと**:\n  - Ruby 3.1 や古い Rails バージョンを使用している場合、最新の Rails リリースへのアップグレードを遅らせない。\n  - アップグレードにより、アプリケーションのセキュリティと性能が向上。",
+            "tags": [
+                "Software",
+                "Security"
+            ]
+        },
+        {
+            "title": "カシオ計算機のランサムウェア被害、個人情報が漏洩",
+            "url": "https://news.mynavi.jp/techplus/article/20241015-3045091/",
+            "summary": "もちろんです。以下が提供された情報に基づく、統一された文体での要約です：\n\n✅ **カシオ計算機のランサムウェア被害と個人情報漏洩**\n- 📅 10月11日、カシオ計算機はランサムウェアによる個人情報の漏洩を公表。\n- 📆 10月8日に不正アクセスが報じられた際には、個人情報の漏洩を確認していなかった。\n\n✅ **漏洩した可能性のある情報**\n- 👤 同社の従業員（派遣社員、契約社員等を含む）の個人情報\n- 👤 同社の一部関係会社の一部の従業員の個人情報\n- 👤 同社および同社の一部関係会社の取引先の個人情報\n- 👤 過去に同社の採用面接を受けた一部の方の個人情報\n- 👤 顧客に関する情報（クレジットカード情報は含まない）\n- 📄 契約書、請求書、売上等に関する情報\n- 📂 法務、財務、人事計画、監査、営業、技術に関する社内文書\n\n✅ **影響と対策**\n- 🔒 サイバー攻撃確認後、一部サーバを遮断し、重要な社内システムが使用できなくなった。\n- 🛑 一部サービスの停止などの影響が出ている。\n- 🚫 漏洩情報のSNS等での拡散を控えるよう呼びかけ。\n- ⚠️ 不審なメールに注意するよう顧客および従業員に呼びかけ。\n- 💪 情報悪用が確認された場合は、警察と連携して対応し、二次被害の最小限化を目指す。\n\n✅ **影響を受けない情報**\n- 📱 同社のアプリやサービスに使用されるCASIO ID\n- 🖥️ ClassPad.netサービスのシステム\n- 💳 クレジットカード情報（同社および関係会社が提供するオンライン販売サービスでは保有していない）",
+            "tags": [
+                "Security"
+            ]
+        },
+        {
+            "title": "画像生成AIでユーザーの特徴をリアルタイム反映できるバーチャル試着サービス",
+            "url": "https://news.mynavi.jp/techplus/article/20241015-3045151/",
+            "summary": "- 🛍️ ECサイト向けに提供されている「MIM(My Image Model)」というバーチャル試着サービスが開始された。\n- 💻 このサービスでは、ユーザーの体型や髪型などの詳細なパラメータや顔写真をアップロードすることで、リアルタイムに特徴を反映したモデルを生成することができる。\n- 👕 商品となる衣服の特徴（シワ・光沢・透け感など）も反映された再現性の高いバーチャル試着が可能である。\n- 💡 AIによる体型データ分析に基づいたコーディネート提案機能も備えている。\n- 🤖 本サービスには、AIQ社のLLMや生成AIに関する知見が活用されている。",
+            "tags": [
+                "AI",
+                "Web"
+            ]
+        },
+        {
+            "title": "富士通が5Gモバイルネットワークの品質劣化を防止するAI技術を開発",
+            "url": "https://news.mynavi.jp/techplus/article/20241015-3045138/",
+            "summary": "以下がWebページの内容を統一された文体で要約したものです：\n\n- 📡 富士通はNEDOの委託事業において、AIを活用した5Gモバイルネットワークの通信品質向上と省電力化の技術を開発しました。\n- 💻 この技術は2023年11月から全世界のモバイルネットワーク事業者向けに提供され、「FUJITSU Network Virtuora Service Management and Orchestration」に搭載されます。\n- 📊 AIを用いてQoE（Quality of Experience）をリアルタイムで推定し、品質低下が検知された際には自動的に他の基地局のネットワークエリアに切り替える技術を開発。これにより、19%の収容利用者数向上が可能となりました。\n- 🔍 自然災害やイベント開催時などの通信トラフィック上昇をAIで予兆検知し、事前に基地局を起動させて通信品質劣化を未然に防止する技術も開発されました。実証期間の99.8%の時間で利用者品質に影響を与えずに事前対応が確認されています。\n- 🛠️ また、故障検知精度92%以上の異常検知技術を開発し、サービスへの影響が大きいエリアを優先的に復旧させることが可能となりました。これにより、装置故障時の復旧時間が1日から1時間以内に短縮されました。",
+            "tags": [
+                "AI",
+                "Security"
+            ]
+        },
+        {
+            "title": "人気広告ブロッカー「uBlock Origin」、Chromeでサポート終了の可能性",
+            "url": "https://news.mynavi.jp/techplus/article/20241015-3045029/",
+            "summary": "🚨 **警告の表示**: uBlock OriginがChromeウェブストアにおいて、近い将来サポートが終了する可能性があるという警告が表示されるようになった。警告には「この拡張機能は、Chrome 拡張機能のベストプラクティスに沿わないため、まもなくサポートされなくなる可能性があります」と記載されている。\n\n📂 **Manifest V3への移行**: Googleは現在のManifest V2から新しいManifest V3へ移行することを進めている。Manifest V3は拡張機能がブラウザ内でどのように動作するかを大幅に制限し、特に広告ブロッカーに大きな影響を与えることが予想されている。\n\n🔧 **uBlock Originの対応**: uBlock Originの開発者であるRaymond Hill(gorhill)氏は、Manifest V3に対応した軽量版のuBlock Origin Liteをリリースしている。ただし、このバージョンは機能が制限されており、従来のuBlock Originほど強力な機能は実現されていない。\n\n🌐 **他のブラウザへの移行**: uBlock Originのような強力な広告ブロッカーを引き続きフルに利用したいユーザーには、FirefoxやBraveといった他ブラウザへの移行が一つの選択肢となる。これらのブラウザは少なくとも当面の間、Manifest V2のサポートが続けられる予定で、uBlock Originのような強力な広告ブロック機能を維持できることが予想される。\n\n📝 **今後の課題**: 今後、uBlock Originを利用するユーザーにとってブラウザの選択や新しい拡張機能への対応が重要な課題となる。",
+            "tags": [
+                "Web",
+                "Security"
+            ]
+        },
+        {
+            "title": "DuckDB で JSON Lines 形式のログを精査する",
+            "url": "https://zenn.dev/shiguredo/articles/duckdb-jsonlines-log",
+            "summary": "👍 **DuckDB について**\n- 📚 DuckDB は高速かつ簡単に大量のデータを扱える SQL データベースです。\n- 💾 Parquet 形式のファイルを読み書きでき、高い圧縮率と効率性を実現します。\n\n📊 **ログ解析に適している理由**\n- 📂 様々な形式のログファイル（例：JSON, CSV）を直接読み込むことができます。\n- ⚡ 高速で大量のデータを処理できます。\n- 🔍 SQL を使って複雑なクエリを実行することができます。\n\n☁️ **S3 からの直接読み込み**\n- 🌐 `httpfs` 拡張機能を使用して、S3 のファイルを直接読み込むことができます。\n- 💻 読み込んだデータをテーブルに保存することも可能です（例：`CREATE TABLE ... AS SELECT * FROM read_json_auto('s3://...')`）。\n\n🚀 **整理したログの出力**\n- 📁 結果を Parquet 形式で圧縮して S3 に直接アップロードできます。\n- ⚙️ `COPY (SELECT ...) TO 's3://...' (FORMAT parquet, COMPRESSION zstd);` を使用します。\n\n💡 **雑感**\n- 💡 非常に便利なツールです。\n- 🤝 SQL を共有することで解析ツールを簡単に共有できます。\n- 🔗 複数のログを JOIN で結合して分析可能です。",
+            "tags": [
+                "Software",
+                "Recommend"
+            ]
+        },
+        {
+            "title": "Anthropicは、安全ポリシーを更新し、AIの不正行為を困難にした。",
+            "url": "https://venturebeat.com/ai/anthropic-just-made-it-harder-for-ai-to-go-rogue-with-its-updated-safety-policy/",
+            "summary": "🌟 **記事概要**\n\n📅 2024年10月15日午後12時16分に公開された記事です。\n\n🌍 記事には、ロボットの手が世界を持っているベクター芸術の画像が含まれています。この画像はVentureBeatがMidjourneyを使用して作成しました。\n\n💬 **Anthropicの安全ポリシー更新**\n\n✅ AnthropicがAIの不正行為を困難にするために、**Responsible Scaling Policy（RSP）** を更新しました。\n\n🚨 新しいポリシーでは、AIモデルの能力に応じた段階的な規制を導入します。5つの段階（ASL-0からASL-4）があり、各段階で異なる安全措置が求められます。\n\n💡 **Responsible Scaling Officer (RSO) の役割**\n\n🔹 RSOはAI安全プロトコルの監督やモデル展開の評価を行います。必要な安全対策が整っていない場合は、AIの訓練や展開を停止する権限を持ちます。\n\n📊 **業界への影響**\n\n📈 他のAI企業も同様の規制を導入することで、業界全体の安全性向上が期待されます。\n\n🤝 公的透明性の向上により、AI開発者と規制当局の間の信頼関係が強化される可能性があります。\n\n⚖️ **規制への対応**\n\n🔍 AI産業は政府からの規制圧力を受けている中で、Anthropicのポリシー更新はタイムリーな対応となっています。公的な能力報告書や安全評価の開示により、透明性が向上します。\n\n🚀 **将来への展望**\n\n🌟 AIモデルの進化に伴い、リスクも増大するため、Anthropicのポリシーはこれらのリスクに対処するための動的フレームワークを提供しています。他の企業がこれに追随することで、AI安全の新標準が確立される可能性があります。\n\n🌐 **結論**\n\n🌟 AnthropicのResponsible Scaling Policyは、AI技術が破壊的な影響を与えることなく、産業変革や生活向上に貢献することを目指しています。",
+            "tags": [
+                "AI",
+                "Security"
+            ]
+        }
+    ]
+}
