@@ -1,0 +1,987 @@
+{
+    "title": "2025-01-10 までの技術動向",
+    "published": "2025-01-10T16:00:00+09:00",
+    "articles": [
+        [
+            {
+                "title": "Ivanti VPN のゼロデイ脆弱性",
+                "url": "https://www.schneier.com/blog/archives/2025/01/zero-day-vulnerability-in-ivanti-vpn.html",
+                "summary": "### Ivanti VPN のゼロデイ脆弱性\n- 🔒 Ivanti VPNにゼロデイ脆弱性が存在する\n- 🌟 ソフトウェアの集中管理が脆弱性発見時の影響を拡大させる可能性がある\n- 🛠️ ソフトウェアの複雑化と機能追加が脆弱性の原因となることが多い\n- 👥 ユーザーはVPNの使用目的（地理的位置の偽装など）により、脆弱性の影響を軽視する場合がある\n- 🛡️ VPNがセキュリティ周辺に存在する場合、他の脆弱性が先に利用される可能性がある\n- 💡 多くのユーザーがVPNを使用する理由が、メッセージの内容やトラフィックのセキュリティではなく、地理的位置の偽装である",
+                "tags": [
+                    "Security",
+                    "Software"
+                ]
+            },
+            {
+                "title": "研究者は期限切れのドメインを利用して何千ものバックドアを乗っ取る",
+                "url": "https://www.techradar.com/pro/security/researchers-hijack-thousands-of-backdoors-thanks-to-expired-domains",
+                "summary": "### 研究者は期限切れのドメインを利用して何千ものバックドアを乗っ取る\n- 🔒 研究者らが期限切れのドメインを利用して4,000以上のバックドアを乗っ取る手法を発見\n- 💻 この手法により、何千ものネットワークに侵入可能な状態に\n-  orangetriangle  乗っ取られたバックドアは、元の所有者がドメインを再取得しても機能継続\n- 🚨 この問題は、組織のセキュリティに深刻な影響を及ぼす可能性がある\n- 🔍 研究者らは、この脆弱性の詳細と対策を提言している\n- 🛡️ 全てのバックドアはsinkhole処理され、悪用を防いでいる\n- 💻 バックドアは政府機関、大学などの高プロファイルなターゲットで利用されていた\n- 🌍 被害は中国、タイ、韓国、ナイジェリア、バングラデシュなど、世界各地に及んでいる\n- 🕵️ バックドアにはr57shell、c99shell、China Chopperなど複数の種類が含まれていた\n- 🔒 一部のバックドアはLazarus Groupと関連がある可能性が示唆された",
+                "tags": [
+                    "Security"
+                ]
+            },
+            {
+                "title": "SonicWall VPN に 2 番目の脆弱性が発生",
+                "url": "https://www.tomsguide.com/computing/vpns/sonicwall-vpn-hit-with-second-vulnerability",
+                "summary": "### SonicWall VPN に 2 番目の脆弱性が発生\n- ❗ SonicWallのVPNに新たな脆弱性が発生\n- 🔒 この脆弱性により、攻撃者はサーバーを乗っ取り、内部ネットワークにアクセス可能\n- 🛠️ ユーザーは最新のセキュリティパッチの適用を推奨\n- 🔍 脆弱性の詳細についてはまだ公表されていない\n- 🔄 2024年10月にもSonicWall VPNがランサムウェア攻撃の標的となった\n- 🔮 攻撃者はログインプロセスの脆弱性を活用し、セッション識別番号を予測してユーザーを装うことが可能\n- 💻 SonicWallの製品に影響を及ぼす可能性あり\n- 👨‍💻 従業員の教育とサイバーセキュリティ意識の向上が重要\n- 🔑 強力なパスワードの使用がデータ保護に不可欠\n- 💻 独立したサイバーセキュリティ会社による監査が脆弱性の特定に役立つ",
+                "tags": [
+                    "Security"
+                ]
+            },
+            {
+                "title": "データフェッチを useEffect から use へ移行したい",
+                "url": "https://zenn.dev/shiropt/articles/e69807f43f57fb",
+                "summary": "### データフェッチを useEffect から use へ移行したい\n- 🔄 React v19の新機能「use」フックにより、宣言的なデータフェッチが可能に\n- 💻 React v18まではuseEffectで初回レンダリング時にデータを取得\n- 📚 useEffectを使用したデータフェッチでは、3回のレンダリングが発生\n- ⚠️ useEffectでのデータフェッチはパフォーマンス面で課題あり（画面のチラつきなど）\n- ✨ useフックを使用したデータフェッチの例を紹介\n- ⏳ useに渡したPromiseが解決するまでコンポーネントはサスペンド状態\n- 🔄 Suspenseを使用してPromiseが未解決の状態でfallbackを設定可能\n- 🚫 データ取得完了後にコンポーネントがレンダリングされるためloading状態管理が不要\n- 🚨 ErrorBoundaryを使用してエラーハンドリングを実装可能\n- 🔄 データをリフェッチしたい場合は、PromiseをuseStateで管理し、更新時に新しいPromiseをセット",
+                "tags": [
+                    "Web",
+                    "Software"
+                ]
+            },
+            {
+                "title": "This Week in Rust 581",
+                "url": "https://this-week-in-rust.org/blog/2025/01/08/this-week-in-rust-581/",
+                "summary": "### This Week in Rust 581\n- 📚 Rustは信頼性と効率性を重視するプログラミング言語\n- 🌟 毎週Rustの進捗とコミュニティ情報をまとめたThis Week in Rust\n- 💬 X (旧Twitter)、mastodon.social、GitHubで情報提供のPRを歓迎\n- 🤝 GitHubでThis Week in Rustの開発が公開され、過去のアーカイブも利用可能\n- 🔧 エラー発見時にはGitHubでPRの提出が可能\n- 📰 The Embedded Rustacean Issue #36が発行\n- 🛠️ rust-gccプロジェクトの2024年12月の報告が公開\n- 🚀 Helixエディターの25.01リリースのハイライトが紹介\n- 🌟 Rustの非パフォーマンス関連の魅力が記述\n- 🌌 Rustが次世代の宇宙ミッションシミュレータを支える方法が説明\n- 🛠️ RFCの実装にはユーザーテストが重要で、特に安定化前のフィードバックが必要\n- 💻 過去1週間で375のプルリクエストがマージ\n- ➕ m68k-unknown-none-elfとmips mti baremetalのターゲットが追加\n- 🔧 2024エディション移行lintの改善とE0277エラーの解決\n- 🔍 デバッグ情報の改善とLLDBでのenum検査のサポート\n- 🛠️ typeckのObligationCause構築の調整とgeneric_assertのConstify\n- 🔗 cg_llvmでDWARFオペコードの定数化とrustc_intrinsicの無ボディ関数サポート\n- 🛠️ Rustコンパイラの`check_coroutine_obligations`で`PostBorrowckAnalysis`を使用\n- 🧵 Miriの並行処理で`UnblockCallback`を`MachineCallback`に汎化\n- 🛠️ adler2のデバッグ出力修正\n- 🛠️ stdライブラリのbacktrace依存バージョン同期\n- 🛠️ panicメッセージの`write_all`呼び出しを単一化\n- 🛠️ `char::to_digit`で不要なu64キャストを回避\n- 🛠️ `bool::select_unpredictable`の実装\n- 🛠️ rust-analyzer: 非Cargo flychecksの即時クリアリングのバグを修正\n- 💥 rust-analyzer: MIR評価におけるオーバーフロー検出のバグを修正\n- 📁 rust-analyzer: .cargo環境変数の相対パスが動作しないバグを修正\n- ✅ rust-analyzer: 新しいスタイルの`rustc_intrinsic`の安全性を正しく処理\n- 🔍 rust-analyzer: 合成ローカル変数をコード補完から隠す\n- 📚 rust-analyzer: トークンツリーを連続した`Vec`に格納してツリー構造から変更\n- 🛠️ 小さなリグレッションがトレイト関連のバグ修正により発生\n- 🚀 Cargoの更新により小さなパフォーマンス改善がもたらされた\n- 📊 主要なリグレッション 0.4%、範囲 [0.1%, 1.1%]、20件\n- 📈 主要な改善 -0.4%、範囲 [-1.6%, -0.2%]、8件\n- 🔄 51件のアーティファクト比較が行われた\n- 📝 RFCの承認はなし、最終コメント期間のRFCは1件\n- 📅 最終コメント期間のトラッキングイシュー・PRは5件\n- 📅 2025年1月8日から2月5日までのRusty Eventsを紹介\n- 🌐 Virtualイベントが多数開催される\n- 👨‍💻 Code Mavens 🦀 - 🐍 - 🐪 でBlockMesh Networkの紹介とWASM入門\n- 👩‍💻 Charlottesville Rust MeetupでCrafting Interpreters in Rustのコラボレーション\n- 💻 Rust MiamiでRust / Wasm on Serverless and Frontendの講演\n- 👥 Rust Nürnberg onlineとDallas Rust User Meetupでの定期的なミートアップ\n- 🛠️ Mainmatter Rust WorkshopでRustプロジェクトのテスト手法の講座\n- 🌟 Charlottesville Rust Meetup: Quantum Computers Can’t Rust-Proof This! (2025-01-30)\n- 💻 Code Mavens: Are We Embedded Yet? - Implementing tiny HTTP server on a microcontroller (2025-01-30)\n- 🌐 Buffalo Rust Meetup: Buffalo Rust User Group (2025-02-04)\n- Türkiye Türkiye Rust TLV: In person Rust January 2025 at Abra in Raanana (2025-01-12)\n- 🇪🇸 Rust Girona: Rust Girona - 2025 01 (2025-01-08)\n- 🇩🇪 Rust Cologne: How to (not) structure your Rust projects (2025-01-08)\n- 🇬🇧 Reading Rust Workshop: Reading Rust Meetup (2025-01-08)\n- 📅 2025-01-28: Aarhus, DK - Rust Aarhus: Hack Night - Advent of Code\n- 📅 2025-01-30: Augsburg, DE - Rust Meetup Augsburg: Hypermedia-driven development in Rust\n- 📅 2025-01-30: Berlin, DE - Rust Berlin: Rust and Tell - Title\n- 📅 2025-02-01: Brussels, BE - FOSDEM 2025: FOSDEM Rust Devroom\n- 📅 2025-02-01: Nürnberg, DE - Rust Nuremberg: Technikmuseum Sinsheim\n- 📅 2025-02-05: Oxford, GB - Oxford Rust Meetup Group: Oxford Rust and C++ social\n- 📅 2025-01-08: Austin, TX, US - Rust ATX: Rust Dinner - Pinthouse Pizza South Lamar\n- 📅 Rustイベントのカレンダーへの追加を推奨\n- 💼 個別の求人掲載は終了、r/rustのWho's Hiringスレッドを参照\n- 💬 週の引用：教育と正確性のトレードオフについてのAndrew Gallantのコメント\n- 💡 引用の提案と投票を solicits\n- 👥 This Week in Rustの編集者一覧が紹介\n- 💸 メールリストホスティングはRust Foundationが提供\n- 💬 r/rustでのディスカッションリンクが提供",
+                "tags": [
+                    "Software",
+                    "Web",
+                    "Recommend"
+                ]
+            },
+            {
+                "title": "Ivanti の脆弱性 CVE-2025-0282 が積極的に悪用され、Connect Secure と Policy Secure に影響",
+                "url": "https://thehackernews.com/2025/01/ivanti-flaw-cve-2025-0282-actively.html",
+                "summary": "### Ivanti の脆弱性 CVE-2025-0282 が積極的に悪用され、Connect Secure と Policy Secure に影響\n- ⚠️ Ivanti の脆弱性 CVE-2025-0282 が積極的に悪用されている\n- 🛡️ 脆弱性は Connect Secure と Policy Secure に影響を及ぼしている\n- 🔒 セキュリティの接続確認が必要となり、接続のセキュリティが見直される\n- 시간 接続確認には数秒かかることが予想される",
+                "tags": [
+                    "Security"
+                ]
+            },
+            {
+                "title": "プラネックス製ルータに脆弱性、アップデートを - JPCERT/CC",
+                "url": "https://news.mynavi.jp/techplus/article/20250109-3103309/",
+                "summary": "### プラネックス製ルータに脆弱性、アップデートを - JPCERT/CC\n- ⚠️ JPCERT/CCがプラネックス製Wi-Fiルータ「ちびファイ4(MZK-DP300N)」の脆弱性を公表\n- 💻 脆弱性はクロスサイトスクリプティング(CSS)の一種\n- 🚫 ログイン可能な攻撃者が被害者のWebブラウザ上で任意のスクリプトを実行可能\n- 🔍 詳細情報はJVN#57428125で提供\n- 🔄 ユーザーはアップデートの適用を推奨",
+                "tags": [
+                    "Security",
+                    "Web"
+                ]
+            },
+            {
+                "title": "512ビットのRSAキーは1000円程度の費用をかければ数十時間で解読できてしまう",
+                "url": "https://gigazine.net/news/20250109-512-bit-dkim-rsa-key/",
+                "summary": "### 512ビットのRSAキーは1000円程度の費用をかければ数十時間で解読できてしまう\n- 💸 512ビットのRSAキーを解読する費用は約1000円\n- ⏰ 512ビットのRSAキーの解読にかかる時間は数十時間\n- 💻 「redfin.com」の512ビットRSAキーを実際に解読\n- 🛠️ 公開鍵の係数と指数を取得し、CADO-NFSを使用して素因数分解\n- ⏰ AMD EPYC 7003のvCPU8個のマシンで約86時間かかった\n- ✅ 2つの素因数から秘密鍵を生成し、512ビットRSAキーを解読\n- 📧 ヤフーメール、Mailfence、Tutaでは正当な署名として検証突破\n- 🚫 Gmail、Outlook、Zoho、Fastmail、Proton Mail、GMX、OnMailでは1024ビット未満のRSAキーで生成されたDKIM署名を拒否\n- 🔒 ウルフ氏は1024ビット未満のRSAキーを使用している1700以上のサイトを発見\n- 🔗 英語版記事も利用可能",
+                "tags": [
+                    "Security"
+                ]
+            },
+            {
+                "title": "歯科医療グループ、サイバー攻撃を2年間隠蔽し罰金",
+                "url": "https://news.mynavi.jp/techplus/article/20250109-3102086/",
+                "summary": "### 歯科医療グループ、サイバー攻撃を2年間隠蔽し罰金\n- 💰 米国の歯科医療グループ「Westend Dental」が35万ドルの罰金を科された\n- 🔒 ランサムウェア被害とデータ侵害を2年間隠蔽していたことが判明\n- 🏥 「Westend Dental」は複数の歯科医院をまとめたチェーン店方式の医療グループ\n- 🔍 患者からの苦情を受けてインディアナ州監察総監室が調査を実施\n- 📄 Malwarebytesが1月6日にこの情報を報じた",
+                "tags": [
+                    "Security"
+                ]
+            },
+            {
+                "title": "フロントエンドのライブラリ134個を一気にアップデートしてリリースした話",
+                "url": "https://zenn.dev/aldagram_tech/articles/35bf20a7a5d247",
+                "summary": "### フロントエンドのライブラリ134個を一気にアップデートしてリリースした話\n- 🛠️ 134個のフロントエンドライブラリを一括でアップデート\n- 🚀 アップデート後、新しいバージョンをリリース\n- ✨ npm auditの脆弱性を95%削減、ページ表示速度を1.5秒改善、エラー発生を80%解消\n- 💻 アップデートにより、最新の機能とパフォーマンスの向上が期待される\n- 🔧 多数のライブラリの更新は複雑な作業を要した\n- 🌟 アップデートの成果は開発者の生産性向上に貢献\n- ⚠️ ライブラリを一括アップデートするのはお勧めせず、こまめな更新が推奨される\n- 🔍 npm outdatedコマンドを使用してアップデート対象のライブラリを確認\n- 📚 プロジェクトの目標は主要なライブラリを最新化すること\n- 🤔 全体QAまでの期間で他のライブラリもバージョンアップして技術的負債を解消することを決めた",
+                "tags": [
+                    "Web",
+                    "Software",
+                    "Security"
+                ]
+            },
+            {
+                "title": "Windows LDAPに脆弱性、Windows 11/10対象 - アップデートを",
+                "url": "https://news.mynavi.jp/techplus/article/20250109-3102763/",
+                "summary": "### Windows LDAPに脆弱性、Windows 11/10対象 - アップデートを\n- 🚨 Windows LDAPに存在する脆弱性「CVE-2024-49113」が報告された\n- 🔓 認証されていない攻撃者により、サービス拒否や情報窃取の可能性がある\n- 💻 Windows 11とWindows 10が影響対象となる\n- 🔒 セキュリティ更新プログラムの適用が推奨される\n- 🔄 バックドアのハイジャックが可能になる脆弱性\n- 💡 研究者が脆弱性の詳細を発表\n- 📅 2025年1月6日（米国時間）に情報が公開された\n- 🔗 Techstrong Groupが「Security Boulevard」の記事で注意喚起を行った\n- 📖 詳細は関連記事で確認可能\n- 🛡️ 脆弱性の詳細と対策はJPCERT/CCから提供される予定",
+                "tags": [
+                    "Security",
+                    "Software"
+                ]
+            },
+            {
+                "title": "Github Workflowファイルを視覚的に生成できるサービス作ってみた",
+                "url": "https://zenn.dev/mitate_gengaku/articles/what-is-visual-flow",
+                "summary": "### Github Workflowファイルを視覚的に生成できるサービス作ってみた\n- 🔗 ワークフロー・ジョブ・ステップノードを接続してGithub Actionsのワークフローファイルを生成\n- ➕ サイドバーの追加ボタンでノードを追加、バックスペースキーで削除可能\n-  自动生成 🗂️ 生成したワークフローをyamlファイルとしてダウンロードまたはクリップボードにコピー可能\n- 💾 ノードの接続状態を保存ボタンでlocalStorageに保存、復元も容易\n- 🖼️ サービスの画面と機能のデモ画像が提供されている",
+                "tags": [
+                    "Web",
+                    "Software"
+                ]
+            },
+            {
+                "title": "良い v1.1.42",
+                "url": "https://bun.sh/blog/bun-v1.1.42",
+                "summary": "### 良い v1.1.42\n- 🛠️ Bun v1.1.42で「use strict」に関する回帰バグが修正\n- 🛠️ 修正は、Prismaに影響を与える「use strict」の問題を解決\n- 💻 San FranciscoでJavaScriptの未来を構築するシステムエンジニアを募集\n- 📦 Bunのインストール方法がcurl、npm、powershell、scoop、brew、dockerで提供\n- 🔄 Bunのアップグレード方法が説明されている\n- 🧪 回帰テストが追加され、同様の問題が再発しないように対策",
+                "tags": [
+                    "Software",
+                    "Web"
+                ]
+            },
+            {
+                "title": "セキュリティアドバイザリ: CVE-2024-46981、CVE-2024-51737、CVE-2024-51480、CVE-2024-55656",
+                "url": "https://redis.io/blog/security-advisory-cve-2024-46981-cve-2024-51737-cve-2024-51480-cve-2024-55656/",
+                "summary": "### セキュリティアドバイザリ: CVE-2024-46981、CVE-2024-51737、CVE-2024-51480、CVE-2024-55656\n- 🔒 複数のセキュリティ脆弱性が報告：CVE-2024-46981、CVE-2024-51737、CVE-2024-51480、CVE-2024-55656\n- ⚠️ これらの脆弱性により、システムのセキュリティが危険にさらされる可能性がある\n- 💻 脆弱性の詳細と影響範囲は公式アドバイザリで公開予定\n- 🛠️ 対策としてパッチの配布やシステムの更新が推奨される\n- 💻 CVE-2024-46981: Lua Use-After-Free Remote Code Execution Vulnerability (CVSS: 7.0)\n- 🔍 CVE-2024-51737: RediSearch – Integer Overflow with LIMIT or KNN Arguments Can Lead to RCE (CVSS: 7.0)\n- ⚙️ CVE-2024-51480: RedisTimeSeries – Integer Overflow Remote Code Execution Vulnerability (CVSS: 7.0)\n- 🔧 CVE-2024-55656: RedisBloom – Integer Overflow Remote Code Execution Vulnerability (CVSS: 8.8)\n- 🛡️ 脆弱性のExploitationには認証が必要。ネットワークアクセス制限、強力な認証、権限制限を実施\n- 🔄 Redis Cloudサービスは既にアップグレード済み。Self-managed Redisユーザーは最新版へのアップグレードが必要",
+                "tags": [
+                    "Security"
+                ]
+            },
+            {
+                "title": "T-Mobileに対する新たな訴訟は、米国の通信事業者が2021年の侵害の重大性を軽視し、数百万人の個人情報を漏洩したと主張している。",
+                "url": "https://wccftech.com/t-mobile-used-by-washington-state-for-its-2021-breach/",
+                "summary": "### T-Mobileに対する新たな訴訟は、米国の通信事業者が2021年の侵害の重大性を軽視し、数百万人の個人情報を漏洩したと主張している\n- 🚨 ワシントン州がT-Mobileを提訴し、2021年のセキュリティ侵害で7900万人の個人情報が漏洩したと主張\n- 🛡️ T-Mobileはセキュリティ脆弱性を Jahre にわたり認識しながら、消費者に通知せず、これを信託義務違反とした\n- 🚫 T-Mobileは侵害の重大性を軽視し、個人情報の漏洩を隠蔽したと訴えられている\n- 📄 T-Mobileは消費者に誤った保証を行い、実際のセキュリティ状況を公表しなかった\n- 🔍 内部レポートで指摘された脆弱性に対処せず、結果として侵害が発生\n- 💰 訴訟は被害を受けた消費者への補償と、T-Mobileのサイバーセキュリティ基準の向上を求める\n- 💡 T-Mobileは将来的に消費者に対して透明性を保つことが求められている",
+                "tags": [
+                    "Security",
+                    "Other"
+                ]
+            },
+            {
+                "title": "カシオ、最近のランサムウェア攻撃で8,500人の個人情報が流出したと確認",
+                "url": "https://www.techradar.com/pro/security/casio-confirms-data-of-8-500-people-exposed-in-recent-ransomware-attack",
+                "summary": "### カシオ、最近のランサムウェア攻撃で8,500人の個人情報が流出したと確認\n- 🔒 2024年10月のランサムウェア攻撃により8,500人の個人情報が流出\n- 👥 6,456人の従業員の詳細情報（名前、メールアドレス、住所など）が流出\n- 🤝 1,931人の事業パートナーの情報（会社名、メールアドレス、電話番号など）が流出\n- 🛍️ 91人の顧客の情報（配送先、購入日、製品名など）が流出\n- 📄 内部文書（請求書、契約書、会議資料など）も流出した\n- 🚫 カシオは攻撃者との交渉や身代金の支払いを行わなかった\n- 📢 影響を受けたすべての個人に通知が行われた\n- 🔍 個人情報の流出範囲や影響についての調査が進行中\n- 🌟 カシオが事件の影響を最小限に抑えるための対応を行っている\n- 🤔 通常、攻撃者が支払いを受け取らなければ、データを闇ウェブで売却や悪用に使用する可能性がある",
+                "tags": [
+                    "Security"
+                ]
+            },
+            {
+                "title": "Mirai ボットネットの亜種が Four-Faith ルーターの脆弱性を悪用して DDoS 攻撃を実行",
+                "url": "https://thehackernews.com/2025/01/mirai-botnet-variant-exploits-four.html",
+                "summary": "### Mirai ボットネットの亜種が Four-Faith ルーターの脆弱性を悪用して DDoS 攻撃を実行\n- 🔒 Mirai ボットネットの亜種が Four-Faith ルーターの脆弱性を悪用\n- 💥 DDoS 攻撃が実行される可能性がある\n- 💻 攻撃者は Four-Faith ルーターの脆弱性を悪用\n- 🌐 thehackernews.com がこの情報を提供\n- 🛡️ セキュリティの接続確認が行われる必要がある",
+                "tags": [
+                    "Security"
+                ]
+            },
+            {
+                "title": "Androidに6件の緊急の脆弱性、アップデートを",
+                "url": "https://news.mynavi.jp/techplus/article/20250108-3102761/",
+                "summary": "### Androidに6件の緊急の脆弱性、アップデートを\n- 📅 2025年1月6日（米国時間）にGoogleがAndroid Security Bulletinを公開\n- 🚨 6件の緊急の脆弱性が含まれる合計36件の脆弱性情報が公表\n- 🔄 2025-01-01と2025-01-05の2つのセキュリティパッチレベルが含まれている\n- 🔒 Androidデバイスに影響する脆弱性の詳細が公開されている\n- ⚠️ これらの脆弱性は緊急性が高く、アップデートの適用が推奨される\n- 🔍 研究者がバックドアのハイジャックに関する詳細を発表\n- 🔗 詳細情報はGoogleの公式サイトで確認可能\n- 📱 JPCERT/CCがAndroidスマホ(FCNT)の脆弱性について警告を発出した\n- 🔥 銀行アプリなどに対するマルウェアの脅威が確認された\n- 🕵️ 中国公安局が用いるAndroid向け情報窃取ツールが発見され、詳細が公開された",
+                "tags": [
+                    "Security"
+                ]
+            },
+            {
+                "title": "pgspot 0.9.0 リリース",
+                "url": "https://www.postgresql.org/about/news/pgspot-090-released-2994/",
+                "summary": "### pgspot 0.9.0 リリース\n- 🎉 2025年1月8日にpgspot 0.9.0がリリースされた\n- 🛠️ PostgreSQL 17パーサーを使用するpglastを7.2に更新\n- 🐛 plpgsqlのRETURN QUERY EXECUTE処理のバグを修正\n- 🔗 詳細なリリースノートはGitHubのリリースページで確認可能\n- 🛠️ vulnerability checker for PostgreSQL SQL scriptsの機能を改善",
+                "tags": [
+                    "Software",
+                    "Security"
+                ]
+            },
+            {
+                "title": "State of JavaScript 2024の公開など: Cybozu Frontend Weekly (2025-01-07号)",
+                "url": "https://zenn.dev/cybozu_frontend/articles/few-2025-01-07",
+                "summary": "### State of JavaScript 2024の公開など: Cybozu Frontend Weekly (2025-01-07号)\n- 📊 State of JavaScript 2024 が公開され、JavaScript エコシステムの最新トレンドやフレームワークの人気などがまとめられている\n- 🚀 bun test に置き換えることで vitest の実行速度が大幅に向上した事例が紹介されている\n- ⏱️ 2024 年の Web パフォーマンス変化について、INP が Core Web Vital の指標に加わったことや新しい API がサポートされたことが紹介されている\n- 🎨 マーティンファウラー氏がデザイントークンの解説記事を公開し、セマンティックトークンやコンポーネントトークンなどについて解説している\n- 🛠️ Safari Technology Preview 210 がリリースされ、CSS の text-autospace property や ::details-content pseudo-element サポートなどが追加された\n- ⚖️ 米司法省が Google に提示した独占禁止是正措置が独立ブラウザの資金調達に影響を及ぼす可能性があると Mozilla が警鐘を鳴らしている\n- 📖 Microsoft Edge が 2024 年の統計を公開し、AI Chat の回数や節約したメモリ量などについて紹介している",
+                "tags": [
+                    "Web",
+                    "Software",
+                    "AI",
+                    "Security"
+                ]
+            },
+            {
+                "title": "メモリが少ない環境におけるRAGを実現するEdgeRAG",
+                "url": "https://zenn.dev/knowledgesense/articles/16107a48d084d0",
+                "summary": "### メモリが少ない環境におけるRAGを実現するEdgeRAG\n- 💻 EdgeRAGはメモリ制約環境下での効率的なRAGシステムを実現\n- 🔍 RAGは大容量データにアクセスする手法だが、メモリ消費が大きい問題がある\n- ⚡ EdgeRAGは従来手法の3倍程度の速度を達成\n- 📚 Two-level Inverted File手法を応用し、動的なEmbedding生成でメモリ削減\n- 📊 実験結果ではデータ量が増えるに従い検索速度が向上\n- 📱 モバイル端末などメモリ制限のある環境で特に有用\n- 💡 制限環境下的検索速度に言及した論文の増加が期待される",
+                "tags": [
+                    "AI",
+                    "Software"
+                ]
+            },
+            {
+                "title": "アカマイが中国でのCDN事業を撤退、北京からのトラブルが原因とは考えにくい",
+                "url": "https://go.theregister.com/feed/www.theregister.com/2025/01/08/akamai_eol_china_cdn/",
+                "summary": "### アカマイが中国でのCDN事業を撤退、北京からのトラブルが原因とは考えにくい\n- 💥 2026年6月30日に中国でのCDNサービスを終了\n- ✅ 終了理由は中国市場でのビジネスの難しさではなく、事業戦略の見直し\n- 🔄 顧客はAkamaiの海外CDNに移行か、中国企業のサービスに移行する必要がある\n- 🤝 AkamaiはTencent CloudとWangsu Technologyとの連携を強化\n- 📊 Akamaiは中国市場にコミットし続ける、特に海外展開する中国企業向けにサービス提供\n- 💰 CDN以外の計算とセキュリティサービスが収益の大部分を占め、成長の可能性がある",
+                "tags": [
+                    "Web",
+                    "Security"
+                ]
+            },
+            {
+                "title": "TailWind CSS v4は便利だぞ",
+                "url": "https://zenn.dev/jun0723/articles/f27b0046072704",
+                "summary": "### TailWind CSS v4は便利だぞ\n- ✨ TailWind CSS v4.0 ベータ版がリリースされ、便利な機能が追加された\n- 🛠️ 初期設定が簡素化され、CSSファイルに必要な記述が1行になった\n- 🔄 v3からv4へのアップデートは、ターミナルで1行コマンドを実行するだけで自動的に完了\n- 🎨 @theme を使用することで、TailWind CSSのデフォルトテーマを変更、追加、削除できる\n- +W @layer を使用することで、独自のスタイルレイヤーを作成し、スタイルの優先順位を制御できる\n- 🔍 自動ソース検出機能が追加され、ファイルの指定が不要になった\n- ⚡ arbitrary values の簡素化が一部のプロパティで可能になり、class名が短くなった\n- 🔄 クラス名の変更: data-[selected]:opacity-100 から data-selected:opacity-100 へ\n- 🔄 スケールのデフォルト値変更: 1 ごとに 0.25rem から calc(var(--spacing) * 1) へ\n- 🛠️ コンテナクエリのサポート: @tailwindcss/container-queries プラグイン不要に",
+                "tags": [
+                    "Web",
+                    "Software"
+                ]
+            },
+            {
+                "title": "Kafka 4.0 の紹介",
+                "url": "https://dev.to/varadasunandaibm/introduction-to-kafka-40-203m",
+                "summary": "### Kafka 4.0 の紹介\n- 💥 Apache Kafka 4.0 は主要なアーキテクチャ変更と機能廃止を含む大規模なアップデート\n- 🎉 Kafka 4.0 は ZooKeeper の削除と KRaft モードの採用という大きな進歩を遂げた\n- 🏗️ Kafka 3.x シリーズが KRaft モードの導入、JBOD ストレージのサポート、動的 KRaft クォラムなど、Kafka 4.0 への移行を準備\n- 💼 Kafka 4.0 では ZooKeeper が完全に削除され、KRaft が唯一のメタデータ管理プロトコルとして採用\n- 🔄 ZooKeeper を使用している組織は、Kafka 3.9 へのアップグレードと KRaft への移行を経て Kafka 4.0 に移行する必要がある\n- 🚀 Kafka 3.x リリースからの移行計画とツールの活用により、4.0 への円滑なアップグレードが可能\n- 🛠️ Kafka 4.x では、コンテナ化のサポート、強化されたメトリクス、消費者パフォーマンスの改善が期待される\n- 📈 Kafka 4.0 はより効率的でスケーラブルなプラットフォームを提供\n- 🛠️ イベントストリーミングの未来に備え、Kafka 4.0 の改善点をアーキテクチャに組み込む準備が必要\n- 💻 MirrorMaker 1 が廃止され、Log4j アペンダーも削除され、Log4j2 への完全移行が完了",
+                "tags": [
+                    "Software",
+                    "Security"
+                ]
+            },
+            {
+                "title": "CISA、Mitel と Oracle のシステムに重大な欠陥があると警告、悪用が活発化",
+                "url": "https://thehackernews.com/2025/01/cisa-flags-critical-flaws-in-mitel-and.html",
+                "summary": "### CISA、Mitel と Oracle のシステムに重大な欠陥があると警告、悪用が活発化\n- 🚨 CISAがMitelとOracleのシステムに重大なセキュリティ欠陥があると警告\n- 🔒 これらの欠陥が悪用され、セキュリティリスクが高まっている\n- 💻 MitelとOracleのシステムは企業の重要な業務に使用されている\n- 🚫 CISAは組織に対して脆弱性の修正と対策を推奨している\n- 🔍 詳細な脆弱性情報と対策方法はCISAの公式サイトで提供されている",
+                "tags": [
+                    "Security",
+                    "Software"
+                ]
+            },
+            {
+                "title": "Apple、iPhoneとiPadの重要なバグを修正",
+                "url": "https://news.mynavi.jp/techplus/article/20250108-3102599/",
+                "summary": "### Apple、iPhoneとiPadの重要なバグを修正\n- 📅 2025年1月6日（米国時間）にiOS 18.2.1およびiPadOS 18.2.1がリリースされた\n- 🛠️ このアップデートには重要なバグの修正が含まれる\n- 🚫 公開済みの脆弱性（CVE）の修正は含まれていない\n- 📱 対象製品はiPhoneおよびiPad\n- 🔒 セキュリティ上の脆弱性により、300万以上のサイトに影響の可能性\n- 💻 MacやApple Watchなど他の製品にも脆弱性が存在\n- 🔗 詳細は「Apple security releases - Apple Support」やApple公式サイトで確認可能\n- 🚨 2025年1月6日と14日に複数のApple製品に脆弱性が報告された\n- 🔧 セキュリティ対策としてのアップデートが提供",
+                "tags": [
+                    "Security",
+                    "Software"
+                ]
+            },
+            {
+                "title": "「水飲み場攻撃」の国内事例から対策を学ぶ",
+                "url": "https://news.mynavi.jp/techplus/article/20250108-3095610/",
+                "summary": "### 「水飲み場攻撃」の国内事例から対策を学ぶ\n- 🏢 JPCERT/CCが国内での水飲み場攻撃事例を報告\n- 📚 2023年の大学研究室Webサイト改ざん事例が1回目の報告で取り上げられた\n- 💻 2023年のメディア関連Webサイトの悪用事例が2回目の報告で紹介された\n- 🔍 水飲み場攻撃は特定の組織を標的とするため、注意が必要\n- 🔄 攻撃対策として、定期的なセキュリティチェックと更新が重要\n- 🔒 セキュリティ分野の最新事例と対策が紹介されている\n- 🌟 OSSのセキュリティにおける課題と対策が解説されている\n- 🚨 Chromeの拡張機能を使用している260万人に認証情報窃取のリスクがある\n- 🛡️ JPCERT/CCがシビアなサイバー防衛演習の考察を公表\n- 💻 Microsoft Wordのテンプレートを悪用する攻撃に注意が必要",
+                "tags": [
+                    "Security"
+                ]
+            },
+            {
+                "title": "Deepseek V3 対 ChatGPT",
+                "url": "https://dev.to/sysmaya/deepseek-v3-vs-chatgpt-25bb",
+                "summary": "### Deepseek V3 対 ChatGPT\n- 🤖 Deepseekは、問題解決、質問応答、タスク実行を支援するAIシステム\n- 📚 Deepseekは大量の情報を分析し、学習して適切な回答を提供\n- 🔍 Deepseekは、知識ベースから情報を検索し、秒単位で回答\n- 🤝 DeepseekとChatGPTは、それぞれ異なる強みを持つAIシステム\n- 💡 Deepseekの主な用途は、日常生活のサポート、教育、創造性、技術サポート\n- 🌟 Deepseekは、知識の民主化と時間とともに改善する能力が重要\n- 🚀 Deepseekは効率と精度に優れ、AIモデルの作成に革新的なアプローチを採用\n- 😀 Deepseekは訓練時間を大幅に短縮し、エネルギー消費も削減\n- 🔒 Deepseekはデータの安全性とプライバシーに重点を置く可能性があり、他の大企業と異なる倫理的なアプローチを取るかもしれない\n- ⚠️ AI技術の進化には、責任ある使用と公平性の確保が重要である",
+                "tags": [
+                    "AI",
+                    "Security",
+                    "Recommend"
+                ]
+            },
+            {
+                "title": "2025年世界の10大リスクが発表、日本に与える影響とは？",
+                "url": "https://news.mynavi.jp/techplus/article/20250108-3102079/",
+                "summary": "### 2025年世界の10大リスクが発表、日本に与える影響とは？\n- 🌎 米ユーラシア・グループが2025年の世界の10大リスクを発表\n- 📊 10大リスクは年間を通じて起こりそうな政治リスクを予測したもの\n- 🇯🇵 同社はこれらのリスクが日本に与える影響も紹介\n- 🔒 記事の詳細は会員限定で公開されている\n- 🔍 10大リスクの詳細と日本への影響のポイントが紹介されている",
+                "tags": [
+                    "Other"
+                ]
+            },
+            {
+                "title": "カシオ、10月のランサムウェア攻撃の詳細を明らかに",
+                "url": "https://tugatech.com.pt/t64022-casio-revela-detalhes-sobre-ataque-de-ransomware-em-outubro",
+                "summary": "### カシオ、10月のランサムウェア攻撃の詳細を明らかに\n- 🚨 2022年10月5日、カシオがランサムウェア攻撃を受けたことを確認\n- 🔒 攻撃により8500人の情報（主要にパートナーと従業員）が漏洩\n- 📞 漏洩した情報には名前、住所、電話番号、メールアドレスなどが含まれる\n- 💳 支払い情報は顧客も従業員も漏洩していない\n- 📢 被害者にはカシオから詳細と対策についての通知が送られる\n- 🚫 攻撃後、従業員がフィッシングメッセージを受け取ったが、攻撃とは関係ない\n- ✅ 現在、影響を受けたサービスは正常に稼働している",
+                "tags": [
+                    "Security"
+                ]
+            },
+            {
+                "title": "Firefox 134.0 がアップデート可能になりました",
+                "url": "https://tugatech.com.pt/t64021-firefox-134-0-encontra-se-agora-disponivel-para-atualizacao",
+                "summary": "### Firefox 134.0 がアップデート可能になりました\n- 🎉 MozillaがFirefox 134.0の新しい安定版をリリース\n- 🚫 Beta 2で試験的に導入されたデフォルトブラウザ設定機能が削除\n- 💻 WindowsでのHEVCとH.265のハードウェアアクセラレーションが初サポート\n- 🏠 新タブページがユーザーのショートカットや関連ニュースを表示\n- 🔒 最近発見された多数のセキュリティ脆弱性が修正\n- 🔗 公式サイトからダウンロード可能またはシステム更新でアップデート",
+                "tags": [
+                    "Web",
+                    "Security"
+                ]
+            },
+            {
+                "title": "PostgreSQL Anonymizer 2.0: より良く、より速く、より安全に",
+                "url": "https://www.postgresql.org/about/news/postgresql-anonymizer-20-better-faster-safer-2993/",
+                "summary": "### PostgreSQL Anonymizer 2.0: より良く、より速く、より安全に\n- 🎉 2025年1月6日にPostgreSQL Anonymizer 2.0のリリースを発表\n- 🔒 5つのデータ匿名化戦略を提供：Dynamic Masking, Static Masking, Anonymous Dumps, Masking Views, Masking Data Wrappers\n- 🛠️ Masking Functionsの強化：Substitution, Randomization, Faking, Pseudonymization, Partial Scrambling, Shuffling, Noise Addition, Generalization\n- 💻 Rust言語とPGRXフレームワークを使用して完全にリライト\n- 🚀 メモリの安全性、セキュリティ、リソース効率、テスト、コードの保守性が大幅に向上\n- 📚 詳細なチュートリアルと移行ガイドが提供され、ユーザーが簡単に始められるようにサポート\n- 🤝 多くの貢献者からコード、バグ修正、ドキュメント、コードレビュー、アイデアが提供",
+                "tags": [
+                    "Software",
+                    "Security"
+                ]
+            },
+            {
+                "title": "pg_partman 5.2.4 リリース",
+                "url": "https://www.postgresql.org/about/news/pg_partman-524-released-2995/",
+                "summary": "### pg_partman 5.2.4 リリース\n- 🎉 Crunchy Data が pg_partman 5.2.4 のリリースを発表\n-  Shaft 5.2 バージョンの主な機能: UUIDv7 とその他のカスタムエンコード方法のサポート\n- 🔒 インストール時のスーパーユーザー要件が削除\n- ⚡ メンテナンス性能の向上\n- 🔢 BIGINT データ型を使用した LIST パーティショニングの問題修正\n- 📖 詳細な変更履歴は CHANGELOG で確認可能\n- 🔗 公式ウェブサイト、インストール方法、ドキュメント、リリースノートが提供されている",
+                "tags": [
+                    "Software",
+                    "Security"
+                ]
+            },
+            {
+                "title": "GeekomがCES 2025で新型ミニPCを発表 — Snapdragon X Elite、Ryzen AI 9、Core Ultra 9などが登場",
+                "url": "https://www.tomshardware.com/desktops/mini-pcs/geekom-introduces-new-mini-pcs-at-ces-2024-snapdragon-x-elite-ryzen-ai-9-and-core-ultra-9-all-represented",
+                "summary": "### GeekomがCES 2025で新型ミニPCを発表 — Snapdragon X Elite、Ryzen AI 9、Core Ultra 9などが登場\n- 💻 GeekomはCES 2025で新型ミニPCを発表\n- 🚀 新型ミニPCはSnapdragon X Elite、Ryzen AI 9、Core Ultra 9などの高パフォーマンスモバイルチップを搭載\n- ✨ 製品ラインナップにはIT15、QS1、A9 Maxの3つの新型モデルが含まれる\n- 🔨 CES 2024でもLenovo製のQualcommチップ搭載ミニPCが展示された\n- 🌟 既に発売されたA6モデルは前世代AMD Ryzen 6700HとRadeon 680M iGPUを搭載\n- 🔧 Geekom IT15はIntel Core Ultra 9 285HまたはCore Ultra 5 225Hを搭載し、最大64GB DDR5-5800 RAMとIntel Arc XE-LPG A130Tグラフィックスをサポート\n- 🔄 IT15は135.5 x 115.5 x 34.5 mmのサイズで、2.5インチSSDと2つのM.2 SSDを搭載可能\n- 🌐 IT15はWi-Fi 7とBluetooth 5.4をサポート\n- 🔌 IT15は2つのUSB4 Type-Cポート、3つのUSB 3.2 Gen 2 Type-Aポート、2つのHDMI 2.0ポート、2.5G Ethernet、SDカードスロットを搭載\n- 💸 IT15の価格や発売日は未発表",
+                "tags": [
+                    "AI",
+                    "Web",
+                    "Software",
+                    "Security",
+                    "Other"
+                ]
+            },
+            {
+                "title": "研究者らがイルミナのiSeq 100 DNAシーケンサーに重大なセキュリティ上の欠陥を発見",
+                "url": "https://thehackernews.com/2025/01/researchers-uncover-major-security-flaw.html",
+                "summary": "### 研究者らがイルミナのiSeq 100 DNAシーケンサーに重大なセキュリティ上の欠陥を発見\n- 🔍 研究者らがイルミナのiSeq 100 DNAシーケンサーに重大なセキュリティ上の欠陥を特定\n- 🔒 発見された欠陥はシーケンサーのセキュリティに深刻な影響を及ぼす可能性がある\n- 💻 この欠陥により、外部からの攻撃者がシステムに侵入する可能性がある\n- 🌟 詳細な脆弱性の情報はまだ公開されていない\n- 🛡️ イルミナはこの問題に対処するための対策を検討中である",
+                "tags": [
+                    "Security"
+                ]
+            },
+            {
+                "title": "マイクロソフトがBingをGoogle検索そっくりにしたと非難され、Googleが反撃",
+                "url": "https://www.tomsguide.com/computing/search-engines/microsoft-accused-of-making-bing-look-just-like-google-search-and-google-fires-back",
+                "summary": "### マイクロソフトがBingをGoogle検索そっくりにしたと非難され、Googleが反撃\n- 🚫 MicrosoftがBingの検索結果ページをGoogleのデザインに似せたことにより、ユーザーをだます可能性があると非難\n- 🔍 MicrosoftがBingのUIをGoogleの検索バーに似せたデザインに変更\n- 💥 GoogleのParisa TabrizがMicrosoftの行動を批判、ユーザーの混乱と選択肢の制限を指摘\n- 🔒 このGoogle風デザインは、MicrosoftアカウントにログインせずにBingを使用する場合にのみ表示される\n- 🔗 WindowsLatestがこの機能を最初に報告\n- ⚠️ Bingを使用していても、アドレスバーを見ればBingであることが確認できる\n- 🛠️ Bingでの検索結果はGoogleとは異なることが予想される\n- 📜 Microsoftは過去にもGoogleユーザーを誘導するための様々な戦術を使用\n- 💻 MicrosoftがGoogleユーザーをBingに移行させるための手法として、Chromeのダウンロードサイトの変更などを行った\n- 🔄 GoogleはMicrosoftの新しい戦略を冷静に受け止めている",
+                "tags": [
+                    "Web",
+                    "Other"
+                ]
+            },
+            {
+                "title": "Promptyに入門したい",
+                "url": "https://zenn.dev/ymd65536/articles/prompty_get_started_1",
+                "summary": "### Promptyに入門したい\n- 📚 Promptyについての理解を深めるため、公式サイト、GitHubリポジトリ、公式ドキュメントを参照\n- 👥 対象読者はPromptyに興味がある人\n- 🤖 AIチャットシステムの基本はAIエージェントの作成が重要\n- 🔧 AIエージェントはユーザーからの質問に対して適切な応答を返すためのプログラム\n- 📄 PromptyはAIエージェントの設定をコンフィグとして管理できるOSS\n- ⚙️ Promptyは3つの要素（仕様、ツール、ランタイム）から構成\n- 💻 Promptyの使い方：インストール、設定ファイルの作成、Promptyを使ってAIにアクセス\n- 🛠️ main.pyでPromptyとVertexAIを使用するスクリプトが記述されている\n- 📝 .promptyファイルのnameプロパティにはエージェント名を指定\n- 🔎 descriptionプロパティではPromptyの説明を指定\n-  自动生成 apiプロパティではchat, completion, embedding, imageなどのAPIを指定",
+                "tags": [
+                    "AI",
+                    "Software",
+                    "Web"
+                ]
+            },
+            {
+                "title": "Moxa製ルータに緊急の脆弱性、速やかにアップデートを",
+                "url": "https://news.mynavi.jp/techplus/article/20250107-3101966/",
+                "summary": "### Moxa製ルータに緊急の脆弱性、速やかにアップデートを\n- 🚨 Moxaが1月3日に緊急の脆弱性を発表\n- 🔒 脆弱性は特権昇格とOSコマンドインジェクション\n- 💻 認証されていないリモート攻撃者が任意のコードを実行可能\n- ⚠️ 対象製品はセルラールータ、セキュアルータ、ネットワークセキュリティアプライアンス\n- 🔄 速やかなアップデートが推奨される\n- 🚫 脆弱性の影響によるセキュリティリスクが高まる\n- 🛠️ 脆弱性はバックドアに関連する問題を含む\n- 💥 複数のルータを侵害したDDoS攻撃が日本国内にも影響\n- 📅 情報は2025年1月9日に公開された\n- 🔎 詳細はMoxaの公式サイトで確認できる",
+                "tags": [
+                    "Security",
+                    "Software"
+                ]
+            },
+            {
+                "title": "Nvidia の Project Digits デスクトップ AI スーパーコンピューターは手のひらに収まります。1 PFLOPS のパフォーマンスを家庭にもたらすのに 3,000 ドルかかります。",
+                "url": "https://www.tomshardware.com/pc-components/gpus/nvidias-project-digits-desktop-ai-supercomputer-fits-in-the-palm-of-your-hand-usd3-000-to-bring-1-pflops-of-performance-home",
+                "summary": "### Nvidia の Project Digits デスクトップ AI スーパーコンピューターは手のひらに収まります。1 PFLOPS のパフォーマンスを家庭にもたらすのに 3,000 ドルかかります。\n- 💻 Project Digits は手のひらに収まるデスクトップ AI スーパーコンピューター\n- 💥 1 PFLOPS の FP4 浮動小数点性能を提供\n- 💰 価格は 3,000 ドルから購入可能\n- 🛠️ GB10 Grace Blackwell スーパーチップを搭載\n- endcode 128GB LPDDR5X メモリと 4TB NVMe SSD を搭載\n- 🚀 単体で 200 億イテレーションの AI 大規模言語モデルをローカルで実行可能\n- 🤝 Arm とのコラボレーションにより、Grace Blackwell Superchip を搭載\n- 🌐 Nvidia ConnectX スマートネットワークアダプタを搭載\n- 🎯 主な対象はデータサイエンティスト、AI 研究者、学生\n- 📅 Project Digits の発売は 5 月から開始",
+                "tags": [
+                    "AI",
+                    "Software",
+                    "Security",
+                    "Web"
+                ]
+            },
+            {
+                "title": "Flutter3.28.0で追加されそうなWidgetPreviewをサキドリ",
+                "url": "https://zenn.dev/akaboshinit/articles/6082dd655f141c",
+                "summary": "### Flutter3.28.0で追加されそうなWidgetPreviewをサキドリ\n- 🔍 Flutter 3.28.0にWidgetPreview用のコマンドが追加されていることが確認された\n- 📅 WidgetPreviewがStable版にいつ入りそうかは正確なタイミングは不明\n- 👨‍💻 bkonyiさんがWidgetPreviewコマンド追加のPRを提出し、DartとFlutterのTech leadであることがわかった\n- 📚 GitHubのプロジェクトからWidgetPreviewの機能を確認・予想する情報が得られた\n- 🔧 WidgetPreviewには`@Preview`アノテーションと`WidgetPreview`ウィジェットが必要\n- 📝 プレビューしたいWidgetを`WidgetPreview`でラップし、設定を加えることでプレビューに変化を与えることができる\n- 👀 WidgetPreviewは単純なWidgetの表示や動作確認が可能\n- 📱 deviceパラメータでデバイスの設定を指定可能（例: 画面サイズ、ピクセル比、プラットフォーム）\n- 🔄 deviceを指定した場合、Rotateボタンで画面の向きを変更可能\n- 🎨 themeとdarkThemeパラメータでテーマを設定可能",
+                "tags": [
+                    "Web",
+                    "Software"
+                ]
+            },
+            {
+                "title": "Nvidia、研究者や学生向けのパーソナルAIスーパーコンピューター「Project Digits」を発表",
+                "url": "https://venturebeat.com/ai/nvidia-unveils-project-digits-personal-ai-supercomputer-for-researchers-and-students/",
+                "summary": "### Nvidia、研究者や学生向けのパーソナルAIスーパーコンピューター「Project Digits」を発表\n- 💻 Nvidiaが研究者や学生向けのパーソナルAIスーパーコンピューター「Project Digits」を発表\n- ⚡ Project DigitsはGB10 Grace Blackwell Superchipを搭載し、1 petaflopのAI計算性能を提供\n- 🌐 ユーザーは自宅のデスクトップでモデルを開発・推論し、クラウドやデータセンタにシームレスに展開可能\n- 🌟 CES 2025でCEO Jensen Huangが発表、AIの主流化を促進\n- 🤝 Mediatekとの協力により、GB10 Superchipの最適なパワーエフィシャンシーと性能を実現\n- 📊 GB10はNvidia Grace Blackwellアーキテクチャに基づき、最新のCUDAコアと第5世代Tensorコアを搭載\n- 💻 128GBの統合メモリと最大4TBのNVMeストレージを搭載\n- 🔗 2台のProject Digitsをリンクして最大405億パラメータのモデルを実行可能\n- 📚 Nvidia NGCカタログやNvidia Developerポータルから豊富なAIソフトウェアライブラリにアクセス可能\n- 📅 2023年5月よりNvidiaおよび主要パートナーから3000ドルから購入可能",
+                "tags": [
+                    "AI",
+                    "Software"
+                ]
+            },
+            {
+                "title": "Nvidia、RTX AI PC で動作する AI 基盤モデルを発表",
+                "url": "https://venturebeat.com/ai/nvidia-unveils-ai-foundation-models-running-on-rtx-ai-pcs/",
+                "summary": "### Nvidia、RTX AI PC で動作する AI 基盤モデルを発表\n- 💻 NvidiaがRTX AI PC向けのAI基盤モデルを発表\n- 🚀 GeForceは2012年以来AI開発者の重要なプラットフォーム\n- 💡 AI基盤モデルは幅広いアプリケーションに利用可能\n- 🛠️ 開発者はこれらのモデルをカスタマイズ・拡張できる\n- 👩‍💻 RTX AI PCsと低コード・ノーコードツールにより、誰でもAI開発者になれる\n- 📊 主要なPCメーカーとシステムビルダーがNIM対応のRTX AI PCsを発売\n- ⚡ Nvidia Digitsは、AI研究者やデータサイエンティスト向けの個人用AIスーパーコンピュータ\n- 🤝 NIM microservicesは、RTX AI PCs上で大規模言語モデルや画像生成などのAIモデルを実行するための最適化されたコンポーネントを提供\n- 🤖 Project R2Xは、視覚機能を持つPCアバターで、デスクトップアプリやビデオ会議の支援、ドキュメントの読み取りや要約などの機能を持つ\n- 🎨 3Dガイド付き生成AIのAI Blueprintが提供され、アーティストに画像生成の細かい制御機能を提供",
+                "tags": [
+                    "AI",
+                    "Software"
+                ]
+            },
+            {
+                "title": "NVIDIAがCES 2025基調講演で発表した内容はこちら",
+                "url": "https://www.engadget.com/ai/watch-nvidia-ceo-jensen-huang-deliver-his-ces-2025-keynote-live-here-174947969.html?src=rss",
+                "summary": "### NVIDIAがCES 2025基調講演で発表した内容はこちら\n- 📺 NVIDIAがCES 2025で基調講演を行った\n- 📅 基調講演は2025年のCESで行われた\n- 💡 NVIDIAのCEO Jensen Huangが登壇し、新しいGPUやAI技術を発表\n- 🔥 RTX 5090 GPUが発表され、32GB GDDR7 RAM、21,760 CUDAコアで、RTX 4090比で2倍のパフォーマンス\n- 🪄 DLSS 4が導入され、Multi Frame Generation技術により最大8倍のフレームレート向上\n- ⚡ Project Digitsが発表され、個人用AIスーパーコンピュータとして、1ペタフロップの性能で3,000ドル\n- 🚗 NVIDIA DRIVE Hyperion AVプラットフォームが発表され、自動車の自動運転開発向けに強化\n- 🤖 NVIDIA Cosmosワールドファウンデーションモデルが発表され、ロボットやAV開発に利用可能\n- 💰 RTX 5000シリーズGPUの価格が発表され、RTX 5070（549ドル）、RTX 5070 Ti（749ドル）、RTX 5080（999ドル）\n- 📊 NVIDIAの株価は基調講演前日にAppleの市場価値に迫る高騰をみせたが、講演後には6%以上下落",
+                "tags": [
+                    "AI",
+                    "Software",
+                    "Web",
+                    "Security",
+                    "Recommend"
+                ]
+            },
+            {
+                "title": "Google DeepMindが物理世界をシミュレーションする新プロジェクトを立ち上げか",
+                "url": "https://news.mynavi.jp/techplus/article/20250107-3101848/",
+                "summary": "### Google DeepMindが物理世界をシミュレーションする新プロジェクトを立ち上げか\n- 💡 Alphabet傘下のGoogle DeepMindで新しいAIプロジェクトが立ち上がる可能性\n- 👥 プロジェクトはOpenAIの動画生成AI「Sora」を率いた人物がリードする見込み\n- 💻 プロジェクトの詳細は幹部の1人のXの投稿から明らかにされた\n- 🔍 プロジェクトは物理世界のシミュレーションに関連する可能性が高い\n- 🤔 具体的なプロジェクトの詳細や目標はまだ明らかにされていない\n- 🚀 物理シミュレーションの進歩が産業や研究開発に大きな影響を及ぼす可能性\n- 📊 DeepMindはAI技術の研究開発に注力している企業\n- 🤔 物理現象の理解と予測にAI技術を活用する可能性\n- 🤔 科学やエンジニアリング分野での応用を目的とする可能性\n- 🔒 記事の詳細はMembers+会員限定で公開されている",
+                "tags": [
+                    "AI",
+                    "Software"
+                ]
+            },
+            {
+                "title": "米国国防総省、中国軍を支援した疑いのある企業リストにCXMT、CATL、テンセントを追加",
+                "url": "https://www.tomshardware.com/pc-components/dram/us-dod-adds-cxmt-catl-tencent-to-list-of-companies-suspected-of-aiding-the-chinese-military",
+                "summary": "### 米国国防総省、中国軍を支援した疑いのある企業リストにCXMT、CATL、テンセントを追加\n- 🇺🇸 米国国防総省が中国企業のPLA支援疑惑リストを更新\n- 💼 CXMT、CATL、テンセントなどが新規追加\n- 🚫 リスト入りは即時法的・経済的制限を意味せず、ただし将来的な制限の可能性あり\n- 💰 U.S. Treasuryが取引・投資制限を課す可能性あり\n- 🛡️ U.S. Commerce DepartmentがEntity Listに追加し、米国技術へのアクセスを制限する可能性あり\n- 🔍 リスト入り企業は事業活動の監視とパートナーからの厳格なデューディリジェンスを受ける可能性が高い\n- 🌍 リスト入り企業は国際市場へのアクセスに困難が生じる可能性がある\n- 📊 リストに含まれる企業数は134社に達する\n- ❌ 6社がリストから削除された（例：Beijing Megvii Technology、China Railway Constructionなど）\n- 🔒 中国企業は先進の半導体製造装置やAI/HPC用GPUへのアクセスが禁止されている",
+                "tags": [
+                    "Security",
+                    "Other"
+                ]
+            },
+            {
+                "title": "Recoilリポジトリアーカイブのニュースを受けて、Jotaiの過去記事をまとめてみた",
+                "url": "https://zenn.dev/dai_shi/articles/14e0451a0fc149",
+                "summary": "### Recoilリポジトリアーカイブのニュースを受けて、Jotaiの過去記事をまとめてみた\n- 💥 Recoilのリポジトリが元日にアーカイブされたことを知った\n- 📢 Recoilアーカイブのニュースについてツイートし、大きな反響があった\n- 📝 過去に書いたJotai関連のZenn記事をリストアップ\n- 👇 記事は新しい順に掲載され、時系列を追いたい場合は下から見ること\n- 💡 内容に深みのない記事も含むが、参考になれば幸い",
+                "tags": [
+                    "Web",
+                    "Recommend"
+                ]
+            },
+            {
+                "title": "ユナイテッド航空、今春スターリンクを乗客向けに導入へ — ダウンロード速度は最大220Mbps",
+                "url": "https://www.tomshardware.com/tech-industry/united-airlines-to-roll-out-starlink-for-passengers-this-spring-download-speeds-up-to-220-mbps",
+                "summary": "### ユナイテッド航空、今春スターリンクを乗客向けに導入へ — ダウンロード速度は最大220Mbps\n- ✈️ ユナイテッド航空が全機種にスターリンクを導入し、今春から商用化を開始予定\n- 💻 スターリンクのダウンロード速度は最大220Mbpsを提供\n- 🌟 スターリンクは既にハワイアン航空で無料提供中、太平洋上での速度は約100Mbps\n- 👥 ユナイテッド航空のMileagePlus会員はスターリンクを無料で利用可能\n- 📅 2025年末までに全地域機種でスターリンク運用開始予定\n- 🔄 ユナイテッド航空は2024年9月にスターリンクとの最大契約を締結\n- 🛠️ スターリンクはパケットロスやネットワーク遅延が発生する場合があるが、衛星ネットワークの改善により改善予定",
+                "tags": [
+                    "Web",
+                    "Software"
+                ]
+            },
+            {
+                "title": "人気のオープンソース脆弱性スキャナー Nuclei が懸念されるセキュリティ欠陥を修正せざるを得なくなった",
+                "url": "https://www.techradar.com/pro/security/popular-open-source-vulnerability-scanner-nuclei-forced-to-patch-worrying-security-flaw",
+                "summary": "### 人気のオープンソース脆弱性スキャナー Nuclei が懸念されるセキュリティ欠陥を修正せざるを得なくなった\n- 💻 Nucleiは人気のあるオープンソース脆弱性スキャナーツールで、GitHubで21,000のスターと2,600のフォークを獲得\n- 🔒 Nucleiにセキュリティ欠陥が発見され、修正が必要となった\n- 🚨 この欠陥は悪意のあるテンプレートが署名検証をバイパスできる問題を含む\n- 🛠️ CVE-2024-43405として追跡され、深刻度7.8（高）に評価\n- 📅 2024年9月初めにバージョン3.3.2で修正がリリース\n- 🔄 ユーザーには最新版へのアップデートが推奨されている\n- 🚫 アップデートが困難な場合、カスタムテンプレートの使用を停止するべき\n- 🛡️ Nucleiは仮想環境や隔離環境で使用することを推奨\n- 👥 Nucleiプロジェクトには700人以上のコントリビューターが参加し、月間5,000万回以上のスキャンを実施\n- 💡 Nucleiの普及により、サイバーセキュリティコミュニティでの使用が広がっている",
+                "tags": [
+                    "Security",
+                    "Software"
+                ]
+            },
+            {
+                "title": "InspectorのECR継続スキャンで最新のコンテナイメージの脆弱性のみを検知する方法",
+                "url": "https://zenn.dev/falcon_tech/articles/006cc7c4e9df9b",
+                "summary": "### InspectorのECR継続スキャンで最新のコンテナイメージの脆弱性のみを検知する方法\n- 🔍 最新のコンテナイメージで検知した脆弱性は、古いコンテナイメージでも検知される可能性が高い\n- 💥 全世代のコンテナイメージをスキャンすると、同じ脆弱性が重複して検知され、大量の脆弱性通知が発生する可能性がある\n- ⏰ Push/Pullからの経過日数設定では、最新のコンテナイメージがスキャン対象から除外される可能性がある\n- 🛡️ 抑止ルールを使用することで、最新のコンテナイメージ以外の脆弱性をSuppressed状態にできる\n- 🔄 「イメージタグはイミュータブルにする」に準拠すると、Push毎に抑止ルールの更新が必要になる\n- 🛠️ TerraformとLambdaを使用して、抑止ルールの自動更新を行う方法を紹介\n- 🔧 Lambda関数にIAMポリシーをアタッチし、Inspector2のフィルター更新権限を付与\n- 🔔 EventBridgeルールとSNSトピックを使用して脆弱性の検知を通知\n- ⚙️ EventBridgeルールで、ACTIVEステータスの脆弱性検知イベントのみをフィルタリング\n- 📝 SNSメッセージテンプレートで、検出結果の詳細情報を整形して送信",
+                "tags": [
+                    "Security",
+                    "Software"
+                ]
+            },
+            {
+                "title": "2024/12/30〜2025/01/05の最新情報",
+                "url": "https://uki00a.github.io/deno-weekly/articles/2025/01/05.html",
+                "summary": "### 2024/12/30〜2025/01/05の最新情報\n- 💻 DenoにGeometry Interfaces Module Level 1の実装を目的としたPRが作成\n- 🛠️ OpenTelemetryサポートのセットアップ手間を軽減するためのPRが進行中\n- 백업 deno_stdの今後の安定化に関する計画が公開\n- 📚 lint.deno.landからdocs.deno.comへのLintルールドキュメントの移行が実施\n- 📍 DenoのOpenTelemetryサポートに@deno/otelパッケージの使用が不要に\n- 🚀 deno_stdの@std/iniパッケージや@std/uuidのUUIDv7サポートの安定化が検討",
+                "tags": [
+                    "Software",
+                    "Web"
+                ]
+            },
+            {
+                "title": "Deep Seek v3をAPIで使ってみる",
+                "url": "https://zenn.dev/ryuke/articles/8ef68448229884",
+                "summary": "### Deep Seek v3をAPIで使ってみる\n- 🌟 Deep Seek v3は高性能な言語モデルとして注目を集めている\n- 🔑 APIキーはdeepseekにサインアップして取得する\n- 💻 Deep SeekのAPIはOpenAIのAPI仕様に準拠しているため、OpenAI SDKを使用可能\n- 💰 料金設定はgpt-4o-miniの2倍、gpt-4oに比べ1/10の料金\n- 주의 2025/2/8まで50~70%の割引が適用される\n- 📚 データの取り扱いについて注意が必要で、現時点では個人利用が推奨\n- 🛠️ APIではChat Prefix CompletionやFIM Completionがサポートされている",
+                "tags": [
+                    "AI",
+                    "Software",
+                    "Web"
+                ]
+            },
+            {
+                "title": "Cline の動作原理を追う",
+                "url": "https://zenn.dev/nassy/articles/4492b3e71d8e8e",
+                "summary": "### Cline の動作原理を追う\n- 🔍 Clineの動作原理を詳細に解説\n- ⚙️ Clineの内部構造と機能を説明\n- 💻 Clineはユーザーのワークスペースを確認しながら、各種ツールをユーザー承認ベースで順次呼び出すエージェント\n- 🔄 Clineは「human in the loop」方式で、自動化とヒューマンの判断を組み合わせる\n- 💰 v3.0.0 に焦点を当て、主要な機能とプロンプトの翻訳を説明\n- 🔧 処理の流れはインスタンス生成、履歴チェック、タスク開始、ループ、APIリクエスト、ユーザー入力処理、ツール実行、結果確認、タスク継続判断、終了の順\n- 💻 提供されるツールには、CLIコマンド実行、ファイル読み書き、ファイル差し替え、ファイル検索、ディレクトリリスト表示など\n- 🤖 Puppeteer を使用してブラウザを操作する（launch, click, type, scroll_down, scroll_up, close）\n- 🤔 ask_followup_question でユーザーに質問を行い、追加情報を得る（question）\n- ✅ attempt_completion でタスクの完了結果を提示（result, command）\n- 🔎 各ツールの結果はユーザーの応答として返り、その結果に基づいてタスクを進める",
+                "tags": [
+                    "AI",
+                    "Software"
+                ]
+            },
+            {
+                "title": "ColQwen2 でマルチモーダル検索をお試しください!",
+                "url": "https://dev.to/m_sea_bass/try-multimodal-search-with-colqwen2-4idj",
+                "summary": "### ColQwen2 でマルチモーダル検索をお試しください!\n- 🔍 ColQwen2はQwen2-VL-2BをベースにColBERTスタイルの多ベクター表現を生成し、高精度のテキストと画像検索を可能にする\n- 💻 Google ColabとA100 GPUを使用してColQwen2をテストする\n- 📦 必要なライブラリとしてcolpaliとpymupdfをインストールする\n- 📚 ColPali論文から画像データを抽出するためにpymupdfを使用する\n- 📄 PDFファイルをGoogle Colabにアップロードし、コードを実行\n- 🔧 DPIを350に設定（必要に応じて変更可能）\n- -ColQwen2 と ColQwen2Processor は from_pretrained メソッドでロード可能 undefined\n- 🖼️ 入力画像は glob で指定されたパスから読み込み、PIL.Image で開く\n- 📝 入力クエリは文字列のリストとして指定\n- 🔄 画像とクエリは processor で処理され、モデルに適した形式に変換\n- ⚙️ モデルはバッチサイズ 1 で画像を処理し、各画像の埋め込みを生成\n- 📈 最終的に、クエリと画像の関連性スコアが計算され、出力される\n- 📊 スコアはテンソル形式で表示され、具体的なテンソルの例が示されている\n- 💻 Pythonライブラリ（matplotlib, seaborn, pandas, numpy）を使用してデータ処理と可視化を行う\n- 🧩 scoresデータをDataFrameに変換し、画像ごとのスコアを計算\n- 📊 2つのバープロットを横に並べて表示し、各バープロットに異なるクエリのスコアを表示\n- 🔄 グラフのX軸のラベルを45度回転し、右寄せ表示\n- 🔄 グラフのレイアウトを最適化して表示\n- 🔍 PDFページ全体の検索は困難であり、図を個別の画像として抽出することで結果が改善される可能性\n- 📚 Query 1: ColPaliのアーキテクチャに関する最上位の結果はPage 5\n- 📚 Query 2: 以前の研究との違いに関する最上位の結果はPage 3\n- 🔗 PDFからテキスト、画像、テーブルを効果的に抽出するためのツールとしてpymupdf2llmの使用を提案\n- 🔗 ColQwen2の詳細はHugging Faceのリポジトリで確認できる",
+                "tags": [
+                    "AI",
+                    "Web",
+                    "Software"
+                ]
+            },
+            {
+                "title": "O1オープンソースへの道",
+                "url": "https://arxiv.org/abs/2412.14135",
+                "summary": "### O1オープンソースへの道\n- 💡 OpenAIのo1は多くの挑戦的なタスクで専門家レベルのパフォーマンスを達成\n- 🤖 o1の主な技術は強化学習に基づく\n- 📚 強化学習の4つの重要なコンポーネント：ポリシー初期化、報酬設計、探索、学習\n- 🔄 ポリシー初期化はモデルに人間のような推論行動を可能にし、複雑な問題の解決空間を効果的に探査\n- 📈 報酬設計は報酬整形や報酬モデリングにより、探索と学習のための密で効果的な信号を提供\n- 🔍 探索は訓練とテストフェーズで高品質な解決策を生成し、より多くの計算によってより良い解決策を生み出す\n- 📊 学習は探索によって生成されたデータを活用し、より多くのパラメータとより多くの探索データでパフォーマンスを向上",
+                "tags": [
+                    "AI",
+                    "Software"
+                ]
+            },
+            {
+                "title": "日本最大の通信会社NTTドコモがDDoS攻撃で混乱",
+                "url": "https://www.techradar.com/pro/security/japans-largest-telco-ntt-docomo-disrupted-by-ddos-attack",
+                "summary": "### 日本最大の通信会社NTTドコモがDDoS攻撃で混乱\n- 💥 NTTドコモが1月2日にDDoS攻撃を受け、12時間にわたりサービスが停止\n- 👥 9000万人以上のユーザーが影響を受け、ウェブサイトやニュースプラットフォーム、モバイル決済システムが利用不能に\n- 🔒 コア通信とモバイルサービスは影響を受けず、正常に動作\n- 🤔 攻撃の背後にはランサムウェアグループが関わっている可能性があると推測\n- 🚫 NTTドコモは攻撃者を特定していないが、2023年9月にも同社が攻撃を受けている\n- 🌍 通信業界全体がサイバー攻撃の標的となりやすく、米国の9大通信企業も標的となっている\n- 📈 2024年にDDoS攻撃が30%増加し、政治的な動機を持つ攻撃も増加\n- 💡 攻撃により、ユーザーの通信に影響が出た可能性がある\n- 🛡️ 具体的な被害の詳細や対応策についての情報は提供されていない",
+                "tags": [
+                    "Security",
+                    "Web",
+                    "Software"
+                ]
+            },
+            {
+                "title": "iTerm2 重大なセキュリティリリース",
+                "url": "https://iterm2.com/downloads/stable/iTerm2-3_5_11.changelog",
+                "summary": "### iTerm2 重大なセキュリティリリース\n- 🚨 Version 3.5.11で重大なセキュリティ修正が行われ、即時のアップデートが推奨される\n- 👩‍💻 影響を受けるバージョン: 3.5.6, 3.5.7, 3.5.8, 3.5.9, 3.5.10, 3.5.6以降のベータ版\n- 🔒 SSH統合機能のバグにより、リモートホストの/tmp/framer.txtに入出力が記録され、他のユーザーにも読み取れる可能性がある\n- 📅 問題が発生する条件: it2sshコマンドの使用、または設定でSSH統合が有効でPython 3.7以上がインストールされているリモートホスト\n- 🛠️ 対策: すぐにVersion 3.5.11にアップデートし、影響を受けたホストから/tmp/framer.txtを削除する\n- -Mail: 開発者からの連絡先: gnachman@gmail.com\n- 🔑 zipファイルのSHA-256ハッシュ: 655e32b4a9466104f1b0d8847e852515bc332bdf434801762e01b9625caa43e2",
+                "tags": [
+                    "Security",
+                    "Software"
+                ]
+            },
+            {
+                "title": "7-Zip のゼロデイ脆弱性は実は AI によるデマ",
+                "url": "https://www.techradar.com/pro/security/an-alleged-7-zip-zero-day-is-actually-an-ai-hoax",
+                "summary": "### 7-Zip のゼロデイ脆弱性は実は AI によるデマ\n- 🚨 Twitterユーザーが7-Zipのゼロデイ脆弱性を投稿\n- 👨‍💻 7-Zipの作成者Igor Pavlovが脆弱性を否定\n- 🤖 PavlovはAIが誤情報を生成したと主張\n- 🛠️ 偽の脆弱性コードはLZMAデコーダのRC_NORM関数を指摘していたが、実際は存在せず\n- 🔗 7-Zipはオープンソースで、誰でもPavlovの主張を確認可能\n- 🤔 Twitterユーザーの投稿は注目を集めようとする意図があると推測",
+                "tags": [
+                    "Security",
+                    "AI"
+                ]
+            },
+            {
+                "title": "Llamaを微調整し、コード生成の精度をSonnet 3.5の4.2倍に向上しました。",
+                "url": "https://finecodex.com/",
+                "summary": "### Llamaを微調整し、コード生成の精度をSonnet 3.5の4.2倍に向上しました\n- 💻 Fine-tuned Llama-3.3-70BはSonnet-3.5-latestより高い精度を示している\n- 🔍 テスト結果から、discourseリポジトリでのコード変更の正確性が4.2倍向上\n- 💸 高頻度の使用で9倍低いコストを実現、1Mトークンあたり$0.7\n- 🔒 モデルウェイトやプライベートAPIの提供により、データが外部に流出しない\n- 👥 チームは元OpenAI、Anthropic、Asanaの研究科学者とAIエンジニアで構成",
+                "tags": [
+                    "AI",
+                    "Software",
+                    "Security"
+                ]
+            },
+            {
+                "title": "企業幹部がAIフィッシング詐欺の標的にされるケースが増えている",
+                "url": "https://www.techradar.com/pro/security/corporate-executives-are-being-increasingly-targeted-by-ai-phishing-scams",
+                "summary": "### 企業幹部がAIフィッシング詐欺の標的にされるケースが増えている\n- 💼 eBayやBeazleyなどの大企業が高レベル従業員に対するパーソナライズされたフィッシング攻撃の増加を報告\n- 🤖 AIツールが大量のデータを処理し、個人や企業のトーンやスタイルを模倣可能に\n- 💰 90%の成功したサイバー攻撃がフィッシングメールから始まっている\n- 📊 2024年のデータ侵害の平均コストは10%増加し、490万ドルに\n- 🚨 AIの使用により、フィッシング攻撃がより洗練され、見分けにくくなっている\n- 💥 2024年第2四半期にフィッシング攻撃が28%増加\n- 🛡️ 企業は多層的なアプローチで従業員のトレーニングと技術的対策の導入を推奨",
+                "tags": [
+                    "AI",
+                    "Security"
+                ]
+            },
+            {
+                "title": "This Week in Rust 580",
+                "url": "https://this-week-in-rust.org/blog/2025/01/01/this-week-in-rust-580/",
+                "summary": "### This Week in Rust 580\n- 👨‍💻 Rustは信頼性と効率性を重視するプログラミング言語で、コミュニティの進捗を週刊で報告\n- 🔗 情報共有は@ThisWeekInRustにタグ付けまたはGitHubにプルリクエストを送る\n- 📖 This Week in RustはGitHubで開発され、アーカイブはthis-week-in-rust.orgで閲覧可能\n- 🎉 2024年Rust財団の年次報告書のプレビューが公開\n- 🚀 axum 0.8.0、Fish 4.0、Bottles NextのRust関連更新が発表\n- 📚 Crate of the Weekはfakeで、様々なタイプの偽データを生成するライブラリ兼コンソールユーティリティ\n- 🛠️ 331個のプルリクエストが先週マージされた\n- 🛠️ LoongArch OpenHarmonyターゲット向けにLSX機能を有効化\n- 🛠️ すべてのARMターゲットでfloat ABIを明示的に設定\n- 🛠️ datalog/borrowckのクリーンアップを実施\n- 🛠️ rustc_codegen_ssaのlink_rlibでファイルの書き込みをバッファリング\n- 🛠️ C文字列リテラルとformat_argsをHiddenUnicodeCodepointsLintに考慮\n- 🛠️ マルチラインスパンの削除を考慮した提案の改善\n- 🔧 Windowsファイルオープンのバグ修正\n- 🔄 Windowsでのシンボリックリンクのリネーム修正\n- 📄 UTF-8コンソールへの書き込みの改善\n- 🛠️ Cargoのパッケージ処理のバグ修正と改善\n- 📚 rustdocでのパス表示とunsafe binderのサポート\n- 🛡️ Clippyの各種Lintの修正と改善\n- 💻 Rust Analyzerのパフォーマンスと機能の改善\n- 🔨 LTOの改善によりC/C++プログラムのビルドが大幅に高速化\n- 👩‍💻 53件のアーティファクト比較が行われた\n- 📈 0件のリグレッション、1件の改善、1件のミックス結果\n- 🌐 詳細なレポートはGitHubのrustc-perfリポジトリで公開\n- 📝 新しいRFCとして、非構造体パターンマッチ、rustdocのLLMテキストバージョン追加、cfg_os_version_minが提出\n- 📅 2025年1月1日から1月29日までのRustイベントのスケジュールが掲載\n- 🌍 ヨーロッパと北アメリカの都市で開催されるRustイベントがリストアップ\n- 💻 Rustの技術的なテーマ（P2Pネットワーク、ブラウザエンジン、ゲーム開発）がいくつかのイベントで取り上げられる\n- 💼 個別の求人掲載は停止し、r/rustのWho's Hiringスレッドを参照\n- 💬 Quote of the Week: 「Rustはメモリ関連バグの脆弱性を予見していた」\n- 🗳️ Quote of the Weekの候補を提出・投票できる\n- 👩‍💻 This Week in Rustは複数の編集者によって編集されている\n- 📧 メールリストのホスティングはRust Foundationがスポンサー",
+                "tags": [
+                    "Software",
+                    "Web",
+                    "Security",
+                    "Recommend"
+                ]
+            },
+            {
+                "title": "Mercure: サーバー送信イベントの WebSocket 代替",
+                "url": "https://github.com/dunglas/mercure",
+                "summary": "### Mercure: サーバー送信イベントの WebSocket 代替\n- 🌐 Mercureは、WebブラウザやHTTPクライアントにデータ更新をプッシュするためのプロトコル\n- 🛠️ API経由で提供されるリソースの非同期・リアルタイム更新を効率的に配信\n- ⚡ 便利、高速、信頼性が高く、バッテリー効率が良い\n- 📱 リアクティブなWebアプリやモバイルアプリ用の更新に特に有用\n- 📚 ドキュメントやエコシステムが充実しており、各種リソースが提供されている\n- 💥 GitHubで開発が進められており、CIやコードカバレッジ、Go Report Cardなどが公開されている\n- 🔗 Mercureプロトコルはこのリポジトリで維持され、Internet-Draftとしても利用可能\n- ⚙️ Mercureハブ（サーバー）の参照実装がGoで提供され、AGPLライセンスで無料\n- 🐳 公式Dockerイメージが提供されている\n- 🌟 Mercure.rocksでは、管理された高スケーラビリティ版のMercureハブが利用可能",
+                "tags": [
+                    "Web",
+                    "Software"
+                ]
+            },
+            {
+                "title": "CodSpeedによる継続的ベンチーマーク",
+                "url": "https://zenn.dev/termoshtt/articles/codspeed-continuous-benchmarking",
+                "summary": "### CodSpeedによる継続的ベンチーマーク\n- 💻 CodSpeedは自動化された継続的ベンチマークサービスで、パフォーマンス変化を追跡可能\n- 📊 複数のベンチマーク結果を比較し、コード変更の影響を可視化\n- 🌱 Rust、Python、Node.jsのプロジェクトに対応\n- 🔓 Public OSSプロジェクトは無料、Privateリポジトリは有料\n-  brunches ブランチ毎のパフォーマンス変化を表示、コミット毎の改善を追跡\n- 🔍 個々のベンチマークに対するプロファイル結果も表示可能\n- 🛠️ Rustのcriterionと互換性があり、CodSpeedとの連携が容易\n- 🛠️ criterionの設定にはcodspeed-criterion-compatパッケージを使用\n- 💻 GitHub ActionsのSecretsにCODSPEED_TOKENを登録する必要がある\n- ⚙️ GitHub Actionsの設定ファイルcodspeed.ymlでベンチマークの実行を定義",
+                "tags": [
+                    "Software",
+                    "Web",
+                    "Security"
+                ]
+            },
+            {
+                "title": "ドコモもDDoS攻撃を受ける　gooやOCN、d払いなどに障害発生",
+                "url": "https://ascii.jp/elem/000/004/243/4243802/?rss",
+                "summary": "### ドコモもDDoS攻撃を受ける　gooやOCN、d払いなどに障害発生\n- 🚨 ドコモがDDoS攻撃を受け、サービスに障害が発生\n- 📱 影響を受けたサービス：goo、OCN、d払いなど\n- 🔒 具体的な被害の詳細や影響範囲は調査中\n- 🛡️ セキュリティ対策の重要性が再認識される\n- 💻 攻撃により、ユーザーの利用に支障が生じた\n- 📊 攻撃の詳細や影響範囲の調査が進行中\n- 📞 ユーザーからのサポートへの問い合わせが増加\n- ⏳ ドコモが対策を講じ、早期の復旧を目指している\n- ⚠️ 利用者はサービスの利用状況を確認し、必要に応じて代替手段を検討するべき",
+                "tags": [
+                    "Security",
+                    "Web",
+                    "Software"
+                ]
+            },
+            {
+                "title": "Ruby 3.4 のハイライト",
+                "url": "https://blog.sinjakli.co.uk/2025/01/01/ruby-3-4-highlights/",
+                "summary": "### Ruby 3.4 のハイライト\n- 🌟 Ruby 3.4 がリリースされ、新機能が多数追加された\n- 📝 デフォルトブロックパラメータ名 `it` が追加され、単一引数のブロックでパラメータ名を指定せずに `it` を使用可能\n- 💡 ブロック内で `it` を使用することでコードの簡潔さが向上\n- 🔍 新しいフィルタリング方法が導入され、配列の要素を選択する際に正規表現を使用可能\n- 🔗 Ruby 3.4 が RFC8305 (Happy Eyeballs Version 2) を実装し、TCPソケット接続のハンドリングが改善\n- 💻 RFC8305 は、DNSクエリから複数のIPアドレスが返される場合の接続処理を最適化するための規格\n- ⚙️ RFC8305 は、接続タイムの実測データに基づく合理的なデフォルト値を提供\n- 🛠️ 例外のバックトレースにメソッドの所有者（クラスやモジュール）が含まれるようになり、デバッグが容易に\n- 💻 エラーメッセージの改善によりコードの理解が速くなる",
+                "tags": [
+                    "Software"
+                ]
+            },
+            {
+                "title": "Remix v2 から React Router v7 への移行情報まとめ（2025年1月時点）",
+                "url": "https://zenn.dev/sho_yamane/articles/6d33f87c230e55",
+                "summary": "### Remix v2 から React Router v7 への移行情報まとめ（2025年1月時点）\n- 📅 React Router v7 は 2024 年 11 月 22 日にリリースされ、Remix v2 の機能を統合\n- 🔄 Remix v3 の機能が React Router v7 として提供され、フルスタックフレームワークへ進化\n- ⚙️ コンフィグベースルーティングとファイルベースルーティングの両方をサポート\n- 🛡️ ルートごとの型が自動生成され、useLoaderData や useActionData の型補完が改善\n- 🛠️ Future Flags の有効化、依存パッケージの更新、package.json の scripts 更新などの移行手順が提供\n- 💻 Vite プラグインの更新: @remix-run/dev から @react-router/dev/vite に変更\n- ⚙️ 型生成の設定変更: tsconfig.json の include と types に .react-router 関連の設定を追加\n- 📚 自動型生成: ルートパラメータ、loader や action の戻り値、クエリパラメータの型安全性が向上\n- 🔧 loader 関数の型定義改善: params.id の型が明確になり、戻り値の型が自動的に推論される\n- ✅ loader や action で複数の戻り値パターンを型安全に定義可能",
+                "tags": [
+                    "Web",
+                    "Software"
+                ]
+            },
+            {
+                "title": "Svelte の新機能: 2025 年 1 月",
+                "url": "https://svelte.dev/blog/whats-new-in-svelte-january-2025",
+                "summary": "### Svelte の新機能: 2025 年 1 月\n- 📅 2025年1月にSvelteの新機能が発表される\n- 🎉 Svelte Summit 2025: 5月8日-9日、Barcelonaで開催予定\n- 🛠️ 具体的な新機能の詳細は現在明らかにされていない\n- 💻 Svelteはフロントエンド開発に使用されるJavaScriptフレームワーク\n- 📜 Snippetsのエクスポート機能が追加（5.5.0）\n- InputBorder InputBorder input要素でdefaultValueとdefaultCheckedがサポート（5.6.0）\n- 🎨 class属性でオブジェクトや配列を使用可能（clsx）（5.16.0）\n- 🛠️ 新しい<svelte:boundary>要素がエラーキャプチャを実現（5.3.0）\n- 🔗 Svelteの公式ウェブサイトやコミュニティフォーラムで最新情報をチェックできる\n- 🔍 新機能の詳細は今後の開発者会議や公式ブログで公開される予定",
+                "tags": [
+                    "Web",
+                    "Software"
+                ]
+            },
+            {
+                "title": "ServBay 1.7.1 リリース: PHP 8.5-dev をサポート",
+                "url": "https://dev.to/servbay/servbay-171-released-now-supports-php-85-dev-1ok7",
+                "summary": "### ServBay 1.7.1 リリース: PHP 8.5-dev をサポート\n- 🎉 新年の挨拶とともに、ServBay 1.7.1 のリリースを発表\n- 🚀 PHP 8.5-dev がサポートされ、最新のPHP機能を体験可能に\n- 🔧 MySQL 9.1 と MariaDB 11.8 の新パッケージが追加\n- ⚡ サービス操作のパフォーマンスが向上し、複数サービスの操作効率が高まる\n- 🚨 サービス操作時のエラーメッセージ通知が改善され、トラブルシューティングが容易に\n- ⚙️ メニューバーにクイックサービス管理メニューが追加され、サービスの操作が容易に\n- 🐛 ウェブサイト削除やSSL証明書の問題など、多数のバグが修正\n- 🤝 技術サポートチームが質問や支援に応じる\n- 💻 Web開発を楽しく魅力的にするための取り組み\n- 📢 最新情報はX(Twitter)とFacebookでフォロー",
+                "tags": [
+                    "Web",
+                    "Software",
+                    "Security"
+                ]
+            },
+            {
+                "title": "Astro の新機能 - 2024 年 12 月",
+                "url": "https://astro.build/blog/whats-new-december-2024/",
+                "summary": "### Astro の新機能 - 2024 年 12 月\n- 🎉 Astroは2024年のState of JSで#2の使用率、#1のリテンション率、#1のポジティブさを獲得\n- 🤝 Astroの成長はコミュニティの支援、ドキュメント改善、翻訳、コード貢献などにより支えられている\n- 🌟 新しいAstroテーマがテーマディレクトリに追加され、利用可能\n- 📚 Starlightで作成された新しいドキュメントがコミュニティによって発見された\n- 🚀 2024年の締めくくりとして、Astroコミュニティへの感謝と2025年への期待が表明された\n- 🔗 Astro関連のウェブサイト、プロジェクト、アプリ、ツール、ブログ投稿、デモ、動画をDiscordの#showcaseチャンネルで共有するよう呼びかけられている",
+                "tags": [
+                    "Web",
+                    "Software",
+                    "Recommend"
+                ]
+            },
+            {
+                "title": "米財務省、BeyondTrustの鍵漏洩の爆発範囲を公表",
+                "url": "https://go.theregister.com/feed/www.theregister.com/2024/12/31/us_treasury_department_hacked/",
+                "summary": "### 米財務省、BeyondTrustの鍵漏洩の爆発範囲を公表\n- 🚨 米財務省が12月8日にBeyondTrustから通知を受け、リモート技術支援用の鍵が盗まれたことを公表\n- 🔒 盗まれた鍵により、脅威アクターが財務省のいくつかの作業ステーションと非機密ファイルにアクセス可能だった\n- 👥 CISA、FBI、外部のフォレンジック調査員が財務省と協力して事件の理解に努めている\n- -CN 事件は中国国家支援のAPTアクターによるものと特定されている\n- 🛠️ BeyondTrustは盗まれた鍵を無効化し、クラウドインスタンスのセキュリティを強化した\n- 📄 財務省は30日以内に詳細なレポートを提出する予定で、APTによる侵入は重大なサイバーセキュリティ事件として扱われる",
+                "tags": [
+                    "Security"
+                ]
+            },
+            {
+                "title": "Astro ゆく年くる年 2024-2025",
+                "url": "https://zenn.dev/morinokami/articles/astro-2024-2025",
+                "summary": "### Astro ゆく年くる年 2024-2025\n- 🌟 Astroは静的ページに動的要素を追加できるウェブフレームワーク\n- 🛠️ SSR、Middleware、Endpointsなど、サーバーサイド機能も強化\n- 📊 2024年は169回のリリース、昨年とほぼ同じペース\n- 🔄 2023年はメジャーバージョン1から4へ、2024年は4から5へと変化のペースが緩やかに\n- 🌟 2024年初頭のGitHubスター数は37,000程度、年末には48,000程度に増加\n- 📦 2024年初頭の週間ダウンロード数は185,902、12月15日には364,201に増加\n- 📈 State of JavaScript 2024でメタフレームワーク部門のInterest、Retention、Positivityで1位\n- 📚 v5.0でContent Layer APIが導入され、コンテンツ定義が拡張\n- 🚀 5.0.0の正式リリースが2024年12月3日に公開された\n- 🔍 4.16.x系のメンテナンスリリースが2024年12月18日から2024年10月10日にかけて複数公開された",
+                "tags": [
+                    "Web",
+                    "Software"
+                ]
+            },
+            {
+                "title": "DeepSeekのCEOとの興味深いインタビュー",
+                "url": "https://www.chinatalk.media/p/deepseek-ceo-interview-with-chinas",
+                "summary": "### DeepSeekのCEOとの興味深いインタビュー\n- 💡 DeepSeekは中国のAIスタートアップで、最新のR1モデルがOpenAIのo1を複数の推論ベンチマークで上回った\n- 💰 CEOの梁文峰は、High-Flyer（幻方）という4大中国量的ヘッジファンドを経営し、DeepSeekはHigh-Flyerの資金で完全に運営されている\n- 🌐 DeepSeekは基盤技術の開発に焦点を当て、商用アプリケーションではなく、すべてのモデルのオープンソース化を約束している\n- 🔥 DeepSeekは中国のAIモデル価格戦争の火付け役となり、非常に安価なAPIレートを設定している\n- 💻 DeepSeekは高性能な計算リソースにアクセスでき、50,000 Hopper GPU以上を保有していると推測される\n- 🔍 DeepSeekはAGIの謎を解き明かすことを目指し、研究戦略に集中している\n- ✨ DeepSeekはモデルアーキテクチャの革新（MLA、DeepSeekMoE）により、推論コストを大幅に削減し、価格競争を引き起こした\n- 🌟 DeepSeekは「東方の神秘的な力」と呼ばれ、そのV2論文は業界で高い評価を受けている\n- 🔄 中国の大規模モデル企業は、アメリカが0-1の技術革新、中国が1-10の応用革新に優れているというbeliefから、アーキテクチャの革新を避けていた\n- 🤝 DeepSeekは研究と技術にのみ焦点を当て、ToCアプリケーションや商業化を避けてオープンソースルートを選び、独自の道を進んでいる",
+                "tags": [
+                    "AI",
+                    "Software",
+                    "Security",
+                    "Recommend"
+                ]
+            },
+            {
+                "title": "2024年に最も深刻なデータ侵害5件",
+                "url": "https://www.tomsguide.com/computing/online-security/these-are-the-five-worst-data-breaches-of-2024",
+                "summary": "### 2024年に最も深刻なデータ侵害5件\n- 🔒 2024年のデータ侵害は多発し、多くの人々が影響を受けている\n- 📊 トップ5のデータ侵害はすべて数千万人から数億人以上の影響を受けている\n- 💻 最大のデータ漏洩「The Mother of all Data Breaches」では260億件の記録が漏洩\n- 🔓 26億件の記録が暴露され、12テラバイトの情報が流出\n- 🌐 MySpace、Twitter、LinkedIn、Adobe、Canva、MyFitnessPal、政府機関のデータが含まれる\n- 🚨 漏洩データはID盗難、フィッシング攻撃、不正アクセスに利用可能\n- 📄 National Public Dataの個人情報が30年分、3億人のデータが暗号化フォーラムで売却される\n- 🔍 National Public Dataはウェブサイトからデータをスクレイピングして収集\n- 🔒 Ticketmasterが560百万ユーザーの顧客データを侵害\n- 💰 ShinyHuntersが1.3テラバイトのデータを500,000ドルで売却\n- 📑 侵害されたデータには個人情報と部分的な支払い情報が含まれる\n- 💔 2024年4月、AT&Tの109百万のモバイル加入者がデータ侵害に afectされた\n- 📞 侵害はCricket、Boost Mobile、Consumer Cellularの顧客にも及んだ\n- 📊 盗まれたデータには電話番号、通話・テキスト数、通話時間、基地局IDが含まれた\n- 🔒 侵害はSnowflakeクラウドプラットフォームの盗まれた認証情報により発生した\n- 🛠️ Snowflakeはその後、全ての顧客に対して多要素認証を必須化した\n- 💻 myAT&Tアカウントで侵害の影響を確認できる\n- 🚨 UnitedHealthのランサムウェア攻撃により1億人以上が影響を受け、米国最大の医療データ侵害\n- 🔒 ALPHV（BlackCat）グループがChange Healthcareを攻撃し、データ窃盗が発生\n- 👩‍💻 窃盗されたログイン情報により、リモートアクセスサービスが侵害されたことが原因\n- 📊 侵害されたデータには、請求、診断、検査結果、医療記録番号、保険情報、社会保障番号、運転免許証番号が含まれる\n- 🛠️ Citrixプロファイルにはマルチファクタ認証が設定されていなかったが、その後導入された\n- 🛡️ データ侵害対策として、信頼性のあるアンチウイルスソフトウェアとVPNの使用が重要\n- 🔎 個人情報保護のために、アイデンティティ・セキュリティ保護プログラムの利用を推奨\n-  tphish  フィッシング対策と多要素認証の使用が推奨される",
+                "tags": [
+                    "Security"
+                ]
+            },
+            {
+                "title": "米陸軍兵士がAT&T、Verizonの恐喝で逮捕される",
+                "url": "https://krebsonsecurity.com/2024/12/u-s-army-soldier-arrested-in-att-verizon-extortions/",
+                "summary": "### 米陸軍兵士がAT&T、Verizonの恐喝で逮捕される\n- 👮‍♂️ 20歳の米陸軍兵士Cameron John WageniusがAT&TとVerizonの幹部を恐喝した容疑で逮捕\n- 🚫 Wageniusは企業幹部から金品を要求したとされる\n- 💻 Wageniusは通信専門家で、最近まで韓国に駐屯していた\n- 🕵️ WageniusはKiberphant0mというハンドルネームで活動し、少なくとも15の通信会社からデータを盗んだと主張\n- 🔗 WageniusはAT&TとVerizonの電話記録を売却・漏洩していた\n- 👥 Unit 221BのAllison NixonがKiberphant0mの特定に貢献し、脅迫や暴力の標的となった\n- 💥 Kiberphant0mはMouckaの逮捕後、BreachForumsで大統領選挙候補の電話記録を脅迫で公開したと主張\n- 🔒 11月9日にVerizon PTT顧客を対象としたSIMスワッピングサービスを提供\n- ⚖️ Wageniusの逮捕は、米国のサイバー犯罪捜査の迅速化を示している\n- 🚫 Nixonは、サイバー犯罪に携わる若者に対して、法律家に相談すべきだと警告",
+                "tags": [
+                    "Security",
+                    "Other"
+                ]
+            },
+            {
+                "title": "ルータのデフォルト資格情報を悪用してサイバー攻撃、1.5万台にリスク",
+                "url": "https://news.mynavi.jp/techplus/article/20241231-3096862/",
+                "summary": "### ルータのデフォルト資格情報を悪用してサイバー攻撃、1.5万台にリスク\n- 🚨 Four-Faith製産業用ルーターの脆弱性「CVE-2024-12856」が悪用されている\n- 🔒 脆弱性は認証後にリモートコマンドインジェクションを可能にするもの\n- 🌐 攻撃者はデフォルトの認証情報を悪用して不正侵入を行う可能性がある\n- 💥 1.5万台のルータが攻撃のリスクにさらされている\n- 💻 ユーザーはルータの設定を確認し、デフォルト資格情報を変更する必要がある\n- 📚 詳細情報はVulnCheckのブログで公開されている\n- 🎯 北朝鮮の脅威アクターがサイバー攻撃を行っており、国内でも注意が必要\n- 🔗 関連リンクとしてVulnCheckが提供されている\n- htag 関連キーワードとして「脆弱性」「サイバー攻撃」「サイバーセキュリティ」が挙げられている",
+                "tags": [
+                    "Security"
+                ]
+            },
+            {
+                "title": "LineageOS 22 リリース",
+                "url": "https://lineageos.org/Changelog-29/",
+                "summary": "### LineageOS 22 リリース\n- 🚀 LineageOS 22が正式リリースされ、Android 15 QPR1ベースの新バージョンが提供\n- 📱 スマートフォン、タブレット、TVボックスなど、多様なデバイスで利用可能\n- 🛠️ 多数のデバイスが初日からサポートされ、新規デバイスの追加が可能\n- 🎉 LineageOS 22.1がリリースされ、セキュリティと機能が強化\n- ♫ 新しい音楽アプリTwelveとPDFビューアCamelotが導入\n- 🎨 Material Youデザインによる現代的なユーザーインターフェースを導入\n- 🔒 LineageOS 19.1から22.1まで、2024年のセキュリティパッチが統合\n- 💻 SoC向け共通カーネルの導入により、最新のセキュリティパッチや機能を定期的に適用可能\n- ⚙️ 非公式ビルドからインストールする場合、デバイスのインストールガイドに従う必要がある\n- 📚 LineageOS Wikiが拡張され、デバイスのフィルタリングやページネーションされたインストール手順などの機能が追加",
+                "tags": [
+                    "Software",
+                    "Security"
+                ]
+            },
+            {
+                "title": "中国政府系ハッカーが米財務省に侵入",
+                "url": "https://www.darkreading.com/cyberattacks-data-breaches/chinese-state-hackers-breach-us-treasury-department",
+                "summary": "### 中国政府系ハッカーが米財務省に侵入\n- gov 中国政府系ハッカーが米財務省に侵入\n- 🔒 ハッカーはセキュリティベンダーBeyondTrustを通じてリモートアクセスキーを盗み、システムに侵入\n- 🚨 この侵害は「重大なサイバーセキュリティインシデント」として扱われている\n- 💻 侵入により機密情報へのアクセスが可能になったとされる\n- 🚫 攻撃の規模と影響はまだ完全に明らかになっていない\n- 👨‍💻 財務省、CISA、FBIが共同で調査を進めている\n- 🌐 この事件は中国による大規模なサイバーアタックの一環と見られている\n- 🔄 BeyondTrustは影響を受けた顧客に通知し、対処策を提供中\n- 🤔 秘匿情報や暗号鍵の漏洩の可能性が不明\n- 📊 APIアクセス管理の脆弱性や開発者のエンドポイントが侵入の原因となる可能性",
+                "tags": [
+                    "Security"
+                ]
+            },
+            {
+                "title": "JAL、三菱UFJ銀も被害　年末にサイバー攻撃相次ぐ　“敷居の低さ”背景か",
+                "url": "https://ascii.jp/limit/group/ida/elem/000/004/243/4243762/?rss",
+                "summary": "### JAL、三菱UFJ銀も被害　年末にサイバー攻撃相次ぐ　“敷居の低さ”背景か\n- 🚨 2024年12月26日に日本航空と三菱UFJ銀行がサイバー攻撃を受け、大規模なシステム障害が発生\n- ✈️ 日本航空では乗客の荷物預かりシステムに障害が起き、国内線と国際線に遅れや欠航が出た\n- 🏦 三菱UFJ銀行ではネットバンキングなどにアクセスできない障害が起きた\n- 🔍 攻撃は大量のデータを送りつけるDoS（Denial of Service）やDDoS（Distributed Denial of Service）攻撃とみられる\n- 📈 近年、日本企業や政府機関へのサイバー攻撃が増加している\n- 🛠️ サイバー攻撃の対象は金融機関、航空会社、鉄道会社などのインフラ企業が多い\n- 💻 ブーター（またはストレッサー）がサイバー攻撃の敷居を下げ、手軽にDDoS攻撃を実行できる状況が広がっている",
+                "tags": [
+                    "Security"
+                ]
+            },
+            {
+                "title": "フォルクスワーゲンの大規模データ漏洩により、EVドライバー46万人の位置情報が公開された",
+                "url": "https://www.engadget.com/transportation/evs/huge-volkswagen-data-leak-exposed-the-locations-of-460000-ev-drivers-194000006.html?src=rss",
+                "summary": "### フォルクスワーゲンの大規模データ漏洩により、EVドライバー46万人の位置情報が公開された\n- 🚨 Cariadが800,000人のEVオーナーの個人情報が漏洩\n- 📍 460,000台のVW、Seat、Audi車の位置情報が漏洩\n- 🔒 漏洩データはAmazonクラウドストレージからアクセス可能\n- ✅ Cariadは漏洩を修正し、情報はもはやアクセス不可能\n- 👨‍💻 Chaos Computer Clubが漏洩を発見し、Cariadに報告\n- 🕵️ 漏洩データは匿名化され、特定の顧客を特定することは困難\n- 📊 パスワードや支払い情報は漏洩していない",
+                "tags": [
+                    "Security",
+                    "Web"
+                ]
+            },
+            {
+                "title": "AT&TとVerizonは、新たな被害者が特定されたことで、ついにSalt Typhoonハッキングから解放されたと発表",
+                "url": "https://www.techradar.com/pro/security/at-and-t-and-verizon-say-theyre-free-of-salt-typhoon-hacks-at-last-as-further-victims-identified",
+                "summary": "### AT&TとVerizonは、新たな被害者が特定されたことで、ついにSalt Typhoonハッキングから解放されたと発表\n- 🚨 9人目の被害者が特定された\n- 🔒 AT&TとVerizonなど大手通信企業が被害を受けた\n- 💻 100,000以上のルーターが侵害され、攻撃者は地理位置情報や通話記録にアクセス\n- 👨‍💻 攻撃者はワシントンDC周辺のデバイスを特定し、政府関連の標的を監視\n- 🛡️ ホワイトハウスはサイバー攻撃への積極的対応を表明\n- 🔍 調査が継続中だが、侵入の全容は完全に把握できない可能性\n- 🙏 中国への対応を強化し、インフラの安全性を高める必要性が指摘",
+                "tags": [
+                    "Security"
+                ]
+            },
+            {
+                "title": "Nvidia は、企業が AI 用 GPU を管理するのを支援するために 7 億ドルで買収したソフトウェア Run:ai をオープンソース化します。",
+                "url": "https://venturebeat.com/ai/nvidia-acquires-software-maker-runai-to-orchestrate-gpu-clouds-for-ai/",
+                "summary": "### Nvidia は、企業が AI 用 GPU を管理するのを支援するために 7 億ドルで買収したソフトウェア Run:ai をオープンソース化します\n- 💰 Nvidia が 7 億ドルで Run:ai を買収\n- 💻 Run:ai は AI 用 GPU の管理を支援するソフトウェア\n- 💡 Nvidia が Run:ai をオープンソース化する計画\n- 📅 発表日は 2024 年 12 月 30 日\n- 🌟 Run:ai の技術が企業の AI リソース管理に貢献\n- 🌐 Run:ai のオープンソース化により、AI 生態系全体への利用が可能に\n- 🛠️ Run:ai の創業者は、AI 団体に自由度と選択肢を提供し、AI インフラストラクチャの効率化を支援すると述べた\n- 🚀 Nvidia は、AI ソフトウェアの開発と GPU オーケストレーションの効率化に焦点を当てている\n- 💼 Run:ai は企業の AI 開発を効率化する",
+                "tags": [
+                    "AI",
+                    "Software"
+                ]
+            },
+            {
+                "title": "Zig が Rust よりも安全で高速な場合",
+                "url": "https://zackoverflow.dev/writing/unsafe-rust-vs-zig/",
+                "summary": "### Zig が Rust よりも安全で高速な場合\n- 💻 ZigとRustの比較が主題\n- 🛡️ ZigがRustよりも安全であるケースが存在\n- 🚀 ZigがRustよりも高速である可能性\n- 🛠️ Roc言語の開発者がRustからZigに標準ライブラリを書き換え、Zigの方が優れていると報告\n- 🔒 Zigはメモリリークの報告など、メモリ安全環境での作業に役立つツールが多い\n- 💻 著者がunsafe RustとZigでbytecodeインタプリターを実装し、Zigの方が安全で高速かつ書きやすいと結論\n- 🔍 Rustの借用ルールによるエイリアシング問題が最も難しい課題の一つ\n- 🛠️ RustのunsafeコードはCよりも難しく、多くの未定義動作のルールがあるためバグを引き起こしやすい\n- 🚫 Zigではデフォルトでnullポインタが禁止され、メモリ安全性が向上\n- 💪 ZigのポインタはRustのリファレンスと同じようにドット演算子で解釈可能",
+                "tags": [
+                    "Software",
+                    "Security"
+                ]
+            },
+            {
+                "title": "Google、画期的な成果を収めた量子コンピューティングチップ「Willow」を発表",
+                "url": "https://dev.to/empiree/google-reveals-quantum-computing-chip-willow-with-breakthrough-achievements-4geh",
+                "summary": "### Google、画期的な成果を収めた量子コンピューティングチップ「Willow」を発表\n- 🚫 指定のWebページは存在しません\n- 🏠 ホームページへのリンクが提供されています",
+                "tags": [
+                    "Other"
+                ]
+            },
+            {
+                "title": "D-Link製ルータが侵害される、日本に相当数の被害を受けた機器 - 確認を",
+                "url": "https://news.mynavi.jp/techplus/article/20241230-3097308/",
+                "summary": "### D-Link製ルータが侵害される、日本に相当数の被害を受けた機器 - 確認を\n- ⚠️ Fortinetが12月26日、D-Link製ルータが複数の脆弱性を悪用されて侵害されたと報告\n- 🔒 攻撃者はD-Link製ルータの脆弱性を悪用し、ボットネットを構築\n- 🌍 日本に相当数の被害を受けた機器があると報告\n- 🤖 侵害されたデバイスからは「FICORA」または「CAPSAICIN」が発見されている\n- 💻 ユーザーはルータのファームウェア更新や設定確認が必要\n- 🔍 詳細な技術的な調査が行われ、追加の情報が提供される予定\n- ⏰ 早期の対策が重要であり、セキュリティの定期的な確認が推奨される\n- 🔗 Fortinetのサイトが関連リンクとして紹介\n-  ALERT 掲載時点の情報であり、最新のものとは異なる場合がある",
+                "tags": [
+                    "Security"
+                ]
+            },
+            {
+                "title": "🚀 TypeScript 5.0 の最新機能の探索: 新しい改善点の詳細",
+                "url": "https://dev.to/info_generalhazedawn_a3d/exploring-the-latest-features-of-typescript-50-a-deep-dive-into-new-improvements-3ck9",
+                "summary": "### 🚀 TypeScript 5.0 の最新機能の探索: 新しい改善点の詳細\n- 🌟 TypeScript 5.0 は新しい機能と改善点を提供し、生産性と開発者体験を向上\n- 🎉 Decorators が標準化され、クラスやメソッドの振る舞いを変更できる\n- ⚡ Enum のパフォーマンスが最適化され、実行時のパフォーマンスとバンドルサイズが改善\n- 🛠️ Old Compilation と New Compilation の比較で、Enum の最適化が明確に示されている\n- ✍️ satisfies 演算子により、オブジェクトが特定の型に適合するか確認可能\n- 📜 JSDoc コメントで readonly と optional 修飾子を使用可能\n- 🔒 satisfies 演算子は型適合を保証しつつ、余分なプロパティを除去しない\n- 📚 TypeScript 5.0 は、大規模なエンタープライズアプリケーションから小さなサイドプロジェクトまで、開発者にとってますます欠かせないツールとなる\n- 💻 TypeScript 5.0 のアップグレードは、パフォーマンスと開発者体験の両方を向上させる",
+                "tags": [
+                    "Web",
+                    "Software"
+                ]
+            },
+            {
+                "title": "開発に革命を起こすトップオープンソースコーディングLLM",
+                "url": "https://dev.to/roobia/top-open-source-coding-llms-revolutionizing-development-3g7a",
+                "summary": "### 開発に革命を起こすトップオープンソースコーディングLLM\n- 💻 オープンソースのコーディングLLMが開発プロセスを革新\n- 🤖 LLMはコード生成、デバッグ、ドキュメンテーションなどを自動化\n- 🌟 トップのオープンソースLLMが開発者の生産性と効率を向上\n- 🤝 開発者とAIの協働が新しいコーディング手法を生み出す\n- 📖 オープンソースコミュニティがLLMの進化と改善に貢献\n- 🔥 Mistral 7BとMixtral 8X7Bが最適化と性能に優れたモデルとして注目\n- ⚡ Mistral 7Bは7.3Bのパラメータを持ち、Llama 2 13Bを上回る多くのベンチマークで優れた性能を示す\n- 🔍 Mistral 7BはSliding Window Attention (SWA)とGrouped Query Attention (GQA)を採用し、効率的な長文処理と高速推論を実現\n- 💥 Mistral 8X7B: 46.7BパラメータのSMoEモデル、実質12.9Bパラメータ使用\n- 🏆 Mistral 8X7B: Llama 2 70Bと同等以上のベンチマーク性能",
+                "tags": [
+                    "AI",
+                    "Software"
+                ]
+            },
+            {
+                "title": "KAG – ナレッジグラフ RAG フレームワーク",
+                "url": "https://github.com/OpenSPG/KAG",
+                "summary": "### KAG – ナレッジグラフ RAG フレームワーク\n- 📚 KAGはKnowledge Augmented Generationの略称で、ナレッジグラフと生成モデルを組み合わせた技術\n- 🤖 KAGは情報を効果的に利用し、生成品質を向上させる\n- 🔗 KAGは特定の知識を生成プロセスに組み込み、データ駆動型の生成モデルを強化\n- 🤔 KAGは垂直ドメインの知識ベースに論理的推論とQ&Aソリューションを提供\n- 🔍 KAGは従来のRAGベクトル類似度計算の曖昧さとOpenIEによるノイズ問題を克服\n- 🔄 KAGはDIKW階層を参考にSPGをアップグレードし、LLMに親和性のあるバージョンを提供\n- 💻 KAGはオープンソースでフロントエンドを提供し、macOS 12.6以降、Linux CentOS 7 / Ubuntu 20.4以降、Windows 10 LTSC 2021以降の環境が必要\n- 🛠️ KAGはスキーマ制約のある知識構築でドメイン専門家の知識表現と構築をサポート\n- ⚙️ KAGのインストールにはエンジンと依存イメージのインストールが必要で、クイックスタートガイドが用意されている\n- 🌟 KAGは2024年に公開され、最初のリリースは2024年10月25日、Wordドキュメントのアップロードやユーザ体験の最適化が2024年11月21日に追加",
+                "tags": [
+                    "AI",
+                    "Software"
+                ]
+            },
+            {
+                "title": "Apache、攻撃者が悪用できるトラフィック制御のバグを修正",
+                "url": "https://www.scworld.com/news/apache-fixes-traffic-control-bug-that-attackers-could-exploit",
+                "summary": "### Apache、攻撃者が悪用できるトラフィック制御のバグを修正\n- 🚨 Apache Traffic Controlのバージョン8.0.0と8.0.1で9.9の重大脆弱性（CVE-2024-45387）が発見され、2023年12月23日にパッチがリリースされた\n- 🔒 脆弱性により、攻撃者は特別なPUTリクエストを用いて悪意のあるSQLコマンドを注入可能\n- 💻 攻撃者はデータベースに直接SQLクエリを実行し、データベースの完全性と可用性に深刻な影響を及ぼす可能性がある\n- 🌟 セキュリティ専門家は、この脆弱性がCDNサービスに深刻な影響を与える可能性があると警告し、即時更新を推奨\n- 🔒 攻撃者はユーザーの資格情報を侵害した後にのみ、脆弱性を悪用できる\n- 🌐 Apache Traffic Controlは、ウェブコンテンツの配信を制御・最適化するオープンソースプラットフォーム\n- 🛡️ バグの修正により、ネットワークセキュリティが強化された\n- 🔍 脆弱性の詳細と影響範囲は明示されていない\n- 📚 関連記事で他のサイバーセキュリティの課題も紹介されている",
+                "tags": [
+                    "Security",
+                    "Web",
+                    "Software"
+                ]
+            },
+            {
+                "title": "TypeScriptで実践するドメイン駆動設計（DDD）",
+                "url": "https://zenn.dev/masakifukunishi/articles/0823a25f9a4713",
+                "summary": "### TypeScriptで実践するドメイン駆動設計（DDD）\n- 📚 ドメイン駆動設計の理論をTypeScriptのコードベースで理解する目的\n- 💡 既存のシステム理解だけでなく、新規設計の知識を整理する\n- 👨‍💻 ドメイン駆動設計は、システムが対象とする業務領域を深く理解し、プログラムに反映する手法\n- 🔒 値オブジェクトはドメインの意図を明確に表現し、不変性により安全性を担保\n- 🔄 値オブジェクトはロジックをまとめ、予期せぬ副作用を防ぎ、キャッシュが容易\n- ✅ 値オブジェクトは等価性によって比較される\n- 🔥 値オブジェクト `FullName` を定義し、比較メソッド `equals` を提供\n- 🔧 値オブジェクトの比較メソッドを修正することで、属性の追加に伴う変更が容易に\n- 💻 TypeScriptを使ってドメイン駆動設計（DDD）を実践するサンプルコードを紹介\n- 🌟 エンティティ `User` の例を示し、状態変更メソッド `changeName` を提供\n- 👀 ドメインサービスは、複数のエンティティ/値オブジェクト間の協調動作やステートレスな操作、ドメインのビジネスルールを表現するために使用される\n- 🔧 ドメインサービスは、特定のエンティティや値オブジェクトに属さない振る舞いを定義するために使用される\n- 🚫 ユーザーエンティティに重複チェックロジックを入れるのは推奨されない\n- ✅ 重複チェックロジックはドメインサービスとして実装するのが適切\n- 📚 UserDomainServiceはリポジトリを依存注入してメールアドレスの重複チェックを行う\n- 🛠️ UserApplicationServiceはドメインサービスとリポジトリを組み合わせてユーザー登録機能を実装\n- 🛡️ リポジトリはエンティティの永続化と検索のためのインターフェースを提供\n- 🔄 リポジトリパターンは永続化技術の変更に対応しやすくする\n- 🛠️ リポジトリパターンはテストと本番環境での柔軟な切り替えを可能にする\n- 💻 UserRepositoryインターフェースがsaveとdeleteメソッドを定義\n- 📊 InMemoryUserRepositoryがインメモリ実装でUserRepositoryを実装\n- 💾 MySQLUserRepositoryがMySQLデータベース用にUserRepositoryを実装\n- 🔍 registerメソッドでメールアドレスの重複チェックを実施\n- ➕ ユーザー登録時に新しいUserオブジェクトを作成し、リポジトリに保存\n- ⚙️ アプリケーションサービスはシステムの機能を実現する調整役として機能\n- 🔄 アプリケーションサービスはドメインオブジェクトの調整（エンティティ、値オブジェクト、ドメインサービスの連携）\n- 💾 アプリケーションサービスはリポジトリを使用したデータの永続化\n- 🔄 アプリケーションサービスはトランザクション管理\n- 📝 アプリケーションサービスはドメインロジックを含まない（エンティティやドメインサービスの責務）\n- ✨ アプリケーションサービスはシンプルな処理フローに保つ\n- 💻 アプリケーションサービスは技術的な実装の詳細（データベースやフレームワーク）に依存しない\n- 💻 UserApplicationServiceクラスはユーザー登録のユースケースを実装\n- 🔍 ドメインサービスを使用し、メールアドレスの重複チェックを行う\n- 💾 ユーザーエンティティの生成と永続化を実装\n- 🔧 ファクトリパターンは複雑なオブジェクト生成ロジックをカプセル化\n- 🔄 ファクトリを使用する状況には複雑なロジックやビジネスルールの検証が必要な場合\n- 🔗 ファクトリは複数のオブジェクトを協調して生成する必要がある場合にも使用\n-  унифицировать ファクトリはオブジェクトの生成方法を統一するための手段\n- 📧 EmailAddressクラスはメールアドレスの値オブジェクトとして定義され、形式の検証を行う\n- 👤 Userクラスはユーザーエンティティとして定義され、ID、連番、メールアドレスを保持する\n- 🛠️ UserFactoryクラスはユーザーの生成を担い、メールアドレスの検証、連番の取得、ユーザーIDの生成を行う\n- 🔄 UserFactoryは UserRepository から最後に作成されたユーザーの連番を取得し、次の連番を決定する\n- 🔍 UserRepositoryインタフェースはユーザーの保存、最後に作成されたユーザーの取得、メールアドレスによる検索を提供する\n- 📚 レイヤードアーキテクチャは、ソフトウェアを関心事ごとに層に分割する設計手法\n- 🔗 DDDとレイヤードアーキテクチャは、ビジネスロジックの明確な分離とドメインモデルの焦点化を実現\n- 🖥️ プレゼンテーション層はシステムの外部とのインタラクション、リクエストの受付、レスポンスの整形、入力値のバリデーション、アプリケーション層のサービス呼び出しを担当\n- ⚙️ アプリケーション層はユースケースの実現、ドメインオブジェクトの調整、トランザクション管理、セキュリティ制御、ドメインオブジェクトの生成・保存制御を担当\n- 🔥 ドメイン層はビジネスロジックの中核、エンティティ・値オブジェクト・ドメインサービスの配置、ビジネスルール・ドメインロジックの実装、技術実装の独立性、他の層への依存性の排除を担当\n- 💾 インフラストラクチャ層はデータベースアクセス、外部API通信、ファイルI/Oの実装、リポジトリの具体的実装を担当\n- ➡️ 層間の依存関係は上位層から下位層への一方向、依存性逆転の原則によりドメイン層のインターフェースをインフラストラクチャ層が実装、各層は直接の下位層のみに依存\n- 💻 プロジェクトはCRUD操作が中心で、ドメインルールやビジネスロジックはシンプル\n- 📚 目的はドメイン駆動設計の基本概念とパターンを整理すること\n- 🔗 サンプルプロジェクトのリポジトリが存在\n- 🔧 機能要件はユーザー管理（登録・取得・削除）と記事管理（投稿・取得・削除）\n- 📁 ディレクトリ構成はインターフェース層、アプリケーション層、ドメイン層、インフラ層に分かれている\n- 🛠️ 技術スタックにはDocker, TypeScript, Node.js, Express, Prisma, SQLite, Vitest, ESLint, Prettier, GitHub Actionsが使用\n- 📖 参考文献としてドメイン駆動設計の入門書や関連記事が挙げられている",
+                "tags": [
+                    "Software",
+                    "Web"
+                ]
+            },
+            {
+                "title": "ハッカーは最近の攻撃でいくつかのChrome拡張機能に悪意のあるコードを挿入した",
+                "url": "https://www.engadget.com/cybersecurity/hackers-injected-malicious-code-into-several-chrome-extensions-in-recent-attack-220648155.html?src=rss",
+                "summary": "### ハッカーは最近の攻撃でいくつかのChrome拡張機能に悪意のあるコードを挿入した\n- 🚨 ハッカーがフィッシング攻撃で管理アカウントにアクセスし、複数のChrome拡張機能に悪意のあるコードを挿入\n- 🔒 CyberhavenのChrome拡張機能が12月24日に侵害され、特定のソーシャルメディア広告とAIプラットフォームへのログインを標的にした攻撃\n- 📚 Reutersの報告によると、ParrotTalks、Uvoice、VPNCityも12月中旬から影響を受けている\n- 📧 Cyberhavenは12月26日に顧客にメールを送り、パスワードの変更と資格情報の更新を推奨\n- 📊 悪意のあるコードはFacebook Adsユーザーのデータ（アクセストークン、ユーザーID、クッキーなど）を窃取し、2FAを回避するための情報を収集\n- 🛠️ Cyberhavenは12月25日に侵害を検出し、1時間以内に悪意のある拡張機能を削除し、清掃版を配布",
+                "tags": [
+                    "Security",
+                    "Web",
+                    "AI"
+                ]
+            },
+            {
+                "title": "数十の Chrome 拡張機能がハッキングされ、数百万人のユーザーがデータ盗難の危険にさらされる",
+                "url": "https://thehackernews.com/2024/12/16-chrome-extensions-hacked-exposing.html",
+                "summary": "### 数十の Chrome 拡張機能がハッキングされ、数百万人のユーザーがデータ盗難の危険にさらされる\n- 🚨 数十の Chrome 拡張機能がハッキングされ、ユーザーのデータが危険にさらされている\n- 🔒 数百万人のユーザーが影響を受け、個人情報やログイン情報が盗まれる可能性がある\n- 💻 ハッキングされた拡張機能は、ユーザーのブラウジング活動や入力データを収集する可能性がある\n- 🔍 セキュリティ専門家が被害の範囲と影響を調査中\n- 🛡️ ユーザーは影響を受けた拡張機能を確認し、必要に応じてアンインストールすることが推奨される",
+                "tags": [
+                    "Web",
+                    "Security"
+                ]
+            },
+            {
+                "title": "LLMがサプライチェーン攻撃を開始するのは時間の問題だ",
+                "url": "https://go.theregister.com/feed/www.theregister.com/2024/12/29/llm_supply_chain_attacks/",
+                "summary": "### LLMがサプライチェーン攻撃を開始するのは時間の問題だ\n- 🔒 犯罪者が既存のLLMをハッキングして利用する方法を学んでいる\n- 🤖 2025年にはLLMを使用した高度なサプライチェーン攻撃が予想される\n- 💰 2024年に、クラウド資格情報を盗用してLLMにアクセスする攻撃が増加\n- 💻 攻撃者はLLMにアクセスするための資格情報の売買を行っている\n- 🔥 攻撃により、クラウドアカウント所有者は1日に46,000ドル以上の費用を負担\n- 📧 2025年には、LLMを使用した標的型フィッシング攻撃が増加する可能性がある\n- 🔍 攻撃者はLLMを用いて、個々の標的に合わせた詐欺メールを生成する\n- 🔒 Change Healthcareのシステムがランサムウェア攻撃を受け、9ヶ月間サービスが停止した\n- nage 攻撃者はChange Healthcareのシステムに侵入し、100万人以上の個人情報を取得\n- 💡 メールの送信者を確認し、不審なURLをクリックしないように注意が必要",
+                "tags": [
+                    "AI",
+                    "Security"
+                ]
+            },
+            {
+                "title": "2024/12/23〜2024/12/29の最新情報",
+                "url": "https://uki00a.github.io/deno-weekly/articles/2024/12/29.html",
+                "summary": "### 2024/12/23〜2024/12/29の最新情報\n- 📝 Denoの設定ファイル`deno.json`にパーミッションセットの管理機能が追加されるPRが提出\n- 🛠️ `deno.json`に`permissionSets`項目が追加され、複数のパーミッションセットを定義可能\n- 💻 Deno実行時に`--permission-set`オプションを指定して、設定されたパーミッションセットを適用可能\n- 🔧 `deno lint`のJavaScriptプラグインにセレクターのサポートが追加されるPRがマージ\n- 🔍 セレクターを使用することで、ノードの問い合わせを柔軟に行えるようになる\n- 📚 セレクターの具体的な使用例がPRに詳細に記載されている",
+                "tags": [
+                    "Software",
+                    "Security"
+                ]
+            },
+            {
+                "title": "2024 年のデータ侵害トップ 10",
+                "url": "https://www.tomsguide.com/computing/online-security/the-top-10-data-breaches-of-2024",
+                "summary": "### 2024 年のデータ侵害トップ 10\n- 🔒 2024年7月から9月の間に422 million以上のレコードが漏洩\n- 😊 260億件以上のレコードが漏洩\n- 💰 データ侵害のコストは過去最高で、世界平均が4.88 millionドル\n- 💥 Mother of All Breaches (MOAB) が4,144のデータ侵害を包括し、260億レコードが漏洩\n- 🔒 Discordが4.2億件のメッセージを含む256百万ユーザーのデータを漏洩\n- 🔄 AT&Tは7.6百万の現行顧客と65.4百万の旧顧客のデータが漏洩\n- 🔐 Change Healthcareが2月にハッキングされ、1億人のアメリカ人のデータが影響\n- 🔒 APLHV（BlackCat）によるランサムウェア攻撃で約1億人の個人情報が漏洩\n- 🔐 Dellが5月にブルートフォース攻撃を受け、4900万件の顧客情報が漏洩\n- 🔒 Life360アプリの50万ユーザーのデータがダークウェブに漏洩",
+                "tags": [
+                    "Security"
+                ]
+            },
+            {
+                "title": "LLMのコード能力を向上させる取り組み",
+                "url": "https://zenn.dev/yokota_lab/articles/65dbdcd56ab8bd",
+                "summary": "### LLMのコード能力を向上させる取り組み\n- 💻 LLM（大規模言語モデル）のコード生成能力の向上が注目されている\n- 📚 新たな学習手法やデータセットの活用により、コードの品質向上が図られている\n- 🛠️ 特定のプログラミング言語に特化したモデルの開発が進められている\n- 🔍 コードの正当性や安全性を評価するための検証システムの開発が行われている\n- 🤝 開発者とLLMの協働環境の整備が進められており、効率的なコード作成を支援\n- 🤖 Llama-3.1-Swallow-8B-v0.2は250B Token継続事前学習を施し、日本語と英語に強いLLM\n- 🤔 Swallow Projectと横田研究室は、LLMのReasoning能力向上のため数学とコーディング能力の強化に取り組む\n- 🔧 Llama-3では静的解析とユニットテストによりコード品質を保証\n- 📊 v0.2ではNIILCとJHumanEvalの性能が改善し、特にJHumanEvalのスコアが0.3360に向上\n- 🔄 Qwen-2.5-Coderの学習粒度は2つのフェーズに分かれ、Repo-Levelではcontext sizeが4倍に増加",
+                "tags": [
+                    "AI",
+                    "Software",
+                    "Security"
+                ]
+            },
+            {
+                "title": "DeepSeek-V3 は、最も先進的なオープンソース LLM モデルの 1 つです",
+                "url": "https://tugatech.com.pt/t63787-deepseek-v3-e-um-dos-modelos-llm-open-source-mais-avancados",
+                "summary": "### DeepSeek-V3 は、最も先進的なオープンソース LLM モデルの 1 つです\n- 🚀 DeepSeek AIが開発中のDeepSeek-V3は、671億パラメータを持つMixture-of-Experts (MoE) モデル\n- 📈 DeepSeek-V3は、主要なベンチマークテストで他のオープンソースLLMモデルを上回る性能を示している\n- 💰 DeepSeek-V3の使用料はUS$0.27/100万トークン（US$0.07/100万トークンにキャッシュを使用）、価格は主要モデルの約1/10\n- 🛠️ DeepSeek-V3は新しい情報のトレーニングが効率的で、使用コストも低い\n- 🌟 DeepSeek-V3は、GPT-4やClaude 3.5などのクローズドルモデルよりも優れた性能を示している\n- 💻 DeepSeek AIの使命はオープンソースモデルとクローズドルモデルのギャップを縮めること\n- 🔗 詳細情報はGitHubのプロジェクトページで提供されている",
+                "tags": [
+                    "AI",
+                    "Software",
+                    "Recommend"
+                ]
+            },
+            {
+                "title": "Inertia.js v2.0で追加された新機能を実際に実装してみた",
+                "url": "https://zenn.dev/issei_miyara/articles/3d8cbc5789f0ac",
+                "summary": "### Inertia.js v2.0で追加された新機能を実際に実装してみた\n- ✨ Inertia.js v2.0が正式リリースされ、非同期リクエストの機能が大幅にサポートされた\n- 🔄 Polling: サーバーに定期的に通信してpropsを更新する機能\n- 🚀 Prefetching: ページにアクセス前にサーバーに通信を行いpropsを取得する機能\n- 💼 Deferred props: データを遅延ロードし、必要なタイミングでpropsを更新する機能\n- 👇 Infinite scrolling: スクロール時にデータを自動的に追加読み込みする機能\n- ⬇️ Lazy loading data on scroll: スクロール時にデータを遅延ロードする機能\n- 📚 usePrefetchでデータのprefetchとキャッシュ機能が追加\n- ⚙️ prefetchしたデータはデフォルト30秒間キャッシュ可能で、キャッシュ時間は任意に調整可能\n- ⏳ Deferred propsで特定データの読み込みをページレンダリング後まで延期\n- 🛠️ Infinite scrollingの実装に挑戦したが、バグにより正しく機能しなかった",
+                "tags": [
+                    "Web",
+                    "Software"
+                ]
+            },
+            {
+                "title": "2024-12-28のJS: pnpm 10.0 RC.1、State of JavaScript 2024、Design Token-Based UI Architecture",
+                "url": "https://jser.info/2024/12/28/pnpm-10.0-rc.1-state-of-javascript-2024-design-token-based-ui-architecture/",
+                "summary": "### 2024-12-28のJS: pnpm 10.0 RC.1、State of JavaScript 2024、Design Token-Based UI Architecture\n- 📦 pnpm 10.0 RC 1がリリースされ、インストールするパッケージのlifecycle scriptをデフォルトで実行しないように変更\n- 📊 State of JavaScript 2024が公開され、JavaScriptの言語機能、ライブラリ、テスト、monorepo、JSとTSの比率、AIの利用率、学習リソースなどのアンケート結果がまとめられている\n- 🎨 Design TokenベースのUIアーキテクチャについての記事が公開され、Design Tokenの分割理由、スコープ、メリット・デメリットが説明されている\n- 🛠️ React Router 7.1.0がリリースされ、Vite 6をサポート\n- 🔄 SWR v2.3.0がリリースされ、fallbackとしてPromiseデータを指定できるように、React 19のサポートなどが追加\n- 🏃 zx 8.3.0がリリースされ、Async Iteratorの対応、pipe()の改善、--envフラグの追加などが行われている\n- 🚀 Nuxt v3.15がリリースされ、Vite 6のサポート、callOnce()の追加、definePageMetaの改善などが含まれている\n- ⚙️ Service Workerの`skipWaiting`と`clients.claim`の挙動について説明。Service Workerのページコントロールのタイミングを制御\n- 📚 React Ariaのアクセシビリティ対応の実装についての連載記事がQiita Advent Calendar 2024で公開\n- ✍️ CSSのtext-box-trim/text-edge/text-boxの機能について解説。タイポグラフィの改善に寄与",
+                "tags": [
+                    "Web",
+                    "Software",
+                    "AI",
+                    "Security",
+                    "Recommend"
+                ]
+            },
+            {
+                "title": "Apache Traffic Controlに緊急の脆弱性、アップデートを",
+                "url": "https://news.mynavi.jp/techplus/article/20241228-3094965/",
+                "summary": "### Apache Traffic Controlに緊急の脆弱性、アップデートを\n- 🚨 Apache Traffic Controlに緊急の脆弱性（CVE-2024-45387）が存在\n- 🔒 特定のロールを持つリモート攻撃者が任意のSQL命令を実行可能\n- 📅 脆弱性の報告日は2024年12月23日（米国時間）\n- 👨‍💻 著者：後藤大地\n- 🔗 関連キーワード：脆弱性、サイバーセキュリティ\n- ⚠️ バックドアのバックドアをハイジャックする脆弱性が報告された\n- 💻 OSSのセキュリティ問題についての記事も掲載\n- 💥 複数のルータを侵害したDDoS攻撃が発生、日本国内にも影響\n- 🛡️ IIJが情報漏えい対策機能を標準搭載したセキュアな業務用デバイスを提供\n- 🤔 経営層の「根拠なき過信」が企業のセキュリティリスクを高めている",
+                "tags": [
+                    "Security"
+                ]
+            },
+            {
+                "title": "LLMを数学タスクにアラインする手法の系譜 - GPT-3からQwen2.5まで",
+                "url": "https://zenn.dev/bilzard/articles/survey-self-improve-llm",
+                "summary": "### LLMを数学タスクにアラインする手法の系譜 - GPT-3からQwen2.5まで\n- 📚 LLM（大規模言語モデル）の数学能力向上のための手法が紹介\n- 💥 GPT-3からQwen2.5までの系譜をたどる\n- 💡 LLMの数学タスクへのアライン手法を概観し、Qwen2.5に至るまでの提案手法を俯瞰的に解説\n- 📈 LLMの性能向上に伴い、数学問題の解決能力も向上\n- 🛠️ 技術の進化により、モデルのトレーニング手法やデータセットの改善が行われている\n- 🔍 STaRをベースに、Reward model (RM) を用いたアプローチが主流に\n- 🤔 sample&select手法は解法候補の多様性を保ちつつ正答率を上げるが、大量の候補サンプリングが必要という課題がある\n- 🎯 AGIを目指すため、より効率的なアプローチの探索が必要\n- 🔄 解法候補の多様性を高めるために、複数モデルの生成結果を混ぜる手法が導入\n- 🧮 Qwen2.5-MathはTIR手法を用い、モデルサイズの小さいモデルの生成結果をサンプリング",
+                "tags": [
+                    "AI",
+                    "Software"
+                ]
+            },
+            {
+                "title": "北朝鮮のハッカーが伝染性インタビューキャンペーンで OtterCookie マルウェアを展開",
+                "url": "https://thehackernews.com/2024/12/north-korean-hackers-deploy-ottercookie.html",
+                "summary": "### 北朝鮮のハッカーが伝染性インタビューキャンペーンで OtterCookie マルウェアを展開\n- 💻 北朝鮮のハッカーが OtterCookie マルウェアを展開\n- 🗣️ マルウェアは伝染性インタビューキャンペーンを通じて配布\n- 🔒 thehackernews.com がセキュリティ確認のメッセージを表示\n- ⏳ セキュリティ確認プロセスに数秒かかる可能性がある\n- 🛡️ 接続のセキュリティを確認する必要があると提示",
+                "tags": [
+                    "Security"
+                ]
+            },
+            {
+                "title": "CloudNativePG 1.25.0 および 1.24.2 がリリースされました!",
+                "url": "https://www.postgresql.org/about/news/cloudnativepg-1250-and-1242-released-2985/",
+                "summary": "### CloudNativePG 1.25.0 および 1.24.2 がリリースされました!\n- 🎉 CloudNativePG Operator の 1.25.0 および 1.24.2 がリリース\n- 🛠️ 1.25.0 で Declarative Database Management, Logical Replication, Fine-Tuned Data Durability などの主要機能が導入\n- 🔌 CNPG-I (CloudNativePG Interface) の実験的な導入により、外部プラグインの拡張が可能に\n- 😎 1.23.6 が最後の 1.23.x シリーズのパッチリリースとして提供\n- ✨ 1.25.0 では pg_dump と pg_restore の制御強化、並列リコンサイラーなどの追加の機能も導入\n- 📚 アップグレードガイドが提供され、1.25.0 へのアップグレードが推奨\n- 👥 Slack と Twitter でコミュニティに参加し、サポートや情報交換が可能",
+                "tags": [
+                    "Software"
+                ]
+            },
+            {
+                "title": "[お知らせ] SynchDB 1.0 リリース - リアルタイム データベース同期のための PostgreSQL 拡張機能",
+                "url": "https://www.postgresql.org/about/news/announce-synchdb-10-released-postgresql-extension-for-real-time-database-synchronization-2986/",
+                "summary": "### [お知らせ] SynchDB 1.0 リリース - リアルタイム データベース同期のための PostgreSQL 拡張機能\n- 🎉 SynchDB 1.0が2024年12月24日にリリース\n- 🔄 PostgreSQLからMySQLやMS SQL Serverなどの異種データベースとのリアルタイムデータ同期を可能に\n- 🛠️ パフォーマンス改善：データキャッシング、JVMメモリ制御、バッチ処理の高速化\n- 📚 新機能：カスタムスナップショットモード、JVMヒープメモリ監視、統計ビュー、統計リセット\n- 🔧 設定強化：Debeziumランナーのパフォーマンス調整、JVM最大ヒープメモリ設定、SSLパラメータ、背景ワーカー数\n- 🐛 バグ修正：メモリーリークの解決、メモリコンテクスト処理の改善、SPIメモリ使用の修正\n- ⚠️ 既知の問題：自動コネクタ起動制限、ALTER TABLE制限、コネクタ状態永続化の問題",
+                "tags": [
+                    "Software",
+                    "Security"
+                ]
+            },
+            {
+                "title": "[お知らせ] IvorySQL 4.0 リリース - PostgreSQL 17.0 Foundation との Oracle 互換性が強化されました",
+                "url": "https://www.postgresql.org/about/news/announce-ivorysql-40-released-enhanced-oracle-compatibility-with-postgresql-170-foundation-2987/",
+                "summary": "### [お知らせ] IvorySQL 4.0 リリース - PostgreSQL 17.0 Foundation との Oracle 互換性が強化されました\n- 🎉 IvorySQL 4.0が2024年12月23日にリリース\n- 🔄 PostgreSQL 17.0をベースにOracle互換性を強化\n- 💻 Invisible Columnsを導入し、psqlで拡張説明をサポート\n- 🛠️ PL/SQLパッケージ管理機能を追加、パッケージのライフサイクルを完全に管理\n- 🔧 pg_get_functiondefの改善により、複数の関数OIDをサポート\n- ⚙️ デフォルトデータベースとして'ivorysql'を追加、Ubuntuインストールパッケージをサポート\n- 🔗 ソースコードリポジトリはGitHubで公開、詳細変更はComplete Changelogで確認可能",
+                "tags": [
+                    "Software"
+                ]
+            },
+            {
+                "title": "中国のAI企業は、画期的な進歩により、11分の1の計算量で最先端のAIモデルを作成できるようになったと発表 — DeepSeekの最適化により、米国の制裁の限界が明らかになる可能性がある",
+                "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/chinese-ai-company-says-breakthroughs-enabled-creating-a-leading-edge-ai-model-with-11x-less-compute-deepseeks-optimizations-highlight-limits-of-us-sanctions",
+                "summary": "### 中国的AI企業は、画期的な進歩により、11分の1の計算量で最先端のAIモデルを作成できるようになったと発表 — DeepSeekの最適化により、米国の制裁の限界が明らかになる可能性がある\n- 🚀 中国のAI企業DeepSeekが、計算量を11分の1に削減した最先端のAIモデルを開発\n- 💪 この最適化技術により、AIモデルの生成が大幅に高速化・効率化\n- 🔒 米国の技術制裁に対する中国の対応力が示唆される\n- 💻 DeepSeekが6710億パラメータのAIモデルを2.8百万GPU時間で訓練\n- 🔍 MetaのLlama 3（4050億パラメータ）は30.8百万GPU時間で訓練\n- ⚙️ DeepSeekは高度なパイプラインアルゴリズム、最適化通信フレームワーク、FP8低精度計算を使用\n- 🔗 2,048台のNvidia H800 GPUを使用し、NVLinkとInfiniBandで通信最適化\n- 🔓 DeepSeekはモデルとウェイトをオープンソース化し、テストが期待される\n- 🌟 DeepSeek-v3 MoE言語モデルは、GPT-4x、Claude-3.5-Sonnet、LLlama-3.1と同等または優れた性能\n- 📊 計算量の削減が、AI開発のコストと時間を大幅に削減する可能性",
+                "tags": [
+                    "AI",
+                    "Software",
+                    "Security"
+                ]
+            },
+            {
+                "title": "Nuxt v3.15 がリリースされました🎉 : Nuxt Weekly News (2024年12月25日号)",
+                "url": "https://zenn.dev/feasion/articles/nuxt-weekly-news-20241225",
+                "summary": "### Nuxt v3.15 がリリースされました🎉 : Nuxt Weekly News (2024年12月25日号)\n- 🎁 Nuxt v3.15がクリスマスプレゼントとしてリリースされました\n- ❄️ ローディング画面で雪が降るエフェクトが追加されました\n- ⚡️ Vite v6に対応し、新規APIへの対応も行われています\n- 🗺️ callOnceにmodeオプションが追加され、実行のタイミングを可変化できます\n- 📋 definePageMetaにカスタムキーの追加とローカル関数のサポートが追加されました\n- 🔥 アプリマニフェストのロード時間短縮：ブラウザ側でのpreloadが可能に\n- 💻 Vite v6がリリースされ、Nuxt v4、Nuxt UI v3、Nuxt Content v3の開発が進行中\n- 📜 definePageMetaのパラメータ詳細はドキュメントを参照\n- 🎁 2025年もNuxtおよび関連モジュールのさらなる進化が期待される",
+                "tags": [
+                    "Web",
+                    "Software"
+                ]
+            },
+            {
+                "title": "日本航空にサイバー攻撃で遅延および欠航、三菱UFJ銀行も被害",
+                "url": "https://news.mynavi.jp/techplus/article/20241227-3095482/",
+                "summary": "### 日本航空にサイバー攻撃で遅延および欠航、三菱UFJ銀行も被害\n- 🚨 2024年12月26日、日本航空で社内外をつなぐネットワーク機器に障害が発生\n- 💻 障害の原因は分散型サービス拒否攻撃(DDoS)によるシステム不具合\n- ✈️ 同日出発の国内線および国際線の運航に影響が及んだ\n- 🏦 三菱UFJ銀行もサイバー攻撃の被害を受けた\n- 🔒 サイバー攻撃は企業のITシステムに深刻な影響を及ぼす可能性がある\n- 👩‍💻 研究者がバックドアのハイジャック手法を発表\n- 💻 OSSのセキュリティに関する難しさが議論される\n- 🔥 複数のルータを侵害したDDoS攻撃が発生、日本国内にも影響\n- 🛡️ IIJが情報漏えい対策機能を標準搭載した業務用デバイスを提供\n- 🔒 ランサムウェアへの対処には事前の準備が重要 - ガートナー 鈴木氏",
+                "tags": [
+                    "Security"
+                ]
+            },
+            {
+                "title": "Apache MINA CVE-2024-52046: CVSS 10.0 の欠陥により、安全でないシリアル化による RCE が可能になる",
+                "url": "https://thehackernews.com/2024/12/apache-mina-cve-2024-52046-cvss-100.html",
+                "summary": "### Apache MINA CVE-2024-52046: CVSS 10.0 の欠陥により、安全でないシリアル化による RCE が可能になる\n- ⚠️ Apache MINA に CVSS 10.0 の深刻な脆弱性が発見された\n- 🔒 この脆弱性により、安全でないシリアル化により RCE（リモートコード実行）が可能になる\n- 💻 thehackernews.com がこの脆弱性について報告している\n- ⏳ 接続のセキュリティ確認が必要となる場合がある\n- 📖 詳細は thehackernews.com の記事で確認できる",
+                "tags": [
+                    "Security",
+                    "Software"
+                ]
+            },
+            {
+                "title": "This Week in Rust 579",
+                "url": "https://this-week-in-rust.org/blog/2024/12/25/this-week-in-rust-579/",
+                "summary": "### This Week in Rust 579\n- 🚀 Rustは信頼性と効率性のソフトウェア開発を可能にするプログラミング言語\n- 🌟 この週刊誌はRustの進捗とコミュニティの活動をまとめたもの\n- 💬 情報提供や貢献を希望する場合、X（旧Twitter）、Mastodon、GitHubで連絡可能\n- 💻 This Week in RustはGitHubで開発され、アーカイブはthis-week-in-rust.orgで閲覧可能\n- 🔧 誤りを見つけたらGitHubでPRを提出できる\n- 🤝 398個のプルリクエストが先週マージされた\n- 🛠️ Rustupのreqwestバックエンドとrustlsのテストが呼びかけられている\n- 👩‍💻 Rustコミュニティのオープンソースプロジェクトへの貢献の機会が提供されている\n- 📚 OmniLEDは、LED行列に時間や音量を表示するための Crate of the Week\n- 📅 2024年12月25日から2025年1月22日までのRusty Eventsのスケジュールが発表された",
+                "tags": [
+                    "Software",
+                    "Web",
+                    "Recommend"
+                ]
+            }
+        ]
+    ]
+}
